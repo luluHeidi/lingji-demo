@@ -1,0 +1,1788 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>灵机系统 - 演示角色权限配置 v4</title>
+    <style>
+        /* ===== 基础重置 & 变量 ===== */
+        :root {
+            --primary: #006eff;
+            --primary-light: #e6f2ff;
+            --success: #00b578;
+            --warning: #ff8f1f;
+            --danger: #ee3f4d;
+            --text-1: #1a1a1a;
+            --text-2: #666;
+            --text-3: #999;
+            --bg-1: #fff;
+            --bg-2: #f5f7fa;
+            --bg-3: #e8ecf2;
+            --border: #e8ecf2;
+            --radius: 12px;
+            --shadow: 0 2px 12px rgba(0,0,0,0.06);
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Helvetica Neue', sans-serif;
+            background: var(--bg-2);
+            color: var(--text-1);
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        /* ===== 顶栏 ===== */
+        .header {
+            background: #fff;
+            border-bottom: 1px solid var(--border);
+            padding: 0 32px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .header-left { display: flex; align-items: center; gap: 12px; }
+        .header-logo { font-size: 20px; }
+        .header-title { font-size: 16px; font-weight: 600; }
+        .header-subtitle { font-size: 13px; color: var(--text-3); margin-left: 8px; }
+        .header-right { display: flex; align-items: center; gap: 12px; }
+
+        .btn {
+            padding: 8px 20px;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            border: none;
+            transition: all 0.2s;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .btn-primary { background: var(--primary); color: #fff; }
+        .btn-primary:hover { background: #0055cc; }
+        .btn-outline { background: #fff; color: var(--text-1); border: 1px solid var(--border); }
+        .btn-outline:hover { background: var(--bg-2); }
+        .btn-danger { background: #fff; color: var(--danger); border: 1px solid #ffe0e0; }
+        .btn-danger:hover { background: #fff5f5; }
+        .btn-success { background: var(--success); color: #fff; }
+        .btn-success:hover { background: #009a63; }
+        .btn-sm { padding: 5px 14px; font-size: 13px; }
+
+        /* ===== 主体布局 ===== */
+        .container { max-width: 1400px; margin: 0 auto; padding: 24px 32px; }
+
+        /* ===== 文件夹区域 ===== */
+        .folder-section { margin-bottom: 28px; }
+        .folder-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 14px;
+            padding: 0 4px;
+        }
+        .folder-header-left { display: flex; align-items: center; gap: 10px; }
+        .folder-title-bar {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            cursor: pointer;
+            user-select: none;
+            padding: 6px 12px;
+            border-radius: 8px;
+            transition: background 0.15s;
+        }
+        .folder-title-bar:hover { background: rgba(0,0,0,0.04); }
+        .folder-icon { font-size: 18px; }
+        .folder-name {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--text-1);
+        }
+        .folder-count {
+            font-size: 12px;
+            color: var(--text-3);
+            background: var(--bg-3);
+            border-radius: 10px;
+            padding: 2px 8px;
+            font-weight: 500;
+        }
+        .folder-toggle-icon {
+            font-size: 12px;
+            color: var(--text-3);
+            transition: transform 0.25s;
+            margin-left: 4px;
+        }
+        .folder-toggle-icon.collapsed { transform: rotate(-90deg); }
+        .folder-actions { display: flex; gap: 6px; }
+        .folder-actions .btn { opacity: 0.6; transition: opacity 0.2s; }
+        .folder-actions:hover .btn { opacity: 1; }
+
+        /* 文件夹内容区域 */
+        .folder-body { transition: all 0.3s ease; }
+        .folder-body.collapsed { display: none; }
+
+        /* ===== 角色卡片网格 ===== */
+        .role-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
+            gap: 20px;
+        }
+
+        .role-card {
+            background: #fff;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            overflow: hidden;
+            transition: all 0.25s;
+            border: 2px solid transparent;
+        }
+        .role-card:hover {
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            transform: translateY(-2px);
+        }
+        .role-card--editing { border-color: var(--primary); }
+
+        .role-card-header {
+            padding: 18px 20px;
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+        .role-avatar {
+            width: 44px; height: 44px;
+            border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 18px; font-weight: 700; color: #fff;
+            flex-shrink: 0;
+        }
+        .role-basic { flex: 1; min-width: 0; }
+        .role-name { font-size: 16px; font-weight: 600; }
+        .role-meta { font-size: 13px; color: var(--text-3); margin-top: 2px; }
+        .role-actions { display: flex; gap: 6px; }
+
+        /* 权限摘要标签（收起时显示） */
+        .perm-summary {
+            padding: 0 20px 14px;
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+        .perm-summary-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            font-size: 12px;
+            padding: 3px 10px;
+            border-radius: 10px;
+            font-weight: 500;
+        }
+        .perm-summary-tag--menu {
+            background: var(--primary-light);
+            color: var(--primary);
+        }
+        .perm-summary-tag--data {
+            background: #f0fdf4;
+            color: #16a34a;
+        }
+        .perm-expand-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            font-size: 12px;
+            color: var(--text-3);
+            cursor: pointer;
+            padding: 3px 10px;
+            border-radius: 10px;
+            border: 1px dashed var(--border);
+            transition: all 0.2s;
+        }
+        .perm-expand-btn:hover {
+            color: var(--primary);
+            border-color: var(--primary);
+            background: var(--primary-light);
+        }
+
+        /* 编辑表单 */
+        .role-edit-form {
+            padding: 16px 20px;
+            background: var(--primary-light);
+            display: none;
+        }
+        .role-edit-form.active { display: block; }
+        .form-row { display: flex; gap: 12px; margin-bottom: 12px; }
+        .form-group { flex: 1; }
+        .form-label { display: block; font-size: 12px; font-weight: 600; color: var(--text-2); margin-bottom: 4px; }
+        .form-input {
+            width: 100%; padding: 8px 12px;
+            border: 1px solid var(--border); border-radius: 8px;
+            font-size: 14px; background: #fff; transition: border 0.2s;
+        }
+        .form-input:focus { outline: none; border-color: var(--primary); }
+        .form-select {
+            width: 100%; padding: 8px 12px;
+            border: 1px solid var(--border); border-radius: 8px;
+            font-size: 14px; background: #fff; cursor: pointer;
+        }
+        .form-select:focus { outline: none; border-color: var(--primary); }
+        .color-input-group { display: flex; gap: 8px; align-items: center; }
+        .color-preview {
+            width: 32px; height: 32px;
+            border-radius: 8px;
+            border: 2px solid #fff;
+            box-shadow: 0 0 0 1px var(--border);
+            cursor: pointer; flex-shrink: 0;
+        }
+        .color-picker { opacity: 0; width: 0; height: 0; position: absolute; }
+
+        /* ===== 权限详情区域 ===== */
+        .role-card-body {
+            padding: 0 20px 16px;
+            border-top: 1px solid var(--border);
+            display: none;
+        }
+        .role-card-body.expanded { display: block; }
+
+        .perm-tabs {
+            display: flex; gap: 0;
+            margin: 14px 0;
+            border-bottom: 2px solid var(--border);
+        }
+        .perm-tab {
+            padding: 8px 16px; font-size: 13px; font-weight: 600;
+            color: var(--text-3); cursor: pointer;
+            border-bottom: 2px solid transparent; margin-bottom: -2px;
+            transition: all 0.2s;
+            display: flex; align-items: center; gap: 5px;
+        }
+        .perm-tab:hover { color: var(--text-2); }
+        .perm-tab.active { color: var(--primary); border-bottom-color: var(--primary); }
+        .perm-panel { display: none; }
+        .perm-panel.active { display: block; }
+
+        .perm-section-title {
+            font-size: 13px; font-weight: 600; color: var(--text-2);
+            margin-bottom: 10px;
+            display: flex; align-items: center; gap: 6px;
+        }
+
+        /* ===== 菜单权限树（三级） ===== */
+        .menu-tree { display: flex; flex-direction: column; gap: 2px; }
+        .menu-tree-group { margin-bottom: 6px; }
+        .menu-tree-l1 {
+            display: flex; align-items: center; gap: 8px;
+            padding: 6px 8px; border-radius: 6px;
+            font-size: 13px; font-weight: 600; color: var(--text-1);
+            cursor: pointer; transition: background 0.15s;
+        }
+        .menu-tree-l1:hover { background: var(--bg-2); }
+        .menu-tree-l2-list { margin-left: 28px; display: flex; flex-direction: column; gap: 2px; }
+        .menu-tree-l2 {
+            display: flex; align-items: center; gap: 8px;
+            padding: 4px 8px; border-radius: 6px;
+            font-size: 13px; color: var(--text-2);
+            cursor: pointer; transition: background 0.15s;
+        }
+        .menu-tree-l2:hover { background: var(--bg-2); }
+        .menu-tree-l3-list { margin-left: 28px; display: flex; flex-direction: column; gap: 1px; }
+        .menu-tree-l3 {
+            display: flex; align-items: center; gap: 8px;
+            padding: 3px 8px; border-radius: 6px;
+            font-size: 12px; color: var(--text-3);
+            cursor: pointer; transition: background 0.15s;
+        }
+        .menu-tree-l3:hover { background: var(--bg-2); }
+
+        .tree-toggle {
+            width: 14px; height: 14px;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 10px; color: var(--text-3);
+            transition: transform 0.2s; flex-shrink: 0;
+        }
+        .tree-toggle.collapsed { transform: rotate(-90deg); }
+
+        .perm-cb {
+            width: 16px; height: 16px; border-radius: 4px;
+            border: 2px solid #ccc; background: #fff;
+            display: flex; align-items: center; justify-content: center;
+            cursor: pointer; transition: all 0.15s; flex-shrink: 0;
+        }
+        .perm-cb.checked { background: var(--primary); border-color: var(--primary); }
+        .perm-cb.checked::after { content: '✓'; color: #fff; font-size: 11px; font-weight: 700; }
+        .perm-cb.partial { background: var(--primary); border-color: var(--primary); }
+        .perm-cb.partial::after { content: '—'; color: #fff; font-size: 12px; font-weight: 700; line-height: 1; }
+
+        .all-select-tag {
+            display: inline-flex; align-items: center; gap: 4px;
+            font-size: 12px; color: var(--primary); background: var(--primary-light);
+            border-radius: 10px; padding: 2px 10px; font-weight: 600;
+        }
+
+        /* ===== 数据权限 ===== */
+        .data-perm-section { margin-top: 8px; }
+        .data-perm-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 4px; }
+        .data-perm-item {
+            display: flex; align-items: center; gap: 8px;
+            padding: 5px 8px; border-radius: 6px;
+            font-size: 13px; color: var(--text-2);
+            cursor: pointer; transition: background 0.15s;
+        }
+        .data-perm-item:hover { background: var(--bg-2); }
+        .data-perm-all {
+            grid-column: 1 / -1;
+            font-weight: 600; color: var(--text-1);
+            padding: 6px 8px;
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 4px;
+        }
+
+        /* ===== 操作权限 ===== */
+        .ops-perm-section { margin-top: 8px; }
+        .ops-perm-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 4px; }
+        .ops-perm-item {
+            display: flex; align-items: center; gap: 8px;
+            padding: 5px 8px; border-radius: 6px;
+            font-size: 13px; color: var(--text-2);
+            cursor: pointer; transition: background 0.15s;
+        }
+        .ops-perm-item:hover { background: var(--bg-2); }
+        .ops-perm-item .ops-desc {
+            font-size: 11px; color: var(--text-3); margin-left: auto;
+        }
+        .ops-perm-all {
+            grid-column: 1 / -1;
+            font-weight: 600; color: var(--text-1);
+            padding: 6px 8px;
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 4px;
+        }
+        .ops-group-title {
+            grid-column: 1 / -1;
+            font-size: 12px; font-weight: 600; color: var(--primary);
+            padding: 8px 8px 2px;
+            margin-top: 4px;
+        }
+        .perm-summary-tag--ops {
+            background: #fdf2f8;
+            color: #be185d;
+        }
+
+        /* 新增角色卡 / 新增文件夹 */
+        .role-card--add, .folder-add-card {
+            border: 2px dashed var(--border);
+            display: flex; align-items: center; justify-content: center;
+            min-height: 120px; cursor: pointer;
+            transition: all 0.2s; background: #fafbfc;
+            border-radius: var(--radius);
+        }
+        .role-card--add:hover, .folder-add-card:hover {
+            border-color: var(--primary); background: var(--primary-light);
+        }
+        .add-card-content { text-align: center; color: var(--text-3); }
+        .add-card-icon { font-size: 28px; margin-bottom: 6px; }
+        .add-card-text { font-size: 14px; font-weight: 500; }
+
+        /* 全局操作栏 */
+        .global-actions {
+            display: flex; gap: 12px; align-items: center;
+            margin-bottom: 20px; padding: 0 4px;
+        }
+
+        /* 权限统计标签 */
+        .perm-stat {
+            font-size: 11px; color: var(--text-3);
+            font-weight: 400; margin-left: auto;
+        }
+
+        /* ===== Modal ===== */
+        .modal-overlay {
+            position: fixed; inset: 0;
+            background: rgba(0,0,0,0.4);
+            z-index: 10000;
+            display: flex; align-items: center; justify-content: center;
+            animation: fadeIn 0.2s;
+        }
+        .modal {
+            background: #fff; border-radius: 16px;
+            box-shadow: 0 16px 48px rgba(0,0,0,0.2);
+            padding: 28px 32px;
+            min-width: 380px; max-width: 480px;
+            animation: scaleIn 0.25s ease;
+        }
+        .modal-title { font-size: 17px; font-weight: 600; margin-bottom: 18px; }
+        .modal-actions { display: flex; justify-content: flex-end; gap: 10px; margin-top: 20px; }
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+        @keyframes scaleIn { from { opacity: 0; transform: scale(0.95); } to { opacity: 1; transform: scale(1); } }
+
+        /* ===== Toast ===== */
+        .toast-container {
+            position: fixed; top: 80px; right: 32px;
+            z-index: 10001;
+            display: flex; flex-direction: column; gap: 8px;
+        }
+        .toast {
+            background: #fff; border-radius: 10px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+            padding: 12px 20px; font-size: 14px;
+            display: flex; align-items: center; gap: 8px;
+            animation: toastIn 0.3s ease; max-width: 360px;
+        }
+        .toast--success { border-left: 4px solid var(--success); }
+        .toast--error { border-left: 4px solid var(--danger); }
+        .toast--info { border-left: 4px solid var(--primary); }
+        @keyframes toastIn {
+            from { opacity: 0; transform: translateX(20px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+
+        /* 同步状态 */
+        .sync-badge {
+            display: inline-flex; align-items: center; gap: 6px;
+            font-size: 12px; color: var(--success);
+            background: #e8f8ef; border-radius: 20px;
+            padding: 4px 12px; font-weight: 500;
+        }
+        .sync-dot {
+            width: 6px; height: 6px; border-radius: 50%;
+            background: var(--success);
+            animation: syncPulse 2s infinite;
+        }
+        @keyframes syncPulse { 0%,100% { opacity: 1; } 50% { opacity: 0.3; } }
+
+        /* 分隔线 */
+        .folder-divider {
+            height: 1px;
+            background: var(--border);
+            margin: 8px 0 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 顶栏 -->
+    <div class="header">
+        <div class="header-left">
+            <span class="header-logo">⚙️</span>
+            <span class="header-title">灵机系统 · 演示角色权限配置</span>
+            <span class="header-subtitle">配置不同角色的菜单权限、数据权限和操作权限</span>
+        </div>
+        <div class="header-right">
+            <div class="sync-badge">
+                <span class="sync-dot"></span>
+                数据实时同步
+            </div>
+            <button class="btn btn-outline btn-sm" onclick="resetToDefault()">🔄 恢复默认</button>
+            <a href="index.html" class="btn btn-primary btn-sm" target="_blank">📺 预览灵机系统</a>
+        </div>
+    </div>
+
+    <!-- 主内容 -->
+    <div class="container">
+        <!-- 全局操作栏 -->
+        <div class="global-actions">
+            <button class="btn btn-outline btn-sm" onclick="addNewFolder()">📁 新建文件夹</button>
+            <button class="btn btn-outline btn-sm" onclick="addNewRole(null)">➕ 新建角色</button>
+        </div>
+        <div id="mainContent"></div>
+    </div>
+
+    <!-- Toast -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <script>
+    (function() {
+        'use strict';
+
+        const STORAGE_KEY = 'lingji-role-config';
+
+        // ==========================================
+        // 菜单树（三级）
+        // ==========================================
+        const MENU_TREE = [
+            {
+                id: 'rights-library', name: '商业化权益库', icon: '📦',
+                children: [
+                    { id: 'rights-overview', name: '商业化权益大盘', children: [] },
+                    { id: 'video-rights', name: '视频授权权益明细', children: [] },
+                    { id: 'derivative-rights', name: '衍生权益明细', children: [] }
+                ]
+            },
+            {
+                id: 'material-library', name: '商业化素材库', icon: '📁',
+                children: [
+                    { id: 'material-overview', name: '素材库概览', children: [] },
+                    {
+                        id: 'material-query', name: '素材查询与申用',
+                        children: [
+                            { id: 'mq-ip-list', name: 'IP列表与筛选' },
+                            { id: 'mq-material-detail', name: '素材详情与搜索' },
+                            { id: 'mq-apply', name: '素材申用' },
+                            { id: 'mq-records', name: '申用记录' }
+                        ]
+                    },
+                    {
+                        id: 'material-upload', name: '素材上传',
+                        children: [
+                            { id: 'mu-standard', name: '标准化任务上传' },
+                            { id: 'mu-batch', name: '批量非标导入' },
+                            { id: 'mu-demand', name: '素材需求' },
+                            { id: 'mu-sorting', name: '智能分拣台' }
+                        ]
+                    },
+                    { id: 'material-tools', name: '素材工具箱', children: [] }
+                ]
+            },
+            {
+                id: 'video-auth', name: '视频作品授权', icon: '🎬',
+                children: [
+                    {
+                        id: 'auth-management', name: '授权管理',
+                        children: [
+                            { id: 'am-projects', name: '我的项目' },
+                            { id: 'am-rights-review', name: '授权审查' },
+                            { id: 'am-project-data', name: '项目数据' },
+                            { id: 'am-auth-list', name: '授权片单管理' },
+                            { id: 'am-approvals', name: '项目审批管理' }
+                        ]
+                    }
+                ]
+            },
+            {
+                id: 'derivative-auth', name: '衍生授权管理', icon: '🌿',
+                children: [
+                    { id: 'derivative-project', name: '项目管理', children: [] },
+                    { id: 'derivative-supervision', name: '监修管理', children: [] }
+                ]
+            },
+            {
+                id: 'product-dev', name: '自研商品开发管理', icon: '📦',
+                children: [
+                    { id: 'product-project', name: '项目管理', children: [] },
+                    { id: 'product-workflow', name: '流程管理', children: [] }
+                ]
+            },
+            {
+                id: 'anti-fake', name: '防伪互动技术', icon: '🛡️',
+                children: [
+                    { id: 'tech-selection', name: '技术选型', children: [] },
+                    { id: 'material-config', name: '素材配置', children: [] },
+                    { id: 'guzi-code', name: '谷子码管理', children: [] }
+                ]
+            },
+            {
+                id: 'data-service', name: '数据服务', icon: '📊',
+                children: [
+                    { id: 'business-data', name: '经营数据', children: [] },
+                    { id: 'industry-data', name: '行业数据', children: [] }
+                ]
+            }
+        ];
+
+        // ==========================================
+        // 品类
+        // ==========================================
+        const CATEGORIES = [
+            { id: 'cat-tv', name: '电视剧', icon: '📺' },
+            { id: 'cat-anime', name: '动漫', icon: '✨' },
+            { id: 'cat-variety', name: '综艺', icon: '🎤' },
+            { id: 'cat-movie', name: '电影', icon: '🎬' },
+            { id: 'cat-documentary', name: '纪录片', icon: '🎞️' },
+            { id: 'cat-kids', name: '少儿', icon: '🧒' },
+            { id: 'cat-short-drama', name: '横屏短剧', icon: '📱' }
+        ];
+
+        // ==========================================
+        // 操作权限（v5 — 全系统拆解，按模块分组）
+        // 模块状态：✅ 已完成 | 🚧 待开发(操作项为推断，标记⚠️待确认)
+        // ==========================================
+        const OPERATIONS = [
+            // ─── ✅ 素材上传 (material-upload) ────────────────────
+            { group: '📤 素材上传', module: 'material-upload', id: 'op-mu-create-task', name: '创建上传任务', desc: '发起标准化上传任务' },
+            { group: '📤 素材上传', module: 'material-upload', id: 'op-mu-delegate', name: '委派外包', desc: '生成临时链接委派外包执行者' },
+            { group: '📤 素材上传', module: 'material-upload', id: 'op-mu-self-upload', name: '自行上传', desc: '直接上传素材文件' },
+            { group: '📤 素材上传', module: 'material-upload', id: 'op-mu-track-progress', name: '进度追踪', desc: '查看任务进度和状态' },
+            { group: '📤 素材上传', module: 'material-upload', id: 'op-mu-manage-link', name: '临时链接管理', desc: '生成/撤销/查看外包临时链接' },
+            { group: '📤 素材上传', module: 'material-upload', id: 'op-mu-review-approve', name: '审批通过', desc: '审批通过素材上传任务' },
+            { group: '📤 素材上传', module: 'material-upload', id: 'op-mu-review-reject', name: '审批驳回', desc: '驳回素材上传并要求修正' },
+            { group: '📤 素材上传', module: 'material-upload', id: 'op-mu-review-comment', name: '审批批注', desc: '添加上传审查批注意见' },
+            { group: '📤 素材上传', module: 'material-upload', id: 'op-mu-submit-demand', name: '提交素材需求', desc: '下游消费者提交素材需求单' },
+            { group: '📤 素材上传', module: 'material-upload', id: 'op-mu-process-demand', name: '处理素材需求', desc: '响应并处理素材需求' },
+            { group: '📤 素材上传', module: 'material-upload', id: 'op-mu-batch-import', name: '批量非标导入', desc: '批量上传非标准化素材包' },
+            { group: '📤 素材上传', module: 'material-upload', id: 'op-mu-sorting-confirm', name: '分拣确认', desc: '确认AI分拣结果' },
+            { group: '📤 素材上传', module: 'material-upload', id: 'op-mu-sorting-adjust', name: '分拣调整', desc: '手动调整分拣分类' },
+            { group: '📤 素材上传', module: 'material-upload', id: 'op-mu-archive', name: '素材归档', desc: '将素材归档到素材库' },
+            { group: '📤 素材上传', module: 'material-upload', id: 'op-mu-temp-link-upload', name: '临时链接上传', desc: '通过临时链接上传素材（外包）' },
+
+            // ─── ✅ 素材查询与申用 (material-query) ────────────────
+            { group: '🔍 素材查询与申用', module: 'material-query', id: 'op-mq-search', name: 'IP素材搜索', desc: '通过名称/ID/AI智能搜索IP素材' },
+            { group: '🔍 素材查询与申用', module: 'material-query', id: 'op-mq-view-detail', name: '素材详情查看', desc: '查看IP素材详情、预览图片' },
+            { group: '🔍 素材查询与申用', module: 'material-query', id: 'op-mq-apply', name: '素材申用', desc: '提交素材申用请求' },
+            { group: '🔍 素材查询与申用', module: 'material-query', id: 'op-mq-batch-apply', name: '批量申用', desc: '批量选择并申用多个素材' },
+            { group: '🔍 素材查询与申用', module: 'material-query', id: 'op-mq-view-records', name: '申用记录查看', desc: '查看历史申用记录和状态' },
+            { group: '🔍 素材查询与申用', module: 'material-query', id: 'op-mq-download', name: '素材下载', desc: '下载已获授权的素材文件' },
+
+            // ─── ✅ 授权管理 (auth-management) ─────────────────────
+            { group: '✅ 授权管理', module: 'auth-management', id: 'op-am-add-ip', name: '添加审查IP', desc: '通过版权ID/合同号新增审查IP' },
+            { group: '✅ 授权管理', module: 'auth-management', id: 'op-am-review-first', name: '权益初审', desc: '执行权益初审流程' },
+            { group: '✅ 授权管理', module: 'auth-management', id: 'op-am-review-second', name: '权益复审', desc: '执行权益复审流程' },
+            { group: '✅ 授权管理', module: 'auth-management', id: 'op-am-review-final', name: '终审', desc: '执行终审并最终确认' },
+            { group: '✅ 授权管理', module: 'auth-management', id: 'op-am-contract-compare', name: '合同对照', desc: '分屏对照合同条款与权益信息' },
+            { group: '✅ 授权管理', module: 'auth-management', id: 'op-am-edit-auth-time', name: '编辑授权时间', desc: '按平台编辑授权起止时间' },
+            { group: '✅ 授权管理', module: 'auth-management', id: 'op-am-view-detail', name: '权益详情查看', desc: '查看50+字段的权益详情信息' },
+
+            // ─── 🚧 商业化权益大盘 (rights-overview) ⚠️待确认 ─────
+            { group: '📊 权益大盘 ⚠️', module: 'rights-overview', id: 'op-ro-view-dashboard', name: '查看权益大盘', desc: '查看整体权益数据概览和统计' },
+            { group: '📊 权益大盘 ⚠️', module: 'rights-overview', id: 'op-ro-export-report', name: '导出报表', desc: '导出权益统计报表' },
+
+            // ─── 🚧 视频授权权益明细 (rights-video) ⚠️待确认 ──────
+            { group: '🎬 视频权益明细 ⚠️', module: 'rights-video', id: 'op-rv-search', name: '权益搜索', desc: '搜索和筛选视频授权权益' },
+            { group: '🎬 视频权益明细 ⚠️', module: 'rights-video', id: 'op-rv-view-detail', name: '权益详情', desc: '查看视频授权权益详细信息' },
+            { group: '🎬 视频权益明细 ⚠️', module: 'rights-video', id: 'op-rv-export', name: '数据导出', desc: '导出视频权益数据' },
+
+            // ─── 🚧 衍生权益明细 (rights-derivative) ⚠️待确认 ─────
+            { group: '🎭 衍生权益明细 ⚠️', module: 'rights-derivative', id: 'op-rd-search', name: '衍生权益搜索', desc: '搜索和筛选衍生授权权益' },
+            { group: '🎭 衍生权益明细 ⚠️', module: 'rights-derivative', id: 'op-rd-view-detail', name: '衍生权益详情', desc: '查看衍生授权权益详细信息' },
+            { group: '🎭 衍生权益明细 ⚠️', module: 'rights-derivative', id: 'op-rd-export', name: '衍生数据导出', desc: '导出衍生权益统计数据' },
+
+            // ─── 🚧 素材库概览 (material-overview) ⚠️待确认 ──────
+            { group: '📦 素材库概览 ⚠️', module: 'material-overview', id: 'op-mo-view-stats', name: '查看素材统计', desc: '查看素材库整体统计数据' },
+            { group: '📦 素材库概览 ⚠️', module: 'material-overview', id: 'op-mo-view-trends', name: '查看趋势', desc: '查看素材入库/使用趋势图表' },
+
+            // ─── 🚧 素材工具箱 (material-tools) ⚠️待确认 ─────────
+            { group: '🧰 素材工具箱 ⚠️', module: 'material-tools', id: 'op-mt-use-tool', name: '使用工具', desc: '使用素材处理/转换等工具' },
+            { group: '🧰 素材工具箱 ⚠️', module: 'material-tools', id: 'op-mt-batch-process', name: '批量处理', desc: '批量执行素材处理操作' },
+
+            // ─── 🚧 衍生授权-项目管理 (derivative-project) ⚠️待确认
+            { group: '📋 衍生项目管理 ⚠️', module: 'derivative-project', id: 'op-dp-create', name: '创建项目', desc: '创建衍生授权项目' },
+            { group: '📋 衍生项目管理 ⚠️', module: 'derivative-project', id: 'op-dp-edit', name: '编辑项目', desc: '编辑项目信息和进度' },
+            { group: '📋 衍生项目管理 ⚠️', module: 'derivative-project', id: 'op-dp-view', name: '查看项目', desc: '查看项目详情和进度' },
+            { group: '📋 衍生项目管理 ⚠️', module: 'derivative-project', id: 'op-dp-close', name: '关闭项目', desc: '结项/关闭衍生授权项目' },
+
+            // ─── 🚧 监修管理 (derivative-supervision) ⚠️待确认 ────
+            { group: '🔎 监修管理 ⚠️', module: 'derivative-supervision', id: 'op-ds-create-task', name: '创建监修任务', desc: '发起监修审核任务' },
+            { group: '🔎 监修管理 ⚠️', module: 'derivative-supervision', id: 'op-ds-review', name: '监修审核', desc: '执行监修审核和反馈' },
+            { group: '🔎 监修管理 ⚠️', module: 'derivative-supervision', id: 'op-ds-feedback', name: '反馈记录', desc: '查看和管理监修反馈记录' },
+
+            // ─── 🚧 自研商品-项目管理 (product-project) ⚠️待确认 ──
+            { group: '🏭 商品项目管理 ⚠️', module: 'product-project', id: 'op-pp-create', name: '创建商品项目', desc: '创建自研商品开发项目' },
+            { group: '🏭 商品项目管理 ⚠️', module: 'product-project', id: 'op-pp-edit', name: '编辑商品项目', desc: '编辑商品项目信息和进度' },
+            { group: '🏭 商品项目管理 ⚠️', module: 'product-project', id: 'op-pp-view', name: '查看商品项目', desc: '查看商品项目详情' },
+
+            // ─── 🚧 自研商品-流程管理 (product-workflow) ⚠️待确认 ──
+            { group: '🔄 商品流程管理 ⚠️', module: 'product-workflow', id: 'op-pw-config', name: '流程配置', desc: '配置商品开发流程模板' },
+            { group: '🔄 商品流程管理 ⚠️', module: 'product-workflow', id: 'op-pw-monitor', name: '流程监控', desc: '监控商品开发流程状态' },
+
+            // ─── 🚧 防伪-技术选型 (antifraud-tech) ⚠️待确认 ──────
+            { group: '🛡️ 防伪技术选型 ⚠️', module: 'antifraud-tech', id: 'op-at-view-schemes', name: '查看方案', desc: '查看防伪技术方案和对比' },
+            { group: '🛡️ 防伪技术选型 ⚠️', module: 'antifraud-tech', id: 'op-at-select', name: '技术选型', desc: '选择并确认防伪技术方案' },
+
+            // ─── 🚧 防伪-素材配置 (antifraud-material) ⚠️待确认 ───
+            { group: '🎨 防伪素材配置 ⚠️', module: 'antifraud-material', id: 'op-afm-upload', name: '上传防伪素材', desc: '上传防伪专用素材' },
+            { group: '🎨 防伪素材配置 ⚠️', module: 'antifraud-material', id: 'op-afm-config', name: '配置防伪素材', desc: '配置防伪素材应用规则' },
+            { group: '🎨 防伪素材配置 ⚠️', module: 'antifraud-material', id: 'op-afm-preview', name: '素材预览', desc: '预览防伪素材效果' },
+
+            // ─── 🚧 谷子码管理 (antifraud-guzi) ⚠️待确认 ─────────
+            { group: '🏷️ 谷子码管理 ⚠️', module: 'antifraud-guzi', id: 'op-gz-generate', name: '生成谷子码', desc: '批量生成谷子码' },
+            { group: '🏷️ 谷子码管理 ⚠️', module: 'antifraud-guzi', id: 'op-gz-manage-batch', name: '批次管理', desc: '管理谷子码生成批次' },
+            { group: '🏷️ 谷子码管理 ⚠️', module: 'antifraud-guzi', id: 'op-gz-stats', name: '使用统计', desc: '查看谷子码使用统计数据' },
+
+            // ─── 🚧 经营数据 (data-business) ⚠️待确认 ────────────
+            { group: '📈 经营数据 ⚠️', module: 'data-business', id: 'op-db-view', name: '查看经营数据', desc: '查看经营数据分析和收益统计' },
+            { group: '📈 经营数据 ⚠️', module: 'data-business', id: 'op-db-export', name: '导出经营报表', desc: '导出经营数据报表' },
+
+            // ─── 🚧 行业数据 (data-industry) ⚠️待确认 ────────────
+            { group: '📉 行业数据 ⚠️', module: 'data-industry', id: 'op-di-view', name: '查看行业数据', desc: '查看行业数据和市场趋势' },
+            { group: '📉 行业数据 ⚠️', module: 'data-industry', id: 'op-di-compare', name: '竞品对比', desc: '查看竞品对比分析数据' },
+            { group: '📉 行业数据 ⚠️', module: 'data-industry', id: 'op-di-export', name: '导出行业报表', desc: '导出行业数据分析报表' }
+        ];
+
+        const OP_GROUPS = [...new Set(OPERATIONS.map(o => o.group))];
+
+        // ==========================================
+        // 默认配置（v4: 增加 operations + 素材上传角色组）
+        // ==========================================
+        const DEFAULT_CONFIG = {
+            version: 5,
+            folders: [
+                { id: 'folder-default', name: '默认分组', icon: '📋', collapsed: false },
+                { id: 'folder-material', name: '素材运营组', icon: '📁', collapsed: false },
+                { id: 'folder-auth', name: '授权审查组', icon: '🎬', collapsed: false },
+                { id: 'folder-upload', name: '素材上传组', icon: '📤', collapsed: false }
+            ],
+            roles: [
+                {
+                    id: 'admin', name: '鲁海洋', title: '管理员', dept: 'IP产品组',
+                    color: '#006eff', menus: ['all'], categories: ['all'], operations: ['all'],
+                    folderId: 'folder-default'
+                },
+                {
+                    id: 'material-op', name: '李小华', title: '素材运营', dept: '会员运营组',
+                    color: '#00b578',
+                    menus: [
+                        'material-library',
+                        'material-overview', 'material-query', 'material-upload', 'material-tools',
+                        'mq-ip-list', 'mq-material-detail', 'mq-apply', 'mq-records',
+                        'mu-standard', 'mu-batch', 'mu-demand', 'mu-sorting'
+                    ],
+                    categories: ['cat-tv', 'cat-anime', 'cat-variety'],
+                    operations: [
+                        // 素材上传
+                        'op-mu-create-task', 'op-mu-delegate', 'op-mu-self-upload', 'op-mu-track-progress',
+                        'op-mu-manage-link', 'op-mu-submit-demand', 'op-mu-process-demand',
+                        'op-mu-batch-import', 'op-mu-sorting-confirm', 'op-mu-sorting-adjust', 'op-mu-archive',
+                        // 素材查询与申用
+                        'op-mq-search', 'op-mq-view-detail', 'op-mq-apply', 'op-mq-batch-apply', 'op-mq-view-records', 'op-mq-download'
+                    ],
+                    folderId: 'folder-material'
+                },
+                {
+                    id: 'auth-reviewer', name: '王大伟', title: '授权审核员', dept: '衍生品运营组',
+                    color: '#ff8f1f',
+                    menus: [
+                        'rights-library',
+                        'rights-overview', 'video-rights', 'derivative-rights',
+                        'video-auth', 'auth-management',
+                        'am-projects', 'am-rights-review', 'am-project-data', 'am-auth-list', 'am-approvals',
+                        'derivative-auth', 'derivative-project', 'derivative-supervision'
+                    ],
+                    categories: ['all'],
+                    operations: [
+                        // 授权管理
+                        'op-am-add-ip', 'op-am-review-first', 'op-am-review-second', 'op-am-review-final',
+                        'op-am-contract-compare', 'op-am-edit-auth-time', 'op-am-view-detail',
+                        // 权益大盘（只读）
+                        'op-ro-view-dashboard',
+                        // 视频权益明细（只读）
+                        'op-rv-search', 'op-rv-view-detail',
+                        // 衍生权益明细（只读）
+                        'op-rd-search', 'op-rd-view-detail'
+                    ],
+                    folderId: 'folder-auth'
+                },
+                {
+                    id: 'product-dev-role', name: '张小明', title: '商品开发', dept: '自研商品组',
+                    color: '#7c3aed',
+                    menus: [
+                        'material-library',
+                        'material-overview', 'material-query',
+                        'mq-ip-list', 'mq-material-detail',
+                        'product-dev', 'product-project', 'product-workflow',
+                        'anti-fake', 'tech-selection', 'material-config', 'guzi-code'
+                    ],
+                    categories: ['cat-tv', 'cat-anime', 'cat-variety', 'cat-movie'],
+                    operations: [
+                        // 素材查询（只读）
+                        'op-mq-search', 'op-mq-view-detail', 'op-mq-apply', 'op-mq-view-records', 'op-mq-download',
+                        // 商品项目管理
+                        'op-pp-create', 'op-pp-edit', 'op-pp-view',
+                        // 商品流程管理
+                        'op-pw-config', 'op-pw-monitor',
+                        // 防伪技术选型
+                        'op-at-view-schemes', 'op-at-select',
+                        // 防伪素材配置
+                        'op-afm-upload', 'op-afm-config', 'op-afm-preview',
+                        // 谷子码管理
+                        'op-gz-generate', 'op-gz-manage-batch', 'op-gz-stats'
+                    ],
+                    folderId: 'folder-default'
+                },
+                {
+                    id: 'data-analyst', name: '陈思思', title: '数据分析师', dept: '数据服务组',
+                    color: '#ee3f4d',
+                    menus: [
+                        'rights-library',
+                        'rights-overview', 'video-rights', 'derivative-rights',
+                        'data-service', 'business-data', 'industry-data'
+                    ],
+                    categories: ['all'],
+                    operations: [
+                        // 权益大盘
+                        'op-ro-view-dashboard', 'op-ro-export-report',
+                        // 视频权益明细
+                        'op-rv-search', 'op-rv-view-detail', 'op-rv-export',
+                        // 衍生权益明细
+                        'op-rd-search', 'op-rd-view-detail', 'op-rd-export',
+                        // 经营数据
+                        'op-db-view', 'op-db-export',
+                        // 行业数据
+                        'op-di-view', 'op-di-compare', 'op-di-export'
+                    ],
+                    folderId: 'folder-default'
+                },
+                // ====== 素材上传组 — 5个角色（基于用户故事） ======
+                {
+                    id: 'mu-pm', name: '张小明', title: '内部PM', dept: 'IP产品组',
+                    color: '#7c3aed',
+                    menus: [
+                        'material-library', 'material-upload',
+                        'mu-standard', 'mu-batch', 'mu-demand', 'mu-sorting'
+                    ],
+                    categories: ['all'],
+                    operations: [
+                        'op-mu-create-task', 'op-mu-delegate', 'op-mu-self-upload', 'op-mu-track-progress',
+                        'op-mu-manage-link', 'op-mu-process-demand', 'op-mu-batch-import',
+                        'op-mu-sorting-confirm', 'op-mu-sorting-adjust', 'op-mu-archive'
+                    ],
+                    folderId: 'folder-upload'
+                },
+                {
+                    id: 'mu-approver', name: '赵制片', title: '审批人', dept: '制片管理组',
+                    color: '#f59e0b',
+                    menus: [
+                        'material-library', 'material-upload',
+                        'mu-standard'
+                    ],
+                    categories: ['all'],
+                    operations: [
+                        'op-mu-review-approve', 'op-mu-review-reject', 'op-mu-review-comment', 'op-mu-track-progress'
+                    ],
+                    folderId: 'folder-upload'
+                },
+                {
+                    id: 'mu-consumer', name: '李小华', title: '下游消费者', dept: '商品运营组',
+                    color: '#06b6d4',
+                    menus: [
+                        'material-library', 'material-upload',
+                        'mu-demand'
+                    ],
+                    categories: ['cat-tv', 'cat-anime', 'cat-variety'],
+                    operations: [
+                        'op-mu-submit-demand', 'op-mu-track-progress'
+                    ],
+                    folderId: 'folder-upload'
+                },
+                {
+                    id: 'mu-data-ai', name: '陈工', title: '数据/AI团队', dept: '技术团队',
+                    color: '#8b5cf6',
+                    menus: [
+                        'material-library', 'material-upload',
+                        'mu-batch', 'mu-sorting'
+                    ],
+                    categories: ['all'],
+                    operations: [
+                        'op-mu-batch-import', 'op-mu-sorting-confirm', 'op-mu-sorting-adjust', 'op-mu-archive'
+                    ],
+                    folderId: 'folder-upload'
+                },
+                {
+                    id: 'mu-outsource', name: '外包-王师傅', title: '外包执行者', dept: '外部协作',
+                    color: '#64748b',
+                    menus: [],
+                    categories: [],
+                    operations: [
+                        'op-mu-temp-link-upload', 'op-mu-self-upload'
+                    ],
+                    folderId: 'folder-upload'
+                }
+            ]
+        };
+
+        // 展开状态（内存态，不持久化）
+        const expandedCards = new Set();
+
+        // ==========================================
+        // 工具函数
+        // ==========================================
+
+        function getConfig() {
+            try {
+                const stored = localStorage.getItem(STORAGE_KEY);
+                if (stored) {
+                    const parsed = JSON.parse(stored);
+                    if (parsed && parsed.roles && parsed.roles.length > 0) {
+                        // v4→v5 迁移：操作权限ID格式从 op-xxx 变为 op-{module}-xxx，旧数据直接重置
+                        if (!parsed.version || parsed.version < 5) {
+                            const fresh = JSON.parse(JSON.stringify(DEFAULT_CONFIG));
+                            localStorage.setItem(STORAGE_KEY, JSON.stringify(fresh));
+                            return fresh;
+                        }
+                        // 迁移兜底
+                        parsed.roles.forEach(r => {
+                            if (!r.categories) r.categories = ['all'];
+                            if (!r.folderId) r.folderId = null;
+                            if (!r.operations) r.operations = [];
+                        });
+                        if (!parsed.folders) parsed.folders = [];
+                        return parsed;
+                    }
+                }
+            } catch (e) { }
+            return JSON.parse(JSON.stringify(DEFAULT_CONFIG));
+        }
+
+        function saveConfig(config) {
+            config.version = 5;
+            localStorage.setItem(STORAGE_KEY, JSON.stringify(config));
+        }
+
+        function showToast(msg, type = 'success') {
+            const c = document.getElementById('toastContainer');
+            const t = document.createElement('div');
+            t.className = `toast toast--${type}`;
+            t.textContent = msg;
+            c.appendChild(t);
+            setTimeout(() => { t.style.opacity = '0'; setTimeout(() => t.remove(), 300); }, 2500);
+        }
+
+        function getAllMenuIds() {
+            const ids = [];
+            MENU_TREE.forEach(g => {
+                ids.push(g.id);
+                g.children.forEach(c => {
+                    ids.push(c.id);
+                    if (c.children) c.children.forEach(l3 => ids.push(l3.id));
+                });
+            });
+            return ids;
+        }
+
+        function getAllCategoryIds() {
+            return CATEGORIES.map(c => c.id);
+        }
+
+        function getAllOperationIds() {
+            return OPERATIONS.map(o => o.id);
+        }
+
+        /** 获取权限摘要文本 */
+        function getPermSummary(role) {
+            const isMenuAll = role.menus.includes('all');
+            const isCatAll = (role.categories || []).includes('all');
+            const isOpsAll = (role.operations || []).includes('all');
+
+            let menuText = '';
+            if (isMenuAll) {
+                menuText = '全部菜单';
+            } else {
+                // 统计一级菜单数量
+                const l1Count = MENU_TREE.filter(g => role.menus.includes(g.id)).length;
+                menuText = `${role.menus.length}项权限（${l1Count}个模块）`;
+            }
+
+            let catText = '';
+            if (isCatAll) {
+                catText = '全部品类';
+            } else {
+                const cats = (role.categories || []).filter(id => id !== 'all');
+                const catNames = cats.map(id => {
+                    const c = CATEGORIES.find(c => c.id === id);
+                    return c ? c.name : id;
+                });
+                catText = catNames.length > 0 ? catNames.join('、') : '无品类';
+            }
+
+            let opsText = '';
+            if (isOpsAll) {
+                opsText = '全部操作';
+            } else {
+                const ops = (role.operations || []).filter(id => id !== 'all');
+                opsText = ops.length > 0 ? `${ops.length}项操作` : '无操作权限';
+            }
+
+            return { menuText, catText, opsText };
+        }
+
+        // ==========================================
+        // Modal
+        // ==========================================
+
+        function showModal(title, contentHtml, onConfirm) {
+            const overlay = document.createElement('div');
+            overlay.className = 'modal-overlay';
+            overlay.innerHTML = `
+                <div class="modal">
+                    <div class="modal-title">${title}</div>
+                    <div class="modal-body">${contentHtml}</div>
+                    <div class="modal-actions">
+                        <button class="btn btn-outline btn-sm" id="modalCancel">取消</button>
+                        <button class="btn btn-primary btn-sm" id="modalConfirm">确定</button>
+                    </div>
+                </div>
+            `;
+            document.body.appendChild(overlay);
+
+            overlay.querySelector('#modalCancel').onclick = () => overlay.remove();
+            overlay.querySelector('#modalConfirm').onclick = () => {
+                const result = onConfirm(overlay);
+                if (result !== false) overlay.remove();
+            };
+            overlay.addEventListener('click', (e) => {
+                if (e.target === overlay) overlay.remove();
+            });
+        }
+
+        // ==========================================
+        // 渲染
+        // ==========================================
+
+        function render() {
+            const config = getConfig();
+            const container = document.getElementById('mainContent');
+
+            // 按文件夹分组
+            const folders = config.folders || [];
+            const folderMap = {};
+            folders.forEach(f => { folderMap[f.id] = []; });
+            folderMap['__ungrouped__'] = [];
+
+            config.roles.forEach(role => {
+                const fid = role.folderId;
+                if (fid && folderMap[fid]) {
+                    folderMap[fid].push(role);
+                } else {
+                    folderMap['__ungrouped__'].push(role);
+                }
+            });
+
+            let html = '';
+
+            // 未分组的角色
+            const ungrouped = folderMap['__ungrouped__'];
+            if (ungrouped.length > 0) {
+                html += `
+                <div class="folder-section">
+                    <div class="folder-header">
+                        <div class="folder-header-left">
+                            <div class="folder-title-bar" onclick="toggleFolderCollapse('__ungrouped__')">
+                                <span class="folder-icon">📋</span>
+                                <span class="folder-name">未分组</span>
+                                <span class="folder-count">${ungrouped.length}个角色</span>
+                                <span class="folder-toggle-icon" id="fticon-__ungrouped__">▼</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="folder-body" id="fbody-__ungrouped__">
+                        <div class="role-grid">
+                            ${ungrouped.map(r => renderRoleCard(r, config)).join('')}
+                            <div class="role-card role-card--add" onclick="addNewRole(null)" style="min-height:120px">
+                                <div class="add-card-content">
+                                    <div class="add-card-icon">➕</div>
+                                    <div class="add-card-text">新增角色</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>`;
+            }
+
+            // 各文件夹
+            folders.forEach(folder => {
+                const roles = folderMap[folder.id] || [];
+                const isCollapsed = folder.collapsed;
+                html += `
+                <div class="folder-section" data-folder-id="${folder.id}">
+                    <div class="folder-header">
+                        <div class="folder-header-left">
+                            <div class="folder-title-bar" onclick="toggleFolderCollapse('${folder.id}')">
+                                <span class="folder-icon">${folder.icon || '📁'}</span>
+                                <span class="folder-name">${folder.name}</span>
+                                <span class="folder-count">${roles.length}个角色</span>
+                                <span class="folder-toggle-icon ${isCollapsed ? 'collapsed' : ''}" id="fticon-${folder.id}">▼</span>
+                            </div>
+                        </div>
+                        <div class="folder-actions">
+                            <button class="btn btn-outline btn-sm" onclick="renameFolder('${folder.id}')">✏️</button>
+                            <button class="btn btn-danger btn-sm" onclick="deleteFolder('${folder.id}')">🗑️</button>
+                        </div>
+                    </div>
+                    <div class="folder-body ${isCollapsed ? 'collapsed' : ''}" id="fbody-${folder.id}">
+                        <div class="role-grid">
+                            ${roles.map(r => renderRoleCard(r, config)).join('')}
+                            <div class="role-card role-card--add" onclick="addNewRole('${folder.id}')" style="min-height:120px">
+                                <div class="add-card-content">
+                                    <div class="add-card-icon">➕</div>
+                                    <div class="add-card-text">新增角色到此文件夹</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>`;
+            });
+
+            container.innerHTML = html;
+        }
+
+        function renderRoleCard(role, config) {
+            const isExpanded = expandedCards.has(role.id);
+            const summary = getPermSummary(role);
+            const isMenuAll = role.menus.includes('all');
+            const isCatAll = (role.categories || []).includes('all');
+            const isOpsAll = (role.operations || []).includes('all');
+            const menuCount = isMenuAll ? getAllMenuIds().length : role.menus.length;
+            const catCount = isCatAll ? CATEGORIES.length : (role.categories || []).length;
+            const opsCount = isOpsAll ? OPERATIONS.length : (role.operations || []).length;
+            const folders = config.folders || [];
+
+            return `
+            <div class="role-card ${isExpanded ? '' : ''}" id="card-${role.id}">
+                <div class="role-card-header">
+                    <div class="role-avatar" style="background:${role.color}">${role.name.charAt(0)}</div>
+                    <div class="role-basic">
+                        <div class="role-name">${role.name}</div>
+                        <div class="role-meta">${role.title} · ${role.dept}</div>
+                    </div>
+                    <div class="role-actions">
+                        <button class="btn btn-outline btn-sm" onclick="toggleEdit('${role.id}')">✏️</button>
+                        ${config.roles.length > 1 ? `<button class="btn btn-danger btn-sm" onclick="deleteRole('${role.id}')">🗑️</button>` : ''}
+                    </div>
+                </div>
+
+                <!-- 编辑表单 -->
+                <div class="role-edit-form" id="edit-${role.id}">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label">姓名</label>
+                            <input class="form-input" id="name-${role.id}" value="${role.name}" />
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">角色标题</label>
+                            <input class="form-input" id="title-${role.id}" value="${role.title}" />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label">部门</label>
+                            <input class="form-input" id="dept-${role.id}" value="${role.dept}" />
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">所属文件夹</label>
+                            <select class="form-select" id="folder-${role.id}">
+                                <option value="" ${!role.folderId ? 'selected' : ''}>未分组</option>
+                                ${folders.map(f => `<option value="${f.id}" ${role.folderId === f.id ? 'selected' : ''}>${f.icon} ${f.name}</option>`).join('')}
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label">标识颜色</label>
+                            <div class="color-input-group">
+                                <div class="color-preview" id="colorPreview-${role.id}" style="background:${role.color}" onclick="document.getElementById('colorPicker-${role.id}').click()"></div>
+                                <input type="color" class="color-picker" id="colorPicker-${role.id}" value="${role.color}" onchange="updateColorPreview('${role.id}', this.value)" />
+                                <input class="form-input" id="colorText-${role.id}" value="${role.color}" style="flex:1" oninput="updateColorPreview('${role.id}', this.value)" />
+                            </div>
+                        </div>
+                    </div>
+                    <div style="display:flex;gap:8px;justify-content:flex-end;margin-top:4px">
+                        <button class="btn btn-outline btn-sm" onclick="toggleEdit('${role.id}')">取消</button>
+                        <button class="btn btn-success btn-sm" onclick="saveRoleInfo('${role.id}')">💾 保存</button>
+                    </div>
+                </div>
+
+                <!-- 权限摘要（收起时显示） -->
+                ${!isExpanded ? `
+                <div class="perm-summary">
+                    <span class="perm-summary-tag perm-summary-tag--menu">📋 ${summary.menuText}</span>
+                    <span class="perm-summary-tag perm-summary-tag--data">🗂️ ${summary.catText}</span>
+                    <span class="perm-summary-tag perm-summary-tag--ops">⚡ ${summary.opsText}</span>
+                    <span class="perm-expand-btn" onclick="togglePermDetail('${role.id}')">展开详情 ▼</span>
+                </div>` : ''}
+
+                <!-- 权限详情（展开时显示） -->
+                <div class="role-card-body ${isExpanded ? 'expanded' : ''}" id="body-${role.id}">
+                    ${isExpanded ? `
+                    <div style="display:flex;justify-content:flex-end;padding-top:14px">
+                        <span class="perm-expand-btn" onclick="togglePermDetail('${role.id}')">收起详情 ▲</span>
+                    </div>` : ''}
+                    <div class="perm-tabs">
+                        <div class="perm-tab active" data-perm-tab="menu" data-role="${role.id}" onclick="switchPermTab('${role.id}','menu')">
+                            📋 菜单权限
+                            ${isMenuAll ? '<span class="all-select-tag">👑 全部</span>' : `<span class="perm-stat">${menuCount}项</span>`}
+                        </div>
+                        <div class="perm-tab" data-perm-tab="data" data-role="${role.id}" onclick="switchPermTab('${role.id}','data')">
+                            🗂️ 数据权限
+                            ${isCatAll ? '<span class="all-select-tag">👑 全部</span>' : `<span class="perm-stat">${catCount}/${CATEGORIES.length}品类</span>`}
+                        </div>
+                        <div class="perm-tab" data-perm-tab="ops" data-role="${role.id}" onclick="switchPermTab('${role.id}','ops')">
+                            ⚡ 操作权限
+                            ${isOpsAll ? '<span class="all-select-tag">👑 全部</span>' : `<span class="perm-stat">${opsCount}/${OPERATIONS.length}项</span>`}
+                        </div>
+                    </div>
+
+                    <div class="perm-panel active" id="perm-menu-${role.id}">
+                        <div class="menu-tree" id="tree-${role.id}">
+                            ${renderMenuTree(role)}
+                        </div>
+                    </div>
+
+                    <div class="perm-panel" id="perm-data-${role.id}">
+                        <div class="perm-section-title">🗂️ 品类数据权限 — 控制该角色可查看和操作的IP品类范围</div>
+                        ${renderCategoryTree(role)}
+                    </div>
+
+                    <div class="perm-panel" id="perm-ops-${role.id}">
+                        <div class="perm-section-title">⚡ 操作权限 — 控制该角色可执行的具体操作动作</div>
+                        ${renderOperationTree(role)}
+                    </div>
+                </div>
+            </div>`;
+        }
+
+        /** 渲染菜单权限树 */
+        function renderMenuTree(role) {
+            const isAll = role.menus.includes('all');
+
+            return MENU_TREE.map(group => {
+                const l2States = group.children.map(c => {
+                    const l3s = c.children || [];
+                    if (l3s.length === 0) return isAll || role.menus.includes(c.id);
+                    return l3s.every(l3 => isAll || role.menus.includes(l3.id));
+                });
+                const l2Partial = group.children.map(c => {
+                    const l3s = c.children || [];
+                    if (l3s.length === 0) return false;
+                    const some = l3s.some(l3 => isAll || role.menus.includes(l3.id));
+                    const all = l3s.every(l3 => isAll || role.menus.includes(l3.id));
+                    return some && !all;
+                });
+                const allL2 = l2States.every(Boolean);
+                const someL2 = l2States.some(Boolean) || l2Partial.some(Boolean);
+                const l1State = allL2 ? 'checked' : (someL2 ? 'partial' : '');
+
+                return `
+                <div class="menu-tree-group">
+                    <div class="menu-tree-l1" onclick="toggleL1('${role.id}','${group.id}')">
+                        <div class="perm-cb ${l1State}"></div>
+                        <span>${group.icon} ${group.name}</span>
+                    </div>
+                    <div class="menu-tree-l2-list">
+                        ${group.children.map(child => {
+                            const l3s = child.children || [];
+                            const hasL3 = l3s.length > 0;
+
+                            if (!hasL3) {
+                                const checked = isAll || role.menus.includes(child.id);
+                                return `
+                                <div class="menu-tree-l2" onclick="toggleL2('${role.id}','${group.id}','${child.id}')">
+                                    <div class="perm-cb ${checked ? 'checked' : ''}"></div>
+                                    <span>${child.name}</span>
+                                </div>`;
+                            }
+
+                            const l3States = l3s.map(l3 => isAll || role.menus.includes(l3.id));
+                            const allL3 = l3States.every(Boolean);
+                            const someL3 = l3States.some(Boolean);
+                            const l2State = allL3 ? 'checked' : (someL3 ? 'partial' : '');
+
+                            return `
+                            <div>
+                                <div class="menu-tree-l2" onclick="toggleL2('${role.id}','${group.id}','${child.id}')">
+                                    <div class="perm-cb ${l2State}"></div>
+                                    <span class="tree-toggle" onclick="event.stopPropagation();toggleExpand(this)">▼</span>
+                                    <span>${child.name}</span>
+                                    <span class="perm-stat">${l3States.filter(Boolean).length}/${l3s.length}</span>
+                                </div>
+                                <div class="menu-tree-l3-list">
+                                    ${l3s.map(l3 => {
+                                        const l3Checked = isAll || role.menus.includes(l3.id);
+                                        return `
+                                        <div class="menu-tree-l3" onclick="toggleL3('${role.id}','${group.id}','${child.id}','${l3.id}')">
+                                            <div class="perm-cb ${l3Checked ? 'checked' : ''}"></div>
+                                            <span>${l3.name}</span>
+                                        </div>`;
+                                    }).join('')}
+                                </div>
+                            </div>`;
+                        }).join('')}
+                    </div>
+                </div>`;
+            }).join('');
+        }
+
+        /** 渲染品类权限 */
+        function renderCategoryTree(role) {
+            const cats = role.categories || [];
+            const isCatAll = cats.includes('all');
+            const allChecked = isCatAll || CATEGORIES.every(c => cats.includes(c.id));
+            const someChecked = !allChecked && CATEGORIES.some(c => cats.includes(c.id));
+            const allState = allChecked ? 'checked' : (someChecked ? 'partial' : '');
+
+            return `
+            <div class="data-perm-section">
+                <div class="data-perm-grid">
+                    <div class="data-perm-item data-perm-all" onclick="toggleCatAll('${role.id}')">
+                        <div class="perm-cb ${allState}"></div>
+                        <span>全部品类</span>
+                        ${isCatAll ? '<span class="all-select-tag">👑 全部权限</span>' : ''}
+                    </div>
+                    ${CATEGORIES.map(cat => {
+                        const checked = isCatAll || cats.includes(cat.id);
+                        return `
+                        <div class="data-perm-item" onclick="toggleCat('${role.id}','${cat.id}')">
+                            <div class="perm-cb ${checked ? 'checked' : ''}"></div>
+                            <span>${cat.icon} ${cat.name}</span>
+                        </div>`;
+                    }).join('')}
+                </div>
+            </div>`;
+        }
+
+        /** 渲染操作权限 */
+        function renderOperationTree(role) {
+            const ops = role.operations || [];
+            const isOpsAll = ops.includes('all');
+            const allChecked = isOpsAll || OPERATIONS.every(o => ops.includes(o.id));
+            const someChecked = !allChecked && OPERATIONS.some(o => ops.includes(o.id));
+            const allState = allChecked ? 'checked' : (someChecked ? 'partial' : '');
+
+            // 按模块统计
+            const moduleGroups = {};
+            OPERATIONS.forEach(o => {
+                if (!moduleGroups[o.module]) moduleGroups[o.module] = 0;
+                moduleGroups[o.module]++;
+            });
+            const moduleCount = Object.keys(moduleGroups).length;
+            const completedModules = ['material-upload', 'material-query', 'auth-management'];
+            const confirmedCount = completedModules.length;
+
+            let html = `
+            <div class="ops-perm-section">
+                <div style="margin-bottom:8px;padding:6px 10px;background:var(--bg-secondary);border-radius:6px;font-size:12px;color:var(--text-secondary)">
+                    📊 共 <b>${OPERATIONS.length}</b> 项操作 · <b>${moduleCount}</b> 个模块（✅ ${confirmedCount}个已确认 · 🚧 ${moduleCount - confirmedCount}个待确认）
+                </div>
+                <div class="ops-perm-grid">
+                    <div class="ops-perm-item ops-perm-all" onclick="toggleOpsAll('${role.id}')">
+                        <div class="perm-cb ${allState}"></div>
+                        <span>全部操作</span>
+                        ${isOpsAll ? '<span class="all-select-tag">👑 全部权限</span>' : ''}
+                    </div>`;
+
+            let currentGroup = '';
+            OPERATIONS.forEach(op => {
+                if (op.group !== currentGroup) {
+                    currentGroup = op.group;
+                    const isConfirmed = completedModules.includes(op.module);
+                    const statusBadge = isConfirmed
+                        ? '<span style="font-size:10px;padding:1px 6px;background:#e6f7e9;color:#00b578;border-radius:3px;margin-left:6px">✅ 已确认</span>'
+                        : '<span style="font-size:10px;padding:1px 6px;background:#fff7e6;color:#f59e0b;border-radius:3px;margin-left:6px">🚧 待确认</span>';
+                    html += `<div class="ops-group-title">${op.group} ${statusBadge}</div>`;
+                }
+                const checked = isOpsAll || ops.includes(op.id);
+                html += `
+                    <div class="ops-perm-item" onclick="toggleOp('${role.id}','${op.id}')">
+                        <div class="perm-cb ${checked ? 'checked' : ''}"></div>
+                        <span>${op.name}</span>
+                        <span class="ops-desc">${op.desc}</span>
+                    </div>`;
+            });
+
+            html += `</div></div>`;
+            return html;
+        }
+
+        // ==========================================
+        // 权限详情展开/收起
+        // ==========================================
+
+        window.togglePermDetail = function(roleId) {
+            if (expandedCards.has(roleId)) {
+                expandedCards.delete(roleId);
+            } else {
+                expandedCards.add(roleId);
+            }
+            render();
+        };
+
+        // ==========================================
+        // 文件夹操作
+        // ==========================================
+
+        window.toggleFolderCollapse = function(folderId) {
+            if (folderId === '__ungrouped__') {
+                // 未分组区不持久化折叠状态，仅 UI 切换
+                const body = document.getElementById('fbody-__ungrouped__');
+                const icon = document.getElementById('fticon-__ungrouped__');
+                if (body) body.classList.toggle('collapsed');
+                if (icon) icon.classList.toggle('collapsed');
+                return;
+            }
+
+            const config = getConfig();
+            const folder = (config.folders || []).find(f => f.id === folderId);
+            if (!folder) return;
+            folder.collapsed = !folder.collapsed;
+            saveConfig(config);
+
+            const body = document.getElementById('fbody-' + folderId);
+            const icon = document.getElementById('fticon-' + folderId);
+            if (body) body.classList.toggle('collapsed');
+            if (icon) icon.classList.toggle('collapsed');
+        };
+
+        window.addNewFolder = function() {
+            const folderIcons = ['📁', '📂', '🗂️', '📦', '🎬', '🎨', '🔧', '💼', '🏷️', '📋'];
+            showModal('新建角色文件夹', `
+                <div style="margin-bottom:12px">
+                    <label class="form-label">文件夹名称</label>
+                    <input class="form-input" id="newFolderName" placeholder="如：素材上传组" autofocus />
+                </div>
+                <div>
+                    <label class="form-label">图标</label>
+                    <div style="display:flex;gap:8px;flex-wrap:wrap">
+                        ${folderIcons.map((icon, i) => `
+                            <label style="cursor:pointer;font-size:22px;padding:6px;border-radius:8px;border:2px solid ${i === 0 ? 'var(--primary)' : 'transparent'};transition:all 0.15s"
+                                onclick="this.parentNode.querySelectorAll('label').forEach(l=>l.style.borderColor='transparent');this.style.borderColor='var(--primary)';document.getElementById('newFolderIcon').value='${icon}'">
+                                ${icon}
+                            </label>
+                        `).join('')}
+                        <input type="hidden" id="newFolderIcon" value="📁" />
+                    </div>
+                </div>
+            `, (overlay) => {
+                const name = overlay.querySelector('#newFolderName').value.trim();
+                if (!name) { showToast('请输入文件夹名称', 'error'); return false; }
+                const icon = overlay.querySelector('#newFolderIcon').value || '📁';
+
+                const config = getConfig();
+                if (!config.folders) config.folders = [];
+                config.folders.push({
+                    id: 'folder-' + Date.now(),
+                    name: name,
+                    icon: icon,
+                    collapsed: false
+                });
+                saveConfig(config);
+                render();
+                showToast(`已创建文件夹「${icon} ${name}」`, 'success');
+            });
+
+            setTimeout(() => {
+                const input = document.getElementById('newFolderName');
+                if (input) input.focus();
+            }, 100);
+        };
+
+        window.renameFolder = function(folderId) {
+            const config = getConfig();
+            const folder = (config.folders || []).find(f => f.id === folderId);
+            if (!folder) return;
+
+            showModal('重命名文件夹', `
+                <div>
+                    <label class="form-label">文件夹名称</label>
+                    <input class="form-input" id="renameFolderInput" value="${folder.name}" />
+                </div>
+            `, (overlay) => {
+                const name = overlay.querySelector('#renameFolderInput').value.trim();
+                if (!name) { showToast('名称不能为空', 'error'); return false; }
+                folder.name = name;
+                saveConfig(config);
+                render();
+                showToast(`文件夹已重命名为「${name}」`, 'success');
+            });
+        };
+
+        window.deleteFolder = function(folderId) {
+            const config = getConfig();
+            const folder = (config.folders || []).find(f => f.id === folderId);
+            if (!folder) return;
+            const rolesInFolder = config.roles.filter(r => r.folderId === folderId);
+
+            showModal('确认删除文件夹', `
+                <p style="font-size:14px;color:var(--text-2);line-height:1.8">
+                    确定删除文件夹「<strong>${folder.name}</strong>」吗？<br/>
+                    其中的 <strong>${rolesInFolder.length}</strong> 个角色将移到"未分组"。
+                </p>
+            `, () => {
+                rolesInFolder.forEach(r => { r.folderId = null; });
+                config.folders = config.folders.filter(f => f.id !== folderId);
+                saveConfig(config);
+                render();
+                showToast(`已删除文件夹「${folder.name}」，角色已移至未分组`, 'info');
+            });
+        };
+
+        // ==========================================
+        // 菜单权限交互
+        // ==========================================
+
+        window.toggleExpand = function(el) {
+            el.classList.toggle('collapsed');
+            const l3List = el.closest('.menu-tree-l2').nextElementSibling;
+            if (l3List && l3List.classList.contains('menu-tree-l3-list')) {
+                l3List.style.display = el.classList.contains('collapsed') ? 'none' : '';
+            }
+        };
+
+        window.toggleL3 = function(roleId, groupId, childId, l3Id) {
+            const config = getConfig();
+            const role = config.roles.find(r => r.id === roleId);
+            if (!role) return;
+            if (role.menus.includes('all')) role.menus = getAllMenuIds();
+            const idx = role.menus.indexOf(l3Id);
+            if (idx >= 0) role.menus.splice(idx, 1);
+            else role.menus.push(l3Id);
+            syncL2FromL3(role, groupId, childId);
+            checkIfAllSelected(role);
+            saveConfig(config);
+            render();
+            showToast(`${role.name} 菜单权限已更新`, 'success');
+        };
+
+        window.toggleL2 = function(roleId, groupId, childId) {
+            const config = getConfig();
+            const role = config.roles.find(r => r.id === roleId);
+            if (!role) return;
+            if (role.menus.includes('all')) role.menus = getAllMenuIds();
+            const l2Node = findL2Node(groupId, childId);
+            const l3s = l2Node ? (l2Node.children || []) : [];
+            if (l3s.length === 0) {
+                const idx = role.menus.indexOf(childId);
+                if (idx >= 0) role.menus.splice(idx, 1);
+                else role.menus.push(childId);
+            } else {
+                const allL3Checked = l3s.every(l3 => role.menus.includes(l3.id));
+                if (allL3Checked) {
+                    l3s.forEach(l3 => { const i = role.menus.indexOf(l3.id); if (i >= 0) role.menus.splice(i, 1); });
+                    const ci = role.menus.indexOf(childId); if (ci >= 0) role.menus.splice(ci, 1);
+                } else {
+                    if (!role.menus.includes(childId)) role.menus.push(childId);
+                    l3s.forEach(l3 => { if (!role.menus.includes(l3.id)) role.menus.push(l3.id); });
+                }
+            }
+            syncL1FromL2(role, groupId);
+            checkIfAllSelected(role);
+            saveConfig(config);
+            render();
+            showToast(`${role.name} 菜单权限已更新`, 'success');
+        };
+
+        window.toggleL1 = function(roleId, groupId) {
+            const config = getConfig();
+            const role = config.roles.find(r => r.id === roleId);
+            if (!role) return;
+            if (role.menus.includes('all')) role.menus = getAllMenuIds();
+            const group = MENU_TREE.find(g => g.id === groupId);
+            if (!group) return;
+            const allChecked = group.children.every(c => {
+                const l3s = c.children || [];
+                if (l3s.length === 0) return role.menus.includes(c.id);
+                return l3s.every(l3 => role.menus.includes(l3.id));
+            });
+            if (allChecked) {
+                const gi = role.menus.indexOf(groupId); if (gi >= 0) role.menus.splice(gi, 1);
+                group.children.forEach(c => {
+                    const ci = role.menus.indexOf(c.id); if (ci >= 0) role.menus.splice(ci, 1);
+                    (c.children || []).forEach(l3 => { const li = role.menus.indexOf(l3.id); if (li >= 0) role.menus.splice(li, 1); });
+                });
+            } else {
+                if (!role.menus.includes(groupId)) role.menus.push(groupId);
+                group.children.forEach(c => {
+                    if (!role.menus.includes(c.id)) role.menus.push(c.id);
+                    (c.children || []).forEach(l3 => { if (!role.menus.includes(l3.id)) role.menus.push(l3.id); });
+                });
+            }
+            checkIfAllSelected(role);
+            saveConfig(config);
+            render();
+            showToast(`${role.name} 菜单权限已更新`, 'success');
+        };
+
+        // 品类权限
+        window.toggleCat = function(roleId, catId) {
+            const config = getConfig();
+            const role = config.roles.find(r => r.id === roleId);
+            if (!role) return;
+            if (!role.categories) role.categories = [];
+            if (role.categories.includes('all')) role.categories = getAllCategoryIds();
+            const idx = role.categories.indexOf(catId);
+            if (idx >= 0) role.categories.splice(idx, 1);
+            else role.categories.push(catId);
+            if (getAllCategoryIds().every(id => role.categories.includes(id))) role.categories = ['all'];
+            saveConfig(config);
+            render();
+            showToast(`${role.name} 数据权限已更新`, 'success');
+        };
+
+        window.toggleCatAll = function(roleId) {
+            const config = getConfig();
+            const role = config.roles.find(r => r.id === roleId);
+            if (!role) return;
+            if (!role.categories) role.categories = [];
+            const isCatAll = role.categories.includes('all') || getAllCategoryIds().every(id => role.categories.includes(id));
+            role.categories = isCatAll ? [] : ['all'];
+            saveConfig(config);
+            render();
+            showToast(`${role.name} 数据权限已更新`, 'success');
+        };
+
+        // 操作权限交互
+        window.toggleOp = function(roleId, opId) {
+            const config = getConfig();
+            const role = config.roles.find(r => r.id === roleId);
+            if (!role) return;
+            if (!role.operations) role.operations = [];
+            if (role.operations.includes('all')) role.operations = getAllOperationIds();
+            const idx = role.operations.indexOf(opId);
+            if (idx >= 0) role.operations.splice(idx, 1);
+            else role.operations.push(opId);
+            if (getAllOperationIds().every(id => role.operations.includes(id))) role.operations = ['all'];
+            saveConfig(config);
+            render();
+            showToast(`${role.name} 操作权限已更新`, 'success');
+        };
+
+        window.toggleOpsAll = function(roleId) {
+            const config = getConfig();
+            const role = config.roles.find(r => r.id === roleId);
+            if (!role) return;
+            if (!role.operations) role.operations = [];
+            const isAll = role.operations.includes('all') || getAllOperationIds().every(id => role.operations.includes(id));
+            role.operations = isAll ? [] : ['all'];
+            saveConfig(config);
+            render();
+            showToast(`${role.name} 操作权限已更新`, 'success');
+        };
+
+        // 辅助
+        function findL2Node(groupId, childId) {
+            const group = MENU_TREE.find(g => g.id === groupId);
+            return group ? group.children.find(c => c.id === childId) : null;
+        }
+
+        function syncL2FromL3(role, groupId, childId) {
+            const l2Node = findL2Node(groupId, childId);
+            if (!l2Node) return;
+            const l3s = l2Node.children || [];
+            if (l3s.length === 0) return;
+            const anyL3 = l3s.some(l3 => role.menus.includes(l3.id));
+            if (anyL3) { if (!role.menus.includes(childId)) role.menus.push(childId); }
+            else { const ci = role.menus.indexOf(childId); if (ci >= 0) role.menus.splice(ci, 1); }
+            syncL1FromL2(role, groupId);
+        }
+
+        function syncL1FromL2(role, groupId) {
+            const group = MENU_TREE.find(g => g.id === groupId);
+            if (!group) return;
+            const anyL2 = group.children.some(c => {
+                if (role.menus.includes(c.id)) return true;
+                return (c.children || []).some(l3 => role.menus.includes(l3.id));
+            });
+            if (anyL2) { if (!role.menus.includes(groupId)) role.menus.push(groupId); }
+            else { const gi = role.menus.indexOf(groupId); if (gi >= 0) role.menus.splice(gi, 1); }
+        }
+
+        function checkIfAllSelected(role) {
+            const allIds = getAllMenuIds();
+            if (allIds.every(id => role.menus.includes(id))) role.menus = ['all'];
+        }
+
+        // Tab
+        window.switchPermTab = function(roleId, tab) {
+            document.querySelectorAll(`.perm-tab[data-role="${roleId}"]`).forEach(t => {
+                t.classList.toggle('active', t.dataset.permTab === tab);
+            });
+            const mp = document.getElementById(`perm-menu-${roleId}`);
+            const dp = document.getElementById(`perm-data-${roleId}`);
+            const op = document.getElementById(`perm-ops-${roleId}`);
+            if (mp) mp.classList.toggle('active', tab === 'menu');
+            if (dp) dp.classList.toggle('active', tab === 'data');
+            if (op) op.classList.toggle('active', tab === 'ops');
+        };
+
+        // ==========================================
+        // 角色基本信息
+        // ==========================================
+
+        window.toggleEdit = function(roleId) {
+            const form = document.getElementById(`edit-${roleId}`);
+            const card = document.getElementById(`card-${roleId}`);
+            if (!form) return;
+            form.classList.toggle('active');
+            card.classList.toggle('role-card--editing');
+        };
+
+        window.saveRoleInfo = function(roleId) {
+            const config = getConfig();
+            const role = config.roles.find(r => r.id === roleId);
+            if (!role) return;
+
+            const name = document.getElementById(`name-${roleId}`)?.value?.trim();
+            const title = document.getElementById(`title-${roleId}`)?.value?.trim();
+            const dept = document.getElementById(`dept-${roleId}`)?.value?.trim();
+            const color = document.getElementById(`colorText-${roleId}`)?.value?.trim();
+            const folderId = document.getElementById(`folder-${roleId}`)?.value || null;
+
+            if (!name) { showToast('姓名不能为空', 'error'); return; }
+            if (!title) { showToast('角色标题不能为空', 'error'); return; }
+
+            role.name = name;
+            role.title = title;
+            role.dept = dept || '';
+            if (color && /^#[0-9a-fA-F]{6}$/.test(color)) role.color = color;
+            role.folderId = folderId;
+
+            saveConfig(config);
+            render();
+            showToast(`「${name}」信息已保存`, 'success');
+        };
+
+        window.updateColorPreview = function(roleId, color) {
+            const preview = document.getElementById(`colorPreview-${roleId}`);
+            const text = document.getElementById(`colorText-${roleId}`);
+            const picker = document.getElementById(`colorPicker-${roleId}`);
+            if (preview) preview.style.background = color;
+            if (text && text.value !== color) text.value = color;
+            if (picker && picker.value !== color) picker.value = color;
+        };
+
+        window.deleteRole = function(roleId) {
+            const config = getConfig();
+            const role = config.roles.find(r => r.id === roleId);
+            if (!role) return;
+
+            showModal('确认删除角色', `
+                <p style="font-size:14px;color:var(--text-2);line-height:1.8">
+                    确定删除角色「<strong>${role.name}</strong>（${role.title}）」吗？<br/>
+                    此操作不可撤销。
+                </p>
+            `, () => {
+                config.roles = config.roles.filter(r => r.id !== roleId);
+                saveConfig(config);
+                render();
+                showToast(`已删除角色「${role.name}」`, 'info');
+            });
+        };
+
+        window.addNewRole = function(folderId) {
+            const config = getConfig();
+            const colors = ['#006eff','#00b578','#ff8f1f','#7c3aed','#ee3f4d','#f59e0b','#06b6d4','#8b5cf6'];
+            const newId = 'role-' + Date.now();
+            config.roles.push({
+                id: newId,
+                name: '新角色',
+                title: '请编辑',
+                dept: '',
+                color: colors[config.roles.length % colors.length],
+                menus: [],
+                categories: [],
+                operations: [],
+                folderId: folderId || null
+            });
+            saveConfig(config);
+            render();
+            setTimeout(() => toggleEdit(newId), 100);
+            showToast('已添加新角色，请编辑详情', 'success');
+        };
+
+        window.resetToDefault = function() {
+            showModal('确认恢复默认', `
+                <p style="font-size:14px;color:var(--text-2);line-height:1.8">
+                    确定恢复为默认角色配置吗？<br/>
+                    <strong style="color:var(--danger)">所有自定义修改将丢失。</strong>
+                </p>
+            `, () => {
+                saveConfig(JSON.parse(JSON.stringify(DEFAULT_CONFIG)));
+                expandedCards.clear();
+                render();
+                showToast('已恢复默认配置', 'info');
+            });
+        };
+
+        // 初始化
+        render();
+    })();
+    </script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+{
+  "id": "tv-xxx",
+  "name": "IP名称",
+  "level": "S",
+  "poster": "",
+  "actors": "演员1、演员2、演员3",
+  "director": "导演名",
+  "category": "电视剧",
+  "status": "上映中",
+  "collectedMaterials": 0,
+  "pendingMaterials": 0,
+  "relatedProjects": 0
+}

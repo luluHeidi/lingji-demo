@@ -1,0 +1,409 @@
+<!-- 素材上传模块 v3.0 -->
+<!-- 版本: v3.0 | 日期: 2026-03-24 -->
+<!-- 架构: 一级Tab导航（与素材查询/授权管理一致） -->
+<div class="module-container" data-module="module-material-upload">
+
+    <!-- ========== 页面标题 ========== -->
+    <div class="page-breadcrumb">
+        <div class="breadcrumb-item active">
+            <i data-lucide="upload-cloud" class="breadcrumb-icon"></i>
+            <span>素材上传</span>
+        </div>
+        <div class="mu-header-actions">
+            <button class="btn-primary" id="mu-btn-create-task" onclick="window.muApp.showPage('mu-page-create-task','standard')" style="display:none"><i data-lucide="plus"></i> 创建任务</button>
+            <button class="btn-primary" id="mu-btn-new-request" style="display:none"><i data-lucide="plus"></i> 提交需求</button>
+        </div>
+    </div>
+
+    <!-- ========== 一级Tab导航 ========== -->
+    <div class="category-tabs" id="mu-main-tabs">
+        <div class="category-tab active" data-mu-tab="standard" onclick="window.muApp.switchTab('standard')">
+            <i data-lucide="clipboard-list" class="tab-icon"></i>
+            <span>标准化任务上传</span>
+        </div>
+        <div class="category-tab" data-mu-tab="batch-import" onclick="window.muApp.switchTab('batch-import')">
+            <i data-lucide="package" class="tab-icon"></i>
+            <span>批量非标导入</span>
+        </div>
+        <div class="category-tab" data-mu-tab="demand" onclick="window.muApp.switchTab('demand')">
+            <i data-lucide="megaphone" class="tab-icon"></i>
+            <span>素材需求</span>
+        </div>
+    </div>
+
+    <!-- ========== Tab1: 标准化任务上传 ========== -->
+    <div id="mu-path-standard" class="mu-tab-panel">
+
+        <!-- 任务看板（直接展示，不再有子Tab） -->
+        <div id="mu-page-dashboard" class="mu-tab-content">
+            <div class="filter-bar">
+                <div class="filter-group">
+                    <label>IP</label>
+                    <div class="select-wrapper">
+                        <select id="filter-task-ip"><option value="all">全部</option></select>
+                        <i data-lucide="chevron-down" class="select-icon"></i>
+                    </div>
+                </div>
+                <div class="filter-group">
+                    <label>状态</label>
+                    <div class="select-wrapper">
+                        <select id="filter-task-status">
+                            <option value="all">全部</option>
+                            <option value="draft">草稿</option>
+                            <option value="active">进行中</option>
+                            <option value="completed">已完成</option>
+                        </select>
+                        <i data-lucide="chevron-down" class="select-icon"></i>
+                    </div>
+                </div>
+                <div class="filter-group">
+                    <label>排播</label>
+                    <div class="select-wrapper">
+                        <select id="filter-task-milestone"><option value="all">全部</option></select>
+                        <i data-lucide="chevron-down" class="select-icon"></i>
+                    </div>
+                </div>
+                <div class="search-group">
+                    <div class="search-input-wrapper">
+                        <i data-lucide="search" class="search-icon"></i>
+                        <input type="text" class="search-input" placeholder="搜索任务..." id="search-task">
+                    </div>
+                </div>
+            </div>
+            <div class="task-cards-grid" id="task-cards-container"></div>
+            <div class="empty-state" id="dashboard-empty" style="display:none;">
+                <i data-lucide="inbox"></i>
+                <p>暂无上传任务，点击右上角「创建任务」开始</p>
+            </div>
+        </div>
+
+        <!-- 页面内跳转: 任务详情 -->
+        <div id="mu-page-task-detail" class="mu-page-jump" style="display:none;">
+            <div class="page-jump-header">
+                <button class="btn-text" onclick="window.muApp.backToList()"><i data-lucide="arrow-left"></i> 返回</button>
+                <span class="breadcrumb-sep">/</span>
+                <span class="breadcrumb-current" id="task-detail-title"></span>
+            </div>
+            <div id="task-detail-content"></div>
+        </div>
+
+        <!-- 页面内跳转: 创建任务 -->
+        <div id="mu-page-create-task" class="mu-page-jump" style="display:none;">
+            <div class="page-jump-header">
+                <button class="btn-text" onclick="window.muApp.backToList()"><i data-lucide="arrow-left"></i> 返回</button>
+                <span class="breadcrumb-sep">/</span>
+                <span class="breadcrumb-current">创建上传任务</span>
+            </div>
+            <div class="create-task-form">
+                <div class="form-section">
+                    <h3 class="form-section-title">基本信息</h3>
+                    <div class="form-row">
+                        <label class="form-label"><span class="required">*</span>任务名称</label>
+                        <input type="text" class="form-input" id="ct-task-name" placeholder="如：《长风渡》定档期素材采集">
+                    </div>
+                    <div class="form-row">
+                        <label class="form-label"><span class="required">*</span>关联IP</label>
+                        <div class="select-wrapper">
+                            <select class="form-select" id="ct-ip"><option value="">选择IP项目</option></select>
+                            <i data-lucide="chevron-down" class="select-icon"></i>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <label class="form-label"><span class="required">*</span>排播节点</label>
+                        <div class="select-wrapper">
+                            <select class="form-select" id="ct-milestone"><option value="">选择排播节点</option></select>
+                            <i data-lucide="chevron-down" class="select-icon"></i>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <label class="form-label">截止日期</label>
+                        <input type="date" class="form-input" id="ct-deadline">
+                    </div>
+                    <div class="form-row">
+                        <label class="form-label">任务说明</label>
+                        <textarea class="form-textarea" id="ct-description" placeholder="补充说明..."></textarea>
+                    </div>
+                </div>
+                <div class="form-section">
+                    <div class="form-section-header">
+                        <h3 class="form-section-title">子任务清单</h3>
+                        <button class="btn-text" id="btn-add-subtask"><i data-lucide="plus"></i> 添加子任务</button>
+                    </div>
+                    <div id="subtask-list"></div>
+                </div>
+                <div class="form-actions">
+                    <button class="btn-secondary" onclick="window.muApp.showPage('mu-page-dashboard','standard')">取消</button>
+                    <button class="btn-outline" id="btn-save-draft">保存草稿</button>
+                    <button class="btn-primary" id="btn-submit-task">提交</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 页面内跳转: 智能分拣台 -->
+        <div id="mu-page-sorting-station" class="mu-page-jump" style="display:none;">
+            <div class="page-jump-header">
+                <button class="btn-text" id="btn-back-from-sorting"><i data-lucide="arrow-left"></i> 返回</button>
+                <span class="breadcrumb-sep">/</span>
+                <span class="breadcrumb-current" id="sorting-title">智能分拣台</span>
+            </div>
+            <div class="sorting-context" id="sorting-context"></div>
+            <!-- 上传区 -->
+            <div class="upload-zone" id="upload-zone">
+                <div class="upload-zone__inner">
+                    <i data-lucide="upload-cloud" class="upload-zone__icon"></i>
+                    <p>将文件拖入此区域，或 <button class="btn-text" id="btn-select-files">点击选择文件</button></p>
+                    <p class="upload-zone__hint">支持 JPG/PNG/PSD/TIFF/MP4/MOV 等格式，可批量上传</p>
+                    <input type="file" id="file-input" multiple style="display:none" accept="image/*,video/*,.psd,.tiff,.tif,.raw">
+                </div>
+            </div>
+            <!-- 识别进度 -->
+            <div class="recognition-progress" id="recognition-progress" style="display:none;">
+                <i data-lucide="cpu"></i> 识别中...
+                <div class="progress-bar"><div class="progress-fill" id="recognition-fill"></div></div>
+                <span id="recognition-pct">0%</span>
+            </div>
+            <!-- 分拣结果 -->
+            <div class="sorting-results" id="sorting-results" style="display:none;">
+                <div class="sorting-tabs">
+                    <div class="sorting-tab active" data-group="high" onclick="window.muApp.switchSortingTab('high')">✅ 高置信 (<span id="sort-high-count">0</span>)</div>
+                    <div class="sorting-tab" data-group="medium" onclick="window.muApp.switchSortingTab('medium')">⚠️ 需确认 (<span id="sort-medium-count">0</span>)</div>
+                    <div class="sorting-tab" data-group="low" onclick="window.muApp.switchSortingTab('low')">❌ 疑似非素材 (<span id="sort-low-count">0</span>)</div>
+                </div>
+                <div class="sorting-group" id="sort-group-high">
+                    <div class="sorting-group__header">
+                        <span>系统有把握的识别结果</span>
+                        <div><label class="checkbox-label"><input type="checkbox" id="check-all-high"> 全选</label> <button class="btn-small btn-primary" id="btn-confirm-high">确认</button></div>
+                    </div>
+                    <div class="file-grid" id="sort-grid-high"></div>
+                </div>
+                <div class="sorting-group" id="sort-group-medium" style="display:none;">
+                    <div class="sorting-group__header">
+                        <span>请为以下文件选择正确类型</span>
+                        <div><button class="btn-small btn-outline" id="btn-batch-set-type">批量设为...</button></div>
+                    </div>
+                    <div class="file-grid" id="sort-grid-medium"></div>
+                </div>
+                <div class="sorting-group" id="sort-group-low" style="display:none;">
+                    <div class="sorting-group__header">
+                        <span>可勾选"挽救"移回</span>
+                        <div><button class="btn-small btn-outline" id="btn-exclude-all">一键排除全部</button></div>
+                    </div>
+                    <div class="file-grid" id="sort-grid-low"></div>
+                </div>
+                <div class="sorting-footer">
+                    <div class="sorting-summary">📊 确认 <strong id="sort-confirmed">0</strong> | 待选 <strong id="sort-pending">0</strong> | 排除 <strong id="sort-excluded">0</strong></div>
+                    <div>
+                        <button class="btn-secondary" id="btn-reset-sorting">重置全部</button>
+                        <button class="btn-primary" id="btn-confirm-archive">确认入库（<span id="sort-archive-count">0</span>个文件）</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== Tab2: 批量非标素材导入（v2 重设计 — 操作工作台） ========== -->
+    <div id="mu-path-batch-import" class="mu-tab-panel" style="display:none;">
+
+        <!-- 导入操作区 -->
+        <div class="bi-section bi-import-area">
+            <h3 class="bi-section-title"><i data-lucide="upload"></i> 导入素材</h3>
+            <!-- 导入方式选择 -->
+            <div class="bi-method-tabs">
+                <div class="bi-method-tab active" data-bi-method="zip" onclick="window.muApp.switchBiMethod('zip')">
+                    <i data-lucide="archive"></i> 压缩包
+                </div>
+                <div class="bi-method-tab" data-bi-method="folder" onclick="window.muApp.switchBiMethod('folder')">
+                    <i data-lucide="folder-open"></i> 文件夹
+                </div>
+                <div class="bi-method-tab" data-bi-method="link" onclick="window.muApp.switchBiMethod('link')">
+                    <i data-lucide="link"></i> 网盘链接
+                </div>
+            </div>
+
+            <!-- 压缩包/文件夹上传区 -->
+            <div class="bi-upload-zone" id="bi-upload-zone">
+                <div class="bi-upload-zone__inner">
+                    <i data-lucide="upload-cloud" class="bi-upload-zone__icon"></i>
+                    <p class="bi-upload-zone__text">将<span id="bi-upload-type-hint">压缩包</span>拖入此区域</p>
+                    <p class="bi-upload-zone__sub">或 <button class="btn-text" id="bi-btn-select-files">点击选择文件</button></p>
+                    <p class="bi-upload-zone__hint" id="bi-upload-format-hint">支持 .zip / .rar / .7z 格式</p>
+                    <input type="file" id="bi-file-input" multiple style="display:none" accept=".zip,.rar,.7z,image/*,video/*,.psd,.tiff,.tif,.raw">
+                </div>
+            </div>
+
+            <!-- 网盘链接输入区（默认隐藏） -->
+            <div class="bi-link-input-area" id="bi-link-input-area" style="display:none;">
+                <div class="form-row">
+                    <label class="form-label">网盘链接</label>
+                    <input type="text" class="form-input" id="bi-link-url" placeholder="粘贴百度网盘 / 腾讯微云 / 阿里云盘链接">
+                </div>
+                <div class="form-row">
+                    <label class="form-label">提取码</label>
+                    <input type="text" class="form-input bi-link-code-input" id="bi-link-code" placeholder="如有提取码请输入（可选）" maxlength="6">
+                </div>
+            </div>
+
+            <!-- 已选文件预览 -->
+            <div class="bi-files-preview" id="bi-files-preview" style="display:none;">
+                <div class="bi-files-summary">
+                    <span><i data-lucide="file"></i> 已选择 <strong id="bi-file-count">0</strong> 个文件</span>
+                    <button class="btn-text bi-btn-clear" id="bi-btn-clear"><i data-lucide="trash-2"></i> 清空</button>
+                </div>
+                <div class="bi-files-list" id="bi-files-list"></div>
+            </div>
+
+            <!-- 关联IP + 开始导入 -->
+            <div class="bi-import-footer">
+                <div class="bi-import-option">
+                    <label class="form-label">关联IP（可选）</label>
+                    <div class="select-wrapper">
+                        <select class="form-select" id="bi-import-ip"><option value="">不关联，由AI识别</option></select>
+                        <i data-lucide="chevron-down" class="select-icon"></i>
+                    </div>
+                </div>
+                <button class="btn-primary bi-btn-start" id="bi-btn-start-import" disabled>
+                    <i data-lucide="zap"></i> 开始导入
+                </button>
+            </div>
+        </div>
+
+        <!-- 智能打标进度区 -->
+        <div class="bi-section bi-progress-area" id="bi-progress-area" style="display:none;">
+            <h3 class="bi-section-title"><i data-lucide="cpu"></i> 智能打标中...</h3>
+            <div class="bi-progress-overall">
+                <div class="bi-progress-bar-wrap">
+                    <div class="bi-progress-bar"><div class="bi-progress-fill" id="bi-progress-fill"></div></div>
+                    <span class="bi-progress-pct" id="bi-progress-pct">0%</span>
+                </div>
+                <span class="bi-progress-count" id="bi-progress-count">0/0 个文件</span>
+            </div>
+            <div class="bi-pipeline" id="bi-pipeline">
+                <div class="bi-pipeline-step" id="bi-step-dedup">
+                    <span class="bi-step-icon">⏳</span>
+                    <span class="bi-step-name">去重</span>
+                    <span class="bi-step-result" id="bi-step-dedup-result"></span>
+                </div>
+                <div class="bi-pipeline-step" id="bi-step-quality">
+                    <span class="bi-step-icon">⏳</span>
+                    <span class="bi-step-name">质量筛选</span>
+                    <span class="bi-step-result" id="bi-step-quality-result"></span>
+                </div>
+                <div class="bi-pipeline-step" id="bi-step-sensitive">
+                    <span class="bi-step-icon">⏳</span>
+                    <span class="bi-step-name">敏感检测</span>
+                    <span class="bi-step-result" id="bi-step-sensitive-result"></span>
+                </div>
+                <div class="bi-pipeline-step" id="bi-step-tagging">
+                    <span class="bi-step-icon">⏳</span>
+                    <span class="bi-step-name">AI智能打标</span>
+                    <span class="bi-step-result" id="bi-step-tagging-result"></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 打标结果确认区 -->
+        <div class="bi-section bi-results-area" id="bi-results-area" style="display:none;">
+            <h3 class="bi-section-title"><i data-lucide="tags"></i> 打标结果</h3>
+            <div class="sorting-tabs bi-result-tabs">
+                <div class="sorting-tab active" data-bi-group="high" onclick="window.muApp.switchBiResultTab('high')">✅ 高置信 (<span id="bi-high-count">0</span>)</div>
+                <div class="sorting-tab" data-bi-group="medium" onclick="window.muApp.switchBiResultTab('medium')">⚠️ 需确认 (<span id="bi-medium-count">0</span>)</div>
+                <div class="sorting-tab" data-bi-group="low" onclick="window.muApp.switchBiResultTab('low')">❌ 疑似非素材 (<span id="bi-low-count">0</span>)</div>
+            </div>
+            <div class="sorting-group bi-result-group" id="bi-group-high">
+                <div class="sorting-group__header">
+                    <span>AI有把握的识别结果</span>
+                    <div><label class="checkbox-label"><input type="checkbox" id="bi-check-all-high"> 全选</label> <button class="btn-small btn-primary" id="bi-btn-confirm-high">确认</button></div>
+                </div>
+                <div class="file-grid" id="bi-grid-high"></div>
+            </div>
+            <div class="sorting-group bi-result-group" id="bi-group-medium" style="display:none;">
+                <div class="sorting-group__header">
+                    <span>请检查/修正标签</span>
+                    <div><button class="btn-small btn-outline" id="bi-btn-batch-set">批量设为...</button></div>
+                </div>
+                <div class="file-grid" id="bi-grid-medium"></div>
+            </div>
+            <div class="sorting-group bi-result-group" id="bi-group-low" style="display:none;">
+                <div class="sorting-group__header">
+                    <span>可勾选"挽救"移回</span>
+                    <div><button class="btn-small btn-outline" id="bi-btn-exclude-all">一键排除全部</button></div>
+                </div>
+                <div class="file-grid" id="bi-grid-low"></div>
+            </div>
+            <div class="sorting-footer bi-result-footer">
+                <div class="sorting-summary">📊 确认 <strong id="bi-confirmed">0</strong> | 待确认 <strong id="bi-pending-confirm">0</strong> | 排除 <strong id="bi-excluded">0</strong></div>
+                <div>
+                    <button class="btn-secondary" id="bi-btn-reset">重置全部</button>
+                    <button class="btn-primary" id="bi-btn-archive">确认入库（<span id="bi-archive-count">0</span>个文件）</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 历史批次列表 -->
+        <div class="bi-section bi-history-area">
+            <h3 class="bi-section-title"><i data-lucide="history"></i> 历史批次</h3>
+            <div class="bi-history-table-wrap">
+                <table class="data-table" id="bi-history-table">
+                    <thead>
+                        <tr><th>批次名</th><th>导入时间</th><th>文件数</th><th>入库数</th><th>状态</th><th>操作</th></tr>
+                    </thead>
+                    <tbody id="bi-history-body"></tbody>
+                </table>
+            </div>
+            <div class="empty-state" id="bi-history-empty" style="display:none;">
+                <i data-lucide="inbox"></i><p>暂无导入记录</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- ========== Tab3: 素材需求 ========== -->
+    <div id="mu-path-demand" class="mu-tab-panel" style="display:none;">
+        <div class="filter-bar">
+            <div class="filter-group">
+                <label>状态</label>
+                <div class="select-wrapper">
+                    <select id="filter-request-status">
+                        <option value="all">全部</option>
+                        <option value="pending">待处理</option>
+                        <option value="replied_available">已回复-可提供</option>
+                        <option value="replied_unavailable">已回复-无法提供</option>
+                    </select>
+                    <i data-lucide="chevron-down" class="select-icon"></i>
+                </div>
+            </div>
+            <div class="filter-group">
+                <label>IP</label>
+                <div class="select-wrapper">
+                    <select id="filter-request-ip"><option value="all">全部</option></select>
+                    <i data-lucide="chevron-down" class="select-icon"></i>
+                </div>
+            </div>
+        </div>
+        <div class="request-table-wrap">
+            <table class="data-table" id="request-table">
+                <thead>
+                    <tr><th>需求人</th><th>IP</th><th>素材类型</th><th>用途</th><th>紧急程度</th><th>状态</th><th>操作</th></tr>
+                </thead>
+                <tbody id="request-table-body"></tbody>
+            </table>
+        </div>
+        <div class="empty-state" id="demand-empty" style="display:none;">
+            <i data-lucide="inbox"></i><p>暂无素材需求</p>
+        </div>
+    </div>
+
+    <!-- ========== 全局弹窗层 ========== -->
+    <div class="mu-overlay" id="mu-overlay" style="display:none;" onclick="window.muApp.closeModal()"></div>
+    <div class="mu-modal" id="mu-modal" style="display:none;">
+        <div class="mu-modal__header">
+            <h3 id="modal-title"></h3>
+            <button class="btn-icon" onclick="window.muApp.closeModal()"><i data-lucide="x"></i></button>
+        </div>
+        <div class="mu-modal__body" id="modal-body"></div>
+        <div class="mu-modal__footer" id="modal-footer"></div>
+    </div>
+
+    <!-- Toast -->
+    <div class="mu-toast-container" id="mu-toast-container"></div>
+</div>

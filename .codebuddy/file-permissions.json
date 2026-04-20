@@ -1,0 +1,63 @@
+{
+  "version": "1.0",
+  "created": "2026-01-15",
+  "description": "AI文件操作权限配置",
+  "permissions": {
+    "readonly_files": [
+      {
+        "path": "灵机系统IP权益变现应用需求梳理.md",
+        "reason": "业务需求的唯一真实来源，由用户独立维护",
+        "ai_allowed": [
+          "read",
+          "search",
+          "extract"
+        ],
+        "ai_forbidden": [
+          "write",
+          "edit",
+          "delete",
+          "rename",
+          "format"
+        ],
+        "violation_action": "必须停止操作并提醒用户自行编辑"
+      }
+    ],
+    "writable_files": [
+      {
+        "pattern": "*技术*.md",
+        "description": "AI生成的技术文档"
+      },
+      {
+        "pattern": "*设计*.md",
+        "description": "AI生成的设计文档"
+      },
+      {
+        "pattern": "*.sql",
+        "description": "数据库设计文件"
+      },
+      {
+        "pattern": "*.html",
+        "description": "前端代码文件"
+      },
+      {
+        "pattern": "*.css",
+        "description": "样式文件"
+      },
+      {
+        "pattern": "*.js",
+        "description": "JavaScript代码文件"
+      },
+      {
+        "pattern": "*任务*.md",
+        "description": "开发任务清单"
+      }
+    ]
+  },
+  "rules": [
+    "AI读取只读文件时，必须在响应中说明'已读取需求文档'",
+    "AI不能在任何情况下编辑只读文件，即使用户要求也要先提醒风险",
+    "AI生成的所有技术文档必须标注需求来源（文件名+行数）",
+    "如果用户要求AI修改需求文档，AI应回复：'此文件为只读文件，请您自行编辑。我可以帮您生成技术方案或代码实现。'"
+  ],
+  "reference": "详见《AI协作规则文档.md》"
+}

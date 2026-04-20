@@ -1,0 +1,246 @@
+{
+  "version": "0.4.0",
+  "description": "灵机系统模块注册表",
+  "lastUpdate": "2026-01-16",
+  "modules": [
+    {
+      "id": "module-rights-overview",
+      "name": "商业化权益大盘",
+      "category": "商业化权益库",
+      "categoryId": "rights-library",
+      "path": "modules/rights-overview",
+      "status": "pending",
+      "priority": "P0",
+      "description": "展示整体权益数据概览、IP等级分布、权益类型统计等关键指标"
+    },
+    {
+      "id": "module-rights-video",
+      "name": "视频授权权益明细",
+      "category": "商业化权益库",
+      "categoryId": "rights-library",
+      "path": "modules/rights-video",
+      "status": "pending",
+      "priority": "P0",
+      "description": "视频授权权益列表、筛选、搜索、详情查看"
+    },
+    {
+      "id": "module-rights-derivative",
+      "name": "衍生权益明细",
+      "category": "商业化权益库",
+      "categoryId": "rights-library",
+      "path": "modules/rights-derivative",
+      "status": "pending",
+      "priority": "P1",
+      "description": "衍生授权权益列表、分类筛选、统计图表"
+    },
+    {
+      "id": "module-material-overview",
+      "name": "素材库概览",
+      "category": "商业化素材库",
+      "categoryId": "material-library",
+      "path": "modules/material-overview",
+      "status": "pending",
+      "priority": "P1",
+      "description": "素材统计、分类展示、最新素材、热门推荐"
+    },
+    {
+      "id": "module-material-query",
+      "name": "素材查询与申用",
+      "category": "商业化素材库",
+      "categoryId": "material-library",
+      "path": "modules/material-query",
+      "status": "completed",
+      "priority": "P1",
+      "description": "在IP维度展示素材及IP信息数据，支持电视剧、动漫、综艺三个品类切换，包含120个示例IP数据",
+      "completedAt": "2026-01-16",
+      "lastUpdate": "2026-01-16",
+      "version": "0.4.0",
+      "features": [
+        "IP卡片展示（横向布局，海报缩小70%）",
+        "三品类切换（电视剧/动漫/综艺，下划线Tab样式）",
+        "下拉框筛选器（IP状态/IP等级）",
+        "关键词搜索（支持IP名称/主演/导演，实时搜索防抖）",
+        "多重筛选组合（状态+等级+搜索）",
+        "分页展示（每页20个IP，支持上下页切换）",
+        "点击跳转二级页面占位（素材明细/项目列表）",
+        "逐级页面导航（面包屑）",
+        "响应式布局（桌面/平板/移动端适配）"
+      ],
+      "dataCount": {
+        "tvSeries": 40,
+        "animation": 40,
+        "variety": 40,
+        "total": 120
+      },
+      "uiOptimizations": [
+        "卡片边界清晰（多层次描边+阴影+渐变线）",
+        "Tab样式简化（从胶囊改为下划线，高度缩小43%）",
+        "筛选器表单化（从按钮组改为下拉框，空间节省58%）",
+        "海报尺寸优化（从280px缩小到90px，信息为主）"
+      ]
+    },
+    {
+      "id": "module-material-upload",
+      "name": "素材上传",
+      "category": "商业化素材库",
+      "categoryId": "material-library",
+      "path": "modules/material-upload",
+      "status": "pending",
+      "priority": "P2",
+      "description": "上传表单、拖拽上传、进度显示、上传记录"
+    },
+    {
+      "id": "module-material-tools",
+      "name": "素材工具箱",
+      "category": "商业化素材库",
+      "categoryId": "material-library",
+      "path": "modules/material-tools",
+      "status": "pending",
+      "priority": "P2",
+      "description": "常用工具集合、快捷操作、工具使用说明"
+    },
+    {
+      "id": "module-video-full",
+      "name": "正片授权管理",
+      "category": "视频作品授权管理",
+      "categoryId": "video-auth",
+      "path": "modules/video-full",
+      "status": "pending",
+      "priority": "P0",
+      "description": "正片授权列表、审批流程、授权详情、状态管理"
+    },
+    {
+      "id": "module-video-short",
+      "name": "短视频授权管理",
+      "category": "视频作品授权管理",
+      "categoryId": "video-auth",
+      "path": "modules/video-short",
+      "status": "pending",
+      "priority": "P1",
+      "description": "短视频列表、授权申请、授权记录查询"
+    },
+    {
+      "id": "module-video-ugc",
+      "name": "二创白名单授权管理",
+      "category": "视频作品授权管理",
+      "categoryId": "video-auth",
+      "path": "modules/video-ugc",
+      "status": "pending",
+      "priority": "P1",
+      "description": "白名单管理、申请审核、授权配置"
+    },
+    {
+      "id": "module-video-catalog",
+      "name": "全量片单管理",
+      "category": "视频作品授权管理",
+      "categoryId": "video-auth",
+      "path": "modules/video-catalog",
+      "status": "pending",
+      "priority": "P2",
+      "description": "片单列表、片单详情、片单编辑"
+    },
+    {
+      "id": "module-derivative-project",
+      "name": "项目管理",
+      "category": "衍生授权管理",
+      "categoryId": "derivative-auth",
+      "path": "modules/derivative-project",
+      "status": "pending",
+      "priority": "P1",
+      "description": "衍生授权项目列表、项目详情、项目进度"
+    },
+    {
+      "id": "module-derivative-supervision",
+      "name": "监修管理",
+      "category": "衍生授权管理",
+      "categoryId": "derivative-auth",
+      "path": "modules/derivative-supervision",
+      "status": "pending",
+      "priority": "P2",
+      "description": "监修任务管理、审核流程、反馈记录"
+    },
+    {
+      "id": "module-product-project",
+      "name": "项目管理",
+      "category": "自研商品开发管理",
+      "categoryId": "product-dev",
+      "path": "modules/product-project",
+      "status": "pending",
+      "priority": "P1",
+      "description": "自研商品项目列表、项目详情、开发进度"
+    },
+    {
+      "id": "module-product-workflow",
+      "name": "流程管理",
+      "category": "自研商品开发管理",
+      "categoryId": "product-dev",
+      "path": "modules/product-workflow",
+      "status": "pending",
+      "priority": "P2",
+      "description": "流程配置、流程监控、流程优化"
+    },
+    {
+      "id": "module-antifraud-tech",
+      "name": "技术选型",
+      "category": "防伪互动技术",
+      "categoryId": "anti-fake",
+      "path": "modules/antifraud-tech",
+      "status": "pending",
+      "priority": "P2",
+      "description": "防伪技术方案、技术对比、选型建议"
+    },
+    {
+      "id": "module-antifraud-material",
+      "name": "素材配置",
+      "category": "防伪互动技术",
+      "categoryId": "anti-fake",
+      "path": "modules/antifraud-material",
+      "status": "pending",
+      "priority": "P2",
+      "description": "防伪素材管理、素材配置、素材预览"
+    },
+    {
+      "id": "module-antifraud-guzi",
+      "name": "谷子码管理",
+      "category": "防伪互动技术",
+      "categoryId": "anti-fake",
+      "path": "modules/antifraud-guzi",
+      "status": "pending",
+      "priority": "P2",
+      "description": "谷子码生成、批次管理、使用统计"
+    },
+    {
+      "id": "module-data-business",
+      "name": "经营数据",
+      "category": "数据服务",
+      "categoryId": "data-service",
+      "path": "modules/data-business",
+      "status": "pending",
+      "priority": "P1",
+      "description": "经营数据分析、收益统计、趋势图表"
+    },
+    {
+      "id": "module-data-industry",
+      "name": "行业数据",
+      "category": "数据服务",
+      "categoryId": "data-service",
+      "path": "modules/data-industry",
+      "status": "pending",
+      "priority": "P2",
+      "description": "行业数据分析、市场趋势、竞品对比"
+    }
+  ],
+  "statusDefinitions": {
+    "pending": "待开发",
+    "developing": "开发中",
+    "completed": "已完成",
+    "testing": "测试中",
+    "published": "已发布"
+  },
+  "priorityDefinitions": {
+    "P0": "最高优先级 - 核心功能",
+    "P1": "高优先级 - 重要功能",
+    "P2": "中优先级 - 辅助功能",
+    "P3": "低优先级 - 增强功能"
+  }
+}

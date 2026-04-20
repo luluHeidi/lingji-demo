@@ -1,0 +1,15 @@
+{
+  "id": "SC20260101MX01",
+  "name": "素材名称",
+  "type": "image",
+  "elementTag": "brand",
+  "format": "jpg",
+  "size": "1920x1080px",
+  "applyCount": 0,
+  "projectFile": "yes",
+  "purpose": "promotion",
+  "uploader": "username",
+  "uploadTime": "2026-01-01 00:00:00",
+  "blockchainHash": "sha256:xxxx",
+  "previewUrl": ""
+}

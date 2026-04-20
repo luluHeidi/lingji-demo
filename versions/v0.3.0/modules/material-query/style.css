@@ -1,0 +1,503 @@
+/* ========== 素材查询与申用模块样式 ========== */
+
+.material-query-page {
+    padding: 24px 32px;
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ========== 页面导航 ========== */
+.page-breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 24px;
+    font-size: 14px;
+}
+
+.breadcrumb-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--text-secondary);
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.breadcrumb-item:hover {
+    color: var(--primary-color);
+}
+
+.breadcrumb-item.active {
+    color: var(--text-primary);
+    font-weight: 500;
+    cursor: default;
+}
+
+.breadcrumb-icon {
+    width: 16px;
+    height: 16px;
+}
+
+.breadcrumb-separator {
+    width: 14px;
+    height: 14px;
+    color: var(--text-tertiary);
+}
+
+/* ========== 品类Tab切换 ========== */
+.category-tabs {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 32px;
+    padding: 8px;
+    background: var(--bg-secondary);
+    border-radius: var(--radius-lg);
+    width: fit-content;
+}
+
+.category-tab {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 24px;
+    background: transparent;
+    border-radius: var(--radius-md);
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--text-secondary);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.category-tab:hover {
+    background: var(--bg-primary);
+    color: var(--text-primary);
+}
+
+.category-tab.active {
+    background: var(--primary-color);
+    color: white;
+    box-shadow: var(--shadow-sm);
+}
+
+.tab-icon {
+    width: 18px;
+    height: 18px;
+}
+
+/* ========== IP卡片容器 ========== */
+.ip-cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 24px;
+    margin-bottom: 32px;
+}
+
+/* ========== IP卡片 ========== */
+.ip-card {
+    background: var(--bg-primary);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    transition: all 0.3s ease;
+    cursor: default;
+}
+
+.ip-card:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-4px);
+}
+
+/* 海报区域 */
+.ip-poster {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-tertiary) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.ip-poster img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.poster-placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    color: var(--text-tertiary);
+}
+
+.poster-placeholder-icon {
+    width: 64px;
+    height: 64px;
+    opacity: 0.4;
+}
+
+.poster-placeholder-text {
+    font-size: 14px;
+    opacity: 0.6;
+}
+
+/* 卡片内容区 */
+.ip-card-content {
+    padding: 16px;
+}
+
+/* 卡片标题 */
+.ip-card-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+.ip-name {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-primary);
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.ip-level {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.ip-level.level-s-plus {
+    background: linear-gradient(135deg, #ff6b6b 0%, #ff8e53 100%);
+    color: white;
+}
+
+.ip-level.level-s {
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    color: white;
+}
+
+.ip-level.level-a-plus {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+.ip-level.level-a {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    color: white;
+}
+
+/* 基本信息 */
+.ip-basic-info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 12px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--border-light);
+}
+
+.info-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    font-size: 13px;
+}
+
+.info-label {
+    color: var(--text-tertiary);
+    min-width: 56px;
+    flex-shrink: 0;
+}
+
+.info-value {
+    color: var(--text-secondary);
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* 开发状态 */
+.ip-status {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 12px;
+    border-radius: 16px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.ip-status.status-planned {
+    background: rgba(100, 100, 100, 0.1);
+    color: var(--text-secondary);
+}
+
+.ip-status.status-developing {
+    background: rgba(0, 110, 255, 0.1);
+    color: var(--primary-color);
+}
+
+.ip-status.status-reviewed {
+    background: rgba(255, 159, 28, 0.1);
+    color: #ff9f1c;
+}
+
+.ip-status.status-releasing {
+    background: rgba(46, 213, 115, 0.1);
+    color: #2ed573;
+}
+
+.ip-status.status-completed {
+    background: rgba(87, 101, 116, 0.1);
+    color: #576574;
+}
+
+.status-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: currentColor;
+}
+
+/* 交互字段 */
+.ip-interactive-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.interactive-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 12px;
+    background: var(--bg-secondary);
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.interactive-item:hover {
+    background: var(--primary-ultralight);
+    transform: translateX(4px);
+}
+
+.interactive-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    color: var(--text-secondary);
+}
+
+.interactive-icon {
+    width: 16px;
+    height: 16px;
+    color: var(--primary-color);
+}
+
+.interactive-value {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.interactive-value.collected {
+    color: var(--primary-color);
+}
+
+.interactive-value.pending {
+    color: #ff9f1c;
+}
+
+.interactive-value.projects {
+    color: #2ed573;
+}
+
+/* ========== 分页器 ========== */
+.pagination-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    padding: 20px 0;
+}
+
+.pagination-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    background: var(--bg-primary);
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius-md);
+    font-size: 14px;
+    color: var(--text-primary);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.pagination-btn:hover:not(:disabled) {
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+    color: white;
+}
+
+.pagination-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.pagination-btn i {
+    width: 16px;
+    height: 16px;
+}
+
+.page-info {
+    font-size: 14px;
+    color: var(--text-secondary);
+}
+
+.page-info span {
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+/* ========== 二级页面占位 ========== */
+.detail-page-placeholder {
+    padding: 24px 32px;
+    animation: fadeIn 0.3s ease;
+}
+
+.placeholder-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 400px;
+    text-align: center;
+}
+
+.placeholder-icon {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 24px;
+    background: linear-gradient(135deg, var(--primary-ultralight) 0%, var(--bg-secondary) 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.placeholder-icon .icon {
+    width: 60px;
+    height: 60px;
+    color: var(--primary-color);
+}
+
+.placeholder-content h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 12px;
+}
+
+.placeholder-content p {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin-bottom: 32px;
+    max-width: 400px;
+}
+
+.back-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 24px;
+    background: var(--primary-color);
+    border: none;
+    border-radius: var(--radius-md);
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+    background: var(--primary-dark);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.back-btn i {
+    width: 18px;
+    height: 18px;
+}
+
+/* ========== 响应式设计 ========== */
+@media (max-width: 1400px) {
+    .ip-cards-container {
+        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    }
+}
+
+@media (max-width: 1200px) {
+    .ip-cards-container {
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .material-query-page {
+        padding: 16px;
+    }
+
+    .category-tabs {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .category-tab {
+        flex: 1;
+        justify-content: center;
+        padding: 10px 16px;
+    }
+
+    .ip-cards-container {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 16px;
+    }
+
+    .pagination-container {
+        flex-direction: column;
+        gap: 16px;
+    }
+}

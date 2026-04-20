@@ -1,0 +1,291 @@
+<div class="material-query-page">
+    <!-- 页面导航 -->
+    <div class="page-breadcrumb">
+        <div class="breadcrumb-item active">
+            <i data-lucide="folder" class="breadcrumb-icon"></i>
+            <span>素材查询与申用</span>
+        </div>
+    </div>
+
+    <!-- 品类Tab切换 -->
+    <div class="category-tabs">
+        <div class="category-tab active" data-category="tvSeries">
+            <i data-lucide="tv" class="tab-icon"></i>
+            <span>电视剧</span>
+        </div>
+        <div class="category-tab" data-category="animation">
+            <i data-lucide="sparkles" class="tab-icon"></i>
+            <span>动漫</span>
+        </div>
+        <div class="category-tab" data-category="variety">
+            <i data-lucide="mic" class="tab-icon"></i>
+            <span>综艺</span>
+        </div>
+    </div>
+
+    <!-- 筛选器和搜索模块 -->
+    <div class="filter-section">
+        <!-- IP状态筛选 -->
+        <div class="filter-group">
+            <label class="filter-label">IP状态</label>
+            <div class="select-wrapper">
+                <select class="filter-select" id="statusSelect">
+                    <option value="all">全部</option>
+                    <option value="已立项">已立项</option>
+                    <option value="开发中">开发中</option>
+                    <option value="已过审">已过审</option>
+                    <option value="上映中">上映中</option>
+                    <option value="已完播">已完播</option>
+                </select>
+                <i data-lucide="chevron-down" class="select-icon"></i>
+            </div>
+        </div>
+
+        <!-- IP等级筛选 -->
+        <div class="filter-group">
+            <label class="filter-label">IP等级</label>
+            <div class="select-wrapper">
+                <select class="filter-select" id="levelSelect">
+                    <option value="all">全部</option>
+                    <option value="S+">S+</option>
+                    <option value="S">S</option>
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                </select>
+                <i data-lucide="chevron-down" class="select-icon"></i>
+            </div>
+        </div>
+
+        <!-- 搜索框 -->
+        <div class="search-group">
+            <div class="search-input-wrapper">
+                <i data-lucide="search" class="search-icon"></i>
+                <input 
+                    type="text" 
+                    class="search-input" 
+                    placeholder="搜索IP名称"
+                    id="searchInput"
+                />
+                <button class="search-clear" id="searchClear" style="display: none;">
+                    <i data-lucide="x"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- IP卡片列表容器 -->
+    <div class="ip-cards-container" id="ipCardsContainer">
+        <!-- 卡片将由JS动态生成 -->
+    </div>
+
+    <!-- 分页器 -->
+    <div class="pagination-container">
+        <button class="pagination-btn" id="prevPageBtn" disabled>
+            <i data-lucide="chevron-left"></i>
+            上一页
+        </button>
+        <div class="page-info">
+            第 <span id="currentPage">1</span> / <span id="totalPages">1</span> 页
+        </div>
+        <button class="pagination-btn" id="nextPageBtn">
+            下一页
+            <i data-lucide="chevron-right"></i>
+        </button>
+    </div>
+</div>
+
+<!-- 素材详情页 -->
+<div class="material-detail-page" style="display: none;">
+    <!-- 面包屑 -->
+    <div class="page-breadcrumb">
+        <div class="breadcrumb-item" id="backToQueryList">
+            <i data-lucide="folder" class="breadcrumb-icon"></i>
+            <span>素材查询与申用</span>
+        </div>
+        <i data-lucide="chevron-right" class="breadcrumb-separator"></i>
+        <div class="breadcrumb-item active">
+            <span id="detailIPName">《IP名》已回收素材详情</span>
+        </div>
+    </div>
+
+    <!-- 搜索模块 -->
+    <div class="search-section">
+        <div class="search-box-wrapper">
+            <!-- 搜索输入框 -->
+            <textarea class="search-textarea" id="materialSearch" 
+                      placeholder="描述你的素材需求或输入素材名称/素材id搜索" 
+                      rows="3"></textarea>
+            
+            <!-- 底部操作栏 -->
+            <div class="search-actions">
+                <!-- 左侧：AI开关（大圆角线框） -->
+                <div class="ai-switch-container">
+                    <input type="checkbox" id="aiSearchToggle" class="ai-switch-input">
+                    <label for="aiSearchToggle" class="ai-switch-label">
+                        <span class="switch-track">
+                            <span class="switch-thumb"></span>
+                        </span>
+                        <i data-lucide="sparkles" class="ai-icon"></i>
+                        <span class="ai-text">AI搜索</span>
+                    </label>
+                </div>
+                
+                <!-- 右侧：搜索按钮 -->
+                <button class="search-submit-btn" id="doMaterialSearch">
+                    <i data-lucide="send"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- AI需求分析结果（AI模式时显示） -->
+    <div class="ai-analysis-result" id="aiAnalysisResult" style="display: none;">
+        <div class="analysis-title">
+            <i data-lucide="brain-circuit"></i>
+            素材需求分析
+        </div>
+        <div class="analysis-content" id="aiAnalysisContent">
+            根据您的描述，我们理解您需要：宣传类图片素材，适合社交媒体传播，风格偏向古风仙侠，色调以紫粉为主。已为您筛选出最相关的素材。
+        </div>
+        <!-- AI分析完成后的一键全选按钮 -->
+        <button class="ai-select-all-btn" id="aiSelectAllBtn">
+            <i data-lucide="check-square"></i>
+            <span>全选</span>
+        </button>
+    </div>
+
+    <!-- 筛选器模块 -->
+    <div class="material-filters" id="materialFilters">
+        <div class="filter-row">
+            <!-- 素材类型 -->
+            <div class="filter-item">
+                <label>素材类型</label>
+                <div class="select-wrapper">
+                    <select id="filterMaterialType" class="filter-select">
+                        <option value="all">全部</option>
+                        <option value="video">视频</option>
+                        <option value="audio">音频</option>
+                        <option value="image">图片</option>
+                        <option value="text">文字</option>
+                        <option value="3d">3D模型</option>
+                    </select>
+                    <i data-lucide="chevron-down" class="select-icon"></i>
+                </div>
+            </div>
+
+            <!-- 五要素标签 -->
+            <div class="filter-item">
+                <label>五要素标签</label>
+                <div class="select-wrapper">
+                    <select id="filterElementTag" class="filter-select">
+                        <option value="all">全部</option>
+                        <option value="story">故事</option>
+                        <option value="brand">品牌</option>
+                        <option value="music">音乐</option>
+                        <option value="model">模式</option>
+                        <option value="character">人物</option>
+                    </select>
+                    <i data-lucide="chevron-down" class="select-icon"></i>
+                </div>
+            </div>
+
+            <!-- 素材格式 -->
+            <div class="filter-item">
+                <label>素材格式</label>
+                <div class="select-wrapper">
+                    <select id="filterFormat" class="filter-select">
+                        <option value="all">全部</option>
+                        <option value="mp4">mp4</option>
+                        <option value="mp3">mp3</option>
+                        <option value="jpg">jpg</option>
+                        <option value="png">png</option>
+                        <option value="psd">psd</option>
+                        <option value="ai">ai</option>
+                        <option value="fbx">fbx</option>
+                    </select>
+                    <i data-lucide="chevron-down" class="select-icon"></i>
+                </div>
+            </div>
+
+            <!-- 工程文件 -->
+            <div class="filter-item">
+                <label>工程文件</label>
+                <div class="select-wrapper">
+                    <select id="filterProjectFile" class="filter-select">
+                        <option value="all">全部</option>
+                        <option value="yes">有工程文件</option>
+                        <option value="no">无工程文件</option>
+                    </select>
+                    <i data-lucide="chevron-down" class="select-icon"></i>
+                </div>
+            </div>
+
+            <!-- 制作用途 -->
+            <div class="filter-item">
+                <label>制作用途</label>
+                <div class="select-wrapper">
+                    <select id="filterPurpose" class="filter-select">
+                        <option value="all">全部</option>
+                        <option value="promotion">剧宣</option>
+                        <option value="opening">开机</option>
+                        <option value="design">设定</option>
+                        <option value="marketing">营销</option>
+                        <option value="derivative">衍生</option>
+                    </select>
+                    <i data-lucide="chevron-down" class="select-icon"></i>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 一键全选按钮 -->
+        <button class="select-all-btn" id="selectAllMaterials">
+            <i data-lucide="check-square"></i>
+            <span>全选</span>
+        </button>
+    </div>
+
+    <!-- 素材卡片网格 -->
+    <div class="material-grid" id="materialGrid">
+        <!-- 素材卡片将通过JS动态生成 -->
+    </div>
+
+    <!-- 批量操作栏（选中素材时显示） -->
+    <div class="batch-action-bar" id="batchActionBar" style="display: none;">
+        <div class="batch-info">
+            已选择 <span id="selectedCount">0</span> 个素材
+        </div>
+        <div class="batch-actions">
+            <button class="batch-btn cancel-btn" id="cancelBatchBtn">取消</button>
+            <button class="batch-btn primary-btn" id="applyBatchBtn">
+                <i data-lucide="file-check"></i>
+                批量申用
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- 二级页面占位（其他功能开发中） -->
+<div class="detail-page-placeholder" id="detailPagePlaceholder" style="display: none;">
+    <div class="page-breadcrumb">
+        <div class="breadcrumb-item" id="backToList">
+            <i data-lucide="folder" class="breadcrumb-icon"></i>
+            <span>素材查询与申用</span>
+        </div>
+        <i data-lucide="chevron-right" class="breadcrumb-separator"></i>
+        <div class="breadcrumb-item active">
+            <span id="currentIPName"></span>
+        </div>
+    </div>
+
+    <div class="placeholder-content">
+        <div class="placeholder-icon">
+            <i data-lucide="construction" class="icon"></i>
+        </div>
+        <h3>功能开发中</h3>
+        <p id="placeholderMessage"></p>
+        <button class="back-btn" id="backBtn">
+            <i data-lucide="arrow-left"></i>
+            返回列表
+        </button>
+    </div>
+</div>

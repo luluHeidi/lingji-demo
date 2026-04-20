@@ -1,0 +1,445 @@
+<div class="auth-management-page">
+    <!-- 页面标题 -->
+    <div class="page-breadcrumb">
+        <div class="breadcrumb-item active">
+            <span>授权管理</span>
+        </div>
+    </div>
+
+    <!-- 品类Tab切换 -->
+    <div class="category-tabs" id="authCategoryTabs">
+        <div class="category-tab active" data-auth-tab="myProjects">
+            <span>我的项目</span>
+        </div>
+        <div class="category-tab" data-auth-tab="rightsReview">
+            <span>授权审查</span>
+        </div>
+    </div>
+
+    <!-- Tab内容区：我的项目 -->
+    <div class="auth-tab-content" id="tabMyProjects">
+        <div class="section-block projects-section">
+            <div class="section-header" style="justify-content: flex-end;">
+                <button class="btn-create-project" id="btnCreateProject">
+                    <i data-lucide="plus"></i>
+                    <span>创建项目</span>
+                </button>
+            </div>
+            <div class="project-list-container" id="projectListContainer">
+                <!-- JS动态渲染 -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Tab内容区：授权审查 -->
+    <div class="auth-tab-content" id="tabRightsReview" style="display:none;">
+        <div class="rights-review-container" id="rightsReviewContainer">
+            <!-- JS动态渲染：二创权益区 + 分销权益区 -->
+        </div>
+    </div>
+
+    <!-- 项目详情二级页 -->
+    <div class="project-detail-page" id="projectDetailPage" style="display:none;">
+        <!-- 面包屑导航 -->
+        <div class="detail-breadcrumb">
+            <span class="breadcrumb-link" id="btnBackToList">授权管理</span>
+            <i data-lucide="chevron-right" class="breadcrumb-sep"></i>
+            <span class="breadcrumb-current" id="detailPageTitle">项目详情</span>
+        </div>
+
+        <!-- 项目基本信息头部 -->
+        <div class="detail-header" id="detailHeader">
+            <!-- JS 动态渲染 -->
+        </div>
+
+        <!-- 快速跳转导航条 -->
+        <div class="detail-nav-bar" id="detailNavBar">
+            <!-- JS 动态渲染 -->
+        </div>
+
+        <!-- 项目数据区域 -->
+        <div class="detail-section" id="sectionProjectData" style="display:none;">
+            <div class="detail-section-anchor" id="anchorProjectData"></div>
+            <div class="detail-section-header">
+                <h3 class="detail-section-title">
+                    <i data-lucide="bar-chart-3" class="detail-section-icon"></i>
+                    项目数据
+                </h3>
+                <button class="btn-export" id="btnExportData">
+                    <i data-lucide="download"></i>
+                    导出数据
+                </button>
+            </div>
+            <!-- 时间筛选器 -->
+            <div class="data-time-filter" id="dataTimeFilter">
+                <span class="filter-label">时间区间：</span>
+                <div class="date-range-picker" id="dateRangePicker">
+                    <div class="date-input-group">
+                        <i data-lucide="calendar" class="date-icon"></i>
+                        <input type="date" class="date-input" id="dateStart" />
+                        <span class="date-sep">—</span>
+                        <input type="date" class="date-input" id="dateEnd" />
+                    </div>
+                </div>
+            </div>
+            <!-- 指标卡 -->
+            <div class="data-metric-cards" id="dataMetricCards">
+                <!-- JS 动态渲染：左侧大卡 + 右侧小卡网格 -->
+            </div>
+            <!-- 分月日均柱形图 -->
+            <div class="chart-container">
+                <h4 class="chart-title">分月日均授权作品数</h4>
+                <div class="chart-wrapper" id="chartMonthly">
+                    <!-- JS 动态渲染柱形图 -->
+                </div>
+            </div>
+            <!-- 分季度日均柱形图 -->
+            <div class="chart-container">
+                <h4 class="chart-title">分季度日均授权作品数</h4>
+                <div class="chart-legend" id="chartQuarterlyLegend">
+                    <!-- JS 动态渲染图例 -->
+                </div>
+                <div class="chart-wrapper" id="chartQuarterly">
+                    <!-- JS 动态渲染柱形图 -->
+                </div>
+            </div>
+        </div>
+
+        <!-- 授权作品管理区域 -->
+        <div class="detail-section" id="sectionAuthDetails" style="display:none;">
+            <div class="detail-section-anchor" id="anchorAuthDetails"></div>
+            <div class="detail-section-header">
+                <h3 class="detail-section-title">
+                    <i data-lucide="file-text" class="detail-section-icon"></i>
+                    授权片单管理
+                </h3>
+                <span class="auth-detail-count" id="authDetailCount"></span>
+            </div>
+            <!-- 筛选器 -->
+            <div class="auth-detail-filters">
+                <div class="filter-group">
+                    <label class="filter-label">授权状态</label>
+                    <div class="select-wrapper">
+                        <select class="filter-select" id="filterStatus">
+                            <option value="全部">全部</option>
+                            <option value="授权中">授权中</option>
+                            <option value="已回收">已回收</option>
+                        </select>
+                        <i data-lucide="chevron-down" class="select-icon"></i>
+                    </div>
+                </div>
+                <div class="filter-group">
+                    <label class="filter-label">品类</label>
+                    <div class="select-wrapper">
+                        <select class="filter-select" id="filterCategory">
+                            <option value="全部">全部</option>
+                            <option value="电视剧">电视剧</option>
+                            <option value="动漫">动漫</option>
+                            <option value="综艺">综艺</option>
+                            <option value="电影">电影</option>
+                            <option value="纪录片">纪录片</option>
+                            <option value="少儿">少儿</option>
+                            <option value="横屏短剧">横屏短剧</option>
+                        </select>
+                        <i data-lucide="chevron-down" class="select-icon"></i>
+                    </div>
+                </div>
+                <!-- 批量操作栏 -->
+                <div class="batch-approval-bar" id="batchApprovalBar" style="display:none;">
+                    <span class="batch-count">已选中 0 条</span>
+                    <button class="btn-batch-approval" onclick="openBatchApprovalModal()">
+                        <i data-lucide="check-circle" style="width:14px;height:14px;"></i>
+                        批量审批
+                    </button>
+                </div>
+            </div>
+            <div class="auth-detail-table-wrap" id="authDetailTable">
+                <!-- JS 动态渲染 -->
+            </div>
+        </div>
+
+        <!-- 项目审批管理区域 -->
+        <div class="detail-section" id="sectionApprovals" style="display:none;">
+            <div class="detail-section-anchor" id="anchorApprovals"></div>
+            <div class="detail-section-header">
+                <h3 class="detail-section-title">
+                    <i data-lucide="clipboard-check" class="detail-section-icon"></i>
+                    项目审批管理
+                </h3>
+            </div>
+            <!-- 我的审批 / 我的申请 Tab切换 -->
+            <div class="approval-tabs" id="approvalTabs">
+                <div class="approval-tab active" data-approval-tab="myApproval">
+                    <i data-lucide="check-square" style="width:14px;height:14px;"></i>
+                    <span>我的审批</span>
+                    <span class="approval-tab-badge" id="myApprovalBadge">0</span>
+                </div>
+                <div class="approval-tab" data-approval-tab="myApplication">
+                    <i data-lucide="file-edit" style="width:14px;height:14px;"></i>
+                    <span>我的申请</span>
+                </div>
+            </div>
+            <!-- 我的审批内容 -->
+            <div class="approval-tab-content" id="tabMyApproval">
+                <div class="approval-list" id="approvalList">
+                    <!-- JS 动态渲染 -->
+                </div>
+            </div>
+            <!-- 我的申请内容 -->
+            <div class="approval-tab-content" id="tabMyApplication" style="display:none;">
+                <div class="application-list" id="applicationList">
+                    <!-- JS 动态渲染 -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 授权审查二级页 -->
+    <div class="rights-review-detail-page" id="rightsReviewDetailPage" style="display:none;">
+        <!-- 面包屑导航 -->
+        <div class="detail-breadcrumb">
+            <span class="breadcrumb-link" id="btnBackToRightsReview">授权审查</span>
+            <i data-lucide="chevron-right" class="breadcrumb-sep"></i>
+            <span class="breadcrumb-current" id="rrDetailPageTitle">作品授权详情</span>
+        </div>
+
+        <!-- 作品基础信息 -->
+        <div class="rrd-info-card" id="rrdInfoCard">
+            <!-- JS 动态渲染 -->
+        </div>
+
+        <!-- 审核节点条 -->
+        <div class="rrd-review-nodes" id="rrdReviewNodes">
+            <!-- JS 动态渲染 -->
+        </div>
+
+        <!-- 待审权利信息 -->
+        <div class="rrd-rights-section">
+            <div class="rrd-rights-header">
+                <h3 class="rrd-rights-title">
+                    <i data-lucide="shield-check" style="width:18px;height:18px;"></i>
+                    待审权利信息
+                </h3>
+            </div>
+            <div class="rrd-rights-list" id="rrdRightsList">
+                <!-- JS 动态渲染 -->
+            </div>
+        </div>
+    </div>
+
+    <!-- 终止授权确认弹窗 -->
+    <div class="terminate-modal-mask" id="terminateAuthModal" style="display:none;">
+        <div class="terminate-modal-content">
+            <div class="terminate-modal-header">
+                <h3 class="terminate-modal-title">终止授权确认</h3>
+                <button class="terminate-modal-close" id="btnTerminateClose">
+                    <i data-lucide="x" style="width:18px;height:18px;"></i>
+                </button>
+            </div>
+            <div class="terminate-modal-body">
+                <div class="terminate-modal-icon">
+                    <i data-lucide="alert-triangle"></i>
+                </div>
+                <p class="terminate-modal-desc" id="terminateModalDesc">确认申请终止该作品的授权吗？</p>
+                <p class="terminate-modal-sub">终止授权申请提交后，将进入审批流程，审批通过后授权状态将变更为"已回收"。</p>
+            </div>
+            <div class="terminate-modal-footer">
+                <button class="btn-secondary terminate-modal-cancel" id="btnTerminateCancel">取消</button>
+                <button class="btn-primary terminate-modal-confirm" id="btnTerminateConfirm">确认申请</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 重新授权确认弹窗 -->
+    <div class="reauth-modal-mask" id="reauthModal" style="display:none;">
+        <div class="reauth-modal-content">
+            <div class="reauth-modal-header">
+                <h3 class="reauth-modal-title">重新授权确认</h3>
+                <button class="reauth-modal-close" id="btnReauthClose">
+                    <i data-lucide="x" style="width:18px;height:18px;"></i>
+                </button>
+            </div>
+            <div class="reauth-modal-body">
+                <div class="reauth-modal-icon">
+                    <i data-lucide="refresh-cw"></i>
+                </div>
+                <p class="reauth-modal-desc" id="reauthModalDesc">确认申请重新授权该作品吗？</p>
+                <p class="reauth-modal-sub">重新授权申请提交后，将进入审批流程，审批通过后授权状态将恢复为"授权中"。</p>
+            </div>
+            <div class="reauth-modal-footer">
+                <button class="btn-secondary reauth-modal-cancel" id="btnReauthCancel">取消</button>
+                <button class="btn-primary reauth-modal-confirm" id="btnReauthConfirm">确认申请</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 查看申请详情弹窗 -->
+    <div class="view-app-modal-mask" id="viewApplicationModal" style="display:none;">
+        <div class="view-app-modal-content">
+            <div class="view-app-modal-header">
+                <h3 class="view-app-modal-title">申请详情</h3>
+                <button class="view-app-modal-close" id="btnViewAppClose">
+                    <i data-lucide="x" style="width:18px;height:18px;"></i>
+                </button>
+            </div>
+            <div class="view-app-modal-body">
+                <div class="view-app-modal-icon">
+                    <i data-lucide="file-search"></i>
+                </div>
+                <div class="view-app-info-list">
+                    <div class="view-app-info-row">
+                        <span class="view-app-label">作品名称</span>
+                        <span class="view-app-value" id="viewAppWorkName">-</span>
+                    </div>
+                    <div class="view-app-info-row">
+                        <span class="view-app-label">申请类型</span>
+                        <span class="view-app-value" id="viewAppType">-</span>
+                    </div>
+                    <div class="view-app-info-row">
+                        <span class="view-app-label">申请时间</span>
+                        <span class="view-app-value" id="viewAppTime">-</span>
+                    </div>
+                    <div class="view-app-info-row">
+                        <span class="view-app-label">审批状态</span>
+                        <span class="view-app-status-tag" id="viewAppStatus">审批中</span>
+                    </div>
+                </div>
+            </div>
+            <div class="view-app-modal-footer">
+                <button class="btn-primary view-app-modal-ok" id="btnViewAppOk">知道了</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 空白跳转页（占位） -->
+    <div class="blank-page-overlay" id="blankPageOverlay" style="display:none;">
+        <div class="blank-page-content">
+            <div class="blank-page-icon">
+                <i data-lucide="construction"></i>
+            </div>
+            <h3 class="blank-page-title" id="blankPageTitle">页面开发中</h3>
+            <p class="blank-page-desc" id="blankPageDesc">该功能页面正在开发中，敬请期待</p>
+            <button class="btn-back" id="btnBlankBack">
+                <i data-lucide="arrow-left"></i>
+                <span>返回</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- 批量审批弹窗 -->
+    <div class="batch-modal-mask" id="batchApprovalModal" style="display:none;">
+        <div class="batch-modal-content">
+            <div class="batch-modal-header">
+                <h3 class="batch-modal-title">批量审批</h3>
+                <button class="batch-modal-close" onclick="closeBatchApprovalModal()">
+                    <i data-lucide="x" style="width:18px;height:18px;"></i>
+                </button>
+            </div>
+            <div class="batch-modal-body">
+                <p class="batch-modal-desc">已选中0条作品，请选择审批结论</p>
+                <div class="batch-options">
+                    <label class="batch-option">
+                        <input type="radio" name="batchApprovalResult" value="可授权" class="batch-option-radio">
+                        <span class="batch-option-card">
+                            <i data-lucide="check-circle" class="batch-option-icon authorizable"></i>
+                            <span class="batch-option-text">可授权</span>
+                        </span>
+                    </label>
+                    <label class="batch-option">
+                        <input type="radio" name="batchApprovalResult" value="不可授权" class="batch-option-radio">
+                        <span class="batch-option-card">
+                            <i data-lucide="x-circle" class="batch-option-icon unauthorized"></i>
+                            <span class="batch-option-text">不可授权</span>
+                        </span>
+                    </label>
+                </div>
+            </div>
+            <div class="batch-modal-footer">
+                <button class="btn-secondary batch-modal-cancel" onclick="closeBatchApprovalModal()">取消</button>
+                <button class="btn-primary batch-modal-confirm" disabled onclick="confirmBatchApproval()">确认审批</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 添加审查IP弹窗 -->
+    <div class="add-auth-ip-modal-mask" id="addAuthIPModal" style="display:none;">
+        <div class="add-auth-ip-modal-content">
+            <div class="add-auth-ip-modal-header">
+                <h3 class="add-auth-ip-modal-title">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                    添加审查IP
+                </h3>
+                <button class="add-auth-ip-modal-close" id="btnAddAuthIPClose">
+                    <i data-lucide="x" style="width:18px;height:18px;"></i>
+                </button>
+            </div>
+            <div class="add-auth-ip-modal-body">
+                <!-- 风险提示 -->
+                <div class="add-auth-ip-risk-alert">
+                    <div class="add-auth-ip-risk-icon">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                    </div>
+                    <div class="add-auth-ip-risk-text">
+                        <strong>风险提示：</strong>人工添加审查IP为高风险敏感操作，添加后将进入正式授权审查流程，请仔细核对后再添加
+                    </div>
+                </div>
+                <!-- 添加表单 -->
+                <div class="add-auth-ip-form">
+                    <div class="add-auth-ip-form-group">
+                        <label class="add-auth-ip-label">
+                            版权ID
+                            <span class="add-auth-ip-required">*</span>
+                        </label>
+                        <input type="text" class="add-auth-ip-input mono" id="addAuthBqid" placeholder="请输入版权ID，如：bq2078802" autocomplete="off">
+                        <span class="add-auth-ip-error" id="addAuthBqidError"></span>
+                    </div>
+                    <div class="add-auth-ip-form-group">
+                        <label class="add-auth-ip-label">
+                            作品名称
+                        </label>
+                        <div class="add-auth-ip-autofill-field" id="addAuthWorkNameField">
+                            <span class="add-auth-ip-autofill-placeholder">输入版权ID后自动填充</span>
+                        </div>
+                        <span class="add-auth-ip-error" id="addAuthWorkNameError"></span>
+                    </div>
+                    <div class="add-auth-ip-form-group">
+                        <label class="add-auth-ip-label">
+                            待审查合同号
+                        </label>
+                        <input type="text" class="add-auth-ip-input mono" id="addAuthRightsId" placeholder="多条合同号请用 ；分隔，如：T180-PCG-2024121700007；T180-PCG-2024121700010" title="多条合同号请用；分隔，如：T180-PCG-2024121700007；T180-PCG-2024121700010">
+                        <span class="add-auth-ip-error" id="addAuthRightsIdError"></span>
+                    </div>
+                    <div class="add-auth-ip-form-group">
+                        <label class="add-auth-ip-label">
+                            初审人审结论
+                        </label>
+                        <div class="add-auth-ip-readonly-field">
+                            <span class="add-auth-ip-defect-tag">
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                                权利瑕疵
+                            </span>
+                            <span class="add-auth-ip-readonly-hint">（系统默认，不可修改）</span>
+                        </div>
+                    </div>
+                    <div class="add-auth-ip-form-group">
+                        <label class="add-auth-ip-label">
+                            初审瑕疵原因
+                            <span class="add-auth-ip-required">*</span>
+                        </label>
+                        <div class="add-auth-ip-textarea-wrap">
+                            <textarea class="add-auth-ip-textarea" id="addAuthDefectReason" placeholder="请详细描述初审瑕疵原因..." maxlength="500" rows="4"></textarea>
+                            <span class="add-auth-ip-char-count"><span id="addAuthCharCount">0</span>/500</span>
+                        </div>
+                        <span class="add-auth-ip-error" id="addAuthDefectReasonError"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="add-auth-ip-modal-footer">
+                <button class="btn-secondary add-auth-ip-cancel" id="btnAddAuthIPCancel">取消添加</button>
+                <button class="btn-primary add-auth-ip-confirm" id="btnAddAuthIPConfirm">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                    确认添加
+                </button>
+            </div>
+        </div>
+    </div>

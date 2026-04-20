@@ -1,0 +1,33 @@
+{
+  "id": "module-material-query",
+  "name": "素材查询与申用",
+  "version": "1.0.0",
+  "description": "在IP维度展示素材及IP信息数据，支持电视剧、动漫、综艺三个品类切换",
+  "category": "商业化素材库",
+  "priority": "P1",
+  "status": "completed",
+  "author": "AI Assistant",
+  "createdAt": "2026-01-16",
+  "features": [
+    "IP维度素材展示",
+    "三品类切换（电视剧/动漫/综艺）",
+    "IP卡片展示（海报+基本信息+状态+交互数据）",
+    "分页展示（每页20个IP）",
+    "点击跳转二级页面（素材明细/项目列表）"
+  ],
+  "dependencies": {
+    "lucide": "latest",
+    "framework.css": "^0.2.0",
+    "framework.js": "^0.2.0"
+  },
+  "files": {
+    "html": "index.html",
+    "css": "style.css",
+    "js": "main.js",
+    "data": "data.json"
+  },
+  "routes": {
+    "main": "/modules/material-query/index.html",
+    "detail": "/modules/material-query/detail.html (未开发)"
+  }
+}

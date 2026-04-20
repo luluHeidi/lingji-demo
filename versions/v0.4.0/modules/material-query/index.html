@@ -1,0 +1,121 @@
+<div class="material-query-page">
+    <!-- 页面导航 -->
+    <div class="page-breadcrumb">
+        <div class="breadcrumb-item active">
+            <i data-lucide="folder" class="breadcrumb-icon"></i>
+            <span>素材查询与申用</span>
+        </div>
+    </div>
+
+    <!-- 品类Tab切换 -->
+    <div class="category-tabs">
+        <div class="category-tab active" data-category="tvSeries">
+            <i data-lucide="tv" class="tab-icon"></i>
+            <span>电视剧</span>
+        </div>
+        <div class="category-tab" data-category="animation">
+            <i data-lucide="sparkles" class="tab-icon"></i>
+            <span>动漫</span>
+        </div>
+        <div class="category-tab" data-category="variety">
+            <i data-lucide="mic" class="tab-icon"></i>
+            <span>综艺</span>
+        </div>
+    </div>
+
+    <!-- 筛选器和搜索模块 -->
+    <div class="filter-section">
+        <!-- IP状态筛选 -->
+        <div class="filter-group">
+            <label class="filter-label">IP状态</label>
+            <div class="select-wrapper">
+                <select class="filter-select" id="statusSelect">
+                    <option value="all">全部</option>
+                    <option value="已立项">已立项</option>
+                    <option value="开发中">开发中</option>
+                    <option value="已过审">已过审</option>
+                    <option value="上映中">上映中</option>
+                    <option value="已完播">已完播</option>
+                </select>
+                <i data-lucide="chevron-down" class="select-icon"></i>
+            </div>
+        </div>
+
+        <!-- IP等级筛选 -->
+        <div class="filter-group">
+            <label class="filter-label">IP等级</label>
+            <div class="select-wrapper">
+                <select class="filter-select" id="levelSelect">
+                    <option value="all">全部</option>
+                    <option value="S+">S+</option>
+                    <option value="S">S</option>
+                    <option value="A+">A+</option>
+                    <option value="A">A</option>
+                </select>
+                <i data-lucide="chevron-down" class="select-icon"></i>
+            </div>
+        </div>
+
+        <!-- 搜索框 -->
+        <div class="search-group">
+            <div class="search-input-wrapper">
+                <i data-lucide="search" class="search-icon"></i>
+                <input 
+                    type="text" 
+                    class="search-input" 
+                    placeholder="搜索IP名称"
+                    id="searchInput"
+                />
+                <button class="search-clear" id="searchClear" style="display: none;">
+                    <i data-lucide="x"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- IP卡片列表容器 -->
+    <div class="ip-cards-container" id="ipCardsContainer">
+        <!-- 卡片将由JS动态生成 -->
+    </div>
+
+    <!-- 分页器 -->
+    <div class="pagination-container">
+        <button class="pagination-btn" id="prevPageBtn" disabled>
+            <i data-lucide="chevron-left"></i>
+            上一页
+        </button>
+        <div class="page-info">
+            第 <span id="currentPage">1</span> / <span id="totalPages">1</span> 页
+        </div>
+        <button class="pagination-btn" id="nextPageBtn">
+            下一页
+            <i data-lucide="chevron-right"></i>
+        </button>
+    </div>
+</div>
+
+<!-- 二级页面占位（功能开发中） -->
+<div class="detail-page-placeholder" id="detailPagePlaceholder" style="display: none;">
+    <div class="page-breadcrumb">
+        <div class="breadcrumb-item" id="backToList">
+            <i data-lucide="folder" class="breadcrumb-icon"></i>
+            <span>素材查询与申用</span>
+        </div>
+        <i data-lucide="chevron-right" class="breadcrumb-separator"></i>
+        <div class="breadcrumb-item active">
+            <span id="currentIPName"></span>
+        </div>
+    </div>
+
+    <div class="placeholder-content">
+        <div class="placeholder-icon">
+            <i data-lucide="construction" class="icon"></i>
+        </div>
+        <h3>功能开发中</h3>
+        <p id="placeholderMessage"></p>
+        <button class="back-btn" id="backBtn">
+            <i data-lucide="arrow-left"></i>
+            返回列表
+        </button>
+    </div>
+</div>

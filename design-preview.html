@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>腾讯视频IP商业化系统 - 设计规范预览</title>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <style>
+        :root {
+            /* 主色系 - 腾讯蓝 */
+            --primary-color: #006eff;
+            --primary-light: #3d8eff;
+            --primary-dark: #0050cc;
+            --primary-lighter: #e6f2ff;
+            
+            /* 功能色 - 低饱和度 */
+            --success-color: #00b578;
+            --success-light: #e6f9f0;
+            --warning-color: #ff8f1f;
+            --warning-light: #fff3e6;
+            --error-color: #ee3f4d;
+            --error-light: #ffeef0;
+            --info-color: #1890ff;
+            --info-light: #e6f4ff;
+            
+            /* IP等级色 */
+            --level-s: #8b5cf6;
+            --level-a: #3b82f6;
+            --level-b: #64748b;
+            
+            /* 文本色 */
+            --text-primary: #1a1a1a;
+            --text-secondary: #666666;
+            --text-placeholder: #999999;
+            --text-inverse: #ffffff;
+            
+            /* 背景色 */
+            --bg-primary: #ffffff;
+            --bg-secondary: #f8f9fa;
+            --bg-tertiary: #f0f2f5;
+            
+            /* 边框色 */
+            --border-primary: #e5e7eb;
+            --border-light: #f0f2f5;
+            
+            /* 阴影 */
+            --shadow-xs: 0 1px 2px 0 rgba(0, 0, 0, 0.03);
+            --shadow-sm: 0 2px 8px 0 rgba(0, 0, 0, 0.04);
+            --shadow-md: 0 4px 16px 0 rgba(0, 0, 0, 0.08);
+            --shadow-lg: 0 8px 24px 0 rgba(0, 0, 0, 0.10);
+            --shadow-xl: 0 12px 32px 0 rgba(0, 0, 0, 0.12);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+            background: var(--bg-secondary);
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+
+        /* 头部 */
+        .header {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-light) 100%);
+            color: white;
+            padding: 48px 24px;
+            text-align: center;
+            box-shadow: var(--shadow-md);
+        }
+
+        .header h1 {
+            font-size: 32px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        .header p {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+
+        /* 容器 */
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 32px 24px;
+        }
+
+        .section {
+            background: white;
+            border-radius: 8px;
+            padding: 32px;
+            margin-bottom: 24px;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .section-title {
+            font-size: 20px;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 24px;
+            padding-bottom: 16px;
+            border-bottom: 2px solid var(--border-primary);
+        }
+
+        .sub-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin: 24px 0 16px 0;
+        }
+
+        .divider {
+            height: 1px;
+            background: var(--border-primary);
+            margin: 24px 0;
+        }
+
+        /* 网格布局 */
+        .grid {
+            display: grid;
+            gap: 20px;
+        }
+
+        .grid-2 { grid-template-columns: repeat(2, 1fr); }
+        .grid-3 { grid-template-columns: repeat(3, 1fr); }
+        .grid-4 { grid-template-columns: repeat(4, 1fr); }
+        .grid-5 { grid-template-columns: repeat(5, 1fr); }
+
+        /* 色卡 */
+        .color-card {
+            padding: 32px 20px;
+            border-radius: 8px;
+            text-align: center;
+            color: white;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .color-name {
+            font-size: 14px;
+            font-weight: 500;
+            margin-bottom: 8px;
+        }
+
+        .color-code {
+            font-size: 12px;
+            font-family: 'Monaco', 'Courier New', monospace;
+            opacity: 0.9;
+        }
+
+        .primary { background: var(--primary-color); }
+        .primary-light { background: var(--primary-light); }
+        .primary-dark { background: var(--primary-dark); }
+        .primary-lighter { background: var(--primary-lighter); color: var(--primary-color); }
+
+        .success { background: var(--success-color); }
+        .warning { background: var(--warning-color); }
+        .error { background: var(--error-color); }
+        .info { background: var(--info-color); }
+
+        /* IP等级图标 */
+        .level-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 64px;
+            height: 64px;
+            border-radius: 8px;
+            color: white;
+            font-size: 24px;
+            font-weight: 700;
+            transition: all 0.3s ease;
+        }
+
+        .level-icon:hover {
+            transform: scale(1.05);
+        }
+
+        .level-splus {
+            background: linear-gradient(135deg, #ffd700 0%, #ffb700 100%);
+            box-shadow: 0 4px 12px 0 rgba(255, 215, 0, 0.4);
+        }
+
+        .level-s {
+            background: linear-gradient(135deg, #a78bfa 0%, #8b5cf6 100%);
+            box-shadow: 0 4px 12px 0 rgba(139, 92, 246, 0.3);
+        }
+
+        .level-a {
+            background: linear-gradient(135deg, #60a5fa 0%, #3b82f6 100%);
+            box-shadow: 0 4px 12px 0 rgba(59, 130, 246, 0.3);
+        }
+
+        .level-b {
+            background: #64748b;
+            box-shadow: 0 4px 12px 0 rgba(100, 116, 139, 0.3);
+        }
+
+        /* 按钮 */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 24px;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: none;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-light) 100%);
+            color: white;
+            box-shadow: 0 2px 8px 0 rgba(0, 110, 255, 0.2);
+        }
+
+        .btn-primary:hover {
+            box-shadow: 0 4px 12px 0 rgba(0, 110, 255, 0.3);
+            transform: translateY(-1px);
+        }
+
+        .btn-secondary {
+            background: white;
+            color: var(--primary-color);
+            border: 1px solid var(--primary-color);
+        }
+
+        .btn-secondary:hover {
+            background: var(--primary-lighter);
+        }
+
+        .btn-success {
+            background: var(--success-color);
+            color: white;
+        }
+
+        .btn-warning {
+            background: var(--warning-color);
+            color: white;
+        }
+
+        .btn-error {
+            background: var(--error-color);
+            color: white;
+        }
+
+        .btn-group {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        /* 表单 */
+        .form-group {
+            margin-bottom: 16px;
+        }
+
+        .form-label {
+            display: block;
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--text-primary);
+            margin-bottom: 8px;
+        }
+
+        .form-input {
+            width: 100%;
+            height: 40px;
+            padding: 0 12px;
+            border: 1px solid var(--border-primary);
+            border-radius: 6px;
+            font-size: 14px;
+            transition: all 0.3s ease;
+        }
+
+        .form-input:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(0, 110, 255, 0.1);
+        }
+
+        /* 卡片 */
+        .card {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            border: 1px solid var(--border-primary);
+            box-shadow: var(--shadow-sm);
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            box-shadow: var(--shadow-md);
+            transform: translateY(-2px);
+        }
+
+        .card-title {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        /* 海报 */
+        .poster-container {
+            position: relative;
+            width: 100%;
+            padding-top: 133.33%;
+            border-radius: 6px;
+            overflow: hidden;
+            background: linear-gradient(135deg, #f0f2f5 0%, #e5e7eb 100%);
+        }
+
+        .poster-placeholder {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #e6f2ff 0%, #f0f6ff 100%);
+            color: var(--text-secondary);
+            font-size: 14px;
+            font-weight: 500;
+            text-align: center;
+            padding: 16px;
+        }
+
+        /* 告警图标 */
+        .alert-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            font-size: 20px;
+        }
+
+        .alert-success {
+            background: var(--success-light);
+            color: var(--success-color);
+        }
+
+        .alert-warning {
+            background: var(--warning-light);
+            color: var(--warning-color);
+        }
+
+        .alert-error {
+            background: var(--error-light);
+            color: var(--error-color);
+        }
+
+        .alert-info {
+            background: var(--info-light);
+            color: var(--info-color);
+        }
+
+        /* 阴影展示 */
+        .shadow-demo {
+            padding: 24px;
+            background: white;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .shadow-xs { box-shadow: var(--shadow-xs); }
+        .shadow-sm { box-shadow: var(--shadow-sm); }
+        .shadow-md { box-shadow: var(--shadow-md); }
+        .shadow-lg { box-shadow: var(--shadow-lg); }
+
+        /* 提示标签 */
+        .tag {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 500;
+        }
+
+        .tag-primary {
+            background: var(--primary-lighter);
+            color: var(--primary-color);
+        }
+
+        @media (max-width: 768px) {
+            .grid-2, .grid-3, .grid-4, .grid-5 {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 页面头部 -->
+    <div class="header">
+        <h1>🎨 腾讯视频IP商业化系统</h1>
+        <p>设计规范可视化预览 | 理性·科技·简约·清透</p>
+    </div>
+
+    <div class="container">
+        <!-- 主色系 - 腾讯蓝 -->
+        <div class="section">
+            <h2 class="section-title">🎨 主色系 - 腾讯蓝</h2>
+            <div class="grid grid-4">
+                <div class="color-card primary">
+                    <div class="color-name">主色</div>
+                    <div class="color-code">#006eff</div>
+                </div>
+                <div class="color-card primary-light">
+                    <div class="color-name">主色浅色</div>
+                    <div class="color-code">#3d8eff</div>
+                </div>
+                <div class="color-card primary-dark">
+                    <div class="color-name">主色深色</div>
+                    <div class="color-code">#0050cc</div>
+                </div>
+                <div class="color-card primary-lighter">
+                    <div class="color-name">主色超浅</div>
+                    <div class="color-code">#e6f2ff</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 功能色系 - 低饱和度 -->
+        <div class="section">
+            <h2 class="section-title">🌈 功能色系（低饱和度·克制优雅）</h2>
+            <div class="grid grid-4">
+                <div class="color-card success">
+                    <div class="color-name">成功色</div>
+                    <div class="color-code">#00b578</div>
+                </div>
+                <div class="color-card warning">
+                    <div class="color-name">警告色</div>
+                    <div class="color-code">#ff8f1f</div>
+                </div>
+                <div class="color-card error">
+                    <div class="color-name">错误色</div>
+                    <div class="color-code">#ee3f4d</div>
+                </div>
+                <div class="color-card info">
+                    <div class="color-name">信息色</div>
+                    <div class="color-code">#1890ff</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- IP等级图标 -->
+        <div class="section">
+            <h2 class="section-title">⭐ IP等级图标</h2>
+            <div class="grid grid-4">
+                <div style="text-align: center;">
+                    <div class="level-icon level-splus">S+</div>
+                    <div style="margin-top: 12px; color: var(--text-secondary); font-size: 14px;">顶级IP - 金色渐变</div>
+                </div>
+                <div style="text-align: center;">
+                    <div class="level-icon level-s">S</div>
+                    <div style="margin-top: 12px; color: var(--text-secondary); font-size: 14px;">高级IP - 神秘紫</div>
+                </div>
+                <div style="text-align: center;">
+                    <div class="level-icon level-a">A</div>
+                    <div style="margin-top: 12px; color: var(--text-secondary); font-size: 14px;">优质IP - 清透蓝</div>
+                </div>
+                <div style="text-align: center;">
+                    <div class="level-icon level-b">B</div>
+                    <div style="margin-top: 12px; color: var(--text-secondary); font-size: 14px;">普通IP - 中性灰</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 告警提示图标 -->
+        <div class="section">
+            <h2 class="section-title">🔔 告警提示图标</h2>
+            <div class="grid grid-4">
+                <div style="text-align: center;">
+                    <div class="alert-icon alert-success">
+                        <i data-lucide="check"></i>
+                    </div>
+                    <div style="margin-top: 12px; color: var(--text-secondary); font-size: 14px;">成功提示</div>
+                </div>
+                <div style="text-align: center;">
+                    <div class="alert-icon alert-info">
+                        <i data-lucide="info"></i>
+                    </div>
+                    <div style="margin-top: 12px; color: var(--text-secondary); font-size: 14px;">信息提示</div>
+                </div>
+                <div style="text-align: center;">
+                    <div class="alert-icon alert-warning">
+                        <i data-lucide="alert-triangle"></i>
+                    </div>
+                    <div style="margin-top: 12px; color: var(--text-secondary); font-size: 14px;">警告提示</div>
+                </div>
+                <div style="text-align: center;">
+                    <div class="alert-icon alert-error">
+                        <i data-lucide="x"></i>
+                    </div>
+                    <div style="margin-top: 12px; color: var(--text-secondary); font-size: 14px;">错误提示</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 按钮组件 -->
+        <div class="section">
+            <h2 class="section-title">🔘 按钮组件</h2>
+            
+            <h3 class="sub-title">按钮类型</h3>
+            <div class="btn-group">
+                <button class="btn btn-primary">
+                    <i data-lucide="check"></i>
+                    主要按钮
+                </button>
+                <button class="btn btn-secondary">
+                    <i data-lucide="edit"></i>
+                    次要按钮
+                </button>
+                <button class="btn btn-success">
+                    <i data-lucide="check-circle"></i>
+                    成功按钮
+                </button>
+                <button class="btn btn-warning">
+                    <i data-lucide="alert-triangle"></i>
+                    警告按钮
+                </button>
+                <button class="btn btn-error">
+                    <i data-lucide="trash-2"></i>
+                    错误按钮
+                </button>
+            </div>
+        </div>
+
+        <!-- 表单组件 -->
+        <div class="section">
+            <h2 class="section-title">📝 表单组件</h2>
+            <div class="grid grid-2">
+                <div class="form-group">
+                    <label class="form-label">IP名称</label>
+                    <input type="text" class="form-input" placeholder="请输入IP名称...">
+                </div>
+                <div class="form-group">
+                    <label class="form-label">IP类型</label>
+                    <select class="form-input">
+                        <option>电视剧</option>
+                        <option>综艺</option>
+                        <option>动漫</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <!-- 信息卡片 -->
+        <div class="section">
+            <h2 class="section-title">📇 信息卡片</h2>
+            <div class="grid grid-3">
+                <div class="card">
+                    <div class="card-title">数据卡片</div>
+                    <div style="color: var(--text-secondary); font-size: 14px;">
+                        清透的阴影效果，悬停时有微交互反馈
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-title">IP资产卡片</div>
+                    <div style="color: var(--text-secondary); font-size: 14px;">
+                        统一的圆角和间距，视觉简约专业
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-title">业务流程卡片</div>
+                    <div style="color: var(--text-secondary); font-size: 14px;">
+                        低饱和度配色，长时间使用不疲劳
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 影视剧海报 -->
+        <div class="section">
+            <h2 class="section-title">🎬 影视剧海报展示（3:4比例）</h2>
+            <div class="grid grid-5">
+                <div class="poster-container">
+                    <div class="poster-placeholder">IP名称</div>
+                </div>
+                <div class="poster-container">
+                    <div class="poster-placeholder">IP名称</div>
+                </div>
+                <div class="poster-container">
+                    <div class="poster-placeholder">IP名称</div>
+                </div>
+                <div class="poster-container">
+                    <div class="poster-placeholder">IP名称</div>
+                </div>
+                <div class="poster-container">
+                    <div class="poster-placeholder">IP名称</div>
+                </div>
+            </div>
+            <div style="margin-top: 16px; color: var(--text-secondary); font-size: 14px;">
+                ⚡ 占位图采用渐变背景+文字，高级优雅，适合无海报场景
+            </div>
+        </div>
+
+        <!-- 阴影系统 -->
+        <div class="section">
+            <h2 class="section-title">💎 阴影系统（清透轻量）</h2>
+            <div class="grid grid-4">
+                <div class="shadow-demo shadow-xs">
+                    <strong>超轻阴影</strong>
+                    <p style="font-size: 12px; color: var(--text-placeholder); margin-top: 8px;">
+                        shadow-xs<br>
+                        <code>rgba(0,0,0,0.03)</code>
+                    </p>
+                </div>
+                <div class="shadow-demo shadow-sm">
+                    <strong>轻微阴影</strong>
+                    <p style="font-size: 12px; color: var(--text-placeholder); margin-top: 8px;">
+                        shadow-sm<br>
+                        <code>rgba(0,0,0,0.04)</code>
+                    </p>
+                </div>
+                <div class="shadow-demo shadow-md">
+                    <strong>标准阴影</strong>
+                    <p style="font-size: 12px; color: var(--text-placeholder); margin-top: 8px;">
+                        shadow-md<br>
+                        <code>rgba(0,0,0,0.08)</code>
+                    </p>
+                </div>
+                <div class="shadow-demo shadow-lg">
+                    <strong>重阴影</strong>
+                    <p style="font-size: 12px; color: var(--text-placeholder); margin-top: 8px;">
+                        shadow-lg<br>
+                        <code>rgba(0,0,0,0.10)</code>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 线形图标 -->
+        <div class="section">
+            <h2 class="section-title">🎯 线形图标（Lucide Icons）</h2>
+            <div class="grid grid-5">
+                <div style="text-align: center; padding: 20px;">
+                    <i data-lucide="database" style="width: 32px; height: 32px; color: var(--primary-color);"></i>
+                    <div style="margin-top: 8px; font-size: 12px; color: var(--text-secondary);">数据库</div>
+                </div>
+                <div style="text-align: center; padding: 20px;">
+                    <i data-lucide="trending-up" style="width: 32px; height: 32px; color: var(--primary-color);"></i>
+                    <div style="margin-top: 8px; font-size: 12px; color: var(--text-secondary);">趋势上升</div>
+                </div>
+                <div style="text-align: center; padding: 20px;">
+                    <i data-lucide="pie-chart" style="width: 32px; height: 32px; color: var(--primary-color);"></i>
+                    <div style="margin-top: 8px; font-size: 12px; color: var(--text-secondary);">饼图</div>
+                </div>
+                <div style="text-align: center; padding: 20px;">
+                    <i data-lucide="zap" style="width: 32px; height: 32px; color: var(--primary-color);"></i>
+                    <div style="margin-top: 8px; font-size: 12px; color: var(--text-secondary);">系统标识</div>
+                </div>
+                <div style="text-align: center; padding: 20px;">
+                    <i data-lucide="git-branch" style="width: 32px; height: 32px; color: var(--primary-color);"></i>
+                    <div style="margin-top: 8px; font-size: 12px; color: var(--text-secondary);">分支</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 标签徽章 -->
+        <div class="section">
+            <h2 class="section-title">🏷️ 标签徽章</h2>
+            <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+                <span class="tag tag-primary">腾讯蓝主色</span>
+                <span class="tag" style="background: var(--success-light); color: var(--success-color);">低饱和度</span>
+                <span class="tag" style="background: var(--warning-light); color: var(--warning-color);">理性克制</span>
+                <span class="tag" style="background: var(--info-light); color: var(--info-color);">科技简约</span>
+                <span class="tag" style="background: var(--bg-tertiary); color: var(--text-secondary);">清透现代</span>
+            </div>
+        </div>
+
+        <!-- 提示信息 -->
+        <div class="section" style="background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-light) 100%); color: white; border: none;">
+            <h2 class="section-title" style="color: white; border-color: rgba(255,255,255,0.3);">
+                ⚡ 临时预览页面
+            </h2>
+            <p style="font-size: 16px; line-height: 1.8; opacity: 0.95;">
+                本页面展示了腾讯视频IP商业化系统的完整设计规范<br>
+                <strong>理性·科技·简约·清透</strong> 的设计理念贯穿始终<br>
+                查看完成后，请告诉我进行调整或删除
+            </p>
+        </div>
+    </div>
+
+    <script>
+        // 初始化图标
+        if (typeof lucide !== 'undefined') {
+            lucide.createIcons();
+        }
+    </script>
+</body>
+</html>

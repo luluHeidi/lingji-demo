@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>灵机系统 - IP权益变现应用</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <!-- 顶栏 -->
+    <header class="top-bar">
+        <!-- 左侧：系统Logo和名称 -->
+        <div class="logo-section">
+            <i data-lucide="zap" class="logo-icon"></i>
+            <span class="system-name">灵机系统</span>
+        </div>
+
+        <!-- 中间：功能模块Tab -->
+        <nav class="main-tabs">
+            <button class="tab-item" data-tab="panorama">IP资产全景图</button>
+            <button class="tab-item" data-tab="production">IP权益引入和生产</button>
+            <button class="tab-item active" data-tab="monetization">IP权益变现应用</button>
+            <button class="tab-item" data-tab="protection">IP知识产权保护</button>
+            <button class="tab-item" data-tab="data-service">IP数据服务</button>
+        </nav>
+
+        <!-- 右侧：Agent按钮 + 用户信息 -->
+        <div class="user-section">
+            <button class="agent-button">
+                <i data-lucide="sparkles" class="agent-icon"></i>
+                <span class="agent-text">灵机一动</span>
+            </button>
+            <div class="user-info">
+                <span class="user-name">鲁海洋</span>
+                <span class="user-role">管理员</span>
+            </div>
+            <div class="user-avatar">
+                <i data-lucide="user" class="avatar-icon"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- 主体内容区 -->
+    <div class="main-container">
+        <!-- 左侧菜单栏 -->
+        <aside class="sidebar">
+            <nav class="sidebar-nav">
+                <!-- 一级菜单：商业化权益库 -->
+                <div class="menu-group">
+                    <div class="menu-item level-1" data-menu="rights-library">
+                        <i data-lucide="database" class="menu-icon"></i>
+                        <span class="menu-text">商业化权益库</span>
+                        <i data-lucide="chevron-down" class="expand-icon"></i>
+                    </div>
+                    <div class="submenu">
+                        <div class="menu-item level-2" data-submenu="rights-overview">
+                            <span class="menu-text">商业化权益大盘</span>
+                        </div>
+                        <div class="menu-item level-2" data-submenu="video-rights">
+                            <span class="menu-text">视频授权权益明细</span>
+                        </div>
+                        <div class="menu-item level-2" data-submenu="derivative-rights">
+                            <span class="menu-text">衍生权益明细</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 一级菜单：商业化素材库 -->
+                <div class="menu-group">
+                    <div class="menu-item level-1" data-menu="material-library">
+                        <i data-lucide="folder" class="menu-icon"></i>
+                        <span class="menu-text">商业化素材库</span>
+                        <i data-lucide="chevron-down" class="expand-icon"></i>
+                    </div>
+                    <div class="submenu">
+                        <div class="menu-item level-2" data-submenu="material-overview">
+                            <span class="menu-text">素材库概览</span>
+                        </div>
+                        <div class="menu-item level-2" data-submenu="material-query">
+                            <span class="menu-text">素材查询与申用</span>
+                        </div>
+                        <div class="menu-item level-2" data-submenu="material-upload">
+                            <span class="menu-text">素材上传</span>
+                        </div>
+                        <div class="menu-item level-2" data-submenu="material-tools">
+                            <span class="menu-text">素材工具箱</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 一级菜单：视频作品授权管理 -->
+                <div class="menu-group">
+                    <div class="menu-item level-1" data-menu="video-auth">
+                        <i data-lucide="video" class="menu-icon"></i>
+                        <span class="menu-text">视频作品授权管理</span>
+                        <i data-lucide="chevron-down" class="expand-icon"></i>
+                    </div>
+                    <div class="submenu">
+                        <div class="menu-item level-2" data-submenu="full-video-auth">
+                            <span class="menu-text">正片授权管理</span>
+                        </div>
+                        <div class="menu-item level-2" data-submenu="short-video-auth">
+                            <span class="menu-text">短视频授权管理</span>
+                        </div>
+                        <div class="menu-item level-2" data-submenu="ugc-whitelist">
+                            <span class="menu-text">二创白名单授权管理</span>
+                        </div>
+                        <div class="menu-item level-2" data-submenu="all-catalog">
+                            <span class="menu-text">全量片单管理</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 一级菜单：衍生授权管理 -->
+                <div class="menu-group">
+                    <div class="menu-item level-1" data-menu="derivative-auth">
+                        <i data-lucide="git-branch" class="menu-icon"></i>
+                        <span class="menu-text">衍生授权管理</span>
+                        <i data-lucide="chevron-down" class="expand-icon"></i>
+                    </div>
+                    <div class="submenu">
+                        <div class="menu-item level-2" data-submenu="derivative-project">
+                            <span class="menu-text">项目管理</span>
+                        </div>
+                        <div class="menu-item level-2" data-submenu="derivative-supervision">
+                            <span class="menu-text">监修管理</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 一级菜单：自研商品开发管理 -->
+                <div class="menu-group">
+                    <div class="menu-item level-1" data-menu="product-dev">
+                        <i data-lucide="package" class="menu-icon"></i>
+                        <span class="menu-text">自研商品开发管理</span>
+                        <i data-lucide="chevron-down" class="expand-icon"></i>
+                    </div>
+                    <div class="submenu">
+                        <div class="menu-item level-2" data-submenu="product-project">
+                            <span class="menu-text">项目管理</span>
+                        </div>
+                        <div class="menu-item level-2" data-submenu="product-workflow">
+                            <span class="menu-text">流程管理</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 一级菜单：防伪互动技术 -->
+                <div class="menu-group">
+                    <div class="menu-item level-1" data-menu="anti-fake">
+                        <i data-lucide="shield-check" class="menu-icon"></i>
+                        <span class="menu-text">防伪互动技术</span>
+                        <i data-lucide="chevron-down" class="expand-icon"></i>
+                    </div>
+                    <div class="submenu">
+                        <div class="menu-item level-2" data-submenu="tech-selection">
+                            <span class="menu-text">技术选型</span>
+                        </div>
+                        <div class="menu-item level-2" data-submenu="material-config">
+                            <span class="menu-text">素材配置</span>
+                        </div>
+                        <div class="menu-item level-2" data-submenu="guzi-code">
+                            <span class="menu-text">谷子码管理</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 一级菜单：数据服务 -->
+                <div class="menu-group">
+                    <div class="menu-item level-1" data-menu="data-service">
+                        <i data-lucide="bar-chart-3" class="menu-icon"></i>
+                        <span class="menu-text">数据服务</span>
+                        <i data-lucide="chevron-down" class="expand-icon"></i>
+                    </div>
+                    <div class="submenu">
+                        <div class="menu-item level-2" data-submenu="business-data">
+                            <span class="menu-text">经营数据</span>
+                        </div>
+                        <div class="menu-item level-2" data-submenu="industry-data">
+                            <span class="menu-text">行业数据</span>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </aside>
+
+        <!-- 右侧内容区 -->
+        <main class="content-area">
+            <!-- 未开发的Tab页面 -->
+            <div class="tab-content" id="panorama-content" style="display: none;">
+                <div class="under-development">
+                    <i data-lucide="construction" class="dev-icon"></i>
+                    <h2>功能开发中</h2>
+                    <p>IP资产全景图模块正在开发中，敬请期待</p>
+                </div>
+            </div>
+
+            <div class="tab-content" id="production-content" style="display: none;">
+                <div class="under-development">
+                    <i data-lucide="construction" class="dev-icon"></i>
+                    <h2>功能开发中</h2>
+                    <p>IP权益引入和生产模块正在开发中，敬请期待</p>
+                </div>
+            </div>
+
+            <div class="tab-content" id="protection-content" style="display: none;">
+                <div class="under-development">
+                    <i data-lucide="construction" class="dev-icon"></i>
+                    <h2>功能开发中</h2>
+                    <p>IP知识产权保护模块正在开发中，敬请期待</p>
+                </div>
+            </div>
+
+            <div class="tab-content" id="data-service-content" style="display: none;">
+                <div class="under-development">
+                    <i data-lucide="construction" class="dev-icon"></i>
+                    <h2>功能开发中</h2>
+                    <p>IP数据服务模块正在开发中，敬请期待</p>
+                </div>
+            </div>
+
+            <!-- IP权益变现应用内容区（默认显示） -->
+            <div class="tab-content active" id="monetization-content">
+                <div class="page-content">
+                    <div class="under-development">
+                        <i data-lucide="layout-dashboard" class="dev-icon"></i>
+                        <h2>页面开发中</h2>
+                        <p>请从左侧菜单选择功能模块</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script>
+        // 初始化Lucide图标
+        lucide.createIcons();
+    </script>
+</body>
+</html>

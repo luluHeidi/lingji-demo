@@ -1,0 +1,183 @@
+<!-- 素材申用确认页面 -->
+<div class="application-form-container">
+    <!-- 页面导航 -->
+    <div class="breadcrumb">
+        <div class="breadcrumb-path">
+            <span class="breadcrumb-item" id="backToIPList">素材查询与申用</span>
+            <i data-lucide="chevron-right" class="breadcrumb-separator"></i>
+            <span class="breadcrumb-item" id="backToMaterialDetail"><span id="currentIPName">《长相思》已回收素材详情</span></span>
+            <i data-lucide="chevron-right" class="breadcrumb-separator"></i>
+            <span class="breadcrumb-item active">素材申用确认</span>
+        </div>
+        <button class="btn-records" id="goToRecordsBtn">
+            <i data-lucide="file-text"></i>
+            <span>申用记录</span>
+        </button>
+    </div>
+
+    <!-- 表单标题 -->
+    <div class="form-header">
+        <h1>素材申用确认</h1>
+    </div>
+
+    <!-- 基本提示语 -->
+    <div class="form-notice">
+        <span>请确认是否申请以下 <strong id="selectedCount">0</strong> 个素材</span>
+    </div>
+
+    <!-- 申用素材明细表格 -->
+    <div class="materials-table-wrapper">
+        <table class="materials-table">
+            <thead>
+                <tr>
+                    <th width="10%">缩略图</th>
+                    <th width="20%">素材名称</th>
+                    <th width="15%">素材ID</th>
+                    <th width="12%">素材格式</th>
+                    <th width="15%">素材尺寸</th>
+                    <th width="10%">是否申请工程文件</th>
+                    <th width="18%">操作</th>
+                </tr>
+            </thead>
+            <tbody id="materialsTableBody">
+                <!-- 表格内容由JavaScript动态生成 -->
+            </tbody>
+        </table>
+    </div>
+
+    <!-- 空状态提示 -->
+    <div class="empty-state" id="emptyState" style="display: none;">
+        <i data-lucide="inbox" class="empty-icon"></i>
+        <p>暂无申用素材</p>
+        <button class="btn-secondary" id="backToDetailBtn">
+            <span>返回素材详情</span>
+        </button>
+    </div>
+
+    <!-- 申用信息表单 -->
+    <div class="application-info" id="applicationInfo">
+        <h3 class="section-title">
+            <i data-lucide="edit-3"></i>
+            申用信息
+        </h3>
+        <div class="form-grid">
+            <div class="form-group">
+                <label for="projectName">
+                    项目名称 <span class="required">*</span>
+                </label>
+                <select id="projectName">
+                    <option value="">请选择项目名称</option>
+                    <option value="长相思角色小卡_SY20260121ZYG">长相思角色小卡_SY20260121ZYG</option>
+                    <option value="长相思周边手办_SY20260118SB">长相思周边手办_SY20260118SB</option>
+                    <option value="长相思IP联名服饰_SY20260115FS">长相思IP联名服饰_SY20260115FS</option>
+                    <option value="长相思剧情盲盒_SY20260110MH">长相思剧情盲盒_SY20260110MH</option>
+                    <option value="长相思角色徽章套装_SY20260105HZ">长相思角色徽章套装_SY20260105HZ</option>
+                    <option value="长相思纪念册设计_SY20260102JNC">长相思纪念册设计_SY20260102JNC</option>
+                    <option value="长相思主题文创礼盒_SY20251228WC">长相思主题文创礼盒_SY20251228WC</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="applicant">
+                    申请人 <span class="required">*</span>
+                </label>
+                <input type="text" id="applicant" value="鲁海洋" readonly />
+            </div>
+            <div class="form-group">
+                <label for="department">
+                    所属部门 <span class="required">*</span>
+                </label>
+                <input type="text" id="department" value="IP产品组" readonly />
+            </div>
+            <div class="form-group">
+                <label for="usageType">
+                    使用类型 <span class="required">*</span>
+                </label>
+                <select id="usageType">
+                    <option value="">请选择使用类型</option>
+                    <option value="marketing">营销宣传</option>
+                    <option value="product">商品开发</option>
+                    <option value="content">内容制作</option>
+                    <option value="other">其他</option>
+                </select>
+            </div>
+            <div class="form-group full-width">
+                <label for="usageDescription">
+                    用途说明
+                </label>
+                <textarea id="usageDescription" rows="4" placeholder="请详细说明素材的使用用途和场景"></textarea>
+            </div>
+        </div>
+    </div>
+
+    <!-- 操作按钮 -->
+    <div class="form-actions">
+        <button class="btn-cancel" id="cancelApplicationBtn">
+            <span>取消申请</span>
+        </button>
+        <button class="btn-save" id="saveApplicationBtn">
+            <span>保存申请</span>
+        </button>
+        <button class="btn-primary" id="confirmApplicationBtn">
+            <span>确认申请</span>
+        </button>
+    </div>
+</div>
+
+<!-- 删除确认弹窗 -->
+<div class="modal" id="deleteConfirmModal">
+    <div class="modal-content modal-small">
+        <div class="modal-header">
+            <h3>确认删除</h3>
+            <button class="modal-close" data-modal="deleteConfirmModal">
+                <i data-lucide="x"></i>
+            </button>
+        </div>
+        <div class="modal-body">
+            <div class="confirm-message">
+                <i data-lucide="alert-circle" class="warning-icon"></i>
+                <p>确定要从申请列表中移除该素材吗？</p>
+                <p class="material-name-hint" id="deleteTargetName"></p>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button class="btn-cancel" data-modal="deleteConfirmModal">取消</button>
+            <button class="btn-danger" id="confirmDeleteBtn">确认删除</button>
+        </div>
+    </div>
+</div>
+
+<!-- 素材预览弹窗 -->
+<div class="modal" id="previewModal">
+    <div class="modal-content modal-large">
+        <div class="modal-header">
+            <h3>素材预览</h3>
+            <button class="modal-close" data-modal="previewModal">
+                <i data-lucide="x"></i>
+            </button>
+        </div>
+        <div class="modal-body">
+            <div class="preview-container" id="previewContainer">
+                <!-- 预览内容由JavaScript动态生成 -->
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button class="btn-secondary" data-modal="previewModal">关闭</button>
+        </div>
+    </div>
+</div>
+
+<!-- 确认提交申请弹窗 -->
+<div class="modal" id="confirmSubmitModal">
+    <div class="modal-content modal-small">
+        <div class="confirm-message">
+            <i data-lucide="alert-circle" class="warning-icon"></i>
+            <p>确定要提交该申请吗？</p>
+            <p class="hint-text">提交后将进入审核流程，无法撤回修改。</p>
+        </div>
+        <div class="modal-footer">
+            <button class="btn-secondary" data-modal="confirmSubmitModal">取消</button>
+            <button class="btn-primary" id="confirmSubmitBtn">确认提交</button>
+        </div>
+    </div>
+</div>
+
