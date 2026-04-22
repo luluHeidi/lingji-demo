@@ -78,65 +78,103 @@ function renderTaskCards() {
 /**
  * 渲染项目列表
  */
+// ========== M1: 项目列表（v2 按执行规格重写）==========
+
+const RIGHTS_TYPE_MAP = {
+  'secondary_creation': '二创权+剪辑权', 'distribution': '信网权+转授权',
+  'broadcast': '信网权+播控权', 'adaptation': '改编权', 'ip_usage': 'IP使用权',
+  'comprehensive': '综合权益', 'aigc': 'AIGC权益'
+};
+const AUDIT_MODE_MAP = { 'rolling': '多轮滚动审核', 'one_time': '单次审批', 'no_audit': '免审核' };
+const PROJECT_STATUS_MAP = {
+  'configuring': { label: '配置中', cls: 'prj-status-gray' },
+  'running': { label: '运行中', cls: 'prj-status-green' },
+  'suspended': { label: '已暂停', cls: 'prj-status-orange' },
+  'expired': { label: '已到期', cls: 'prj-status-red' },
+  'archived': { label: '已归档', cls: 'prj-status-light' }
+};
+
+let projectFilters = { rights_type: '', audit_mode: '', status: '' };
+
 function renderProjectList() {
     const container = document.getElementById('projectListContainer');
     if (!container || !authData) return;
 
-    const projects = authData.projects;
+    let projects = (authData.projects || []).filter(p => p.status !== 'deleted');
 
-    if (!projects || projects.length === 0) {
-        container.innerHTML = `
-            <div class="empty-state">
-                <i data-lucide="folder-open"></i>
-                <p>暂无项目</p>
-            </div>
-        `;
-        if (typeof lucide !== 'undefined') lucide.createIcons();
+    // 渲染筛选区
+    const filterArea = document.getElementById('projectFilterArea');
+    if (filterArea) {
+        filterArea.innerHTML = `
+          <div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-bottom:16px">
+            <select id="prjFilterRightsType" style="padding:6px 10px;border:1px solid #d0d5dd;border-radius:6px;font-size:12px">
+              <option value="">全部权利类型</option>
+              ${Object.entries(RIGHTS_TYPE_MAP).map(([k,v]) => `<option value="${k}" ${projectFilters.rights_type===k?'selected':''}>${v}</option>`).join('')}
+            </select>
+            <select id="prjFilterAuditMode" style="padding:6px 10px;border:1px solid #d0d5dd;border-radius:6px;font-size:12px">
+              <option value="">全部审核方式</option>
+              ${Object.entries(AUDIT_MODE_MAP).map(([k,v]) => `<option value="${k}" ${projectFilters.audit_mode===k?'selected':''}>${v}</option>`).join('')}
+            </select>
+            <select id="prjFilterStatus" style="padding:6px 10px;border:1px solid #d0d5dd;border-radius:6px;font-size:12px">
+              <option value="">全部状态</option>
+              ${Object.entries(PROJECT_STATUS_MAP).map(([k,v]) => `<option value="${k}" ${projectFilters.status===k?'selected':''}>${v.label}</option>`).join('')}
+            </select>
+          </div>`;
+        // 绑定筛选事件
+        ['prjFilterRightsType','prjFilterAuditMode','prjFilterStatus'].forEach(id => {
+            const el = document.getElementById(id);
+            if (el) el.onchange = function() {
+                if (id.includes('RightsType')) projectFilters.rights_type = this.value;
+                if (id.includes('AuditMode')) projectFilters.audit_mode = this.value;
+                if (id.includes('Status')) projectFilters.status = this.value;
+                renderProjectList();
+            };
+        });
+    }
+
+    // 应用筛选
+    if (projectFilters.rights_type) projects = projects.filter(p => p.rights_type === projectFilters.rights_type);
+    if (projectFilters.audit_mode) projects = projects.filter(p => p.audit_mode === projectFilters.audit_mode);
+    if (projectFilters.status) projects = projects.filter(p => p.status === projectFilters.status);
+
+    if (projects.length === 0) {
+        const hasFilters = projectFilters.rights_type || projectFilters.audit_mode || projectFilters.status;
+        container.innerHTML = hasFilters
+            ? '<div style="text-align:center;padding:60px 0;color:#999;font-size:14px">暂无匹配项目</div>'
+            : '<div style="text-align:center;padding:60px 0;color:#999;font-size:14px">暂无项目，点击「创建项目」开始</div>';
         return;
     }
 
-    container.innerHTML = projects.map(project => {
+    container.innerHTML = projects.map(p => {
+        const st = PROJECT_STATUS_MAP[p.status] || { label: p.status, cls: '' };
         return `
-            <div class="project-card" data-project-id="${project.id}">
+            <div class="project-card" data-project-id="${p.id}" style="cursor:pointer" onclick="openProjectDetail('${p.id}')">
                 <div class="project-card-inner">
-                    <div class="project-status-bar ${project.status}"></div>
+                    <div class="project-status-bar ${p.status}"></div>
                     <div class="project-card-body">
                         <div class="project-card-top">
                             <div class="project-name-group">
-                                <i data-lucide="layers" class="project-title-icon"></i>
-                                <span class="project-name">${project.name}</span>
-                                <span class="project-id-text">ID: ${project.id}</span>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#6c5ce7" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+                                <span class="project-name">${p.name}</span>
                             </div>
-                            <div class="project-status-tag ${project.status}">
-                                <span class="status-dot"></span>
-                                <span>${project.statusLabel}</span>
-                            </div>
+                            <span class="${st.cls}" style="padding:2px 8px;border-radius:10px;font-size:11px;font-weight:500">${st.label}</span>
                         </div>
-                        <div class="project-info-row">
-                            <div class="project-info-item">
-                                <span>授权时间：</span>
-                                <span class="project-info-value">${project.authPeriod}</span>
-                            </div>
-                            <div class="project-info-item">
-                                <span>项目类型：</span>
-                                <span class="project-info-value">${project.type}</span>
-                            </div>
+                        <div style="display:flex;gap:8px;margin:8px 0;flex-wrap:wrap">
+                            <span style="background:#eff6ff;color:#1e40af;padding:2px 8px;border-radius:4px;font-size:11px">${RIGHTS_TYPE_MAP[p.rights_type]||p.rights_type}</span>
+                            <span style="background:#f0fdf4;color:#166534;padding:2px 8px;border-radius:4px;font-size:11px">${AUDIT_MODE_MAP[p.audit_mode]||p.audit_mode}</span>
                         </div>
-                        <div class="project-card-bottom">
-                            <button class="btn-view-detail" data-action="view-detail" data-project="${project.id}">
-                                查看详情
-                                <i data-lucide="arrow-right"></i>
-                            </button>
+                        <div class="project-info-row" style="font-size:12px;color:#666;display:grid;grid-template-columns:1fr 1fr;gap:4px 16px">
+                            <div><span style="color:#999">合作方</span> ${p.partner_name || '-'}</div>
+                            <div><span style="color:#999">品类</span> ${(p.category_scope||[]).join('、')}</div>
+                            <div><span style="color:#999">授权时间</span> ${p.auth_window_start||'-'} ~ ${p.auth_window_end||'-'}</div>
+                            <div><span style="color:#999">已授权</span> <strong style="color:#2e7d32">${(p.authorized_count||0).toLocaleString()}</strong> · <span style="color:#999">已回收</span> ${p.recovered_count||0}</div>
                         </div>
                     </div>
                 </div>
-            </div>
-        `;
+            </div>`;
     }).join('');
 
-    if (typeof lucide !== 'undefined') {
-        lucide.createIcons();
-    }
+    if (typeof lucide !== 'undefined') lucide.createIcons();
 }
 
 /**
@@ -230,7 +268,7 @@ function bindEvents() {
     const btnCreate = document.getElementById('btnCreateProject');
     if (btnCreate) {
         btnCreate.addEventListener('click', function() {
-            showBlankPage('创建项目', '创建项目页面正在开发中，敬请期待');
+            openCreateProjectModal();
         });
     }
 
@@ -2299,6 +2337,76 @@ function showAddAuthIPSuccess(workName) {
     }, 3000);
 }
 
+// ========== 创建项目 3 步弹窗（M1 规格 C2-C6）==========
+let createProjectStep = 1;
+let createProjectData = { rights_type: '', audit_mode: '' };
+
+function openCreateProjectModal() {
+  createProjectStep = 1;
+  createProjectData = { rights_type: '', audit_mode: '' };
+  renderCreateProjectModal();
+}
+
+function renderCreateProjectModal() {
+  let existing = document.getElementById('createProjectModal');
+  if (existing) existing.remove();
+
+  const stepTitles = ['选择权利类型', '选择审核方式', '填写配置项'];
+  let bodyHTML = '';
+
+  if (createProjectStep === 1) {
+    bodyHTML = Object.entries(RIGHTS_TYPE_MAP).map(([k,v]) =>
+      `<label style="display:flex;align-items:center;gap:8px;padding:10px 12px;border:1px solid ${createProjectData.rights_type===k?'#6c5ce7':'#e5e7eb'};border-radius:8px;cursor:pointer;background:${createProjectData.rights_type===k?'#f5f3ff':'#fff'}" onclick="createProjectData.rights_type='${k}';renderCreateProjectModal()">
+        <input type="radio" name="cpRightsType" value="${k}" ${createProjectData.rights_type===k?'checked':''} style="accent-color:#6c5ce7">
+        <span style="font-size:13px">${v}</span>
+      </label>`
+    ).join('');
+  } else if (createProjectStep === 2) {
+    const defaultMode = createProjectData.rights_type === 'secondary_creation' ? 'rolling' : 'one_time';
+    if (!createProjectData.audit_mode) createProjectData.audit_mode = defaultMode;
+    bodyHTML = Object.entries(AUDIT_MODE_MAP).map(([k,v]) =>
+      `<label style="display:flex;align-items:center;gap:8px;padding:10px 12px;border:1px solid ${createProjectData.audit_mode===k?'#6c5ce7':'#e5e7eb'};border-radius:8px;cursor:pointer;background:${createProjectData.audit_mode===k?'#f5f3ff':'#fff'}" onclick="createProjectData.audit_mode='${k}';renderCreateProjectModal()">
+        <input type="radio" name="cpAuditMode" value="${k}" ${createProjectData.audit_mode===k?'checked':''} style="accent-color:#6c5ce7">
+        <span style="font-size:13px">${v}</span>
+        ${k===defaultMode?'<span style="background:#fef3c7;color:#92400e;padding:1px 6px;border-radius:4px;font-size:10px;margin-left:auto">推荐</span>':''}
+      </label>`
+    ).join('');
+  } else {
+    const isRolling = createProjectData.audit_mode === 'rolling';
+    bodyHTML = `
+      <div style="display:grid;gap:12px">
+        <div><label style="font-size:12px;font-weight:500;display:block;margin-bottom:4px">合作方名称</label><input type="text" placeholder="请输入" style="width:100%;padding:8px;border:1px solid #d0d5dd;border-radius:6px;font-size:12px"></div>
+        <div><label style="font-size:12px;font-weight:500;display:block;margin-bottom:4px">合同编号</label><input type="text" placeholder="请输入" style="width:100%;padding:8px;border:1px solid #d0d5dd;border-radius:6px;font-size:12px"></div>
+        <div><label style="font-size:12px;font-weight:500;display:block;margin-bottom:4px">联系人</label><input type="text" placeholder="请输入" style="width:100%;padding:8px;border:1px solid #d0d5dd;border-radius:6px;font-size:12px"></div>
+        <div><label style="font-size:12px;font-weight:500;display:block;margin-bottom:4px">品类范围</label><div style="display:flex;gap:6px;flex-wrap:wrap">${['电视剧','电影','综艺','动漫','纪录片','少儿','微短剧'].map(c=>'<label style="display:flex;align-items:center;gap:4px;font-size:12px"><input type="checkbox" checked>'+c+'</label>').join('')}</div></div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px"><div><label style="font-size:12px;font-weight:500;display:block;margin-bottom:4px">授权开始</label><input type="date" style="width:100%;padding:8px;border:1px solid #d0d5dd;border-radius:6px;font-size:12px"></div><div><label style="font-size:12px;font-weight:500;display:block;margin-bottom:4px">授权结束</label><input type="date" style="width:100%;padding:8px;border:1px solid #d0d5dd;border-radius:6px;font-size:12px"></div></div>
+        ${isRolling?'<div><label style="font-size:12px;font-weight:500;display:block;margin-bottom:4px">合同安全线（日均）</label><input type="number" placeholder="如 3500" style="width:100%;padding:8px;border:1px solid #d0d5dd;border-radius:6px;font-size:12px"></div>':''}
+      </div>`;
+  }
+
+  const html = `
+    <div id="createProjectModal" style="position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:1000;display:flex;align-items:center;justify-content:center" onclick="if(event.target===this)this.remove()">
+      <div style="background:#fff;border-radius:12px;width:480px;max-height:80vh;overflow-y:auto" onclick="event.stopPropagation()">
+        <div style="padding:16px 20px;border-bottom:1px solid #e5e7eb;display:flex;justify-content:space-between;align-items:center">
+          <h3 style="margin:0;font-size:16px">创建项目 — Step ${createProjectStep}/3 ${stepTitles[createProjectStep-1]}</h3>
+          <button style="background:none;border:none;cursor:pointer" onclick="document.getElementById('createProjectModal').remove()">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#999" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+          </button>
+        </div>
+        <div style="padding:20px;display:grid;gap:8px">${bodyHTML}</div>
+        <div style="padding:12px 20px;border-top:1px solid #e5e7eb;display:flex;justify-content:flex-end;gap:8px">
+          ${createProjectStep > 1 ? '<button class="rr-btn-view" onclick="createProjectStep--;renderCreateProjectModal()">上一步</button>' : ''}
+          <button class="rr-btn-view" onclick="document.getElementById(\'createProjectModal\').remove()">取消</button>
+          ${createProjectStep < 3
+            ? `<button class="rr-btn-submit" onclick="if(createProjectStep===1&&!createProjectData.rights_type){alert('请选择权利类型');return;}createProjectStep++;renderCreateProjectModal()">下一步</button>`
+            : `<button class="rr-btn-submit" onclick="document.getElementById('createProjectModal').remove();showToast('项目已创建（configuring状态）','success');renderProjectList()">确认创建</button>`
+          }
+        </div>
+      </div>
+    </div>`;
+  document.body.insertAdjacentHTML('beforeend', html);
+}
+
 /**
  * 显示空白占位页
  */
@@ -2380,8 +2488,10 @@ const AUDIT_PROGRESS_ORDER = {
 };
 
 const TASK_TYPE_MAP = {
-  'risk_review': '风险审查',
-  'auth_review': '授权审查'
+  'authorization_review': '授权审查',
+  'risk_review_distribution': '风险审查-分销冲突',
+  'risk_review_defect': '风险审查-新增瑕疵',
+  'defect_reaudit': '权益瑕疵重审'
 };
 
 const REVIEW_RESULT_MAP = {
@@ -2448,9 +2558,25 @@ const DEFECT_DISPOSAL_RESULT_MAP = {
 const FLOW_STEPS = [
   { key: 'rights_first_review', label: '初审', reviewByField: 'rights_first_review_by', reviewAtField: 'rights_first_review_at' },
   { key: 'rights_second_review', label: '复审', reviewByField: 'rights_second_review_by', reviewAtField: 'rights_second_review_at' },
-  { key: 'rights_third_review', label: '运营授权评估', reviewByField: 'rights_third_review_by', reviewAtField: 'rights_third_review_at' },
-  { key: 'confirmed_rights', label: '权益确认', reviewByField: '', reviewAtField: '' }
+  { key: 'rights_third_review', label: '运营授权评估', reviewByField: 'rights_third_review_by', reviewAtField: 'rights_third_review_at' }
 ];
+
+// M3: 根据 task_type 动态获取审核链路步骤
+function getFlowStepsByTaskType(taskType) {
+  switch (taskType) {
+    case 'authorization_review':
+    case 'defect_reaudit':
+      return FLOW_STEPS; // 初审→复审→终审（3步）
+    case 'risk_review_distribution':
+    case 'risk_review_defect':
+      return [
+        { key: 'rights_first_review', label: '初审', reviewByField: 'rights_first_review_by', reviewAtField: 'rights_first_review_at' },
+        { key: 'rights_second_review', label: '法务判定', reviewByField: 'rights_second_review_by', reviewAtField: 'rights_second_review_at' }
+      ]; // 2步
+    default:
+      return FLOW_STEPS;
+  }
+}
 
 // 品类筛选选项（合并后）
 const CATEGORY_FILTER_OPTIONS = ['电视剧', '电影', '综艺', '纪录片', '动漫', '少儿', '微短剧'];
@@ -2508,9 +2634,10 @@ function getProgressBadgeClass(p) {
 
 function getTaskTypeBadgeClass(t) {
   switch (t) {
-    case 'auth_review': return 'rr-badge-auth';
-    case 'risk_review': return 'rr-badge-risk';
-    case 'rights_change': return 'rr-badge-change';
+    case 'authorization_review': return 'rr-badge-auth';
+    case 'risk_review_distribution': return 'rr-badge-risk';
+    case 'risk_review_defect': return 'rr-badge-risk';
+    case 'defect_reaudit': return 'rr-badge-change';
     default: return '';
   }
 }
@@ -2559,7 +2686,13 @@ const rrFilters = {
   task_type: '',
   play_category: '',
   rights_second_review_result: '',
-  keyword: ''
+  keyword: '',
+  // v1.2 新增 5 个筛选
+  project: '',
+  hot_level: '',
+  rights_contract_no: '',
+  xwq_status: '',
+  online_status: ''
 };
 
 // ============================================================
@@ -2568,8 +2701,8 @@ const rrFilters = {
 
 function filterRRItems() {
   return rrItems.filter(item => {
-    // 不显示废弃记录（除非筛选了废弃）
-    if (item.audit_progress === 'obsoleted' && rrFilters.audit_progress !== 'obsoleted') return false;
+    // obsoleted 数据始终不显示（系统内部状态不进入界面）
+    if (item.audit_progress === 'obsoleted') return false;
 
     if (rrFilters.audit_progress && item.audit_progress !== rrFilters.audit_progress) return false;
     if (rrFilters.task_type && item.task_type !== rrFilters.task_type) return false;
@@ -2578,6 +2711,15 @@ function filterRRItems() {
       if (label !== rrFilters.play_category) return false;
     }
     if (rrFilters.rights_second_review_result && item.rights_second_review_result !== rrFilters.rights_second_review_result) return false;
+    if (rrFilters.project && (item.project_id || '') !== rrFilters.project) return false;
+    // v1.2 新增筛选
+    if (rrFilters.xwq_status && (item.xwq_status || '') !== rrFilters.xwq_status) return false;
+    if (rrFilters.online_status && (item.online_status || '') !== rrFilters.online_status) return false;
+    if (rrFilters.hot_level && (item.cid_info?.hot_level || '') !== rrFilters.hot_level) return false;
+    if (rrFilters.rights_contract_no) {
+      const ids = (item.import_copr_rights_ids || []).join(' ') + ' ' + (item.import_copr_rights_id || '');
+      if (!ids.toLowerCase().includes(rrFilters.rights_contract_no.toLowerCase())) return false;
+    }
     if (rrFilters.keyword) {
       const kw = rrFilters.keyword.toLowerCase();
       const name = (item.play_name || '').toLowerCase();
@@ -2635,7 +2777,7 @@ function renderRightsReviewV2() {
           <label>审核进度</label>
           <select class="rr-filter-sel" id="rrFilterProgress">
             <option value="">全部进度</option>
-            ${Object.entries(AUDIT_PROGRESS_MAP).map(([k,v]) => `<option value="${k}" ${rrFilters.audit_progress === k ? 'selected' : ''}>${v}</option>`).join('')}
+            ${Object.entries(AUDIT_PROGRESS_MAP).filter(([k]) => k !== 'obsoleted').map(([k,v]) => `<option value="${k}" ${rrFilters.audit_progress === k ? 'selected' : ''}>${v}</option>`).join('')}
           </select>
         </div>
         <div class="rr-filter-group-v2">
@@ -2652,40 +2794,97 @@ function renderRightsReviewV2() {
             <span class="rr-search-icon-v2">${SVG.search}</span>
           </div>
         </div>
+        <!-- v1.2 新增筛选 -->
+        <div class="rr-filter-group-v2">
+          <label>热度口径</label>
+          <select class="rr-filter-sel" id="rrFilterHotLevel">
+            <option value="">全部</option>
+            <option value="S" ${rrFilters.hot_level==='S'?'selected':''}>S</option>
+            <option value="A" ${rrFilters.hot_level==='A'?'selected':''}>A</option>
+            <option value="B" ${rrFilters.hot_level==='B'?'selected':''}>B</option>
+            <option value="C" ${rrFilters.hot_level==='C'?'selected':''}>C</option>
+          </select>
+        </div>
+        <div class="rr-filter-group-v2">
+          <label>所属项目</label>
+          <select class="rr-filter-sel" id="rrFilterProject">
+            <option value="">全部</option>
+            ${(authData?.projects||[]).filter(p=>p.status!=='deleted').map(p=>`<option value="${p.id}" ${rrFilters.project===p.id?'selected':''}>${p.name}</option>`).join('')}
+          </select>
+        </div>
+        <div class="rr-filter-group-v2">
+          <label>权益合同号</label>
+          <input type="text" class="rr-filter-sel" id="rrFilterContractNo" placeholder="输入合同号" value="${rrFilters.rights_contract_no || ''}" style="width:140px">
+        </div>
+        <div class="rr-filter-group-v2">
+          <label>信网权状态</label>
+          <select class="rr-filter-sel" id="rrFilterXwqStatus">
+            <option value="">全部</option>
+            <option value="生效中" ${rrFilters.xwq_status==='生效中'?'selected':''}>生效中</option>
+            <option value="已失效" ${rrFilters.xwq_status==='已失效'?'selected':''}>已失效</option>
+            <option value="未知" ${rrFilters.xwq_status==='未知'?'selected':''}>未知</option>
+          </select>
+        </div>
+        <div class="rr-filter-group-v2">
+          <label>正片在线</label>
+          <select class="rr-filter-sel" id="rrFilterOnlineStatus">
+            <option value="">全部</option>
+            <option value="在线" ${rrFilters.online_status==='在线'?'selected':''}>在线</option>
+            <option value="下架" ${rrFilters.online_status==='下架'?'selected':''}>下架</option>
+          </select>
+        </div>
       </div>
+    </div>
+    <!-- 批量操作栏（常显） -->
+    <div id="rrBatchBar" style="background:#f0f5ff;border:1px solid #bfdbfe;border-radius:8px;padding:10px 16px;margin-bottom:12px;display:flex;align-items:center;gap:12px">
+      <span style="font-size:13px;color:#1e40af" id="rrBatchCount">已选 0 条</span>
+      <button class="rr-btn-view rr-batch-btn" id="rrBtnBatchFirst" onclick="openRRBatchModal('初审')" style="color:#1e40af;border-color:#bfdbfe" disabled>批量初审</button>
+      <button class="rr-btn-view rr-batch-btn" id="rrBtnBatchSecond" onclick="openRRBatchModal('复审')" style="color:#1e40af;border-color:#bfdbfe" disabled>批量复审</button>
+      <button class="rr-btn-view rr-batch-btn" id="rrBtnBatchThird" onclick="openRRBatchModal('终审')" style="color:#1e40af;border-color:#bfdbfe" disabled>批量终审</button>
     </div>
     <div class="rr-table-wrap">
       <table class="rr-table">
         <thead>
           <tr>
+            <th style="width:32px"><input type="checkbox" id="rrSelectAll" onchange="toggleRRSelectAll(this.checked)"></th>
             <th>审核ID</th>
             <th>作品名</th>
+            <th>别名</th>
             <th>品类</th>
             <th>版权ID</th>
+            <th>权益合同号</th>
+            <th>热度</th>
             <th>任务时间</th>
             <th>任务类型</th>
             <th>初审结论</th>
             <th>审核进度</th>
             <th>授权判定</th>
+            <th>信网权状态</th>
+            <th>正片在线</th>
+            <th>瑕疵类型</th>
             <th>操作</th>
           </tr>
         </thead>
         <tbody>
-          ${pageData.length === 0 ? `<tr><td colspan="10" class="rr-table-empty">暂无匹配数据</td></tr>` :
+          ${pageData.length === 0 ? `<tr><td colspan="17" class="rr-table-empty">暂无匹配数据</td></tr>` :
             pageData.map(item => `
               <tr class="rr-table-row" data-audit-id="${item.audit_id}">
+                <td><input type="checkbox" class="rr-row-check" value="${item.audit_id}" onchange="updateRRBatchBar()"></td>
                 <td class="rr-td-mono">${item.audit_id}</td>
-                <td>
-                  <div class="rr-td-name">${item.play_name}</div>
-                  ${item.play_name_alias ? `<div class="rr-td-alias">${item.play_name_alias}</div>` : ''}
-                </td>
+                <td><div class="rr-td-name">${item.play_name}</div></td>
+                <td style="font-size:11px;color:#666">${item.play_name_alias || '-'}</td>
                 <td>${getPlayCategoryLabel(item.play_category)}</td>
                 <td class="rr-td-mono">${item.copyright_id}</td>
+                <td style="font-size:11px">${(item.import_copr_rights_ids && item.import_copr_rights_ids.length > 0) ? item.import_copr_rights_ids.map(id => `<div>${id}</div>`).join('') : (item.import_copr_rights_id || '-')}</td>
+                <td style="font-size:11px"><span style="background:${{'S':'#fef2f2','A':'#fff7ed','B':'#f0fdf4','C':'#f5f3ff'}[item.cid_info?.hot_level]||'#f9fafb'};color:${{'S':'#991b1b','A':'#9a3412','B':'#166534','C':'#5b21b6'}[item.cid_info?.hot_level]||'#666'};padding:1px 6px;border-radius:4px;font-weight:500">${item.cid_info?.hot_level || '-'}</span></td>
                 <td>${formatDate(item.task_time)}</td>
                 <td><span class="rr-badge ${getTaskTypeBadgeClass(item.task_type)}">${getTaskTypeLabel(item.task_type)}</span></td>
                 <td>${getReviewResultLabel(item.rights_first_review_result) || '-'}</td>
                 <td><span class="rr-badge ${getProgressBadgeClass(item.audit_progress)}">${getAuditProgressLabel(item.audit_progress)}</span></td>
                 <td>${getAuthJudgment(item)}</td>
+                <td style="font-size:11px">${item.xwq_status || '-'}</td>
+                <td style="font-size:11px">${item.online_status || '-'}</td>
+                <td style="font-size:11px">${item.defect_type || '-'}</td>
                 <td><button class="rr-btn-view" onclick="openRRDetailV2('${item.audit_id}')">${SVG.eye} 查看</button></td>
               </tr>
             `).join('')}
@@ -2733,6 +2932,18 @@ function bindRRFiltersV2() {
     };
   }
 
+  // v1.2 新增筛选器绑定
+  const selProject = document.getElementById('rrFilterProject');
+  const selHot = document.getElementById('rrFilterHotLevel');
+  const inputContract = document.getElementById('rrFilterContractNo');
+  const selXwq = document.getElementById('rrFilterXwqStatus');
+  const selOnline = document.getElementById('rrFilterOnlineStatus');
+  if (selProject) selProject.onchange = function() { rrFilters.project = this.value; rrCurrentPage = 1; renderRightsReviewV2(); };
+  if (selHot) selHot.onchange = function() { rrFilters.hot_level = this.value; rrCurrentPage = 1; renderRightsReviewV2(); };
+  if (inputContract) { let d2; inputContract.oninput = function() { clearTimeout(d2); d2 = setTimeout(() => { rrFilters.rights_contract_no = this.value; rrCurrentPage = 1; renderRightsReviewV2(); }, 300); }; }
+  if (selXwq) selXwq.onchange = function() { rrFilters.xwq_status = this.value; rrCurrentPage = 1; renderRightsReviewV2(); };
+  if (selOnline) selOnline.onchange = function() { rrFilters.online_status = this.value; rrCurrentPage = 1; renderRightsReviewV2(); };
+
   // 分页按钮
   document.querySelectorAll('.rr-page-btn[data-rrpage]').forEach(btn => {
     btn.onclick = function() {
@@ -2740,6 +2951,152 @@ function bindRRFiltersV2() {
       if (p >= 1) { rrCurrentPage = p; renderRightsReviewV2(); }
     };
   });
+}
+
+// ========== 批量操作（M2 规格 B6/C3-C6）==========
+let rrSelectedIds = new Set();
+
+function toggleRRSelectAll(checked) {
+  document.querySelectorAll('.rr-row-check').forEach(cb => { cb.checked = checked; });
+  updateRRBatchBar();
+}
+
+function updateRRBatchBar() {
+  const checks = document.querySelectorAll('.rr-row-check:checked');
+  rrSelectedIds = new Set([...checks].map(c => c.value));
+  const count = document.getElementById('rrBatchCount');
+  if (count) count.textContent = '已选 ' + rrSelectedIds.size + ' 条';
+  // 启用/禁用批量按钮
+  const btns = document.querySelectorAll('.rr-batch-btn');
+  btns.forEach(btn => {
+    btn.disabled = rrSelectedIds.size === 0;
+    btn.style.opacity = rrSelectedIds.size === 0 ? '0.4' : '1';
+    btn.style.cursor = rrSelectedIds.size === 0 ? 'not-allowed' : 'pointer';
+  });
+}
+
+function openRRBatchModal(action) {
+  if (rrSelectedIds.size === 0) { alert('请先勾选审查单'); return; }
+  const selectedItems = rrItems.filter(i => rrSelectedIds.has(i.audit_id));
+  const categories = new Set(selectedItems.map(i => i.play_category));
+  const progresses = new Set(selectedItems.map(i => i.audit_progress));
+  if (categories.size > 1 || progresses.size > 1) {
+    alert('批量操作仅支持同品类同进度的审查单');
+    return;
+  }
+
+  // 复审校验：含多待审权益的作品不支持批量复审
+  if (action === '复审') {
+    const multiRightsItems = selectedItems.filter(i => (i.import_copr_rights_ids || []).length > 1);
+    if (multiRightsItems.length > 0) {
+      const names = multiRightsItems.map(i => i.play_name).join('、');
+      alert('以下作品含多条待审权益，授权依据无法默认勾选，不支持批量复审，请逐条审核：\n\n' + names);
+      return;
+    }
+  }
+
+  const platforms = Object.entries(AUTHORIZED_PLATFORM_MAP).map(([k,v]) => `<label style="display:flex;align-items:center;gap:4px;font-size:12px"><input type="checkbox" value="${k}">${v}</label>`).join('');
+  const excludePlatforms = Object.entries(EXCLUDED_PLATFORM_MAP).map(([k,v]) => `<label style="display:flex;align-items:center;gap:4px;font-size:12px"><input type="checkbox" value="${k}">${v}</label>`).join('');
+  const defectTypes = Object.entries(DEFECT_TYPE_MAP).map(([k,v]) => `<label style="display:flex;align-items:center;gap:4px;font-size:12px"><input type="checkbox" value="${k}">${v}</label>`).join('');
+  let formHTML = '';
+
+  if (action === '初审') {
+    formHTML = `
+      <div style="background:#fef2f2;border:1px solid #fecaca;border-radius:8px;padding:10px 12px;margin-bottom:14px;font-size:12px;color:#991b1b;line-height:1.6">
+        <div style="font-weight:600;margin-bottom:4px">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#991b1b" stroke-width="2" style="vertical-align:-2px;margin-right:4px"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+          批量初审注意事项
+        </div>
+        批量审查将对所选作品的权益统一给出相同判断，包括人审结论、瑕疵类型、可授权平台、排除平台及初审备注。<strong>审核人需为审核结论承担责任</strong>，请确认所选作品确实适用相同审查结论后再提交。
+      </div>
+      <div style="margin-bottom:12px"><label style="font-size:12px;font-weight:500;display:block;margin-bottom:4px">初审结论 <span style="color:#ef4444">*</span></label>
+        <select id="batchReviewResult" style="width:100%;padding:8px;border:1px solid #d0d5dd;border-radius:6px;font-size:12px" onchange="document.getElementById('batchDefectArea').style.display=this.value==='rights_defect'?'':'none'">
+          <option value="">请选择</option><option value="rights_available">权利可用</option><option value="rights_defect">权利瑕疵</option>
+        </select></div>
+      <div id="batchDefectArea" style="display:none;margin-bottom:12px"><label style="font-size:12px;font-weight:500;display:block;margin-bottom:4px">瑕疵类型 <span style="color:#ef4444">*</span></label>
+        <div style="display:flex;gap:6px;flex-wrap:wrap">${defectTypes}</div></div>
+      <div style="margin-bottom:12px"><label style="font-size:12px;font-weight:500;display:block;margin-bottom:4px">可授权平台</label>
+        <div style="display:flex;gap:6px;flex-wrap:wrap">${platforms}</div></div>
+      <div style="margin-bottom:12px"><label style="font-size:12px;font-weight:500;display:block;margin-bottom:4px">排除平台</label>
+        <div style="display:flex;gap:6px;flex-wrap:wrap">${excludePlatforms}</div></div>
+      <div><label style="font-size:12px;font-weight:500;display:block;margin-bottom:4px">备注</label>
+        <textarea style="width:100%;padding:8px;border:1px solid #d0d5dd;border-radius:6px;font-size:12px;resize:vertical" rows="2" placeholder="可选"></textarea></div>`;
+  } else if (action === '复审') {
+    formHTML = `
+      <div style="background:#fef2f2;border:1px solid #fecaca;border-radius:8px;padding:10px 12px;margin-bottom:14px;font-size:12px;color:#991b1b;line-height:1.6">
+        <div style="font-weight:600;margin-bottom:4px">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#991b1b" stroke-width="2" style="vertical-align:-2px;margin-right:4px"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+          批量复审注意事项
+        </div>
+        批量审查将对所选作品的权益统一给出相同判断，包括人审结论、瑕疵类型、瑕疵处置方式、可授权平台、排除平台及复审备注。<strong>审核人需为审核结论承担责任</strong>。<br>含多条待审权益的作品不支持批量复审（授权依据无法默认勾选），仅限单待审权益的作品。
+      </div>
+      <div style="margin-bottom:12px"><label style="font-size:12px;font-weight:500;display:block;margin-bottom:4px">复审结论 <span style="color:#ef4444">*</span></label>
+        <select id="batchReviewResult" style="width:100%;padding:8px;border:1px solid #d0d5dd;border-radius:6px;font-size:12px" onchange="document.getElementById('batchSecondDefectArea').style.display=this.value==='rights_defect'?'':'none'">
+          <option value="">请选择</option><option value="rights_available">权利可用</option><option value="rights_defect">权利瑕疵</option>
+        </select></div>
+      <div style="margin-bottom:12px"><label style="font-size:12px;font-weight:500;display:block;margin-bottom:4px">可授权平台 <span style="color:#ef4444">*</span></label>
+        <div style="display:flex;gap:6px;flex-wrap:wrap">${platforms}</div></div>
+      <div style="margin-bottom:12px"><label style="font-size:12px;font-weight:500;display:block;margin-bottom:4px">排除平台 <span style="color:#ef4444">*</span></label>
+        <div style="display:flex;gap:6px;flex-wrap:wrap">${excludePlatforms}</div></div>
+      <div id="batchSecondDefectArea" style="display:none">
+        <div style="margin-bottom:12px"><label style="font-size:12px;font-weight:500;display:block;margin-bottom:4px">瑕疵类型 <span style="color:#ef4444">*</span></label>
+          <div style="display:flex;gap:6px;flex-wrap:wrap">${defectTypes}</div></div>
+        <div style="margin-bottom:12px"><label style="font-size:12px;font-weight:500;display:block;margin-bottom:4px">瑕疵处置方式 <span style="color:#ef4444">*</span></label>
+          <select style="width:100%;padding:8px;border:1px solid #d0d5dd;border-radius:6px;font-size:12px">
+            <option value="">请选择</option>
+            ${Object.entries(DEFECT_DISPOSAL_METHOD_MAP).map(([k,v]) => `<option value="${k}">${v}</option>`).join('')}
+          </select></div>
+        <div style="margin-bottom:12px"><label style="font-size:12px;font-weight:500;display:block;margin-bottom:4px">授权依据（权益ID） <span style="color:#ef4444">*</span></label>
+          <input type="text" style="width:100%;padding:8px;border:1px solid #d0d5dd;border-radius:6px;font-size:12px" placeholder="如 bq2078802-o1160834"></div>
+      </div>
+      <div><label style="font-size:12px;font-weight:500;display:block;margin-bottom:4px">备注</label>
+        <textarea style="width:100%;padding:8px;border:1px solid #d0d5dd;border-radius:6px;font-size:12px;resize:vertical" rows="2" placeholder="可选"></textarea></div>`;
+  } else {
+    const runningProjects = (authData?.projects || []).filter(p => p.status === 'running');
+    formHTML = `
+      <div style="background:#fef2f2;border:1px solid #fecaca;border-radius:8px;padding:10px 12px;margin-bottom:14px;font-size:12px;color:#991b1b;line-height:1.6">
+        <div style="font-weight:600;margin-bottom:4px">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#991b1b" stroke-width="2" style="vertical-align:-2px;margin-right:4px"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+          批量终审注意事项
+        </div>
+        批量审查将对所选作品统一给出相同授权结论，包括是否授权、授权平台及瑕疵处置结论。<strong>授权起止时间将默认采用系统填充时间，不支持单独修改。</strong>若实际授权信息存在差异，请勿使用批量功能，对特殊项目单独确认。
+      </div>
+      <div style="margin-bottom:12px"><label style="font-size:12px;font-weight:500;display:block;margin-bottom:4px">终审结论 <span style="color:#ef4444">*</span></label>
+        <select id="batchReviewResult" style="width:100%;padding:8px;border:1px solid #d0d5dd;border-radius:6px;font-size:12px">
+          <option value="">请选择</option><option value="can_authorized">可授权</option><option value="not_authorized">不授权</option>
+        </select></div>
+      <div style="margin-bottom:12px"><label style="font-size:12px;font-weight:500;display:block;margin-bottom:4px">选择授权项目</label>
+        <div style="display:grid;gap:6px">${runningProjects.map(p => `<label style="display:flex;align-items:center;gap:8px;padding:8px;border:1px solid #e5e7eb;border-radius:6px;font-size:12px;cursor:pointer"><input type="checkbox" value="${p.id}" checked><span>${p.name}</span><span style="color:#999;font-size:11px">${p.partner_name}</span></label>`).join('')}</div></div>
+      <div><label style="font-size:12px;font-weight:500;display:block;margin-bottom:4px">备注</label>
+        <textarea style="width:100%;padding:8px;border:1px solid #d0d5dd;border-radius:6px;font-size:12px;resize:vertical" rows="2" placeholder="可选"></textarea></div>`;
+  }
+
+  const html = `
+    <div id="rrBatchModal" style="position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:1000;display:flex;align-items:center;justify-content:center" onclick="if(event.target===this)this.remove()">
+      <div style="background:#fff;border-radius:12px;width:480px;max-height:80vh;overflow-y:auto" onclick="event.stopPropagation()">
+        <div style="padding:16px 20px;border-bottom:1px solid #e5e7eb;display:flex;justify-content:space-between;align-items:center">
+          <h3 style="margin:0;font-size:16px">批量${action}（${rrSelectedIds.size} 条）</h3>
+          <button style="background:none;border:none;cursor:pointer" onclick="document.getElementById('rrBatchModal').remove()">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#999" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+          </button>
+        </div>
+        <div style="padding:20px">${formHTML}</div>
+        <div style="padding:12px 20px;border-top:1px solid #e5e7eb;display:flex;justify-content:flex-end;gap:8px">
+          <button class="rr-btn-view" onclick="document.getElementById('rrBatchModal').remove()">取消</button>
+          <button class="rr-btn-submit" onclick="confirmRRBatch('${action}')">确认提交</button>
+        </div>
+      </div>
+    </div>`;
+  document.body.insertAdjacentHTML('beforeend', html);
+}
+
+function confirmRRBatch(action) {
+  const result = document.getElementById('batchReviewResult')?.value;
+  if (!result) { alert('请选择' + action + '结论'); return; }
+  document.getElementById('rrBatchModal')?.remove();
+  showToast('批量' + action + '提交成功（' + rrSelectedIds.size + ' 条）', 'success');
+  rrSelectedIds.clear();
+  renderRightsReviewV2();
 }
 
 // ============================================================
@@ -2755,9 +3112,11 @@ function openRRDetailV2(auditId) {
   const listTab = document.getElementById('tabRightsReview');
   const detailPage = document.getElementById('rightsReviewDetailPage');
   const catTabs = document.getElementById('authCategoryTabs');
+  const pageBreadcrumb = document.querySelector('.page-breadcrumb');
   if (listTab) listTab.style.display = 'none';
   if (detailPage) detailPage.style.display = 'block';
   if (catTabs) catTabs.style.display = 'none';
+  if (pageBreadcrumb) pageBreadcrumb.style.display = 'none';
 
   renderRRDetailV2(item);
 }
@@ -2767,9 +3126,13 @@ function closeRRDetailV2() {
   const listTab = document.getElementById('tabRightsReview');
   const detailPage = document.getElementById('rightsReviewDetailPage');
   const catTabs = document.getElementById('authCategoryTabs');
+  const pageBreadcrumb = document.querySelector('.page-breadcrumb');
   if (listTab) listTab.style.display = 'block';
   if (detailPage) detailPage.style.display = 'none';
   if (catTabs) catTabs.style.display = 'flex';
+  if (pageBreadcrumb) pageBreadcrumb.style.display = '';
+  const historyBtn = document.getElementById('btnAuthHistory');
+  if (historyBtn) historyBtn.style.display = 'none';
   renderRightsReviewV2();
 }
 
@@ -2783,6 +3146,13 @@ function renderRRDetailV2(item) {
   if (titleEl) titleEl.textContent = `${item.play_name}-授权详情`;
   const backBtn = document.getElementById('btnBackToRightsReview');
   if (backBtn) backBtn.onclick = closeRRDetailV2;
+
+  // 审核历史按钮（面包屑右侧）
+  const historyBtn = document.getElementById('btnAuthHistory');
+  if (historyBtn) {
+    historyBtn.style.display = '';
+    historyBtn.onclick = function() { openAuthHistoryV2(item.copyright_id); };
+  }
 
   // 作品基础信息
   renderWorkInfoCard(item);
@@ -2819,7 +3189,6 @@ function renderWorkInfoCard(item) {
           <div class="rrd-info-field"><span class="rrd-info-label">热度</span><span class="rrd-info-value">${item.cid_info?.hot_level || '-'}</span></div>
         </div>
         <div class="rrd-info-actions">
-          <button class="rrd-btn-history" onclick="openAuthHistoryV2('${item.copyright_id}')">${SVG.history} 审核历史</button>
         </div>
       </div>
     </div>
@@ -2830,12 +3199,13 @@ function renderFlowSteps(item) {
   const container = document.getElementById('rrdReviewNodes');
   if (!container) return;
 
-  const currentIdx = AUDIT_PROGRESS_ORDER[item.audit_progress] ?? -1;
+  const steps = getFlowStepsByTaskType(item.task_type);
+  const currentIdx = steps.findIndex(s => s.key === item.audit_progress);
   const isObsoleted = item.audit_progress === 'obsoleted';
 
   container.innerHTML = `
     <div class="rr-flow-steps">
-      ${FLOW_STEPS.map((step, idx) => {
+      ${steps.map((step, idx) => {
         let status = 'pending';
         let operator = '';
         let time = '';
@@ -2848,11 +3218,9 @@ function renderFlowSteps(item) {
         } else if (idx === currentIdx && item.audit_progress !== 'confirmed_rights') {
           status = 'active';
         } else if (item.audit_progress === 'confirmed_rights') {
-          status = idx <= 3 ? 'completed' : 'pending';
-          if (idx < 3) {
-            operator = item[step.reviewByField] || '';
-            time = formatDateTime(item[step.reviewAtField]);
-          }
+          status = 'completed';
+          operator = item[step.reviewByField] || '';
+          time = formatDateTime(item[step.reviewAtField]);
         }
 
         return `
@@ -2862,7 +3230,7 @@ function renderFlowSteps(item) {
             </div>
             <div class="rr-flow-step-label">${step.label}</div>
             ${operator ? `<div class="rr-flow-step-info">${operator} · ${time}</div>` : ''}
-            ${idx < FLOW_STEPS.length - 1 ? '<div class="rr-flow-step-line"></div>' : ''}
+            ${idx < steps.length - 1 ? '<div class="rr-flow-step-line"></div>' : ''}
           </div>
         `;
       }).join('')}
@@ -2874,15 +3242,406 @@ function renderReviewSection(item) {
   const container = document.getElementById('rrdRightsList');
   if (!container) return;
 
-  const currentIdx = AUDIT_PROGRESS_ORDER[item.audit_progress] ?? -1;
+  const steps = getFlowStepsByTaskType(item.task_type);
+  const currentIdx = steps.findIndex(s => s.key === item.audit_progress);
+  const isConfirmed = item.audit_progress === 'confirmed_rights';
+  const isRisk = item.task_type && (item.task_type.startsWith('risk_review') || item.task_type === 'defect_reaudit');
 
-  container.innerHTML = `
-    <div class="rr-review-panels">
-      ${renderFirstReviewPanel(item, currentIdx)}
-      ${renderSecondReviewPanel(item, currentIdx)}
-      ${renderThirdReviewPanel(item, currentIdx)}
-    </div>
-  `;
+  // ========== 当前流程区（左右分栏） ==========
+  let flowHTML = '';
+  if (isConfirmed) {
+    // 已完成——横向展示所有节点回显
+    flowHTML = `
+      <div class="rrd-section-card">
+        <div class="rrd-section-title">当前流程</div>
+        <div style="display:flex;flex-direction:column;gap:16px;padding:16px 20px">
+          ${renderNodeSummary('版权运营初审', buildFirstReviewDisplay(item, isRisk), item.rights_first_review_by, item.rights_first_review_at)}
+          ${renderNodeSummary('法务复审', buildSecondReviewDisplay(item, isRisk), item.rights_second_review_by, item.rights_second_review_at)}
+          ${renderNodeSummary(isRisk ? '外循环运营授权评估' : '品类运营授权评估', buildThirdReviewDisplay(item), item.rights_third_review_by, item.rights_third_review_at)}
+        </div>
+      </div>`;
+  } else {
+    // 未完成——左右分栏
+    const leftNodes = steps.map((step, idx) => {
+      let status = 'pending';
+      if (idx < currentIdx) status = 'completed';
+      else if (idx === currentIdx) status = 'active';
+      return `
+        <div class="rrd-flow-node ${status}" style="display:flex;align-items:flex-start;gap:12px;position:relative;padding-bottom:${idx < steps.length - 1 ? '24px' : '0'}">
+          <div style="width:24px;height:24px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;${
+            status === 'completed' ? 'background:#10b981;color:#fff' :
+            status === 'active' ? 'background:#6c5ce7;color:#fff' :
+            'background:#e5e7eb;color:#999'
+          }">
+            ${status === 'completed' ? SVG.check : `<span style="font-size:11px;font-weight:600">${idx + 1}</span>`}
+          </div>
+          ${idx < steps.length - 1 ? `<div style="position:absolute;left:11px;top:28px;width:2px;height:calc(100% - 28px);background:${status === 'completed' ? '#10b981' : '#e5e7eb'}"></div>` : ''}
+          <div>
+            <div style="font-size:13px;font-weight:500;color:${status === 'active' ? '#6c5ce7' : '#333'}">${step.label}</div>
+            ${status === 'completed' && item[step.reviewByField] ? `<div style="font-size:11px;color:#999;margin-top:2px">${item[step.reviewByField]} · ${formatDateTime(item[step.reviewAtField])}</div>` : ''}
+            ${status === 'completed' ? `<div style="margin-top:6px;font-size:12px;color:#666">${
+              idx === 0 ? buildFirstReviewDisplay(item, isRisk) :
+              idx === 1 ? buildSecondReviewDisplay(item, isRisk) :
+              buildThirdReviewDisplay(item)
+            }</div>` : ''}
+          </div>
+        </div>`;
+    }).join('');
+
+    // 右侧：当前阶段审核表单
+    let rightPanel = '';
+    const activeStep = steps[currentIdx];
+    const activeName = activeStep ? activeStep.label : '';
+    if (item.audit_progress === 'rights_first_review') {
+      rightPanel = renderFirstReviewForm(item, isRisk);
+    } else if (item.audit_progress === 'rights_second_review') {
+      rightPanel = renderSecondReviewForm(item, isRisk);
+    } else if (item.audit_progress === 'rights_third_review') {
+      rightPanel = renderThirdReviewForm(item, isRisk);
+    }
+
+    flowHTML = `
+      <div class="rrd-section-card" style="padding:0">
+        <div style="display:flex">
+          <div style="flex:7;min-width:0;border-right:1px solid #e5e7eb">
+            <div class="rrd-section-title" style="padding:14px 20px;border-bottom:1px solid #e5e7eb">当前流程</div>
+            <div style="padding:20px">${leftNodes}</div>
+          </div>
+          <div style="flex:10;min-width:0">
+            <div style="padding:14px 20px;border-bottom:1px solid #e5e7eb;font-size:15px;font-weight:500">${activeName}</div>
+            <div style="padding:20px">${rightPanel}</div>
+          </div>
+        </div>
+      </div>`;
+  }
+
+  // ========== 待审核信息区（权益卡片 + 详情面板） ==========
+  const rightsInfos = item.rights_infos || [];
+  let rightsHTML = '';
+  if (rightsInfos.length > 0) {
+    rightsHTML = `
+      <div style="margin-top:20px">
+        <div style="font-size:16px;font-weight:600;color:#111;margin-bottom:12px">待审核信息</div>
+        <div style="display:flex;gap:12px;overflow-x:auto;padding-bottom:8px">
+          ${rightsInfos.map((r, i) => {
+            const isImport = r.copyright_type === 'import';
+            const isRiskCard = (item.risk_export_copr_rights_ids || []).includes(r.copr_rights_id) ||
+                               (item.defect_copy_rights_ids || []).includes(r.copr_rights_id);
+            return `
+              <div class="rrd-rights-card" onclick="toggleRightsDetail(this, ${i})" style="min-width:280px;cursor:pointer;border:1px solid #f0f0f0;border-radius:10px;padding:14px 18px;background:#fff;transition:all .2s">
+                <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+                  <span style="font-size:11px;padding:2px 8px;border-radius:4px;${
+                    r.ip_authorize_right_external === 'authorized' ? 'background:#f0fdf4;color:#166534' :
+                    r.ip_authorize_right_external === 'not_authorized' ? 'background:#fef2f2;color:#991b1b' :
+                    r.ip_authorize_right_external === 'pending' ? 'background:#fffbeb;color:#92400e' : 'background:#f9fafb;color:#666'
+                  }">${
+                    r.ip_authorize_right_external === 'authorized' ? '已授权' :
+                    r.ip_authorize_right_external === 'not_authorized' ? '不授权' :
+                    r.ip_authorize_right_external === 'pending' ? '待审查' : '—'
+                  }</span>
+                  ${isRiskCard || !isImport ? `<span style="color:#ef4444;font-size:12px;font-weight:500">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#ef4444" stroke-width="2" style="vertical-align:-1px"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                    风险审查</span>` : ''}
+                </div>
+                <div style="display:flex;flex-direction:column;gap:6px;font-size:12px">
+                  <div style="display:flex;justify-content:space-between"><span style="color:#999">权益ID</span><span style="color:#333;font-family:monospace">${r.copr_rights_id}</span></div>
+                  <div style="display:flex;justify-content:space-between"><span style="color:#999">合同号</span><span style="color:#333">${r.contract_codes || '-'}</span></div>
+                  <div style="display:flex;justify-content:space-between"><span style="color:#999">权益类型</span><span style="color:#333">${isImport ? '引入类权益' : '输出类权益'}</span></div>
+                </div>
+              </div>`;
+          }).join('')}
+        </div>
+        <div id="rightsDetailPanel" style="margin-top:12px;display:none;background:#fff;border:1px solid #e5e7eb;border-radius:10px;padding:20px">
+        </div>
+      </div>`;
+  }
+
+  container.innerHTML = flowHTML + rightsHTML;
+}
+
+function toggleRightsDetail(card, idx) {
+  const panel = document.getElementById('rightsDetailPanel');
+  if (!panel || !rrCurrentDetailItem) return;
+  const infos = rrCurrentDetailItem.rights_infos || [];
+  const r = infos[idx];
+  if (!r) return;
+  
+  // 高亮选中卡片
+  document.querySelectorAll('.rrd-rights-card').forEach(c => c.style.borderColor = '#f0f0f0');
+  card.style.borderColor = '#6c5ce7';
+  
+  panel.style.display = '';
+  const isImport = r.copyright_type === 'import';
+  
+  // Radio 只读展示辅助函数
+  const radioRow = (label, options, selected) => {
+    if (!options || options.length === 0) return '';
+    return `<div style="margin-bottom:14px">
+      <div style="font-size:12px;color:#999;margin-bottom:6px">${label}</div>
+      <div style="display:flex;flex-wrap:wrap;gap:8px">${options.map(([val, text]) => 
+        `<span style="display:inline-flex;align-items:center;gap:4px;font-size:12px;color:${val === selected ? '#6c5ce7' : '#ccc'}">
+          <span style="width:14px;height:14px;border-radius:50%;border:2px solid ${val === selected ? '#6c5ce7' : '#d0d5dd'};display:inline-flex;align-items:center;justify-content:center">
+            ${val === selected ? '<span style="width:6px;height:6px;border-radius:50%;background:#6c5ce7"></span>' : ''}
+          </span>${text}</span>`
+      ).join('')}</div>
+    </div>`;
+  };
+  const multiRadioRow = (label, options, selectedArr) => {
+    if (!options || options.length === 0) return '';
+    const arr = selectedArr || [];
+    return `<div style="margin-bottom:14px">
+      <div style="font-size:12px;color:#999;margin-bottom:6px">${label}</div>
+      <div style="display:flex;flex-wrap:wrap;gap:8px">${options.map(([val, text]) => 
+        `<span style="display:inline-flex;align-items:center;gap:4px;font-size:12px;color:${arr.includes(val) ? '#6c5ce7' : '#ccc'}">
+          <span style="width:14px;height:14px;border-radius:3px;border:2px solid ${arr.includes(val) ? '#6c5ce7' : '#d0d5dd'};display:inline-flex;align-items:center;justify-content:center">
+            ${arr.includes(val) ? '<svg width="10" height="10" viewBox="0 0 24 24" fill="#6c5ce7" stroke="#6c5ce7" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>' : ''}
+          </span>${text}</span>`
+      ).join('')}</div>
+    </div>`;
+  };
+  const infoItem = (label, value) => `<div style="flex:1;min-width:200px;margin-bottom:14px"><div style="font-size:12px;color:#999;margin-bottom:4px">${label}</div><div style="font-size:13px;color:#333">${value || '-'}</div></div>`;
+  const divider = '<div style="height:1px;background:#f0f0f0;margin:8px 0 16px"></div>';
+  const sectionTitle = (title) => `<div style="font-size:14px;font-weight:600;color:#333;margin-bottom:14px">${title}</div>`;
+
+  if (isImport) {
+    panel.innerHTML = `
+      <div style="display:flex;align-items:center;gap:10px;border-bottom:1px solid #f0f0f0;padding-bottom:14px;margin-bottom:16px">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#666" stroke-width="1.5"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+        <span style="font-size:15px;font-weight:500">权益ID-${r.copr_rights_id}</span>
+      </div>
+      <div style="padding:0 12px">
+        ${sectionTitle('一、基本信息')}
+        <div style="display:flex;gap:16px;flex-wrap:wrap">
+          ${infoItem('权益ID', r.copr_rights_id)}
+          ${infoItem('权益合同号', `<a href="#" style="color:#6c5ce7;text-decoration:none">${r.contract_codes || '-'}</a>`)}
+        </div>
+        ${radioRow('版权类型', [['import_intro','引入版权'],['import_self','引入自制'],['import_custom','引入定制'],['import_replace','引入置换']], r.copyright_type === 'import' ? 'import_intro' : '')}
+        ${radioRow('瑕疵类型', [['pending','权利瑕疵'],['authorized','权利可用'],['not_authorized','权利完全不可用']], r.ip_authorize_right_external)}
+        
+        ${divider}
+        ${sectionTitle('二、授权基础权利')}
+        <div style="display:flex;gap:24px;flex-wrap:wrap">
+          ${radioRow('授权性质', [['exclusive','独家'],['non_exclusive','非独家']], r.co_intention)}
+          <div style="flex:2">${multiRadioRow('授权权利', [['information_network','信息网络传播权'],['broadcast','广播权'],['editing','剪辑权'],['entertainment','娱乐权'],['tv_channel','电视渠道广播权'],['satellite','卫星'],['terrestrial','地面频道'],['network_broadcast','网络渠道广播权'],['aviation','航空器播放权']], r.copyright_rights)}</div>
+        </div>
+        <div style="display:flex;gap:24px;flex-wrap:wrap">
+          ${radioRow('转授权起止日期类型', [['inherit_auth_period','继承授权期限'],['custom_period','自有期限']], r.resell_time_type)}
+          ${infoItem('授权起止日期', `${r.copyright_time_start || '-'} 至 ${r.copyright_time_end || '-'}`)}
+        </div>
+        ${radioRow('转授权许可', [['allowed','可转授'],['joint_sublicense','联合转授'],['not_allowed','不可转授']], r.sub_license_permission)}
+        
+        ${divider}
+        ${sectionTitle('三、二创权利')}
+        ${radioRow('二创权利-权利有无', [['123127036','有'],['123127037','无'],['123127038','未约定']], r.second_creation_has_rights)}
+        ${radioRow('二创权利性质-独占性', [['exclusive','独占'],['non_exclusive','非独占']], r.second_creation_exclusivity)}
+        ${radioRow('二创权利性质-转授权', [['allowed','可转授'],['not_allowed','不可转授']], r.second_creation_sublicense)}
+        
+        ${divider}
+        ${sectionTitle('四、二创创作成果')}
+        ${radioRow('时长要求-授权使用', [['no_limit','无限制'],['has_limit','有限制']], r.achievements_time_requirement_authorized_use)}
+        ${radioRow('数量要求-授权使用', [['no_limit','无限制'],['has_limit','有限制']], r.achievements_quantity_requirement_authorized_use)}
+        ${radioRow('二创权利-新成果归属', [['licensor','授权方'],['licensee','被授权方'],['joint_ownership','共同所有']], r.second_creation_new_attribution)}
+        
+        ${divider}
+        ${sectionTitle('五、二创传播限制')}
+        ${radioRow('传播渠道-授权使用', [['no_limit','无限制'],['has_limit','有限制']], r.dissemination_restrictions_channels_authorized_use)}
+        ${radioRow('传播期限-授权使用', [['no_limit','无限制'],['has_limit','有限制']], r.dissemination_restrictions_period_authorized_use)}
+        ${radioRow('地域-授权使用', [['no_limit','无限制'],['has_limit','有限制']], r.dissemination_restrictions_area_authorized_use)}
+      </div>`;
+  } else {
+    panel.innerHTML = `
+      <div style="display:flex;align-items:center;gap:10px;border-bottom:1px solid #f0f0f0;padding-bottom:14px;margin-bottom:16px">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#666" stroke-width="1.5"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+        <span style="font-size:15px;font-weight:500">权益ID-${r.copr_rights_id}</span>
+      </div>
+      <div style="padding:0 12px">
+        ${sectionTitle('输出类权益信息')}
+        <div style="display:flex;gap:16px;flex-wrap:wrap">
+          ${infoItem('权益ID', r.copr_rights_id)}
+          ${infoItem('合同号', r.contract_codes || '-')}
+          ${infoItem('输出平台', r.export_platform || '-')}
+          ${infoItem('权利类型', r.export_rights_type || '-')}
+          ${infoItem('授权开始', r.export_time_start || '-')}
+          ${infoItem('授权结束', r.export_time_end || '-')}
+        </div>
+      </div>`;
+  }
+}
+
+// ========== 已完成节点回显 ==========
+function renderNodeSummary(name, fieldsHTML, reviewer, reviewAt) {
+  return `
+    <div style="background:#f9fafb;border-radius:8px;padding:12px 16px">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px">
+        <span style="font-size:13px;font-weight:500;color:#333">${name}</span>
+        ${reviewer ? `<span style="font-size:11px;color:#999">${reviewer} · ${formatDateTime(reviewAt)}</span>` : ''}
+      </div>
+      <div style="font-size:12px;color:#666">${fieldsHTML}</div>
+    </div>`;
+}
+
+function buildFirstReviewDisplay(item, isRisk) {
+  const parts = [];
+  parts.push(`人审结论：${getReviewResultLabel(item.rights_first_review_result) || '-'}`);
+  if (item.rights_first_review_result === 'rights_defect' && item.rights_first_review_defect_type?.length) {
+    parts.push(`瑕疵类型：${getDefectTypeLabels(item.rights_first_review_defect_type)}`);
+  }
+  if (item.rights_first_review_authorized_platforms?.length) {
+    parts.push(`可授权平台：${getPlatformLabels(item.rights_first_review_authorized_platforms)}`);
+  }
+  if (item.rights_first_review_excluded_platforms?.length) {
+    parts.push(`排除平台：${getExcludedPlatformLabels(item.rights_first_review_excluded_platforms)}`);
+  }
+  if (item.rights_first_review_remark) parts.push(`备注：${item.rights_first_review_remark}`);
+  return parts.join('<br>');
+}
+
+function buildSecondReviewDisplay(item, isRisk) {
+  const parts = [];
+  parts.push(`人审结论：${getReviewResultLabel(item.rights_second_review_result) || '-'}`);
+  if (item.import_copr_rights_id) parts.push(`授权依据：${item.import_copr_rights_id}`);
+  if (item.rights_second_review_authorized_platforms?.length) {
+    parts.push(`可授权平台：${getPlatformLabels(item.rights_second_review_authorized_platforms)}`);
+  }
+  if (item.rights_second_review_excluded_platforms?.length) {
+    parts.push(`排除平台：${getExcludedPlatformLabels(item.rights_second_review_excluded_platforms)}`);
+  }
+  if (item.rights_second_review_result === 'rights_defect') {
+    if (item.rights_second_review_defect_type?.length) parts.push(`瑕疵类型：${getDefectTypeLabels(item.rights_second_review_defect_type)}`);
+    if (item.rights_second_review_defect_disposal_method) parts.push(`瑕疵处置：${getDisposalMethodLabel(item.rights_second_review_defect_disposal_method)}`);
+  }
+  if (item.rights_second_review_remark) parts.push(`备注：${item.rights_second_review_remark}`);
+  return parts.join('<br>');
+}
+
+function buildThirdReviewDisplay(item) {
+  const parts = [];
+  parts.push(`授权判断：${getThirdReviewResultLabel(item.rights_third_review_result) || '-'}`);
+  if (item.rights_third_review_defect_disposal_result) parts.push(`瑕疵处置结论：${item.rights_third_review_defect_disposal_result}`);
+  const platforms = [];
+  if (item.rights_third_review_authorized_platform_kuaishou === 'Y') platforms.push('快手');
+  if (item.rights_third_review_authorized_platform_douyin === 'Y') platforms.push('抖音');
+  if (platforms.length) parts.push(`可授权平台：${platforms.join('、')}`);
+  if (item.rights_third_review_authorized_platform_kuaishou === 'Y') {
+    parts.push(`快手授权：${item.rights_third_review_authorized_platform_kuaishou_start_date || '-'} 至 ${item.rights_third_review_authorized_platform_kuaishou_end_date || '-'}`);
+  }
+  if (item.rights_third_review_authorized_platform_douyin === 'Y') {
+    parts.push(`抖音授权：${item.rights_third_review_authorized_platform_douyin_start_date || '-'} 至 ${item.rights_third_review_authorized_platform_douyin_end_date || '-'}`);
+  }
+  return parts.join('<br>');
+}
+
+// ========== 各阶段审核表单（右侧面板） ==========
+
+function renderFirstReviewForm(item, isRisk) {
+  return `
+    <div style="display:flex;flex-direction:column;gap:14px">
+      <div class="rr-form-row"><span class="rr-form-label">人审结论 <span style="color:#ef4444">*</span></span>
+        <select class="rr-form-select" id="rrFirstResult" onchange="document.getElementById('rrFirstDefectRow').style.display=this.value==='rights_defect'?'':'none'">
+          <option value="">请选择</option><option value="rights_available">权利可用</option><option value="rights_defect">权利瑕疵</option>
+        </select>
+      </div>
+      <div class="rr-form-row" id="rrFirstDefectRow" style="display:none">
+        <span class="rr-form-label">瑕疵类型 <span style="color:#ef4444">*</span></span>
+        <div class="rr-checkbox-group">${Object.entries(DEFECT_TYPE_MAP).map(([k,v]) => `<label class="rr-checkbox-label"><input type="checkbox" value="${k}" class="rrFirstDefect"> ${v}</label>`).join('')}</div>
+      </div>
+      <div class="rr-form-row"><span class="rr-form-label">可授权平台</span>
+        <div class="rr-checkbox-group">${Object.entries(AUTHORIZED_PLATFORM_MAP).map(([k,v]) => `<label class="rr-checkbox-label"><input type="checkbox" value="${k}" class="rrFirstPlatform"> ${v}</label>`).join('')}</div>
+      </div>
+      <div class="rr-form-row"><span class="rr-form-label">排除平台</span>
+        <div class="rr-checkbox-group">${Object.entries(EXCLUDED_PLATFORM_MAP).map(([k,v]) => `<label class="rr-checkbox-label"><input type="checkbox" value="${k}" class="rrFirstExclude"> ${v}</label>`).join('')}</div>
+      </div>
+      <div class="rr-form-row"><span class="rr-form-label">初审备注</span>
+        <textarea class="rr-form-textarea" id="rrFirstRemark" placeholder="选填"></textarea>
+      </div>
+      <div style="display:flex;justify-content:flex-end"><button class="rr-btn-submit" onclick="submitFirstReviewV2()">提交审查结论</button></div>
+    </div>`;
+}
+
+function renderSecondReviewForm(item, isRisk) {
+  const rightsOpts = (item.import_copr_rights_ids || []).filter(id => id);
+  const autoSelect = rightsOpts.length === 1;
+  return `
+    <div style="display:flex;flex-direction:column;gap:14px">
+      <div class="rr-form-row"><span class="rr-form-label">人审结论 <span style="color:#ef4444">*</span></span>
+        <select class="rr-form-select" id="rrSecondResult" onchange="document.getElementById('rrSecondDefectArea').style.display=this.value==='rights_defect'?'':'none'">
+          <option value="">请选择</option><option value="rights_available">权利可用</option><option value="rights_defect">权利瑕疵</option>
+        </select>
+      </div>
+      <div class="rr-form-row"><span class="rr-form-label">授权依据的引入权利 <span style="color:#ef4444">*</span></span>
+        <div style="display:flex;flex-direction:column;gap:4px">
+          ${rightsOpts.map(id => `<label style="display:flex;align-items:center;gap:6px;font-size:12px;padding:6px 10px;border:1px solid #e5e7eb;border-radius:6px;cursor:pointer">
+            <input type="radio" name="rrSecondImportRightsId" value="${id}" ${autoSelect ? 'checked' : ''}> ${id}
+          </label>`).join('')}
+        </div>
+      </div>
+      <div class="rr-form-row"><span class="rr-form-label">可授权平台 <span style="color:#ef4444">*</span></span>
+        <div class="rr-checkbox-group">${Object.entries(AUTHORIZED_PLATFORM_MAP).map(([k,v]) => `<label class="rr-checkbox-label"><input type="checkbox" value="${k}" class="rrSecondPlatform"> ${v}</label>`).join('')}</div>
+      </div>
+      <div class="rr-form-row"><span class="rr-form-label">排除平台 <span style="color:#ef4444">*</span></span>
+        <div class="rr-checkbox-group">${Object.entries(EXCLUDED_PLATFORM_MAP).map(([k,v]) => `<label class="rr-checkbox-label"><input type="checkbox" value="${k}" class="rrSecondExclude"> ${v}</label>`).join('')}</div>
+      </div>
+      <div id="rrSecondDefectArea" style="display:none">
+        <div class="rr-form-row" style="margin-bottom:14px"><span class="rr-form-label">瑕疵类型 <span style="color:#ef4444">*</span></span>
+          <div class="rr-checkbox-group">${Object.entries(DEFECT_TYPE_MAP).map(([k,v]) => `<label class="rr-checkbox-label"><input type="checkbox" value="${k}" class="rrSecondDefect"> ${v}</label>`).join('')}</div>
+        </div>
+        <div class="rr-form-row"><span class="rr-form-label">瑕疵处置方式 <span style="color:#ef4444">*</span></span>
+          <div style="display:flex;flex-direction:column;gap:4px">
+            ${Object.entries(DEFECT_DISPOSAL_METHOD_MAP).map(([k,v]) => `<label style="display:flex;align-items:center;gap:6px;font-size:12px"><input type="radio" name="rrSecondDisposal" value="${k}"> ${v}</label>`).join('')}
+          </div>
+        </div>
+      </div>
+      <div class="rr-form-row"><span class="rr-form-label">复审备注</span>
+        <textarea class="rr-form-textarea" id="rrSecondRemark" placeholder="选填，如：合同授权范围不含短视频二创权益"></textarea>
+      </div>
+      <div style="display:flex;justify-content:flex-end"><button class="rr-btn-submit" onclick="submitSecondReviewV2()">提交审查结论</button></div>
+    </div>`;
+}
+
+function renderThirdReviewForm(item, isRisk) {
+  const hasDefect = item.rights_second_review_result === 'rights_defect';
+  return `
+    <div style="display:flex;flex-direction:column;gap:14px">
+      <div class="rr-form-row"><span class="rr-form-label">授权判断 <span style="color:#ef4444">*</span></span>
+        <select class="rr-form-select" id="rrThirdResult" onchange="document.getElementById('rrThirdPlatformSection').style.display=this.value==='can_authorized'?'':'none'">
+          <option value="">请选择</option><option value="can_authorized">可授权</option><option value="not_authorized">不授权</option>
+        </select>
+      </div>
+      ${hasDefect ? `
+        <div class="rr-form-row"><span class="rr-form-label">瑕疵处置结论 <span style="color:#ef4444">*</span></span>
+          <div style="display:flex;flex-direction:column;gap:4px">
+            <label style="display:flex;align-items:center;gap:6px;font-size:12px"><input type="radio" name="rrThirdDisposalResult" value="confirmed_disposal"> 已处置</label>
+            <label style="display:flex;align-items:center;gap:6px;font-size:12px"><input type="radio" name="rrThirdDisposalResult" value="no_disposal_needed"> 无需处置</label>
+            <label style="display:flex;align-items:center;gap:6px;font-size:12px"><input type="radio" name="rrThirdDisposalResult" value="pending_disposal"> 待处置</label>
+          </div>
+        </div>
+      ` : ''}
+      <div id="rrThirdPlatformSection" style="display:none">
+        <div class="rr-form-row" style="margin-bottom:14px"><span class="rr-form-label">可授权平台 <span style="color:#ef4444">*</span></span>
+          <div style="display:flex;gap:12px">
+            <label style="display:flex;align-items:center;gap:6px;font-size:12px"><input type="checkbox" id="rrThirdKs" ${item.is_restricted_kuaishou ? 'disabled' : ''} onchange="document.getElementById('rrThirdKsDates').style.display=this.checked?'flex':'none'"> 快手 ${item.is_restricted_kuaishou ? '<span style="color:#ef4444;font-size:11px">（受限）</span>' : ''}</label>
+            <label style="display:flex;align-items:center;gap:6px;font-size:12px"><input type="checkbox" id="rrThirdDy" onchange="document.getElementById('rrThirdDyDates').style.display=this.checked?'flex':'none'"> 抖音</label>
+          </div>
+        </div>
+        <div id="rrThirdKsDates" style="display:none;gap:8px;align-items:center;margin-bottom:14px;padding-left:8px">
+          <span style="font-size:12px;color:#666">快手授权时间：</span>
+          <input type="date" class="rr-form-date" id="rrThirdKsStart" ${isRisk ? 'disabled' : ''}> <span>—</span>
+          <input type="date" class="rr-form-date" id="rrThirdKsEnd" ${isRisk ? 'disabled' : ''}>
+        </div>
+        <div id="rrThirdDyDates" style="display:none;gap:8px;align-items:center;margin-bottom:14px;padding-left:8px">
+          <span style="font-size:12px;color:#666">抖音授权时间：</span>
+          <input type="date" class="rr-form-date" id="rrThirdDyStart" ${isRisk ? 'disabled' : ''}> <span>—</span>
+          <input type="date" class="rr-form-date" id="rrThirdDyEnd" ${isRisk ? 'disabled' : ''}>
+        </div>
+      </div>
+      <div style="display:flex;justify-content:flex-end"><button class="rr-btn-submit" onclick="submitThirdReviewV2()">提交${isRisk ? '回收评估' : '授权评估'}结论</button></div>
+    </div>`;
+}
+
+// 排除平台标签辅助函数
+function getExcludedPlatformLabels(arr) {
+  if (!arr || arr.length === 0) return '-';
+  return arr.map(k => EXCLUDED_PLATFORM_MAP[k] || k).join('、');
 }
 
 // ============================================================
@@ -3115,12 +3874,14 @@ function submitFirstReviewV2() {
   if (!result) { alert('请选择初审结论'); return; }
 
   const platforms = Array.from(document.querySelectorAll('.rrFirstPlatform:checked')).map(c => c.value);
+  const excludePlatforms = Array.from(document.querySelectorAll('.rrFirstExclude:checked')).map(c => c.value);
   const remark = document.getElementById('rrFirstRemark')?.value || '';
   const defectTypes = Array.from(document.querySelectorAll('.rrFirstDefect:checked')).map(c => c.value);
 
   // Mock 更新
   rrCurrentDetailItem.rights_first_review_result = result;
   rrCurrentDetailItem.rights_first_review_authorized_platforms = platforms;
+  rrCurrentDetailItem.rights_first_review_excluded_platforms = excludePlatforms;
   rrCurrentDetailItem.rights_first_review_remark = remark;
   rrCurrentDetailItem.rights_first_review_by = 'demo_user';
   rrCurrentDetailItem.rights_first_review_at = new Date().toISOString().replace('T', ' ').substring(0, 19);
@@ -3140,13 +3901,19 @@ function submitSecondReviewV2() {
   if (!result) { alert('请选择复审结论'); return; }
 
   const platforms = Array.from(document.querySelectorAll('.rrSecondPlatform:checked')).map(c => c.value);
-  const disposal = document.getElementById('rrSecondDisposal')?.value || '';
+  const excludePlatforms = Array.from(document.querySelectorAll('.rrSecondExclude:checked')).map(c => c.value);
+  const disposal = document.querySelector('input[name="rrSecondDisposal"]:checked')?.value || '';
   const remark = document.getElementById('rrSecondRemark')?.value || '';
-  const importRightsId = document.getElementById('rrSecondImportRightsId')?.value || '';
+  const importRightsId = document.querySelector('input[name="rrSecondImportRightsId"]:checked')?.value || '';
+  const defectTypes = Array.from(document.querySelectorAll('.rrSecondDefect:checked')).map(c => c.value);
+
+  if (!importRightsId) { alert('请选择授权依据的引入权利'); return; }
 
   rrCurrentDetailItem.rights_second_review_result = result;
   rrCurrentDetailItem.rights_second_review_authorized_platforms = platforms;
+  rrCurrentDetailItem.rights_second_review_excluded_platforms = excludePlatforms;
   rrCurrentDetailItem.rights_second_review_defect_disposal_method = disposal;
+  rrCurrentDetailItem.rights_second_review_defect_type = defectTypes;
   rrCurrentDetailItem.rights_second_review_remark = remark;
   rrCurrentDetailItem.import_copr_rights_id = importRightsId;
   rrCurrentDetailItem.rights_second_review_by = 'demo_user';

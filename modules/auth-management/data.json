@@ -7,7 +7,7 @@
         "play_name": "庆余年第三季",
         "play_name_alias": "庆余年3",
         "play_category": "1",
-        "task_type": "auth_review",
+        "task_type": "authorization_review",
         "task_time": "2026-03-01 09:30:00",
         "audit_progress": "rights_first_review",
         "rights_first_review_result": "",
@@ -58,7 +58,55 @@
         "proxy_time_end_douyin": "2026-05-06",
         "operator": "system",
         "created_at": "2026-03-01 09:30:00",
-        "updated_at": "2026-03-01 09:30:00"
+        "updated_at": "2026-03-01 09:30:00",
+        "xwq_status": "生效中",
+        "online_status": "在线",
+        "defect_type": "",
+        "authorized_projects": [],
+        "rights_infos": [
+          {
+            "copr_rights_id": "bq2078802-o1160834",
+            "contract_codes": "bq2078802-o1160834",
+            "copyright_type": "import",
+            "copyright_time_start": "2025-01-01",
+            "copyright_time_end": "2027-12-31",
+            "ip_authorize_right_external": "pending",
+            "rights_type_label": "信息网络传播权",
+            "authorized_platforms": [
+              "快手",
+              "抖音"
+            ],
+            "co_intention": "non_exclusive",
+            "copyright_rights": [
+              "information_network",
+              "editing"
+            ],
+            "resell_time_type": "inherit_auth_period",
+            "sub_license_permission": "joint_sublicense",
+            "resell_right_term": [
+              "platform_restriction"
+            ],
+            "resell_right_other_term": "",
+            "copyright_area": [
+              "mainland_china"
+            ],
+            "edit_right_term_option": [
+              "duration_limit"
+            ],
+            "edit_right_other_term": "",
+            "edit_right_duration_term": "3",
+            "second_creation_has_rights": "123127036",
+            "second_creation_exclusivity": "non_exclusive",
+            "second_creation_sublicense": "allowed",
+            "second_creation_sublicense_remark": "",
+            "achievements_time_requirement_authorized_use": "no_limit",
+            "achievements_quantity_requirement_authorized_use": "no_limit",
+            "second_creation_new_attribution": "joint_ownership",
+            "dissemination_restrictions_channels_authorized_use": "no_limit",
+            "dissemination_restrictions_period_authorized_use": "no_limit",
+            "dissemination_restrictions_area_authorized_use": "no_limit"
+          }
+        ]
       },
       {
         "audit_id": "AUD-2026042002",
@@ -66,7 +114,7 @@
         "play_name": "斗罗大陆3",
         "play_name_alias": "斗罗3",
         "play_category": "7",
-        "task_type": "auth_review",
+        "task_type": "authorization_review",
         "task_time": "2026-03-01 10:15:00",
         "audit_progress": "rights_first_review",
         "rights_first_review_result": "",
@@ -117,7 +165,55 @@
         "proxy_time_end_douyin": "2026-05-06",
         "operator": "system",
         "created_at": "2026-03-01 10:15:00",
-        "updated_at": "2026-03-01 10:15:00"
+        "updated_at": "2026-03-01 10:15:00",
+        "xwq_status": "生效中",
+        "online_status": "在线",
+        "defect_type": "",
+        "authorized_projects": [],
+        "rights_infos": [
+          {
+            "copr_rights_id": "bq2078815-o1160847",
+            "contract_codes": "bq2078815-o1160847",
+            "copyright_type": "import",
+            "copyright_time_start": "2025-01-01",
+            "copyright_time_end": "2027-12-31",
+            "ip_authorize_right_external": "pending",
+            "rights_type_label": "信息网络传播权",
+            "authorized_platforms": [
+              "快手",
+              "抖音"
+            ],
+            "co_intention": "non_exclusive",
+            "copyright_rights": [
+              "information_network",
+              "editing"
+            ],
+            "resell_time_type": "inherit_auth_period",
+            "sub_license_permission": "joint_sublicense",
+            "resell_right_term": [
+              "platform_restriction"
+            ],
+            "resell_right_other_term": "",
+            "copyright_area": [
+              "mainland_china"
+            ],
+            "edit_right_term_option": [
+              "duration_limit"
+            ],
+            "edit_right_other_term": "",
+            "edit_right_duration_term": "3",
+            "second_creation_has_rights": "123127036",
+            "second_creation_exclusivity": "non_exclusive",
+            "second_creation_sublicense": "allowed",
+            "second_creation_sublicense_remark": "",
+            "achievements_time_requirement_authorized_use": "no_limit",
+            "achievements_quantity_requirement_authorized_use": "no_limit",
+            "second_creation_new_attribution": "joint_ownership",
+            "dissemination_restrictions_channels_authorized_use": "no_limit",
+            "dissemination_restrictions_period_authorized_use": "no_limit",
+            "dissemination_restrictions_area_authorized_use": "no_limit"
+          }
+        ]
       },
       {
         "audit_id": "AUD-2026042003",
@@ -125,7 +221,7 @@
         "play_name": "长相思第三季",
         "play_name_alias": "长相思3",
         "play_category": "1",
-        "task_type": "auth_review",
+        "task_type": "authorization_review",
         "task_time": "2026-03-01 11:00:00",
         "audit_progress": "rights_second_review",
         "rights_first_review_result": "rights_available",
@@ -179,7 +275,55 @@
         "proxy_time_end_douyin": "2026-05-06",
         "operator": "system",
         "created_at": "2026-03-01 11:00:00",
-        "updated_at": "2026-03-02 10:00:00"
+        "updated_at": "2026-03-02 10:00:00",
+        "xwq_status": "生效中",
+        "online_status": "在线",
+        "defect_type": "",
+        "authorized_projects": [],
+        "rights_infos": [
+          {
+            "copr_rights_id": "bq2078823-o1160862",
+            "contract_codes": "bq2078823-o1160862",
+            "copyright_type": "import",
+            "copyright_time_start": "2025-01-01",
+            "copyright_time_end": "2027-12-31",
+            "ip_authorize_right_external": "pending",
+            "rights_type_label": "信息网络传播权",
+            "authorized_platforms": [
+              "快手",
+              "抖音"
+            ],
+            "co_intention": "non_exclusive",
+            "copyright_rights": [
+              "information_network",
+              "editing"
+            ],
+            "resell_time_type": "inherit_auth_period",
+            "sub_license_permission": "joint_sublicense",
+            "resell_right_term": [
+              "platform_restriction"
+            ],
+            "resell_right_other_term": "",
+            "copyright_area": [
+              "mainland_china"
+            ],
+            "edit_right_term_option": [
+              "duration_limit"
+            ],
+            "edit_right_other_term": "",
+            "edit_right_duration_term": "3",
+            "second_creation_has_rights": "123127036",
+            "second_creation_exclusivity": "non_exclusive",
+            "second_creation_sublicense": "allowed",
+            "second_creation_sublicense_remark": "",
+            "achievements_time_requirement_authorized_use": "no_limit",
+            "achievements_quantity_requirement_authorized_use": "no_limit",
+            "second_creation_new_attribution": "joint_ownership",
+            "dissemination_restrictions_channels_authorized_use": "no_limit",
+            "dissemination_restrictions_period_authorized_use": "no_limit",
+            "dissemination_restrictions_area_authorized_use": "no_limit"
+          }
+        ]
       },
       {
         "audit_id": "AUD-2026042004",
@@ -187,7 +331,7 @@
         "play_name": "创造营2026",
         "play_name_alias": "创造营",
         "play_category": "5",
-        "task_type": "auth_review",
+        "task_type": "authorization_review",
         "task_time": "2026-03-02 09:00:00",
         "audit_progress": "rights_second_review",
         "rights_first_review_result": "rights_defect",
@@ -247,7 +391,55 @@
         "proxy_time_end_douyin": "2026-05-06",
         "operator": "system",
         "created_at": "2026-03-02 09:00:00",
-        "updated_at": "2026-03-03 09:30:00"
+        "updated_at": "2026-03-03 09:30:00",
+        "xwq_status": "生效中",
+        "online_status": "在线",
+        "defect_type": "",
+        "authorized_projects": [],
+        "rights_infos": [
+          {
+            "copr_rights_id": "bq2078846-o1160891",
+            "contract_codes": "bq2078846-o1160891",
+            "copyright_type": "import",
+            "copyright_time_start": "2025-01-01",
+            "copyright_time_end": "2027-12-31",
+            "ip_authorize_right_external": "pending",
+            "rights_type_label": "信息网络传播权",
+            "authorized_platforms": [
+              "快手",
+              "抖音"
+            ],
+            "co_intention": "non_exclusive",
+            "copyright_rights": [
+              "information_network",
+              "editing"
+            ],
+            "resell_time_type": "inherit_auth_period",
+            "sub_license_permission": "joint_sublicense",
+            "resell_right_term": [
+              "platform_restriction"
+            ],
+            "resell_right_other_term": "",
+            "copyright_area": [
+              "mainland_china"
+            ],
+            "edit_right_term_option": [
+              "duration_limit"
+            ],
+            "edit_right_other_term": "",
+            "edit_right_duration_term": "3",
+            "second_creation_has_rights": "123127036",
+            "second_creation_exclusivity": "non_exclusive",
+            "second_creation_sublicense": "allowed",
+            "second_creation_sublicense_remark": "",
+            "achievements_time_requirement_authorized_use": "no_limit",
+            "achievements_quantity_requirement_authorized_use": "no_limit",
+            "second_creation_new_attribution": "joint_ownership",
+            "dissemination_restrictions_channels_authorized_use": "no_limit",
+            "dissemination_restrictions_period_authorized_use": "no_limit",
+            "dissemination_restrictions_area_authorized_use": "no_limit"
+          }
+        ]
       },
       {
         "audit_id": "AUD-2026042005",
@@ -255,7 +447,7 @@
         "play_name": "仙剑奇侠传四",
         "play_name_alias": "仙剑4",
         "play_category": "1",
-        "task_type": "auth_review",
+        "task_type": "authorization_review",
         "task_time": "2026-03-02 10:30:00",
         "audit_progress": "rights_third_review",
         "rights_first_review_result": "rights_available",
@@ -312,7 +504,55 @@
         "proxy_time_end_douyin": "2026-05-06",
         "operator": "system",
         "created_at": "2026-03-02 10:30:00",
-        "updated_at": "2026-03-04 14:00:00"
+        "updated_at": "2026-03-04 14:00:00",
+        "xwq_status": "生效中",
+        "online_status": "在线",
+        "defect_type": "",
+        "authorized_projects": [],
+        "rights_infos": [
+          {
+            "copr_rights_id": "bq2078859-o1160905",
+            "contract_codes": "bq2078859-o1160905",
+            "copyright_type": "import",
+            "copyright_time_start": "2025-01-01",
+            "copyright_time_end": "2027-12-31",
+            "ip_authorize_right_external": "pending",
+            "rights_type_label": "信息网络传播权",
+            "authorized_platforms": [
+              "快手",
+              "抖音"
+            ],
+            "co_intention": "non_exclusive",
+            "copyright_rights": [
+              "information_network",
+              "editing"
+            ],
+            "resell_time_type": "inherit_auth_period",
+            "sub_license_permission": "joint_sublicense",
+            "resell_right_term": [
+              "platform_restriction"
+            ],
+            "resell_right_other_term": "",
+            "copyright_area": [
+              "mainland_china"
+            ],
+            "edit_right_term_option": [
+              "duration_limit"
+            ],
+            "edit_right_other_term": "",
+            "edit_right_duration_term": "3",
+            "second_creation_has_rights": "123127036",
+            "second_creation_exclusivity": "non_exclusive",
+            "second_creation_sublicense": "allowed",
+            "second_creation_sublicense_remark": "",
+            "achievements_time_requirement_authorized_use": "no_limit",
+            "achievements_quantity_requirement_authorized_use": "no_limit",
+            "second_creation_new_attribution": "joint_ownership",
+            "dissemination_restrictions_channels_authorized_use": "no_limit",
+            "dissemination_restrictions_period_authorized_use": "no_limit",
+            "dissemination_restrictions_area_authorized_use": "no_limit"
+          }
+        ]
       },
       {
         "audit_id": "AUD-2026042006",
@@ -320,7 +560,7 @@
         "play_name": "三体动画版",
         "play_name_alias": "三体动画",
         "play_category": "7",
-        "task_type": "auth_review",
+        "task_type": "authorization_review",
         "task_time": "2026-03-02 11:45:00",
         "audit_progress": "rights_third_review",
         "rights_first_review_result": "rights_defect",
@@ -383,7 +623,55 @@
         "proxy_time_end_douyin": "2026-05-06",
         "operator": "system",
         "created_at": "2026-03-02 11:45:00",
-        "updated_at": "2026-03-04 15:00:00"
+        "updated_at": "2026-03-04 15:00:00",
+        "xwq_status": "生效中",
+        "online_status": "在线",
+        "defect_type": "",
+        "authorized_projects": [],
+        "rights_infos": [
+          {
+            "copr_rights_id": "bq2078867-o1160918",
+            "contract_codes": "bq2078867-o1160918",
+            "copyright_type": "import",
+            "copyright_time_start": "2025-01-01",
+            "copyright_time_end": "2027-12-31",
+            "ip_authorize_right_external": "pending",
+            "rights_type_label": "信息网络传播权",
+            "authorized_platforms": [
+              "快手",
+              "抖音"
+            ],
+            "co_intention": "non_exclusive",
+            "copyright_rights": [
+              "information_network",
+              "editing"
+            ],
+            "resell_time_type": "inherit_auth_period",
+            "sub_license_permission": "joint_sublicense",
+            "resell_right_term": [
+              "platform_restriction"
+            ],
+            "resell_right_other_term": "",
+            "copyright_area": [
+              "mainland_china"
+            ],
+            "edit_right_term_option": [
+              "duration_limit"
+            ],
+            "edit_right_other_term": "",
+            "edit_right_duration_term": "3",
+            "second_creation_has_rights": "123127036",
+            "second_creation_exclusivity": "non_exclusive",
+            "second_creation_sublicense": "allowed",
+            "second_creation_sublicense_remark": "",
+            "achievements_time_requirement_authorized_use": "no_limit",
+            "achievements_quantity_requirement_authorized_use": "no_limit",
+            "second_creation_new_attribution": "joint_ownership",
+            "dissemination_restrictions_channels_authorized_use": "no_limit",
+            "dissemination_restrictions_period_authorized_use": "no_limit",
+            "dissemination_restrictions_area_authorized_use": "no_limit"
+          }
+        ]
       },
       {
         "audit_id": "AUD-2026042007",
@@ -391,7 +679,7 @@
         "play_name": "大唐来的苏无名",
         "play_name_alias": "苏无名",
         "play_category": "9",
-        "task_type": "auth_review",
+        "task_type": "authorization_review",
         "task_time": "2026-03-02 14:20:00",
         "audit_progress": "rights_third_review",
         "rights_first_review_result": "rights_available",
@@ -450,7 +738,55 @@
         "proxy_time_end_douyin": "2026-05-06",
         "operator": "system",
         "created_at": "2026-03-02 14:20:00",
-        "updated_at": "2026-03-04 16:00:00"
+        "updated_at": "2026-03-04 16:00:00",
+        "xwq_status": "生效中",
+        "online_status": "在线",
+        "defect_type": "",
+        "authorized_projects": [],
+        "rights_infos": [
+          {
+            "copr_rights_id": "bq2078873-o1160924",
+            "contract_codes": "bq2078873-o1160924",
+            "copyright_type": "import",
+            "copyright_time_start": "2025-01-01",
+            "copyright_time_end": "2027-12-31",
+            "ip_authorize_right_external": "pending",
+            "rights_type_label": "信息网络传播权",
+            "authorized_platforms": [
+              "快手",
+              "抖音"
+            ],
+            "co_intention": "non_exclusive",
+            "copyright_rights": [
+              "information_network",
+              "editing"
+            ],
+            "resell_time_type": "inherit_auth_period",
+            "sub_license_permission": "joint_sublicense",
+            "resell_right_term": [
+              "platform_restriction"
+            ],
+            "resell_right_other_term": "",
+            "copyright_area": [
+              "mainland_china"
+            ],
+            "edit_right_term_option": [
+              "duration_limit"
+            ],
+            "edit_right_other_term": "",
+            "edit_right_duration_term": "3",
+            "second_creation_has_rights": "123127036",
+            "second_creation_exclusivity": "non_exclusive",
+            "second_creation_sublicense": "allowed",
+            "second_creation_sublicense_remark": "",
+            "achievements_time_requirement_authorized_use": "no_limit",
+            "achievements_quantity_requirement_authorized_use": "no_limit",
+            "second_creation_new_attribution": "joint_ownership",
+            "dissemination_restrictions_channels_authorized_use": "no_limit",
+            "dissemination_restrictions_period_authorized_use": "no_limit",
+            "dissemination_restrictions_area_authorized_use": "no_limit"
+          }
+        ]
       },
       {
         "audit_id": "AUD-2026042008",
@@ -458,7 +794,7 @@
         "play_name": "繁花",
         "play_name_alias": "繁花",
         "play_category": "1",
-        "task_type": "auth_review",
+        "task_type": "authorization_review",
         "task_time": "2026-03-03 09:15:00",
         "audit_progress": "confirmed_rights",
         "rights_first_review_result": "rights_available",
@@ -516,7 +852,55 @@
         "proxy_time_end_douyin": "2026-05-06",
         "operator": "wangpinlei",
         "created_at": "2026-03-03 09:15:00",
-        "updated_at": "2026-03-06 09:00:00"
+        "updated_at": "2026-03-06 09:00:00",
+        "xwq_status": "生效中",
+        "online_status": "在线",
+        "defect_type": "",
+        "authorized_projects": [],
+        "rights_infos": [
+          {
+            "copr_rights_id": "bq2078889-o1160937",
+            "contract_codes": "bq2078889-o1160937",
+            "copyright_type": "import",
+            "copyright_time_start": "2025-01-01",
+            "copyright_time_end": "2027-12-31",
+            "ip_authorize_right_external": "pending",
+            "rights_type_label": "信息网络传播权",
+            "authorized_platforms": [
+              "快手",
+              "抖音"
+            ],
+            "co_intention": "non_exclusive",
+            "copyright_rights": [
+              "information_network",
+              "editing"
+            ],
+            "resell_time_type": "inherit_auth_period",
+            "sub_license_permission": "joint_sublicense",
+            "resell_right_term": [
+              "platform_restriction"
+            ],
+            "resell_right_other_term": "",
+            "copyright_area": [
+              "mainland_china"
+            ],
+            "edit_right_term_option": [
+              "duration_limit"
+            ],
+            "edit_right_other_term": "",
+            "edit_right_duration_term": "3",
+            "second_creation_has_rights": "123127036",
+            "second_creation_exclusivity": "non_exclusive",
+            "second_creation_sublicense": "allowed",
+            "second_creation_sublicense_remark": "",
+            "achievements_time_requirement_authorized_use": "no_limit",
+            "achievements_quantity_requirement_authorized_use": "no_limit",
+            "second_creation_new_attribution": "joint_ownership",
+            "dissemination_restrictions_channels_authorized_use": "no_limit",
+            "dissemination_restrictions_period_authorized_use": "no_limit",
+            "dissemination_restrictions_area_authorized_use": "no_limit"
+          }
+        ]
       },
       {
         "audit_id": "AUD-2026042009",
@@ -524,7 +908,7 @@
         "play_name": "超新星运动会2026",
         "play_name_alias": "超新星运动会",
         "play_category": "5",
-        "task_type": "auth_review",
+        "task_type": "authorization_review",
         "task_time": "2026-03-04 11:45:00",
         "audit_progress": "confirmed_rights",
         "rights_first_review_result": "rights_defect",
@@ -589,7 +973,55 @@
         "proxy_time_end_douyin": "2026-05-06",
         "operator": "wangpinlei",
         "created_at": "2026-03-04 11:45:00",
-        "updated_at": "2026-03-07 09:00:00"
+        "updated_at": "2026-03-07 09:00:00",
+        "xwq_status": "生效中",
+        "online_status": "在线",
+        "defect_type": "",
+        "authorized_projects": [],
+        "rights_infos": [
+          {
+            "copr_rights_id": "bq2078947-o1160995",
+            "contract_codes": "bq2078947-o1160995",
+            "copyright_type": "import",
+            "copyright_time_start": "2025-01-01",
+            "copyright_time_end": "2027-12-31",
+            "ip_authorize_right_external": "pending",
+            "rights_type_label": "信息网络传播权",
+            "authorized_platforms": [
+              "快手",
+              "抖音"
+            ],
+            "co_intention": "non_exclusive",
+            "copyright_rights": [
+              "information_network",
+              "editing"
+            ],
+            "resell_time_type": "inherit_auth_period",
+            "sub_license_permission": "joint_sublicense",
+            "resell_right_term": [
+              "platform_restriction"
+            ],
+            "resell_right_other_term": "",
+            "copyright_area": [
+              "mainland_china"
+            ],
+            "edit_right_term_option": [
+              "duration_limit"
+            ],
+            "edit_right_other_term": "",
+            "edit_right_duration_term": "3",
+            "second_creation_has_rights": "123127036",
+            "second_creation_exclusivity": "non_exclusive",
+            "second_creation_sublicense": "allowed",
+            "second_creation_sublicense_remark": "",
+            "achievements_time_requirement_authorized_use": "no_limit",
+            "achievements_quantity_requirement_authorized_use": "no_limit",
+            "second_creation_new_attribution": "joint_ownership",
+            "dissemination_restrictions_channels_authorized_use": "no_limit",
+            "dissemination_restrictions_period_authorized_use": "no_limit",
+            "dissemination_restrictions_area_authorized_use": "no_limit"
+          }
+        ]
       },
       {
         "audit_id": "AUD-2026042010",
@@ -597,7 +1029,7 @@
         "play_name": "玫瑰的故事",
         "play_name_alias": "玫瑰",
         "play_category": "2",
-        "task_type": "auth_review",
+        "task_type": "authorization_review",
         "task_time": "2026-03-05 09:30:00",
         "audit_progress": "confirmed_rights",
         "rights_first_review_result": "rights_available",
@@ -654,7 +1086,55 @@
         "proxy_time_end_douyin": "2026-05-06",
         "operator": "wangpinlei",
         "created_at": "2026-03-05 09:30:00",
-        "updated_at": "2026-03-08 09:00:00"
+        "updated_at": "2026-03-08 09:00:00",
+        "xwq_status": "生效中",
+        "online_status": "在线",
+        "defect_type": "",
+        "authorized_projects": [],
+        "rights_infos": [
+          {
+            "copr_rights_id": "bq2079118-o1161121",
+            "contract_codes": "bq2079118-o1161121",
+            "copyright_type": "import",
+            "copyright_time_start": "2025-01-01",
+            "copyright_time_end": "2027-12-31",
+            "ip_authorize_right_external": "pending",
+            "rights_type_label": "信息网络传播权",
+            "authorized_platforms": [
+              "快手",
+              "抖音"
+            ],
+            "co_intention": "non_exclusive",
+            "copyright_rights": [
+              "information_network",
+              "editing"
+            ],
+            "resell_time_type": "inherit_auth_period",
+            "sub_license_permission": "joint_sublicense",
+            "resell_right_term": [
+              "platform_restriction"
+            ],
+            "resell_right_other_term": "",
+            "copyright_area": [
+              "mainland_china"
+            ],
+            "edit_right_term_option": [
+              "duration_limit"
+            ],
+            "edit_right_other_term": "",
+            "edit_right_duration_term": "3",
+            "second_creation_has_rights": "123127036",
+            "second_creation_exclusivity": "non_exclusive",
+            "second_creation_sublicense": "allowed",
+            "second_creation_sublicense_remark": "",
+            "achievements_time_requirement_authorized_use": "no_limit",
+            "achievements_quantity_requirement_authorized_use": "no_limit",
+            "second_creation_new_attribution": "joint_ownership",
+            "dissemination_restrictions_channels_authorized_use": "no_limit",
+            "dissemination_restrictions_period_authorized_use": "no_limit",
+            "dissemination_restrictions_area_authorized_use": "no_limit"
+          }
+        ]
       },
       {
         "audit_id": "AUD-2026042011",
@@ -662,7 +1142,7 @@
         "play_name": "人世间",
         "play_name_alias": "人世间",
         "play_category": "1",
-        "task_type": "risk_review",
+        "task_type": "risk_review_distribution",
         "task_time": "2026-03-06 09:00:00",
         "audit_progress": "rights_first_review",
         "rights_first_review_result": "",
@@ -716,7 +1196,55 @@
         "proxy_time_end_douyin": "2026-05-06",
         "operator": "system",
         "created_at": "2026-03-06 09:00:00",
-        "updated_at": "2026-03-06 09:00:00"
+        "updated_at": "2026-03-06 09:00:00",
+        "xwq_status": "生效中",
+        "online_status": "在线",
+        "defect_type": "",
+        "authorized_projects": [],
+        "rights_infos": [
+          {
+            "copr_rights_id": "bq2078908-o1160956",
+            "contract_codes": "bq2078908-o1160956",
+            "copyright_type": "import",
+            "copyright_time_start": "2025-01-01",
+            "copyright_time_end": "2027-12-31",
+            "ip_authorize_right_external": "pending",
+            "rights_type_label": "信息网络传播权",
+            "authorized_platforms": [
+              "快手",
+              "抖音"
+            ],
+            "co_intention": "non_exclusive",
+            "copyright_rights": [
+              "information_network",
+              "editing"
+            ],
+            "resell_time_type": "inherit_auth_period",
+            "sub_license_permission": "joint_sublicense",
+            "resell_right_term": [
+              "platform_restriction"
+            ],
+            "resell_right_other_term": "",
+            "copyright_area": [
+              "mainland_china"
+            ],
+            "edit_right_term_option": [
+              "duration_limit"
+            ],
+            "edit_right_other_term": "",
+            "edit_right_duration_term": "3",
+            "second_creation_has_rights": "123127036",
+            "second_creation_exclusivity": "non_exclusive",
+            "second_creation_sublicense": "allowed",
+            "second_creation_sublicense_remark": "",
+            "achievements_time_requirement_authorized_use": "no_limit",
+            "achievements_quantity_requirement_authorized_use": "no_limit",
+            "second_creation_new_attribution": "joint_ownership",
+            "dissemination_restrictions_channels_authorized_use": "no_limit",
+            "dissemination_restrictions_period_authorized_use": "no_limit",
+            "dissemination_restrictions_area_authorized_use": "no_limit"
+          }
+        ]
       },
       {
         "audit_id": "AUD-2026042012",
@@ -724,7 +1252,7 @@
         "play_name": "完美世界",
         "play_name_alias": "完美世界",
         "play_category": "7",
-        "task_type": "risk_review",
+        "task_type": "risk_review_distribution",
         "task_time": "2026-03-06 10:40:00",
         "audit_progress": "rights_second_review",
         "rights_first_review_result": "rights_defect",
@@ -786,7 +1314,55 @@
         "proxy_time_end_douyin": "2026-05-06",
         "operator": "system",
         "created_at": "2026-03-06 10:40:00",
-        "updated_at": "2026-03-07 10:00:00"
+        "updated_at": "2026-03-07 10:00:00",
+        "xwq_status": "生效中",
+        "online_status": "在线",
+        "defect_type": "",
+        "authorized_projects": [],
+        "rights_infos": [
+          {
+            "copr_rights_id": "bq2078895-o1160943",
+            "contract_codes": "bq2078895-o1160943",
+            "copyright_type": "import",
+            "copyright_time_start": "2025-01-01",
+            "copyright_time_end": "2027-12-31",
+            "ip_authorize_right_external": "pending",
+            "rights_type_label": "信息网络传播权",
+            "authorized_platforms": [
+              "快手",
+              "抖音"
+            ],
+            "co_intention": "non_exclusive",
+            "copyright_rights": [
+              "information_network",
+              "editing"
+            ],
+            "resell_time_type": "inherit_auth_period",
+            "sub_license_permission": "joint_sublicense",
+            "resell_right_term": [
+              "platform_restriction"
+            ],
+            "resell_right_other_term": "",
+            "copyright_area": [
+              "mainland_china"
+            ],
+            "edit_right_term_option": [
+              "duration_limit"
+            ],
+            "edit_right_other_term": "",
+            "edit_right_duration_term": "3",
+            "second_creation_has_rights": "123127036",
+            "second_creation_exclusivity": "non_exclusive",
+            "second_creation_sublicense": "allowed",
+            "second_creation_sublicense_remark": "",
+            "achievements_time_requirement_authorized_use": "no_limit",
+            "achievements_quantity_requirement_authorized_use": "no_limit",
+            "second_creation_new_attribution": "joint_ownership",
+            "dissemination_restrictions_channels_authorized_use": "no_limit",
+            "dissemination_restrictions_period_authorized_use": "no_limit",
+            "dissemination_restrictions_area_authorized_use": "no_limit"
+          }
+        ]
       },
       {
         "audit_id": "AUD-2026042013",
@@ -794,7 +1370,7 @@
         "play_name": "漫长的季节",
         "play_name_alias": "漫长的季节",
         "play_category": "1",
-        "task_type": "risk_review",
+        "task_type": "risk_review_distribution",
         "task_time": "2026-03-07 09:00:00",
         "audit_progress": "rights_third_review",
         "rights_first_review_result": "rights_available",
@@ -854,7 +1430,55 @@
         "proxy_time_end_douyin": "2026-05-06",
         "operator": "system",
         "created_at": "2026-03-07 09:00:00",
-        "updated_at": "2026-03-09 14:00:00"
+        "updated_at": "2026-03-09 14:00:00",
+        "xwq_status": "生效中",
+        "online_status": "在线",
+        "defect_type": "",
+        "authorized_projects": [],
+        "rights_infos": [
+          {
+            "copr_rights_id": "bq2078916-o1160964",
+            "contract_codes": "bq2078916-o1160964",
+            "copyright_type": "import",
+            "copyright_time_start": "2025-01-01",
+            "copyright_time_end": "2027-12-31",
+            "ip_authorize_right_external": "pending",
+            "rights_type_label": "信息网络传播权",
+            "authorized_platforms": [
+              "快手",
+              "抖音"
+            ],
+            "co_intention": "non_exclusive",
+            "copyright_rights": [
+              "information_network",
+              "editing"
+            ],
+            "resell_time_type": "inherit_auth_period",
+            "sub_license_permission": "joint_sublicense",
+            "resell_right_term": [
+              "platform_restriction"
+            ],
+            "resell_right_other_term": "",
+            "copyright_area": [
+              "mainland_china"
+            ],
+            "edit_right_term_option": [
+              "duration_limit"
+            ],
+            "edit_right_other_term": "",
+            "edit_right_duration_term": "3",
+            "second_creation_has_rights": "123127036",
+            "second_creation_exclusivity": "non_exclusive",
+            "second_creation_sublicense": "allowed",
+            "second_creation_sublicense_remark": "",
+            "achievements_time_requirement_authorized_use": "no_limit",
+            "achievements_quantity_requirement_authorized_use": "no_limit",
+            "second_creation_new_attribution": "joint_ownership",
+            "dissemination_restrictions_channels_authorized_use": "no_limit",
+            "dissemination_restrictions_period_authorized_use": "no_limit",
+            "dissemination_restrictions_area_authorized_use": "no_limit"
+          }
+        ]
       },
       {
         "audit_id": "AUD-2026042014",
@@ -862,7 +1486,7 @@
         "play_name": "蓝色星球中国篇",
         "play_name_alias": "蓝色星球",
         "play_category": "6",
-        "task_type": "risk_review",
+        "task_type": "risk_review_distribution",
         "task_time": "2026-03-07 14:30:00",
         "audit_progress": "confirmed_rights",
         "rights_first_review_result": "rights_available",
@@ -924,7 +1548,55 @@
         "proxy_time_end_douyin": "2026-05-06",
         "operator": "wangpinlei",
         "created_at": "2026-03-07 14:30:00",
-        "updated_at": "2026-03-10 09:00:00"
+        "updated_at": "2026-03-10 09:00:00",
+        "xwq_status": "生效中",
+        "online_status": "在线",
+        "defect_type": "",
+        "authorized_projects": [],
+        "rights_infos": [
+          {
+            "copr_rights_id": "bq2078955-o1161003",
+            "contract_codes": "bq2078955-o1161003",
+            "copyright_type": "import",
+            "copyright_time_start": "2025-01-01",
+            "copyright_time_end": "2027-12-31",
+            "ip_authorize_right_external": "pending",
+            "rights_type_label": "信息网络传播权",
+            "authorized_platforms": [
+              "快手",
+              "抖音"
+            ],
+            "co_intention": "non_exclusive",
+            "copyright_rights": [
+              "information_network",
+              "editing"
+            ],
+            "resell_time_type": "inherit_auth_period",
+            "sub_license_permission": "joint_sublicense",
+            "resell_right_term": [
+              "platform_restriction"
+            ],
+            "resell_right_other_term": "",
+            "copyright_area": [
+              "mainland_china"
+            ],
+            "edit_right_term_option": [
+              "duration_limit"
+            ],
+            "edit_right_other_term": "",
+            "edit_right_duration_term": "3",
+            "second_creation_has_rights": "123127036",
+            "second_creation_exclusivity": "non_exclusive",
+            "second_creation_sublicense": "allowed",
+            "second_creation_sublicense_remark": "",
+            "achievements_time_requirement_authorized_use": "no_limit",
+            "achievements_quantity_requirement_authorized_use": "no_limit",
+            "second_creation_new_attribution": "joint_ownership",
+            "dissemination_restrictions_channels_authorized_use": "no_limit",
+            "dissemination_restrictions_period_authorized_use": "no_limit",
+            "dissemination_restrictions_area_authorized_use": "no_limit"
+          }
+        ]
       },
       {
         "audit_id": "AUD-2026042017",
@@ -932,7 +1604,7 @@
         "play_name": "斗破苍穹年番",
         "play_name_alias": "斗破年番",
         "play_category": "7",
-        "task_type": "auth_review",
+        "task_type": "authorization_review",
         "task_time": "2026-03-09 10:45:00",
         "audit_progress": "rights_third_review",
         "rights_first_review_result": "rights_available",
@@ -989,69 +1661,55 @@
         "proxy_time_end_douyin": "2026-05-06",
         "operator": "system",
         "created_at": "2026-03-09 10:45:00",
-        "updated_at": "2026-03-11 14:00:00"
-      },
-      {
-        "audit_id": "AUD-2026042018",
-        "copyright_id": "bq2078986",
-        "play_name": "十日游戏",
-        "play_name_alias": "十日游戏",
-        "play_category": "1",
-        "task_type": "auth_review",
-        "task_time": "2026-03-10 09:00:00",
-        "audit_progress": "obsoleted",
-        "rights_first_review_result": "rights_available",
-        "rights_first_review_defect_type": [],
-        "rights_first_review_other_defect_type": "",
-        "rights_first_review_authorized_platforms": [
-          "kuaishou"
-        ],
-        "rights_first_review_excluded_platforms": [],
-        "rights_first_review_by": "system",
-        "rights_first_review_at": "2026-03-10 09:00:00",
-        "rights_first_review_remark": "",
-        "rights_second_review_result": "",
-        "rights_second_review_authorized_platforms": [],
-        "rights_second_review_excluded_platforms": [],
-        "rights_second_review_defect_type": [],
-        "rights_second_review_defect_disposal_method": "",
-        "rights_second_review_by": "",
-        "rights_second_review_at": "",
-        "rights_second_review_remark": "",
-        "import_copr_rights_id": "",
-        "rights_third_review_result": "not_authorized",
-        "rights_third_review_defect_disposal_result": "",
-        "rights_third_review_authorized_platform_kuaishou": "",
-        "rights_third_review_authorized_platform_kuaishou_start_date": "",
-        "rights_third_review_authorized_platform_kuaishou_end_date": "",
-        "rights_third_review_authorized_platform_douyin": "",
-        "rights_third_review_authorized_platform_douyin_start_date": "",
-        "rights_third_review_authorized_platform_douyin_end_date": "",
-        "rights_third_review_by": "system",
-        "rights_third_review_at": "2026-03-10 09:00:00",
-        "import_copr_rights_ids": [
-          "bq2078986-o1161034"
-        ],
-        "defect_copy_rights_ids": [],
-        "export_copr_rights_id_kuaishou": "",
-        "export_copr_rights_id_douyin": "",
-        "system_remark": "权益变更废弃，新单ID: AUD-2026042015",
-        "is_restricted_kuaishou": false,
-        "is_risk_vertical_short_drama": false,
-        "is_risk_edit_duration": false,
-        "main_cid": "mzc002008xnc4vl",
-        "cid_info": {
-          "cid": "mzc002008xnc4vl",
-          "title": "十日游戏",
-          "hot_level": "B",
-          "new_pic_hz": "https://picsum.photos/seed/sryx/320/180",
-          "new_pic_vt": "https://picsum.photos/seed/sryxv/180/240"
-        },
-        "proxy_time_end_kuaishou": "2029-03-13",
-        "proxy_time_end_douyin": "2026-05-06",
-        "operator": "system",
-        "created_at": "2026-03-10 09:00:00",
-        "updated_at": "2026-03-10 09:00:00"
+        "updated_at": "2026-03-11 14:00:00",
+        "xwq_status": "生效中",
+        "online_status": "在线",
+        "defect_type": "",
+        "authorized_projects": [],
+        "rights_infos": [
+          {
+            "copr_rights_id": "bq2078971-o1161019",
+            "contract_codes": "bq2078971-o1161019",
+            "copyright_type": "import",
+            "copyright_time_start": "2025-01-01",
+            "copyright_time_end": "2027-12-31",
+            "ip_authorize_right_external": "pending",
+            "rights_type_label": "信息网络传播权",
+            "authorized_platforms": [
+              "快手",
+              "抖音"
+            ],
+            "co_intention": "non_exclusive",
+            "copyright_rights": [
+              "information_network",
+              "editing"
+            ],
+            "resell_time_type": "inherit_auth_period",
+            "sub_license_permission": "joint_sublicense",
+            "resell_right_term": [
+              "platform_restriction"
+            ],
+            "resell_right_other_term": "",
+            "copyright_area": [
+              "mainland_china"
+            ],
+            "edit_right_term_option": [
+              "duration_limit"
+            ],
+            "edit_right_other_term": "",
+            "edit_right_duration_term": "3",
+            "second_creation_has_rights": "123127036",
+            "second_creation_exclusivity": "non_exclusive",
+            "second_creation_sublicense": "allowed",
+            "second_creation_sublicense_remark": "",
+            "achievements_time_requirement_authorized_use": "no_limit",
+            "achievements_quantity_requirement_authorized_use": "no_limit",
+            "second_creation_new_attribution": "joint_ownership",
+            "dissemination_restrictions_channels_authorized_use": "no_limit",
+            "dissemination_restrictions_period_authorized_use": "no_limit",
+            "dissemination_restrictions_area_authorized_use": "no_limit"
+          }
+        ]
       },
       {
         "audit_id": "AUD-2026042019",
@@ -1059,7 +1717,7 @@
         "play_name": "去有风的地方",
         "play_name_alias": "有风",
         "play_category": "6",
-        "task_type": "auth_review",
+        "task_type": "authorization_review",
         "task_time": "2026-03-11 10:20:00",
         "audit_progress": "rights_second_review",
         "rights_first_review_result": "rights_available",
@@ -1113,7 +1771,55 @@
         "proxy_time_end_douyin": "2026-05-06",
         "operator": "system",
         "created_at": "2026-03-11 10:20:00",
-        "updated_at": "2026-03-12 10:00:00"
+        "updated_at": "2026-03-12 10:00:00",
+        "xwq_status": "生效中",
+        "online_status": "在线",
+        "defect_type": "",
+        "authorized_projects": [],
+        "rights_infos": [
+          {
+            "copr_rights_id": "bq2078932-o1160980",
+            "contract_codes": "bq2078932-o1160980",
+            "copyright_type": "import",
+            "copyright_time_start": "2025-01-01",
+            "copyright_time_end": "2027-12-31",
+            "ip_authorize_right_external": "pending",
+            "rights_type_label": "信息网络传播权",
+            "authorized_platforms": [
+              "快手",
+              "抖音"
+            ],
+            "co_intention": "non_exclusive",
+            "copyright_rights": [
+              "information_network",
+              "editing"
+            ],
+            "resell_time_type": "inherit_auth_period",
+            "sub_license_permission": "joint_sublicense",
+            "resell_right_term": [
+              "platform_restriction"
+            ],
+            "resell_right_other_term": "",
+            "copyright_area": [
+              "mainland_china"
+            ],
+            "edit_right_term_option": [
+              "duration_limit"
+            ],
+            "edit_right_other_term": "",
+            "edit_right_duration_term": "3",
+            "second_creation_has_rights": "123127036",
+            "second_creation_exclusivity": "non_exclusive",
+            "second_creation_sublicense": "allowed",
+            "second_creation_sublicense_remark": "",
+            "achievements_time_requirement_authorized_use": "no_limit",
+            "achievements_quantity_requirement_authorized_use": "no_limit",
+            "second_creation_new_attribution": "joint_ownership",
+            "dissemination_restrictions_channels_authorized_use": "no_limit",
+            "dissemination_restrictions_period_authorized_use": "no_limit",
+            "dissemination_restrictions_area_authorized_use": "no_limit"
+          }
+        ]
       },
       {
         "audit_id": "AUD-2026042020",
@@ -1121,7 +1827,7 @@
         "play_name": "风起洛阳2",
         "play_name_alias": "洛阳2",
         "play_category": "7",
-        "task_type": "auth_review",
+        "task_type": "authorization_review",
         "task_time": "2026-03-12 09:00:00",
         "audit_progress": "confirmed_rights",
         "rights_first_review_result": "rights_available",
@@ -1180,7 +1886,1782 @@
         "proxy_time_end_douyin": "2026-05-06",
         "operator": "wangpinlei",
         "created_at": "2026-03-12 09:00:00",
-        "updated_at": "2026-03-15 09:00:00"
+        "updated_at": "2026-03-15 09:00:00",
+        "xwq_status": "生效中",
+        "online_status": "在线",
+        "defect_type": "",
+        "authorized_projects": [],
+        "rights_infos": [
+          {
+            "copr_rights_id": "bq2078994-o1161042",
+            "contract_codes": "bq2078994-o1161042",
+            "copyright_type": "import",
+            "copyright_time_start": "2025-01-01",
+            "copyright_time_end": "2027-12-31",
+            "ip_authorize_right_external": "pending",
+            "rights_type_label": "信息网络传播权",
+            "authorized_platforms": [
+              "快手",
+              "抖音"
+            ],
+            "co_intention": "non_exclusive",
+            "copyright_rights": [
+              "information_network",
+              "editing"
+            ],
+            "resell_time_type": "inherit_auth_period",
+            "sub_license_permission": "joint_sublicense",
+            "resell_right_term": [
+              "platform_restriction"
+            ],
+            "resell_right_other_term": "",
+            "copyright_area": [
+              "mainland_china"
+            ],
+            "edit_right_term_option": [
+              "duration_limit"
+            ],
+            "edit_right_other_term": "",
+            "edit_right_duration_term": "3",
+            "second_creation_has_rights": "123127036",
+            "second_creation_exclusivity": "non_exclusive",
+            "second_creation_sublicense": "allowed",
+            "second_creation_sublicense_remark": "",
+            "achievements_time_requirement_authorized_use": "no_limit",
+            "achievements_quantity_requirement_authorized_use": "no_limit",
+            "second_creation_new_attribution": "joint_ownership",
+            "dissemination_restrictions_channels_authorized_use": "no_limit",
+            "dissemination_restrictions_period_authorized_use": "no_limit",
+            "dissemination_restrictions_area_authorized_use": "no_limit"
+          }
+        ]
+      },
+      {
+        "rights_first_review_result": "",
+        "rights_first_review_defect_type": [],
+        "rights_first_review_other_defect_type": "",
+        "rights_first_review_authorized_platforms": [],
+        "rights_first_review_excluded_platforms": [],
+        "rights_first_review_by": "",
+        "rights_first_review_at": "",
+        "rights_first_review_remark": "",
+        "rights_second_review_result": "",
+        "rights_second_review_authorized_platforms": [],
+        "rights_second_review_excluded_platforms": [],
+        "rights_second_review_defect_type": [],
+        "rights_second_review_defect_disposal_method": "",
+        "rights_second_review_by": "",
+        "rights_second_review_at": "",
+        "rights_second_review_remark": "",
+        "import_copr_rights_id": "bq2079101-o1161133",
+        "import_copr_rights_ids": [
+          "bq2079101-o1161133"
+        ],
+        "defect_copy_rights_ids": [],
+        "rights_third_review_result": "",
+        "rights_third_review_authorized_platform_kuaishou": "",
+        "rights_third_review_authorized_platform_douyin": "",
+        "xwq_status": "生效中",
+        "online_status": "在线",
+        "defect_type": "",
+        "authorized_projects": [],
+        "project_id": "",
+        "audit_id": "AUD-2026042101",
+        "copyright_id": "bq2079101",
+        "play_name": "赘婿第二季",
+        "play_name_alias": "赘婿2",
+        "play_category": "1",
+        "task_type": "risk_review_distribution",
+        "task_time": "2026-04-18 14:00:00",
+        "audit_progress": "rights_first_review",
+        "main_cid": "mzc00200xyzabc",
+        "cid_info": {
+          "cid": "mzc00200xyzabc",
+          "title": "赘婿第二季",
+          "hot_level": "A"
+        },
+        "operator": "system",
+        "created_at": "2026-04-18 14:00:00",
+        "updated_at": "2026-04-18 14:00:00",
+        "rights_infos": [
+          {
+            "copr_rights_id": "bq2079101-o1161133",
+            "contract_codes": "bq2079101-o1161133",
+            "copyright_type": "import",
+            "copyright_time_start": "2025-01-01",
+            "copyright_time_end": "2027-12-31",
+            "ip_authorize_right_external": "pending",
+            "rights_type_label": "信息网络传播权",
+            "authorized_platforms": [
+              "快手",
+              "抖音"
+            ],
+            "co_intention": "non_exclusive",
+            "copyright_rights": [
+              "information_network",
+              "editing"
+            ],
+            "resell_time_type": "inherit_auth_period",
+            "sub_license_permission": "joint_sublicense",
+            "resell_right_term": [
+              "platform_restriction"
+            ],
+            "resell_right_other_term": "",
+            "copyright_area": [
+              "mainland_china"
+            ],
+            "edit_right_term_option": [
+              "duration_limit"
+            ],
+            "edit_right_other_term": "",
+            "edit_right_duration_term": "3",
+            "second_creation_has_rights": "123127036",
+            "second_creation_exclusivity": "non_exclusive",
+            "second_creation_sublicense": "allowed",
+            "second_creation_sublicense_remark": "",
+            "achievements_time_requirement_authorized_use": "no_limit",
+            "achievements_quantity_requirement_authorized_use": "no_limit",
+            "second_creation_new_attribution": "joint_ownership",
+            "dissemination_restrictions_channels_authorized_use": "no_limit",
+            "dissemination_restrictions_period_authorized_use": "no_limit",
+            "dissemination_restrictions_area_authorized_use": "no_limit"
+          }
+        ]
+      },
+      {
+        "rights_first_review_result": "",
+        "rights_first_review_defect_type": [],
+        "rights_first_review_other_defect_type": "",
+        "rights_first_review_authorized_platforms": [],
+        "rights_first_review_excluded_platforms": [],
+        "rights_first_review_by": "",
+        "rights_first_review_at": "",
+        "rights_first_review_remark": "",
+        "rights_second_review_result": "",
+        "rights_second_review_authorized_platforms": [],
+        "rights_second_review_excluded_platforms": [],
+        "rights_second_review_defect_type": [],
+        "rights_second_review_defect_disposal_method": "",
+        "rights_second_review_by": "",
+        "rights_second_review_at": "",
+        "rights_second_review_remark": "",
+        "import_copr_rights_id": "bq2079205-o1161021",
+        "import_copr_rights_ids": [
+          "bq2079205-o1161021"
+        ],
+        "defect_copy_rights_ids": [],
+        "rights_third_review_result": "",
+        "rights_third_review_authorized_platform_kuaishou": "",
+        "rights_third_review_authorized_platform_douyin": "",
+        "xwq_status": "生效中",
+        "online_status": "在线",
+        "defect_type": "已分销二创",
+        "authorized_projects": [],
+        "project_id": "",
+        "audit_id": "AUD-2026042102",
+        "copyright_id": "bq2079205",
+        "play_name": "长相思第二季(风险)",
+        "play_name_alias": "长相思2",
+        "play_category": "1",
+        "task_type": "risk_review_defect",
+        "task_time": "2026-04-19 10:30:00",
+        "audit_progress": "rights_first_review",
+        "main_cid": "mzc00200defghi",
+        "cid_info": {
+          "cid": "mzc00200defghi",
+          "title": "长相思第二季",
+          "hot_level": "S"
+        },
+        "operator": "system",
+        "created_at": "2026-04-19 10:30:00",
+        "updated_at": "2026-04-19 10:30:00",
+        "rights_infos": [
+          {
+            "copr_rights_id": "bq2079205-o1161021",
+            "contract_codes": "bq2079205-o1161021",
+            "copyright_type": "import",
+            "copyright_time_start": "2025-01-01",
+            "copyright_time_end": "2027-12-31",
+            "ip_authorize_right_external": "pending",
+            "rights_type_label": "信息网络传播权",
+            "authorized_platforms": [
+              "快手",
+              "抖音"
+            ],
+            "co_intention": "non_exclusive",
+            "copyright_rights": [
+              "information_network",
+              "editing"
+            ],
+            "resell_time_type": "inherit_auth_period",
+            "sub_license_permission": "joint_sublicense",
+            "resell_right_term": [
+              "platform_restriction"
+            ],
+            "resell_right_other_term": "",
+            "copyright_area": [
+              "mainland_china"
+            ],
+            "edit_right_term_option": [
+              "duration_limit"
+            ],
+            "edit_right_other_term": "",
+            "edit_right_duration_term": "3",
+            "second_creation_has_rights": "123127036",
+            "second_creation_exclusivity": "non_exclusive",
+            "second_creation_sublicense": "allowed",
+            "second_creation_sublicense_remark": "",
+            "achievements_time_requirement_authorized_use": "no_limit",
+            "achievements_quantity_requirement_authorized_use": "no_limit",
+            "second_creation_new_attribution": "joint_ownership",
+            "dissemination_restrictions_channels_authorized_use": "no_limit",
+            "dissemination_restrictions_period_authorized_use": "no_limit",
+            "dissemination_restrictions_area_authorized_use": "no_limit"
+          }
+        ]
+      },
+      {
+        "rights_first_review_result": "",
+        "rights_first_review_defect_type": [],
+        "rights_first_review_other_defect_type": "",
+        "rights_first_review_authorized_platforms": [],
+        "rights_first_review_excluded_platforms": [],
+        "rights_first_review_by": "",
+        "rights_first_review_at": "",
+        "rights_first_review_remark": "",
+        "rights_second_review_result": "",
+        "rights_second_review_authorized_platforms": [],
+        "rights_second_review_excluded_platforms": [],
+        "rights_second_review_defect_type": [],
+        "rights_second_review_defect_disposal_method": "",
+        "rights_second_review_by": "",
+        "rights_second_review_at": "",
+        "rights_second_review_remark": "",
+        "import_copr_rights_id": "bq2079310-o1161164",
+        "import_copr_rights_ids": [
+          "bq2079310-o1161164"
+        ],
+        "defect_copy_rights_ids": [],
+        "rights_third_review_result": "",
+        "rights_third_review_authorized_platform_kuaishou": "",
+        "rights_third_review_authorized_platform_douyin": "",
+        "xwq_status": "未知",
+        "online_status": "在线",
+        "defect_type": "",
+        "authorized_projects": [],
+        "project_id": "",
+        "audit_id": "AUD-2026042103",
+        "copyright_id": "bq2079310",
+        "play_name": "三体第三季(重审)",
+        "play_name_alias": "三体3",
+        "play_category": "1",
+        "task_type": "defect_reaudit",
+        "task_time": "2026-04-20 16:00:00",
+        "audit_progress": "rights_first_review",
+        "main_cid": "mzc00200jklmno",
+        "cid_info": {
+          "cid": "mzc00200jklmno",
+          "title": "三体第三季",
+          "hot_level": "S"
+        },
+        "operator": "system",
+        "created_at": "2026-04-20 16:00:00",
+        "updated_at": "2026-04-20 16:00:00",
+        "is_reaudit": true,
+        "previous_audit_id": "AUD-2026042015",
+        "rights_infos": [
+          {
+            "copr_rights_id": "bq2079310-o1161164",
+            "contract_codes": "bq2079310-o1161164",
+            "copyright_type": "import",
+            "copyright_time_start": "2025-01-01",
+            "copyright_time_end": "2027-12-31",
+            "ip_authorize_right_external": "pending",
+            "rights_type_label": "信息网络传播权",
+            "authorized_platforms": [
+              "快手",
+              "抖音"
+            ],
+            "co_intention": "non_exclusive",
+            "copyright_rights": [
+              "information_network",
+              "editing"
+            ],
+            "resell_time_type": "inherit_auth_period",
+            "sub_license_permission": "joint_sublicense",
+            "resell_right_term": [
+              "platform_restriction"
+            ],
+            "resell_right_other_term": "",
+            "copyright_area": [
+              "mainland_china"
+            ],
+            "edit_right_term_option": [
+              "duration_limit"
+            ],
+            "edit_right_other_term": "",
+            "edit_right_duration_term": "3",
+            "second_creation_has_rights": "123127036",
+            "second_creation_exclusivity": "non_exclusive",
+            "second_creation_sublicense": "allowed",
+            "second_creation_sublicense_remark": "",
+            "achievements_time_requirement_authorized_use": "no_limit",
+            "achievements_quantity_requirement_authorized_use": "no_limit",
+            "second_creation_new_attribution": "joint_ownership",
+            "dissemination_restrictions_channels_authorized_use": "no_limit",
+            "dissemination_restrictions_period_authorized_use": "no_limit",
+            "dissemination_restrictions_area_authorized_use": "no_limit"
+          }
+        ]
+      },
+      {
+        "rights_first_review_result": "",
+        "rights_first_review_defect_type": [],
+        "rights_first_review_other_defect_type": "",
+        "rights_first_review_authorized_platforms": [],
+        "rights_first_review_excluded_platforms": [],
+        "rights_first_review_by": "",
+        "rights_first_review_at": "",
+        "rights_first_review_remark": "",
+        "rights_second_review_result": "",
+        "rights_second_review_authorized_platforms": [],
+        "rights_second_review_excluded_platforms": [],
+        "rights_second_review_defect_type": [],
+        "rights_second_review_defect_disposal_method": "",
+        "rights_second_review_by": "",
+        "rights_second_review_at": "",
+        "rights_second_review_remark": "",
+        "import_copr_rights_id": "bq2079401-o1161104",
+        "import_copr_rights_ids": [
+          "bq2079401-o1161104",
+          "bq2079401-o1161204"
+        ],
+        "defect_copy_rights_ids": [],
+        "rights_third_review_result": "",
+        "rights_third_review_authorized_platform_kuaishou": "",
+        "rights_third_review_authorized_platform_douyin": "",
+        "xwq_status": "生效中",
+        "online_status": "在线",
+        "defect_type": "",
+        "authorized_projects": [],
+        "project_id": "",
+        "task_type": "authorization_review",
+        "audit_progress": "rights_first_review",
+        "operator": "system",
+        "audit_id": "AUD-B001",
+        "copyright_id": "bq2079401",
+        "play_name": "墨雨云间第二季",
+        "play_name_alias": "墨雨2",
+        "play_category": "1",
+        "main_cid": "mzc00200batch00",
+        "cid_info": {
+          "cid": "mzc00200batch00",
+          "title": "墨雨云间第二季",
+          "hot_level": "S"
+        },
+        "task_time": "2026-04-15 10:00:00",
+        "created_at": "2026-04-15 10:00:00",
+        "updated_at": "2026-04-15 10:00:00",
+        "rights_infos": [
+          {
+            "copr_rights_id": "bq2079401-o1161104",
+            "contract_codes": "bq2079401-o1161104",
+            "copyright_type": "import",
+            "copyright_time_start": "2025-01-01",
+            "copyright_time_end": "2027-12-31",
+            "ip_authorize_right_external": "pending",
+            "rights_type_label": "信息网络传播权",
+            "authorized_platforms": [
+              "快手",
+              "抖音"
+            ],
+            "co_intention": "non_exclusive",
+            "copyright_rights": [
+              "information_network",
+              "editing"
+            ],
+            "resell_time_type": "inherit_auth_period",
+            "sub_license_permission": "joint_sublicense",
+            "resell_right_term": [
+              "platform_restriction"
+            ],
+            "resell_right_other_term": "",
+            "copyright_area": [
+              "mainland_china"
+            ],
+            "edit_right_term_option": [
+              "duration_limit"
+            ],
+            "edit_right_other_term": "",
+            "edit_right_duration_term": "3",
+            "second_creation_has_rights": "123127036",
+            "second_creation_exclusivity": "non_exclusive",
+            "second_creation_sublicense": "allowed",
+            "second_creation_sublicense_remark": "",
+            "achievements_time_requirement_authorized_use": "no_limit",
+            "achievements_quantity_requirement_authorized_use": "no_limit",
+            "second_creation_new_attribution": "joint_ownership",
+            "dissemination_restrictions_channels_authorized_use": "no_limit",
+            "dissemination_restrictions_period_authorized_use": "no_limit",
+            "dissemination_restrictions_area_authorized_use": "no_limit"
+          },
+          {
+            "copr_rights_id": "bq2079401-o1161204",
+            "contract_codes": "bq2079401-o1161204",
+            "copyright_type": "import",
+            "copyright_time_start": "2025-01-01",
+            "copyright_time_end": "2027-12-31",
+            "ip_authorize_right_external": "pending",
+            "rights_type_label": "二次创作权",
+            "authorized_platforms": [
+              "快手"
+            ],
+            "co_intention": "non_exclusive",
+            "copyright_rights": [
+              "information_network",
+              "editing"
+            ],
+            "resell_time_type": "inherit_auth_period",
+            "sub_license_permission": "joint_sublicense",
+            "resell_right_term": [
+              "platform_restriction"
+            ],
+            "resell_right_other_term": "",
+            "copyright_area": [
+              "mainland_china"
+            ],
+            "edit_right_term_option": [
+              "duration_limit"
+            ],
+            "edit_right_other_term": "",
+            "edit_right_duration_term": "3",
+            "second_creation_has_rights": "123127036",
+            "second_creation_exclusivity": "non_exclusive",
+            "second_creation_sublicense": "allowed",
+            "second_creation_sublicense_remark": "",
+            "achievements_time_requirement_authorized_use": "no_limit",
+            "achievements_quantity_requirement_authorized_use": "no_limit",
+            "second_creation_new_attribution": "joint_ownership",
+            "dissemination_restrictions_channels_authorized_use": "no_limit",
+            "dissemination_restrictions_period_authorized_use": "no_limit",
+            "dissemination_restrictions_area_authorized_use": "no_limit"
+          }
+        ]
+      },
+      {
+        "rights_first_review_result": "",
+        "rights_first_review_defect_type": [],
+        "rights_first_review_other_defect_type": "",
+        "rights_first_review_authorized_platforms": [],
+        "rights_first_review_excluded_platforms": [],
+        "rights_first_review_by": "",
+        "rights_first_review_at": "",
+        "rights_first_review_remark": "",
+        "rights_second_review_result": "",
+        "rights_second_review_authorized_platforms": [],
+        "rights_second_review_excluded_platforms": [],
+        "rights_second_review_defect_type": [],
+        "rights_second_review_defect_disposal_method": "",
+        "rights_second_review_by": "",
+        "rights_second_review_at": "",
+        "rights_second_review_remark": "",
+        "import_copr_rights_id": "bq2079402-o1161144",
+        "import_copr_rights_ids": [
+          "bq2079402-o1161144",
+          "bq2079402-o1161244"
+        ],
+        "defect_copy_rights_ids": [],
+        "rights_third_review_result": "",
+        "rights_third_review_authorized_platform_kuaishou": "",
+        "rights_third_review_authorized_platform_douyin": "",
+        "xwq_status": "生效中",
+        "online_status": "在线",
+        "defect_type": "",
+        "authorized_projects": [],
+        "project_id": "",
+        "task_type": "authorization_review",
+        "audit_progress": "rights_first_review",
+        "operator": "system",
+        "audit_id": "AUD-B002",
+        "copyright_id": "bq2079402",
+        "play_name": "长风渡第二季",
+        "play_name_alias": "长风渡2",
+        "play_category": "1",
+        "main_cid": "mzc00200batch01",
+        "cid_info": {
+          "cid": "mzc00200batch01",
+          "title": "长风渡第二季",
+          "hot_level": "A"
+        },
+        "task_time": "2026-04-16 10:00:00",
+        "created_at": "2026-04-16 10:00:00",
+        "updated_at": "2026-04-16 10:00:00",
+        "rights_infos": [
+          {
+            "copr_rights_id": "bq2079402-o1161144",
+            "contract_codes": "bq2079402-o1161144",
+            "copyright_type": "import",
+            "copyright_time_start": "2025-01-01",
+            "copyright_time_end": "2027-12-31",
+            "ip_authorize_right_external": "pending",
+            "rights_type_label": "信息网络传播权",
+            "authorized_platforms": [
+              "快手",
+              "抖音"
+            ],
+            "co_intention": "non_exclusive",
+            "copyright_rights": [
+              "information_network",
+              "editing"
+            ],
+            "resell_time_type": "inherit_auth_period",
+            "sub_license_permission": "joint_sublicense",
+            "resell_right_term": [
+              "platform_restriction"
+            ],
+            "resell_right_other_term": "",
+            "copyright_area": [
+              "mainland_china"
+            ],
+            "edit_right_term_option": [
+              "duration_limit"
+            ],
+            "edit_right_other_term": "",
+            "edit_right_duration_term": "3",
+            "second_creation_has_rights": "123127036",
+            "second_creation_exclusivity": "non_exclusive",
+            "second_creation_sublicense": "allowed",
+            "second_creation_sublicense_remark": "",
+            "achievements_time_requirement_authorized_use": "no_limit",
+            "achievements_quantity_requirement_authorized_use": "no_limit",
+            "second_creation_new_attribution": "joint_ownership",
+            "dissemination_restrictions_channels_authorized_use": "no_limit",
+            "dissemination_restrictions_period_authorized_use": "no_limit",
+            "dissemination_restrictions_area_authorized_use": "no_limit"
+          },
+          {
+            "copr_rights_id": "bq2079402-o1161244",
+            "contract_codes": "bq2079402-o1161244",
+            "copyright_type": "import",
+            "copyright_time_start": "2025-01-01",
+            "copyright_time_end": "2027-12-31",
+            "ip_authorize_right_external": "pending",
+            "rights_type_label": "二次创作权",
+            "authorized_platforms": [
+              "快手"
+            ],
+            "co_intention": "non_exclusive",
+            "copyright_rights": [
+              "information_network",
+              "editing"
+            ],
+            "resell_time_type": "inherit_auth_period",
+            "sub_license_permission": "joint_sublicense",
+            "resell_right_term": [
+              "platform_restriction"
+            ],
+            "resell_right_other_term": "",
+            "copyright_area": [
+              "mainland_china"
+            ],
+            "edit_right_term_option": [
+              "duration_limit"
+            ],
+            "edit_right_other_term": "",
+            "edit_right_duration_term": "3",
+            "second_creation_has_rights": "123127036",
+            "second_creation_exclusivity": "non_exclusive",
+            "second_creation_sublicense": "allowed",
+            "second_creation_sublicense_remark": "",
+            "achievements_time_requirement_authorized_use": "no_limit",
+            "achievements_quantity_requirement_authorized_use": "no_limit",
+            "second_creation_new_attribution": "joint_ownership",
+            "dissemination_restrictions_channels_authorized_use": "no_limit",
+            "dissemination_restrictions_period_authorized_use": "no_limit",
+            "dissemination_restrictions_area_authorized_use": "no_limit"
+          }
+        ]
+      },
+      {
+        "rights_first_review_result": "",
+        "rights_first_review_defect_type": [],
+        "rights_first_review_other_defect_type": "",
+        "rights_first_review_authorized_platforms": [],
+        "rights_first_review_excluded_platforms": [],
+        "rights_first_review_by": "",
+        "rights_first_review_at": "",
+        "rights_first_review_remark": "",
+        "rights_second_review_result": "",
+        "rights_second_review_authorized_platforms": [],
+        "rights_second_review_excluded_platforms": [],
+        "rights_second_review_defect_type": [],
+        "rights_second_review_defect_disposal_method": "",
+        "rights_second_review_by": "",
+        "rights_second_review_at": "",
+        "rights_second_review_remark": "",
+        "import_copr_rights_id": "bq2079403-o1161140",
+        "import_copr_rights_ids": [
+          "bq2079403-o1161140",
+          "bq2079403-o1161240"
+        ],
+        "defect_copy_rights_ids": [],
+        "rights_third_review_result": "",
+        "rights_third_review_authorized_platform_kuaishou": "",
+        "rights_third_review_authorized_platform_douyin": "",
+        "xwq_status": "生效中",
+        "online_status": "在线",
+        "defect_type": "",
+        "authorized_projects": [],
+        "project_id": "",
+        "task_type": "authorization_review",
+        "audit_progress": "rights_first_review",
+        "operator": "system",
+        "audit_id": "AUD-B003",
+        "copyright_id": "bq2079403",
+        "play_name": "我的人间烟火2",
+        "play_name_alias": "烟火2",
+        "play_category": "1",
+        "main_cid": "mzc00200batch02",
+        "cid_info": {
+          "cid": "mzc00200batch02",
+          "title": "我的人间烟火2",
+          "hot_level": "B"
+        },
+        "task_time": "2026-04-17 10:00:00",
+        "created_at": "2026-04-17 10:00:00",
+        "updated_at": "2026-04-17 10:00:00",
+        "rights_infos": [
+          {
+            "copr_rights_id": "bq2079403-o1161140",
+            "contract_codes": "bq2079403-o1161140",
+            "copyright_type": "import",
+            "copyright_time_start": "2025-01-01",
+            "copyright_time_end": "2027-12-31",
+            "ip_authorize_right_external": "pending",
+            "rights_type_label": "信息网络传播权",
+            "authorized_platforms": [
+              "快手",
+              "抖音"
+            ],
+            "co_intention": "non_exclusive",
+            "copyright_rights": [
+              "information_network",
+              "editing"
+            ],
+            "resell_time_type": "inherit_auth_period",
+            "sub_license_permission": "joint_sublicense",
+            "resell_right_term": [
+              "platform_restriction"
+            ],
+            "resell_right_other_term": "",
+            "copyright_area": [
+              "mainland_china"
+            ],
+            "edit_right_term_option": [
+              "duration_limit"
+            ],
+            "edit_right_other_term": "",
+            "edit_right_duration_term": "3",
+            "second_creation_has_rights": "123127036",
+            "second_creation_exclusivity": "non_exclusive",
+            "second_creation_sublicense": "allowed",
+            "second_creation_sublicense_remark": "",
+            "achievements_time_requirement_authorized_use": "no_limit",
+            "achievements_quantity_requirement_authorized_use": "no_limit",
+            "second_creation_new_attribution": "joint_ownership",
+            "dissemination_restrictions_channels_authorized_use": "no_limit",
+            "dissemination_restrictions_period_authorized_use": "no_limit",
+            "dissemination_restrictions_area_authorized_use": "no_limit"
+          },
+          {
+            "copr_rights_id": "bq2079403-o1161240",
+            "contract_codes": "bq2079403-o1161240",
+            "copyright_type": "import",
+            "copyright_time_start": "2025-01-01",
+            "copyright_time_end": "2027-12-31",
+            "ip_authorize_right_external": "authorized",
+            "rights_type_label": "二次创作权",
+            "authorized_platforms": [
+              "快手"
+            ],
+            "co_intention": "non_exclusive",
+            "copyright_rights": [
+              "information_network",
+              "editing"
+            ],
+            "resell_time_type": "inherit_auth_period",
+            "sub_license_permission": "joint_sublicense",
+            "resell_right_term": [
+              "platform_restriction"
+            ],
+            "resell_right_other_term": "",
+            "copyright_area": [
+              "mainland_china"
+            ],
+            "edit_right_term_option": [
+              "duration_limit"
+            ],
+            "edit_right_other_term": "",
+            "edit_right_duration_term": "3",
+            "second_creation_has_rights": "123127036",
+            "second_creation_exclusivity": "non_exclusive",
+            "second_creation_sublicense": "allowed",
+            "second_creation_sublicense_remark": "",
+            "achievements_time_requirement_authorized_use": "no_limit",
+            "achievements_quantity_requirement_authorized_use": "no_limit",
+            "second_creation_new_attribution": "joint_ownership",
+            "dissemination_restrictions_channels_authorized_use": "no_limit",
+            "dissemination_restrictions_period_authorized_use": "no_limit",
+            "dissemination_restrictions_area_authorized_use": "no_limit"
+          }
+        ]
+      },
+      {
+        "rights_first_review_result": "",
+        "rights_first_review_defect_type": [],
+        "rights_first_review_other_defect_type": "",
+        "rights_first_review_authorized_platforms": [],
+        "rights_first_review_excluded_platforms": [],
+        "rights_first_review_by": "",
+        "rights_first_review_at": "",
+        "rights_first_review_remark": "",
+        "rights_second_review_result": "",
+        "rights_second_review_authorized_platforms": [],
+        "rights_second_review_excluded_platforms": [],
+        "rights_second_review_defect_type": [],
+        "rights_second_review_defect_disposal_method": "",
+        "rights_second_review_by": "",
+        "rights_second_review_at": "",
+        "rights_second_review_remark": "",
+        "import_copr_rights_id": "bq2079404-o1161133",
+        "import_copr_rights_ids": [
+          "bq2079404-o1161133",
+          "bq2079404-o1161233"
+        ],
+        "defect_copy_rights_ids": [],
+        "rights_third_review_result": "",
+        "rights_third_review_authorized_platform_kuaishou": "",
+        "rights_third_review_authorized_platform_douyin": "",
+        "xwq_status": "生效中",
+        "online_status": "在线",
+        "defect_type": "",
+        "authorized_projects": [],
+        "project_id": "",
+        "task_type": "authorization_review",
+        "audit_progress": "rights_first_review",
+        "operator": "system",
+        "audit_id": "AUD-B004",
+        "copyright_id": "bq2079404",
+        "play_name": "狂飙第二季",
+        "play_name_alias": "狂飙2",
+        "play_category": "1",
+        "main_cid": "mzc00200batch03",
+        "cid_info": {
+          "cid": "mzc00200batch03",
+          "title": "狂飙第二季",
+          "hot_level": "S"
+        },
+        "task_time": "2026-04-18 10:00:00",
+        "created_at": "2026-04-18 10:00:00",
+        "updated_at": "2026-04-18 10:00:00",
+        "rights_infos": [
+          {
+            "copr_rights_id": "bq2079404-o1161133",
+            "contract_codes": "bq2079404-o1161133",
+            "copyright_type": "import",
+            "copyright_time_start": "2025-01-01",
+            "copyright_time_end": "2027-12-31",
+            "ip_authorize_right_external": "pending",
+            "rights_type_label": "信息网络传播权",
+            "authorized_platforms": [
+              "快手",
+              "抖音"
+            ],
+            "co_intention": "non_exclusive",
+            "copyright_rights": [
+              "information_network",
+              "editing"
+            ],
+            "resell_time_type": "inherit_auth_period",
+            "sub_license_permission": "joint_sublicense",
+            "resell_right_term": [
+              "platform_restriction"
+            ],
+            "resell_right_other_term": "",
+            "copyright_area": [
+              "mainland_china"
+            ],
+            "edit_right_term_option": [
+              "duration_limit"
+            ],
+            "edit_right_other_term": "",
+            "edit_right_duration_term": "3",
+            "second_creation_has_rights": "123127036",
+            "second_creation_exclusivity": "non_exclusive",
+            "second_creation_sublicense": "allowed",
+            "second_creation_sublicense_remark": "",
+            "achievements_time_requirement_authorized_use": "no_limit",
+            "achievements_quantity_requirement_authorized_use": "no_limit",
+            "second_creation_new_attribution": "joint_ownership",
+            "dissemination_restrictions_channels_authorized_use": "no_limit",
+            "dissemination_restrictions_period_authorized_use": "no_limit",
+            "dissemination_restrictions_area_authorized_use": "no_limit"
+          },
+          {
+            "copr_rights_id": "bq2079404-o1161233",
+            "contract_codes": "bq2079404-o1161233",
+            "copyright_type": "import",
+            "copyright_time_start": "2025-01-01",
+            "copyright_time_end": "2027-12-31",
+            "ip_authorize_right_external": "authorized",
+            "rights_type_label": "二次创作权",
+            "authorized_platforms": [
+              "快手"
+            ],
+            "co_intention": "non_exclusive",
+            "copyright_rights": [
+              "information_network",
+              "editing"
+            ],
+            "resell_time_type": "inherit_auth_period",
+            "sub_license_permission": "joint_sublicense",
+            "resell_right_term": [
+              "platform_restriction"
+            ],
+            "resell_right_other_term": "",
+            "copyright_area": [
+              "mainland_china"
+            ],
+            "edit_right_term_option": [
+              "duration_limit"
+            ],
+            "edit_right_other_term": "",
+            "edit_right_duration_term": "3",
+            "second_creation_has_rights": "123127036",
+            "second_creation_exclusivity": "non_exclusive",
+            "second_creation_sublicense": "allowed",
+            "second_creation_sublicense_remark": "",
+            "achievements_time_requirement_authorized_use": "no_limit",
+            "achievements_quantity_requirement_authorized_use": "no_limit",
+            "second_creation_new_attribution": "joint_ownership",
+            "dissemination_restrictions_channels_authorized_use": "no_limit",
+            "dissemination_restrictions_period_authorized_use": "no_limit",
+            "dissemination_restrictions_area_authorized_use": "no_limit"
+          }
+        ]
+      },
+      {
+        "rights_first_review_result": "",
+        "rights_first_review_defect_type": [],
+        "rights_first_review_other_defect_type": "",
+        "rights_first_review_authorized_platforms": [],
+        "rights_first_review_excluded_platforms": [],
+        "rights_first_review_by": "",
+        "rights_first_review_at": "",
+        "rights_first_review_remark": "",
+        "rights_second_review_result": "",
+        "rights_second_review_authorized_platforms": [],
+        "rights_second_review_excluded_platforms": [],
+        "rights_second_review_defect_type": [],
+        "rights_second_review_defect_disposal_method": "",
+        "rights_second_review_by": "",
+        "rights_second_review_at": "",
+        "rights_second_review_remark": "",
+        "import_copr_rights_id": "bq2079405-o1161158",
+        "import_copr_rights_ids": [
+          "bq2079405-o1161158",
+          "bq2079405-o1161258"
+        ],
+        "defect_copy_rights_ids": [],
+        "rights_third_review_result": "",
+        "rights_third_review_authorized_platform_kuaishou": "",
+        "rights_third_review_authorized_platform_douyin": "",
+        "xwq_status": "生效中",
+        "online_status": "在线",
+        "defect_type": "",
+        "authorized_projects": [],
+        "project_id": "",
+        "task_type": "authorization_review",
+        "audit_progress": "rights_first_review",
+        "operator": "system",
+        "audit_id": "AUD-B005",
+        "copyright_id": "bq2079405",
+        "play_name": "莲花楼第二季",
+        "play_name_alias": "莲花楼2",
+        "play_category": "1",
+        "main_cid": "mzc00200batch04",
+        "cid_info": {
+          "cid": "mzc00200batch04",
+          "title": "莲花楼第二季",
+          "hot_level": "A"
+        },
+        "task_time": "2026-04-19 10:00:00",
+        "created_at": "2026-04-19 10:00:00",
+        "updated_at": "2026-04-19 10:00:00",
+        "rights_infos": [
+          {
+            "copr_rights_id": "bq2079405-o1161158",
+            "contract_codes": "bq2079405-o1161158",
+            "copyright_type": "import",
+            "copyright_time_start": "2025-01-01",
+            "copyright_time_end": "2027-12-31",
+            "ip_authorize_right_external": "pending",
+            "rights_type_label": "信息网络传播权",
+            "authorized_platforms": [
+              "快手",
+              "抖音"
+            ],
+            "co_intention": "non_exclusive",
+            "copyright_rights": [
+              "information_network",
+              "editing"
+            ],
+            "resell_time_type": "inherit_auth_period",
+            "sub_license_permission": "joint_sublicense",
+            "resell_right_term": [
+              "platform_restriction"
+            ],
+            "resell_right_other_term": "",
+            "copyright_area": [
+              "mainland_china"
+            ],
+            "edit_right_term_option": [
+              "duration_limit"
+            ],
+            "edit_right_other_term": "",
+            "edit_right_duration_term": "3",
+            "second_creation_has_rights": "123127036",
+            "second_creation_exclusivity": "non_exclusive",
+            "second_creation_sublicense": "allowed",
+            "second_creation_sublicense_remark": "",
+            "achievements_time_requirement_authorized_use": "no_limit",
+            "achievements_quantity_requirement_authorized_use": "no_limit",
+            "second_creation_new_attribution": "joint_ownership",
+            "dissemination_restrictions_channels_authorized_use": "no_limit",
+            "dissemination_restrictions_period_authorized_use": "no_limit",
+            "dissemination_restrictions_area_authorized_use": "no_limit"
+          },
+          {
+            "copr_rights_id": "bq2079405-o1161258",
+            "contract_codes": "bq2079405-o1161258",
+            "copyright_type": "import",
+            "copyright_time_start": "2025-01-01",
+            "copyright_time_end": "2027-12-31",
+            "ip_authorize_right_external": "",
+            "rights_type_label": "二次创作权",
+            "authorized_platforms": [
+              "快手"
+            ],
+            "co_intention": "non_exclusive",
+            "copyright_rights": [
+              "information_network",
+              "editing"
+            ],
+            "resell_time_type": "inherit_auth_period",
+            "sub_license_permission": "joint_sublicense",
+            "resell_right_term": [
+              "platform_restriction"
+            ],
+            "resell_right_other_term": "",
+            "copyright_area": [
+              "mainland_china"
+            ],
+            "edit_right_term_option": [
+              "duration_limit"
+            ],
+            "edit_right_other_term": "",
+            "edit_right_duration_term": "3",
+            "second_creation_has_rights": "123127036",
+            "second_creation_exclusivity": "non_exclusive",
+            "second_creation_sublicense": "allowed",
+            "second_creation_sublicense_remark": "",
+            "achievements_time_requirement_authorized_use": "no_limit",
+            "achievements_quantity_requirement_authorized_use": "no_limit",
+            "second_creation_new_attribution": "joint_ownership",
+            "dissemination_restrictions_channels_authorized_use": "no_limit",
+            "dissemination_restrictions_period_authorized_use": "no_limit",
+            "dissemination_restrictions_area_authorized_use": "no_limit"
+          }
+        ]
+      },
+      {
+        "rights_first_review_result": "rights_available",
+        "rights_first_review_defect_type": [],
+        "rights_first_review_other_defect_type": "",
+        "rights_first_review_authorized_platforms": [],
+        "rights_first_review_excluded_platforms": [],
+        "rights_first_review_by": "zhangsan",
+        "rights_first_review_at": "2026-04-21 10:00:00",
+        "rights_first_review_remark": "",
+        "rights_second_review_result": "",
+        "rights_second_review_authorized_platforms": [],
+        "rights_second_review_excluded_platforms": [],
+        "rights_second_review_defect_type": [],
+        "rights_second_review_defect_disposal_method": "",
+        "rights_second_review_by": "",
+        "rights_second_review_at": "",
+        "rights_second_review_remark": "",
+        "import_copr_rights_id": "bq2079406-o1161312",
+        "import_copr_rights_ids": [
+          "bq2079406-o1161312",
+          "bq2079406-o1161412",
+          "bq2079406-o1161512"
+        ],
+        "defect_copy_rights_ids": [],
+        "rights_third_review_result": "",
+        "rights_third_review_authorized_platform_kuaishou": "",
+        "rights_third_review_authorized_platform_douyin": "",
+        "xwq_status": "生效中",
+        "online_status": "在线",
+        "defect_type": "",
+        "authorized_projects": [],
+        "project_id": "",
+        "task_type": "authorization_review",
+        "audit_progress": "rights_second_review",
+        "operator": "system",
+        "audit_id": "AUD-B006",
+        "copyright_id": "bq2079406",
+        "play_name": "开端第二季",
+        "play_name_alias": "开端2",
+        "play_category": "1",
+        "main_cid": "mzc00200batch05",
+        "cid_info": {
+          "cid": "mzc00200batch05",
+          "title": "开端第二季",
+          "hot_level": "A"
+        },
+        "task_time": "2026-04-20 10:00:00",
+        "created_at": "2026-04-20 10:00:00",
+        "updated_at": "2026-04-20 10:00:00",
+        "rights_infos": [
+          {
+            "copr_rights_id": "bq2079406-o1161312",
+            "contract_codes": "bq2079406-o1161312",
+            "copyright_type": "import",
+            "copyright_time_start": "2025-01-01",
+            "copyright_time_end": "2027-12-31",
+            "ip_authorize_right_external": "pending",
+            "rights_type_label": "信息网络传播权",
+            "authorized_platforms": [
+              "快手",
+              "抖音"
+            ],
+            "co_intention": "non_exclusive",
+            "copyright_rights": [
+              "information_network",
+              "editing"
+            ],
+            "resell_time_type": "inherit_auth_period",
+            "sub_license_permission": "joint_sublicense",
+            "resell_right_term": [
+              "platform_restriction"
+            ],
+            "resell_right_other_term": "",
+            "copyright_area": [
+              "mainland_china"
+            ],
+            "edit_right_term_option": [
+              "duration_limit"
+            ],
+            "edit_right_other_term": "",
+            "edit_right_duration_term": "3",
+            "second_creation_has_rights": "123127036",
+            "second_creation_exclusivity": "non_exclusive",
+            "second_creation_sublicense": "allowed",
+            "second_creation_sublicense_remark": "",
+            "achievements_time_requirement_authorized_use": "no_limit",
+            "achievements_quantity_requirement_authorized_use": "no_limit",
+            "second_creation_new_attribution": "joint_ownership",
+            "dissemination_restrictions_channels_authorized_use": "no_limit",
+            "dissemination_restrictions_period_authorized_use": "no_limit",
+            "dissemination_restrictions_area_authorized_use": "no_limit"
+          },
+          {
+            "copr_rights_id": "bq2079406-o1161412",
+            "contract_codes": "bq2079406-o1161412",
+            "copyright_type": "export",
+            "copyright_time_start": "2025-01-01",
+            "copyright_time_end": "2027-12-31",
+            "ip_authorize_right_external": "pending",
+            "rights_type_label": "二次创作权",
+            "authorized_platforms": [
+              "快手"
+            ],
+            "export_platform": "快手",
+            "export_rights_type": "二创授权",
+            "export_time_start": "2025-06-01",
+            "export_time_end": "2026-12-31"
+          },
+          {
+            "copr_rights_id": "bq2079406-o1161512",
+            "contract_codes": "bq2079406-o1161512",
+            "copyright_type": "import",
+            "copyright_time_start": "2025-01-01",
+            "copyright_time_end": "2027-12-31",
+            "ip_authorize_right_external": "authorized",
+            "rights_type_label": "信息网络传播权",
+            "authorized_platforms": [
+              "快手"
+            ],
+            "co_intention": "non_exclusive",
+            "copyright_rights": [
+              "information_network",
+              "editing"
+            ],
+            "resell_time_type": "inherit_auth_period",
+            "sub_license_permission": "joint_sublicense",
+            "resell_right_term": [
+              "platform_restriction"
+            ],
+            "resell_right_other_term": "",
+            "copyright_area": [
+              "mainland_china"
+            ],
+            "edit_right_term_option": [
+              "duration_limit"
+            ],
+            "edit_right_other_term": "",
+            "edit_right_duration_term": "3",
+            "second_creation_has_rights": "123127036",
+            "second_creation_exclusivity": "non_exclusive",
+            "second_creation_sublicense": "allowed",
+            "second_creation_sublicense_remark": "",
+            "achievements_time_requirement_authorized_use": "no_limit",
+            "achievements_quantity_requirement_authorized_use": "no_limit",
+            "second_creation_new_attribution": "joint_ownership",
+            "dissemination_restrictions_channels_authorized_use": "no_limit",
+            "dissemination_restrictions_period_authorized_use": "no_limit",
+            "dissemination_restrictions_area_authorized_use": "no_limit"
+          }
+        ]
+      },
+      {
+        "rights_first_review_result": "rights_available",
+        "rights_first_review_defect_type": [],
+        "rights_first_review_other_defect_type": "",
+        "rights_first_review_authorized_platforms": [],
+        "rights_first_review_excluded_platforms": [],
+        "rights_first_review_by": "zhangsan",
+        "rights_first_review_at": "2026-04-22 10:00:00",
+        "rights_first_review_remark": "",
+        "rights_second_review_result": "",
+        "rights_second_review_authorized_platforms": [],
+        "rights_second_review_excluded_platforms": [],
+        "rights_second_review_defect_type": [],
+        "rights_second_review_defect_disposal_method": "",
+        "rights_second_review_by": "",
+        "rights_second_review_at": "",
+        "rights_second_review_remark": "",
+        "import_copr_rights_id": "bq2079407-o1161341",
+        "import_copr_rights_ids": [
+          "bq2079407-o1161341",
+          "bq2079407-o1161441",
+          "bq2079407-o1161541"
+        ],
+        "defect_copy_rights_ids": [],
+        "rights_third_review_result": "",
+        "rights_third_review_authorized_platform_kuaishou": "",
+        "rights_third_review_authorized_platform_douyin": "",
+        "xwq_status": "生效中",
+        "online_status": "在线",
+        "defect_type": "",
+        "authorized_projects": [],
+        "project_id": "",
+        "task_type": "authorization_review",
+        "audit_progress": "rights_second_review",
+        "operator": "system",
+        "audit_id": "AUD-B007",
+        "copyright_id": "bq2079407",
+        "play_name": "苍兰诀第二季",
+        "play_name_alias": "苍兰诀2",
+        "play_category": "1",
+        "main_cid": "mzc00200batch06",
+        "cid_info": {
+          "cid": "mzc00200batch06",
+          "title": "苍兰诀第二季",
+          "hot_level": "S"
+        },
+        "task_time": "2026-04-21 10:00:00",
+        "created_at": "2026-04-21 10:00:00",
+        "updated_at": "2026-04-21 10:00:00",
+        "rights_infos": [
+          {
+            "copr_rights_id": "bq2079407-o1161341",
+            "contract_codes": "bq2079407-o1161341",
+            "copyright_type": "import",
+            "copyright_time_start": "2025-01-01",
+            "copyright_time_end": "2027-12-31",
+            "ip_authorize_right_external": "pending",
+            "rights_type_label": "信息网络传播权",
+            "authorized_platforms": [
+              "快手",
+              "抖音"
+            ],
+            "co_intention": "non_exclusive",
+            "copyright_rights": [
+              "information_network",
+              "editing"
+            ],
+            "resell_time_type": "inherit_auth_period",
+            "sub_license_permission": "joint_sublicense",
+            "resell_right_term": [
+              "platform_restriction"
+            ],
+            "resell_right_other_term": "",
+            "copyright_area": [
+              "mainland_china"
+            ],
+            "edit_right_term_option": [
+              "duration_limit"
+            ],
+            "edit_right_other_term": "",
+            "edit_right_duration_term": "3",
+            "second_creation_has_rights": "123127036",
+            "second_creation_exclusivity": "non_exclusive",
+            "second_creation_sublicense": "allowed",
+            "second_creation_sublicense_remark": "",
+            "achievements_time_requirement_authorized_use": "no_limit",
+            "achievements_quantity_requirement_authorized_use": "no_limit",
+            "second_creation_new_attribution": "joint_ownership",
+            "dissemination_restrictions_channels_authorized_use": "no_limit",
+            "dissemination_restrictions_period_authorized_use": "no_limit",
+            "dissemination_restrictions_area_authorized_use": "no_limit"
+          },
+          {
+            "copr_rights_id": "bq2079407-o1161441",
+            "contract_codes": "bq2079407-o1161441",
+            "copyright_type": "import",
+            "copyright_time_start": "2025-01-01",
+            "copyright_time_end": "2027-12-31",
+            "ip_authorize_right_external": "authorized",
+            "rights_type_label": "二次创作权",
+            "authorized_platforms": [
+              "快手"
+            ],
+            "co_intention": "non_exclusive",
+            "copyright_rights": [
+              "information_network",
+              "editing"
+            ],
+            "resell_time_type": "inherit_auth_period",
+            "sub_license_permission": "joint_sublicense",
+            "resell_right_term": [
+              "platform_restriction"
+            ],
+            "resell_right_other_term": "",
+            "copyright_area": [
+              "mainland_china"
+            ],
+            "edit_right_term_option": [
+              "duration_limit"
+            ],
+            "edit_right_other_term": "",
+            "edit_right_duration_term": "3",
+            "second_creation_has_rights": "123127036",
+            "second_creation_exclusivity": "non_exclusive",
+            "second_creation_sublicense": "allowed",
+            "second_creation_sublicense_remark": "",
+            "achievements_time_requirement_authorized_use": "no_limit",
+            "achievements_quantity_requirement_authorized_use": "no_limit",
+            "second_creation_new_attribution": "joint_ownership",
+            "dissemination_restrictions_channels_authorized_use": "no_limit",
+            "dissemination_restrictions_period_authorized_use": "no_limit",
+            "dissemination_restrictions_area_authorized_use": "no_limit"
+          },
+          {
+            "copr_rights_id": "bq2079407-o1161541",
+            "contract_codes": "bq2079407-o1161541",
+            "copyright_type": "import",
+            "copyright_time_start": "2025-01-01",
+            "copyright_time_end": "2027-12-31",
+            "ip_authorize_right_external": "pending",
+            "rights_type_label": "信息网络传播权",
+            "authorized_platforms": [
+              "快手"
+            ],
+            "co_intention": "non_exclusive",
+            "copyright_rights": [
+              "information_network",
+              "editing"
+            ],
+            "resell_time_type": "inherit_auth_period",
+            "sub_license_permission": "joint_sublicense",
+            "resell_right_term": [
+              "platform_restriction"
+            ],
+            "resell_right_other_term": "",
+            "copyright_area": [
+              "mainland_china"
+            ],
+            "edit_right_term_option": [
+              "duration_limit"
+            ],
+            "edit_right_other_term": "",
+            "edit_right_duration_term": "3",
+            "second_creation_has_rights": "123127036",
+            "second_creation_exclusivity": "non_exclusive",
+            "second_creation_sublicense": "allowed",
+            "second_creation_sublicense_remark": "",
+            "achievements_time_requirement_authorized_use": "no_limit",
+            "achievements_quantity_requirement_authorized_use": "no_limit",
+            "second_creation_new_attribution": "joint_ownership",
+            "dissemination_restrictions_channels_authorized_use": "no_limit",
+            "dissemination_restrictions_period_authorized_use": "no_limit",
+            "dissemination_restrictions_area_authorized_use": "no_limit"
+          }
+        ]
+      },
+      {
+        "rights_first_review_result": "rights_available",
+        "rights_first_review_defect_type": [],
+        "rights_first_review_other_defect_type": "",
+        "rights_first_review_authorized_platforms": [],
+        "rights_first_review_excluded_platforms": [],
+        "rights_first_review_by": "zhangsan",
+        "rights_first_review_at": "2026-04-23 10:00:00",
+        "rights_first_review_remark": "",
+        "rights_second_review_result": "",
+        "rights_second_review_authorized_platforms": [],
+        "rights_second_review_excluded_platforms": [],
+        "rights_second_review_defect_type": [],
+        "rights_second_review_defect_disposal_method": "",
+        "rights_second_review_by": "",
+        "rights_second_review_at": "",
+        "rights_second_review_remark": "",
+        "import_copr_rights_id": "bq2079408-o1161395",
+        "import_copr_rights_ids": [
+          "bq2079408-o1161395",
+          "bq2079408-o1161495",
+          "bq2079408-o1161595"
+        ],
+        "defect_copy_rights_ids": [],
+        "rights_third_review_result": "",
+        "rights_third_review_authorized_platform_kuaishou": "",
+        "rights_third_review_authorized_platform_douyin": "",
+        "xwq_status": "生效中",
+        "online_status": "在线",
+        "defect_type": "",
+        "authorized_projects": [],
+        "project_id": "",
+        "task_type": "authorization_review",
+        "audit_progress": "rights_second_review",
+        "operator": "system",
+        "audit_id": "AUD-B008",
+        "copyright_id": "bq2079408",
+        "play_name": "星汉灿烂第三季",
+        "play_name_alias": "星汉3",
+        "play_category": "1",
+        "main_cid": "mzc00200batch07",
+        "cid_info": {
+          "cid": "mzc00200batch07",
+          "title": "星汉灿烂第三季",
+          "hot_level": "A"
+        },
+        "task_time": "2026-04-22 10:00:00",
+        "created_at": "2026-04-22 10:00:00",
+        "updated_at": "2026-04-22 10:00:00",
+        "rights_infos": [
+          {
+            "copr_rights_id": "bq2079408-o1161395",
+            "contract_codes": "bq2079408-o1161395",
+            "copyright_type": "import",
+            "copyright_time_start": "2025-01-01",
+            "copyright_time_end": "2027-12-31",
+            "ip_authorize_right_external": "pending",
+            "rights_type_label": "信息网络传播权",
+            "authorized_platforms": [
+              "快手",
+              "抖音"
+            ],
+            "co_intention": "non_exclusive",
+            "copyright_rights": [
+              "information_network",
+              "editing"
+            ],
+            "resell_time_type": "inherit_auth_period",
+            "sub_license_permission": "joint_sublicense",
+            "resell_right_term": [
+              "platform_restriction"
+            ],
+            "resell_right_other_term": "",
+            "copyright_area": [
+              "mainland_china"
+            ],
+            "edit_right_term_option": [
+              "duration_limit"
+            ],
+            "edit_right_other_term": "",
+            "edit_right_duration_term": "3",
+            "second_creation_has_rights": "123127036",
+            "second_creation_exclusivity": "non_exclusive",
+            "second_creation_sublicense": "allowed",
+            "second_creation_sublicense_remark": "",
+            "achievements_time_requirement_authorized_use": "no_limit",
+            "achievements_quantity_requirement_authorized_use": "no_limit",
+            "second_creation_new_attribution": "joint_ownership",
+            "dissemination_restrictions_channels_authorized_use": "no_limit",
+            "dissemination_restrictions_period_authorized_use": "no_limit",
+            "dissemination_restrictions_area_authorized_use": "no_limit"
+          },
+          {
+            "copr_rights_id": "bq2079408-o1161495",
+            "contract_codes": "bq2079408-o1161495",
+            "copyright_type": "import",
+            "copyright_time_start": "2025-01-01",
+            "copyright_time_end": "2027-12-31",
+            "ip_authorize_right_external": "authorized",
+            "rights_type_label": "二次创作权",
+            "authorized_platforms": [
+              "快手"
+            ],
+            "co_intention": "non_exclusive",
+            "copyright_rights": [
+              "information_network",
+              "editing"
+            ],
+            "resell_time_type": "inherit_auth_period",
+            "sub_license_permission": "joint_sublicense",
+            "resell_right_term": [
+              "platform_restriction"
+            ],
+            "resell_right_other_term": "",
+            "copyright_area": [
+              "mainland_china"
+            ],
+            "edit_right_term_option": [
+              "duration_limit"
+            ],
+            "edit_right_other_term": "",
+            "edit_right_duration_term": "3",
+            "second_creation_has_rights": "123127036",
+            "second_creation_exclusivity": "non_exclusive",
+            "second_creation_sublicense": "allowed",
+            "second_creation_sublicense_remark": "",
+            "achievements_time_requirement_authorized_use": "no_limit",
+            "achievements_quantity_requirement_authorized_use": "no_limit",
+            "second_creation_new_attribution": "joint_ownership",
+            "dissemination_restrictions_channels_authorized_use": "no_limit",
+            "dissemination_restrictions_period_authorized_use": "no_limit",
+            "dissemination_restrictions_area_authorized_use": "no_limit"
+          },
+          {
+            "copr_rights_id": "bq2079408-o1161595",
+            "contract_codes": "bq2079408-o1161595",
+            "copyright_type": "import",
+            "copyright_time_start": "2025-01-01",
+            "copyright_time_end": "2027-12-31",
+            "ip_authorize_right_external": "pending",
+            "rights_type_label": "信息网络传播权",
+            "authorized_platforms": [
+              "快手"
+            ],
+            "co_intention": "non_exclusive",
+            "copyright_rights": [
+              "information_network",
+              "editing"
+            ],
+            "resell_time_type": "inherit_auth_period",
+            "sub_license_permission": "joint_sublicense",
+            "resell_right_term": [
+              "platform_restriction"
+            ],
+            "resell_right_other_term": "",
+            "copyright_area": [
+              "mainland_china"
+            ],
+            "edit_right_term_option": [
+              "duration_limit"
+            ],
+            "edit_right_other_term": "",
+            "edit_right_duration_term": "3",
+            "second_creation_has_rights": "123127036",
+            "second_creation_exclusivity": "non_exclusive",
+            "second_creation_sublicense": "allowed",
+            "second_creation_sublicense_remark": "",
+            "achievements_time_requirement_authorized_use": "no_limit",
+            "achievements_quantity_requirement_authorized_use": "no_limit",
+            "second_creation_new_attribution": "joint_ownership",
+            "dissemination_restrictions_channels_authorized_use": "no_limit",
+            "dissemination_restrictions_period_authorized_use": "no_limit",
+            "dissemination_restrictions_area_authorized_use": "no_limit"
+          }
+        ]
+      },
+      {
+        "rights_first_review_result": "rights_available",
+        "rights_first_review_defect_type": [],
+        "rights_first_review_other_defect_type": "",
+        "rights_first_review_authorized_platforms": [],
+        "rights_first_review_excluded_platforms": [],
+        "rights_first_review_by": "zhangsan",
+        "rights_first_review_at": "2026-04-24 10:00:00",
+        "rights_first_review_remark": "",
+        "rights_second_review_result": "rights_available",
+        "rights_second_review_authorized_platforms": [],
+        "rights_second_review_excluded_platforms": [],
+        "rights_second_review_defect_type": [],
+        "rights_second_review_defect_disposal_method": "",
+        "rights_second_review_by": "lifawu",
+        "rights_second_review_at": "2026-04-25 14:00:00",
+        "rights_second_review_remark": "",
+        "import_copr_rights_id": "bq2079409-o1160987",
+        "import_copr_rights_ids": [
+          "bq2079409-o1160987"
+        ],
+        "defect_copy_rights_ids": [],
+        "rights_third_review_result": "",
+        "rights_third_review_authorized_platform_kuaishou": "",
+        "rights_third_review_authorized_platform_douyin": "",
+        "xwq_status": "生效中",
+        "online_status": "在线",
+        "defect_type": "",
+        "authorized_projects": [],
+        "project_id": "",
+        "task_type": "authorization_review",
+        "audit_progress": "rights_third_review",
+        "operator": "system",
+        "audit_id": "AUD-B009",
+        "copyright_id": "bq2079409",
+        "play_name": "知否知否第二季",
+        "play_name_alias": "知否2",
+        "play_category": "1",
+        "main_cid": "mzc00200batch08",
+        "cid_info": {
+          "cid": "mzc00200batch08",
+          "title": "知否知否第二季",
+          "hot_level": "S"
+        },
+        "task_time": "2026-04-23 10:00:00",
+        "created_at": "2026-04-23 10:00:00",
+        "updated_at": "2026-04-23 10:00:00",
+        "rights_infos": [
+          {
+            "copr_rights_id": "bq2079409-o1160987",
+            "contract_codes": "bq2079409-o1160987",
+            "copyright_type": "import",
+            "copyright_time_start": "2025-01-01",
+            "copyright_time_end": "2027-12-31",
+            "ip_authorize_right_external": "pending",
+            "rights_type_label": "信息网络传播权",
+            "authorized_platforms": [
+              "快手",
+              "抖音"
+            ],
+            "co_intention": "non_exclusive",
+            "copyright_rights": [
+              "information_network",
+              "editing"
+            ],
+            "resell_time_type": "inherit_auth_period",
+            "sub_license_permission": "joint_sublicense",
+            "resell_right_term": [
+              "platform_restriction"
+            ],
+            "resell_right_other_term": "",
+            "copyright_area": [
+              "mainland_china"
+            ],
+            "edit_right_term_option": [
+              "duration_limit"
+            ],
+            "edit_right_other_term": "",
+            "edit_right_duration_term": "3",
+            "second_creation_has_rights": "123127036",
+            "second_creation_exclusivity": "non_exclusive",
+            "second_creation_sublicense": "allowed",
+            "second_creation_sublicense_remark": "",
+            "achievements_time_requirement_authorized_use": "no_limit",
+            "achievements_quantity_requirement_authorized_use": "no_limit",
+            "second_creation_new_attribution": "joint_ownership",
+            "dissemination_restrictions_channels_authorized_use": "no_limit",
+            "dissemination_restrictions_period_authorized_use": "no_limit",
+            "dissemination_restrictions_area_authorized_use": "no_limit"
+          }
+        ]
+      },
+      {
+        "rights_first_review_result": "rights_available",
+        "rights_first_review_defect_type": [],
+        "rights_first_review_other_defect_type": "",
+        "rights_first_review_authorized_platforms": [],
+        "rights_first_review_excluded_platforms": [],
+        "rights_first_review_by": "zhangsan",
+        "rights_first_review_at": "2026-04-25 10:00:00",
+        "rights_first_review_remark": "",
+        "rights_second_review_result": "rights_available",
+        "rights_second_review_authorized_platforms": [],
+        "rights_second_review_excluded_platforms": [],
+        "rights_second_review_defect_type": [],
+        "rights_second_review_defect_disposal_method": "",
+        "rights_second_review_by": "lifawu",
+        "rights_second_review_at": "2026-04-26 14:00:00",
+        "rights_second_review_remark": "",
+        "import_copr_rights_id": "bq2079410-o1161186",
+        "import_copr_rights_ids": [
+          "bq2079410-o1161186"
+        ],
+        "defect_copy_rights_ids": [],
+        "rights_third_review_result": "",
+        "rights_third_review_authorized_platform_kuaishou": "",
+        "rights_third_review_authorized_platform_douyin": "",
+        "xwq_status": "生效中",
+        "online_status": "在线",
+        "defect_type": "",
+        "authorized_projects": [],
+        "project_id": "",
+        "task_type": "authorization_review",
+        "audit_progress": "rights_third_review",
+        "operator": "system",
+        "audit_id": "AUD-B010",
+        "copyright_id": "bq2079410",
+        "play_name": "梦华录第二季",
+        "play_name_alias": "梦华录2",
+        "play_category": "1",
+        "main_cid": "mzc00200batch09",
+        "cid_info": {
+          "cid": "mzc00200batch09",
+          "title": "梦华录第二季",
+          "hot_level": "A"
+        },
+        "task_time": "2026-04-24 10:00:00",
+        "created_at": "2026-04-24 10:00:00",
+        "updated_at": "2026-04-24 10:00:00",
+        "rights_infos": [
+          {
+            "copr_rights_id": "bq2079410-o1161186",
+            "contract_codes": "bq2079410-o1161186",
+            "copyright_type": "import",
+            "copyright_time_start": "2025-01-01",
+            "copyright_time_end": "2027-12-31",
+            "ip_authorize_right_external": "pending",
+            "rights_type_label": "信息网络传播权",
+            "authorized_platforms": [
+              "快手",
+              "抖音"
+            ],
+            "co_intention": "non_exclusive",
+            "copyright_rights": [
+              "information_network",
+              "editing"
+            ],
+            "resell_time_type": "inherit_auth_period",
+            "sub_license_permission": "joint_sublicense",
+            "resell_right_term": [
+              "platform_restriction"
+            ],
+            "resell_right_other_term": "",
+            "copyright_area": [
+              "mainland_china"
+            ],
+            "edit_right_term_option": [
+              "duration_limit"
+            ],
+            "edit_right_other_term": "",
+            "edit_right_duration_term": "3",
+            "second_creation_has_rights": "123127036",
+            "second_creation_exclusivity": "non_exclusive",
+            "second_creation_sublicense": "allowed",
+            "second_creation_sublicense_remark": "",
+            "achievements_time_requirement_authorized_use": "no_limit",
+            "achievements_quantity_requirement_authorized_use": "no_limit",
+            "second_creation_new_attribution": "joint_ownership",
+            "dissemination_restrictions_channels_authorized_use": "no_limit",
+            "dissemination_restrictions_period_authorized_use": "no_limit",
+            "dissemination_restrictions_area_authorized_use": "no_limit"
+          }
+        ]
+      },
+      {
+        "rights_first_review_result": "rights_available",
+        "rights_first_review_defect_type": [],
+        "rights_first_review_other_defect_type": "",
+        "rights_first_review_authorized_platforms": [],
+        "rights_first_review_excluded_platforms": [],
+        "rights_first_review_by": "zhangsan",
+        "rights_first_review_at": "2026-04-26 10:00:00",
+        "rights_first_review_remark": "",
+        "rights_second_review_result": "rights_available",
+        "rights_second_review_authorized_platforms": [],
+        "rights_second_review_excluded_platforms": [],
+        "rights_second_review_defect_type": [],
+        "rights_second_review_defect_disposal_method": "",
+        "rights_second_review_by": "lifawu",
+        "rights_second_review_at": "2026-04-27 14:00:00",
+        "rights_second_review_remark": "",
+        "import_copr_rights_id": "bq2079411-o1161103",
+        "import_copr_rights_ids": [
+          "bq2079411-o1161103"
+        ],
+        "defect_copy_rights_ids": [],
+        "rights_third_review_result": "",
+        "rights_third_review_authorized_platform_kuaishou": "",
+        "rights_third_review_authorized_platform_douyin": "",
+        "xwq_status": "生效中",
+        "online_status": "在线",
+        "defect_type": "",
+        "authorized_projects": [],
+        "project_id": "",
+        "task_type": "authorization_review",
+        "audit_progress": "rights_third_review",
+        "operator": "system",
+        "audit_id": "AUD-B011",
+        "copyright_id": "bq2079411",
+        "play_name": "风吹半夏第二季",
+        "play_name_alias": "半夏2",
+        "play_category": "1",
+        "main_cid": "mzc00200batch10",
+        "cid_info": {
+          "cid": "mzc00200batch10",
+          "title": "风吹半夏第二季",
+          "hot_level": "B"
+        },
+        "task_time": "2026-04-25 10:00:00",
+        "created_at": "2026-04-25 10:00:00",
+        "updated_at": "2026-04-25 10:00:00",
+        "rights_infos": [
+          {
+            "copr_rights_id": "bq2079411-o1161103",
+            "contract_codes": "bq2079411-o1161103",
+            "copyright_type": "import",
+            "copyright_time_start": "2025-01-01",
+            "copyright_time_end": "2027-12-31",
+            "ip_authorize_right_external": "pending",
+            "rights_type_label": "信息网络传播权",
+            "authorized_platforms": [
+              "快手",
+              "抖音"
+            ],
+            "co_intention": "non_exclusive",
+            "copyright_rights": [
+              "information_network",
+              "editing"
+            ],
+            "resell_time_type": "inherit_auth_period",
+            "sub_license_permission": "joint_sublicense",
+            "resell_right_term": [
+              "platform_restriction"
+            ],
+            "resell_right_other_term": "",
+            "copyright_area": [
+              "mainland_china"
+            ],
+            "edit_right_term_option": [
+              "duration_limit"
+            ],
+            "edit_right_other_term": "",
+            "edit_right_duration_term": "3",
+            "second_creation_has_rights": "123127036",
+            "second_creation_exclusivity": "non_exclusive",
+            "second_creation_sublicense": "allowed",
+            "second_creation_sublicense_remark": "",
+            "achievements_time_requirement_authorized_use": "no_limit",
+            "achievements_quantity_requirement_authorized_use": "no_limit",
+            "second_creation_new_attribution": "joint_ownership",
+            "dissemination_restrictions_channels_authorized_use": "no_limit",
+            "dissemination_restrictions_period_authorized_use": "no_limit",
+            "dissemination_restrictions_area_authorized_use": "no_limit"
+          }
+        ]
       }
     ]
   },
@@ -1213,2179 +3694,122 @@
   "projects": [
     {
       "id": "PRJ-2026-001",
-      "name": "抖音授权项目",
-      "authPeriod": "2026.01.15 - 2027.01.14",
-      "type": "长期授权项目",
-      "status": "authorizing",
-      "statusLabel": "授权中",
-      "pendingConfirm": 5,
-      "pendingApply": 3,
-      "pendingApproval": 2,
-      "detail": {
-        "projectData": {
-          "totalDaily": 326,
-          "expiringWithin35Days": 47,
-          "rightsConflictRisk": 12,
-          "categories": {
-            "tv": 98,
-            "anime": 52,
-            "movie": 41,
-            "variety": 45,
-            "documentary": 28,
-            "kids": 32,
-            "shortDrama": 30
-          },
-          "monthlyData": [
-            {
-              "month": "2026-01",
-              "daily": 285
-            },
-            {
-              "month": "2026-02",
-              "daily": 312
-            },
-            {
-              "month": "2026-03",
-              "daily": 326
-            }
-          ],
-          "quarterlyData": [
-            {
-              "quarter": "2025Q4",
-              "daily": 268,
-              "type": "actual"
-            },
-            {
-              "quarter": "2026Q1",
-              "daily": 308,
-              "type": "estimated"
-            },
-            {
-              "quarter": "2026Q2",
-              "daily": 340,
-              "type": "forecast"
-            },
-            {
-              "quarter": "2026Q3",
-              "daily": 365,
-              "type": "forecast"
-            },
-            {
-              "quarter": "2026Q4",
-              "daily": 380,
-              "type": "forecast"
-            }
-          ]
-        },
-        "authDetails": [
-          {
-            "id": "AUTH-001",
-            "workName": "庆余年第三季",
-            "category": "电视剧",
-            "releaseDate": "2026.01.15",
-            "bqid": "bq2078802",
-            "mainCid": "mzc00200djsz2lc",
-            "rightsId": "bq2078802-o1160834",
-            "contractNo": "T180-PCG-2024121700007",
-            "status": "授权中",
-            "authStartDate": "2026.01.20",
-            "authEndDate": "2026.03.21",
-            "internalAuthPeriod": "2025.06.01 - 2028.05.31",
-            "projectAuthPeriod": "2026.01.15 - 2027.01.14",
-            "workConclusion": {
-              "result": "系统判定可授权",
-              "modifier": "李法务",
-              "modifyTime": "2026.01.20 14:30"
-            },
-            "rightsReview": [
-              {
-                "rightsId": "RID-001-01",
-                "rightsName": "信息网络传播权",
-                "contractComparison": [
-                  {
-                    "id": "cc-001-01-1",
-                    "rule": "授权平台仅限抖音APP及其关联产品",
-                    "rightsOption": "信息网络传播权-非独家",
-                    "contractText": "甲方授予乙方在抖音短视频平台及其关联产品（包括但不限于抖音极速版、今日头条）上的信息网络传播权，授权性质为非独家授权，授权期限自2026年1月15日起至2027年1月14日止。",
-                    "aiConflict": false,
-                    "aiNote": "",
-                    "conclusion": ""
-                  },
-                  {
-                    "id": "cc-001-01-2",
-                    "rule": "授权期限不得超过内部版权期限",
-                    "rightsOption": "授权期限合规性",
-                    "contractText": "本合同授权期限为2026年1月15日至2027年1月14日。甲方确认该作品内部版权持有期限为2025年6月1日至2028年5月31日，本次授权期限在版权有效期内。",
-                    "aiConflict": false,
-                    "aiNote": "",
-                    "conclusion": ""
-                  },
-                  {
-                    "id": "cc-001-01-3",
-                    "rule": "不得与现有独家分销协议冲突",
-                    "rightsOption": "排他性审查",
-                    "contractText": "乙方确认不存在与其他平台签署的排他性播放协议，本次非独家授权不影响甲方在其他平台的分发权利。",
-                    "aiConflict": false,
-                    "aiNote": "",
-                    "conclusion": ""
-                  }
-                ],
-                "steps": [
-                  {
-                    "role": "版权运营",
-                    "name": "版权运营初审",
-                    "status": "completed",
-                    "result": "通过",
-                    "operator": "张运营",
-                    "time": "2026.01.18 10:00"
-                  },
-                  {
-                    "role": "法务",
-                    "name": "法务复审",
-                    "status": "completed",
-                    "result": "通过",
-                    "operator": "李法务",
-                    "time": "2026.01.19 15:30"
-                  },
-                  {
-                    "role": "品类运营",
-                    "name": "品类运营授权判定",
-                    "status": "completed",
-                    "result": "可授权",
-                    "operator": "王品类",
-                    "time": "2026.01.20 09:00"
-                  }
-                ]
-              },
-              {
-                "rightsId": "RID-001-02",
-                "rightsName": "转授权",
-                "contractComparison": [
-                  {
-                    "id": "cc-001-02-1",
-                    "rule": "转授权需获得原版权方书面同意",
-                    "rightsOption": "转授权许可",
-                    "contractText": "甲方同意乙方在取得甲方书面同意的前提下，可将本合同项下的部分权利转授权给第三方。转授权范围不得超出本合同约定的权利范围。",
-                    "aiConflict": false,
-                    "aiNote": "",
-                    "conclusion": ""
-                  },
-                  {
-                    "id": "cc-001-02-2",
-                    "rule": "转授权收益分成比例须明确",
-                    "rightsOption": "收益分配",
-                    "contractText": "转授权产生的收益，甲乙双方按照7:3的比例进行分配，乙方应在每季度末向甲方提供转授权收益明细报告。",
-                    "aiConflict": false,
-                    "aiNote": "",
-                    "conclusion": ""
-                  }
-                ],
-                "steps": [
-                  {
-                    "role": "版权运营",
-                    "name": "版权运营初审",
-                    "status": "completed",
-                    "result": "通过",
-                    "operator": "张运营",
-                    "time": "2026.01.18 10:30"
-                  },
-                  {
-                    "role": "法务",
-                    "name": "法务复审",
-                    "status": "completed",
-                    "result": "通过",
-                    "operator": "李法务",
-                    "time": "2026.01.19 16:00"
-                  },
-                  {
-                    "role": "品类运营",
-                    "name": "品类运营授权判定",
-                    "status": "completed",
-                    "result": "可授权",
-                    "operator": "王品类",
-                    "time": "2026.01.20 09:30"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "id": "AUTH-002",
-            "workName": "斗罗大陆3",
-            "category": "动漫",
-            "releaseDate": "2026.01.08",
-            "bqid": "bq2078815",
-            "mainCid": "mzc00200kfts7nb",
-            "rightsId": "bq2078815-o1160847",
-            "contractNo": "T180-PCG-2024121700012",
-            "status": "授权中",
-            "authStartDate": "2026.01.22",
-            "authEndDate": "2026.03.23",
-            "internalAuthPeriod": "2025.08.01 - 2028.07.31",
-            "projectAuthPeriod": "2026.01.15 - 2027.01.14",
-            "workConclusion": {
-              "result": "系统判定可授权",
-              "modifier": "李法务",
-              "modifyTime": "2026.01.22 11:00"
-            },
-            "rightsReview": [
-              {
-                "rightsId": "RID-002-01",
-                "rightsName": "信息网络传播权",
-                "steps": [
-                  {
-                    "role": "版权运营",
-                    "name": "版权运营初审",
-                    "status": "completed",
-                    "result": "通过",
-                    "operator": "张运营",
-                    "time": "2026.01.20 09:00"
-                  },
-                  {
-                    "role": "法务",
-                    "name": "法务复审",
-                    "status": "completed",
-                    "result": "通过",
-                    "operator": "李法务",
-                    "time": "2026.01.21 14:00"
-                  },
-                  {
-                    "role": "品类运营",
-                    "name": "品类运营授权判定",
-                    "status": "completed",
-                    "result": "可授权",
-                    "operator": "王品类",
-                    "time": "2026.01.22 10:00"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "id": "AUTH-003",
-            "workName": "三体动画版",
-            "category": "动漫",
-            "releaseDate": "2026.02.01",
-            "bqid": "bq2078823",
-            "mainCid": "mzc00200mptr9ex",
-            "rightsId": "bq2078823-o1160862",
-            "contractNo": "T180-PCG-2025010800003",
-            "status": "授权中",
-            "authStartDate": "2026.02.10",
-            "authEndDate": "2026.04.11",
-            "internalAuthPeriod": "2025.10.01 - 2028.09.30",
-            "projectAuthPeriod": "",
-            "workConclusion": null,
-            "rightsReview": [
-              {
-                "rightsId": "RID-003-01",
-                "rightsName": "信息网络传播权",
-                "contractComparison": [
-                  {
-                    "id": "cc-003-01-1",
-                    "rule": "授权平台仅限抖音APP及其关联产品",
-                    "rightsOption": "信息网络传播权-非独家",
-                    "contractText": "甲方授予乙方对《三体动画版》在抖音短视频平台及关联产品上的信息网络传播权，授权性质为非独家授权，有效期自合同签署日起至2028年9月30日止。",
-                    "aiConflict": false,
-                    "aiNote": "",
-                    "conclusion": ""
-                  },
-                  {
-                    "id": "cc-003-01-2",
-                    "rule": "授权期限不得超过内部版权期限",
-                    "rightsOption": "授权期限合规性",
-                    "contractText": "合同约定授权截止日期为2028年9月30日，甲方内部版权持有期限为2025年10月1日至2028年9月30日。",
-                    "aiConflict": true,
-                    "aiNote": "AI判定：合同授权期限末尾与内部版权期限完全重合（均为2028.09.30），存在到期日衔接风险，建议预留至少30天缓冲期。",
-                    "conclusion": ""
-                  },
-                  {
-                    "id": "cc-003-01-3",
-                    "rule": "不得与现有独家分销协议冲突",
-                    "rightsOption": "排他性审查",
-                    "contractText": "乙方声明在签约时不存在与其他平台就《三体动画版》签署的独家播放协议。甲方已确认该作品当前未对任何第三方平台进行独家授权。",
-                    "aiConflict": false,
-                    "aiNote": "",
-                    "conclusion": ""
-                  },
-                  {
-                    "id": "cc-003-01-4",
-                    "rule": "片段使用时长不超过单集时长的10%",
-                    "rightsOption": "内容使用限制",
-                    "contractText": "乙方在平台上传播甲方内容时，单条短视频使用的原片素材累计不得超过对应单集正片时长的15%，且须注明内容来源。",
-                    "aiConflict": true,
-                    "aiNote": "AI判定：合同约定片段使用上限为15%，但授权规则要求不超过10%，存在比例冲突，合同条款宽于内部规则限制。",
-                    "conclusion": ""
-                  }
-                ],
-                "steps": [
-                  {
-                    "role": "版权运营",
-                    "name": "版权运营初审",
-                    "status": "completed",
-                    "result": "通过",
-                    "operator": "张运营",
-                    "time": "2026.02.05 10:00"
-                  },
-                  {
-                    "role": "法务",
-                    "name": "法务复审",
-                    "status": "in_progress",
-                    "result": "",
-                    "operator": "",
-                    "time": ""
-                  },
-                  {
-                    "role": "品类运营",
-                    "name": "品类运营授权判定",
-                    "status": "pending",
-                    "result": "",
-                    "operator": "",
-                    "time": ""
-                  }
-                ]
-              },
-              {
-                "rightsId": "RID-003-02",
-                "rightsName": "转授权",
-                "contractComparison": [
-                  {
-                    "id": "cc-003-02-1",
-                    "rule": "转授权需获得原版权方书面同意",
-                    "rightsOption": "转授权许可",
-                    "contractText": "经甲方书面同意，乙方可将本合同约定的部分权利转授权予第三方使用。未经甲方事先书面同意，乙方不得擅自转授权。",
-                    "aiConflict": false,
-                    "aiNote": "",
-                    "conclusion": ""
-                  },
-                  {
-                    "id": "cc-003-02-2",
-                    "rule": "转授权对象须经甲方审核备案",
-                    "rightsOption": "转授权对象管理",
-                    "contractText": "乙方拟转授权的第三方须事先提交甲方审核，甲方有权基于品牌保护等合理理由拒绝特定第三方的转授权申请。审核期限不超过5个工作日。",
-                    "aiConflict": false,
-                    "aiNote": "",
-                    "conclusion": ""
-                  },
-                  {
-                    "id": "cc-003-02-3",
-                    "rule": "转授权收益分成比例须明确",
-                    "rightsOption": "收益分配",
-                    "contractText": "转授权收益分配比例为甲方65%、乙方35%。乙方应于每月10日前向甲方提交上月转授权收益报告及结算单。",
-                    "aiConflict": true,
-                    "aiNote": "AI判定：合同约定分成比例为甲方65%:乙方35%，与该项目标准转授权分成比例（甲方70%:乙方30%）存在偏差，乙方分成高于标准5个百分点。",
-                    "conclusion": ""
-                  }
-                ],
-                "steps": [
-                  {
-                    "role": "版权运营",
-                    "name": "版权运营初审",
-                    "status": "in_progress",
-                    "result": "",
-                    "operator": "",
-                    "time": ""
-                  },
-                  {
-                    "role": "法务",
-                    "name": "法务复审",
-                    "status": "pending",
-                    "result": "",
-                    "operator": "",
-                    "time": ""
-                  },
-                  {
-                    "role": "品类运营",
-                    "name": "品类运营授权判定",
-                    "status": "pending",
-                    "result": "",
-                    "operator": "",
-                    "time": ""
-                  }
-                ]
-              },
-              {
-                "rightsId": "RID-003-03",
-                "rightsName": "改编权",
-                "contractComparison": [
-                  {
-                    "id": "cc-003-03-1",
-                    "rule": "改编作品须保留原作核心要素",
-                    "rightsOption": "改编范围限制",
-                    "contractText": "乙方基于甲方作品进行的改编创作，须保留原作品的核心角色设定、主要故事线及世界观架构，改编方案须事先提交甲方审核批准。",
-                    "aiConflict": false,
-                    "aiNote": "",
-                    "conclusion": ""
-                  },
-                  {
-                    "id": "cc-003-03-2",
-                    "rule": "改编衍生作品著作权归属须明确",
-                    "rightsOption": "著作权归属",
-                    "contractText": "基于甲方原作改编产生的衍生作品，其著作权由甲乙双方共同所有。任何一方未经另一方同意，不得单独许可第三方使用该衍生作品。",
-                    "aiConflict": true,
-                    "aiNote": "AI判定：合同约定改编衍生作品著作权为甲乙双方共有，但授权规则要求改编衍生作品著作权应归甲方单独所有，存在权利归属冲突。",
-                    "conclusion": ""
-                  }
-                ],
-                "steps": [
-                  {
-                    "role": "版权运营",
-                    "name": "版权运营初审",
-                    "status": "pending",
-                    "result": "",
-                    "operator": "",
-                    "time": ""
-                  },
-                  {
-                    "role": "法务",
-                    "name": "法务复审",
-                    "status": "pending",
-                    "result": "",
-                    "operator": "",
-                    "time": ""
-                  },
-                  {
-                    "role": "品类运营",
-                    "name": "品类运营授权判定",
-                    "status": "pending",
-                    "result": "",
-                    "operator": "",
-                    "time": ""
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "id": "AUTH-004",
-            "workName": "长相思第三季",
-            "category": "电视剧",
-            "releaseDate": "2026.02.06",
-            "bqid": "bq2078831",
-            "mainCid": "mzc00200qwvk5pa",
-            "rightsId": "bq2078831-o1160879",
-            "contractNo": "T180-PCG-2025010800009",
-            "status": "授权中",
-            "authStartDate": "2026.02.15",
-            "authEndDate": "2026.04.16",
-            "internalAuthPeriod": "2025.12.01 - 2028.11.30",
-            "projectAuthPeriod": "2026.01.15 - 2027.01.14",
-            "workConclusion": {
-              "result": "系统判定可授权",
-              "modifier": "赵法务",
-              "modifyTime": "2026.02.10 16:00"
-            },
-            "rightsReview": [
-              {
-                "rightsId": "RID-004-01",
-                "rightsName": "信息网络传播权",
-                "steps": [
-                  {
-                    "role": "版权运营",
-                    "name": "版权运营初审",
-                    "status": "completed",
-                    "result": "通过",
-                    "operator": "张运营",
-                    "time": "2026.02.08 09:00"
-                  },
-                  {
-                    "role": "法务",
-                    "name": "法务复审",
-                    "status": "completed",
-                    "result": "通过",
-                    "operator": "赵法务",
-                    "time": "2026.02.09 14:00"
-                  },
-                  {
-                    "role": "品类运营",
-                    "name": "品类运营授权判定",
-                    "status": "completed",
-                    "result": "可授权",
-                    "operator": "王品类",
-                    "time": "2026.02.10 10:00"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "id": "AUTH-005",
-            "workName": "创造营2026",
-            "category": "综艺",
-            "releaseDate": "2026.02.10",
-            "bqid": "bq2078846",
-            "mainCid": "mzc00200rxnm3fc",
-            "rightsId": "bq2078846-o1160891",
-            "contractNo": "T180-PCG-2025012000015",
-            "status": "授权中",
-            "authStartDate": "2026.02.20",
-            "authEndDate": "2026.04.21",
-            "internalAuthPeriod": "2026.01.01 - 2029.12.31",
-            "projectAuthPeriod": "",
-            "workConclusion": null,
-            "rightsReview": [
-              {
-                "rightsId": "RID-005-01",
-                "rightsName": "信息网络传播权",
-                "contractComparison": [
-                  {
-                    "id": "cc-005-01-1",
-                    "rule": "授权平台仅限抖音APP及其关联产品",
-                    "rightsOption": "信息网络传播权-非独家",
-                    "contractText": "甲方授予乙方对《创造营2026》在抖音平台的非独家信息网络传播权，包括但不限于节目正片、花絮及衍生短视频的传播权利。",
-                    "aiConflict": false,
-                    "aiNote": "",
-                    "conclusion": ""
-                  },
-                  {
-                    "id": "cc-005-01-2",
-                    "rule": "综艺节目需确认嘉宾肖像权授权",
-                    "rightsOption": "肖像权合规",
-                    "contractText": "乙方在传播过程中涉及的节目嘉宾肖像使用，由甲方负责取得嘉宾本人或其经纪公司的授权许可，并承担相应法律责任。",
-                    "aiConflict": true,
-                    "aiNote": "AI判定：合同仅约定由甲方负责取得嘉宾肖像授权，但未明确提供肖像授权证明文件的时间节点和方式，存在执行风险。",
-                    "conclusion": ""
-                  }
-                ],
-                "steps": [
-                  {
-                    "role": "版权运营",
-                    "name": "版权运营初审",
-                    "status": "in_progress",
-                    "result": "",
-                    "operator": "",
-                    "time": ""
-                  },
-                  {
-                    "role": "法务",
-                    "name": "法务复审",
-                    "status": "pending",
-                    "result": "",
-                    "operator": "",
-                    "time": ""
-                  },
-                  {
-                    "role": "品类运营",
-                    "name": "品类运营授权判定",
-                    "status": "pending",
-                    "result": "",
-                    "operator": "",
-                    "time": ""
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "id": "AUTH-006",
-            "workName": "风起洛阳2",
-            "category": "电视剧",
-            "releaseDate": "2025.12.20",
-            "bqid": "bq2078867",
-            "mainCid": "mzc00200vnbq4hy",
-            "rightsId": "bq2078867-o1160918",
-            "contractNo": "T180-PCG-2025020300002",
-            "status": "已回收",
-            "authStartDate": "2025.12.25",
-            "authEndDate": "2026.02.23",
-            "internalAuthPeriod": "2025.06.01 - 2027.05.31",
-            "projectAuthPeriod": "2026.01.15 - 2027.01.14",
-            "workConclusion": {
-              "result": "待复核",
-              "subNote": "可补函",
-              "modifier": "李法务",
-              "modifyTime": "2026.01.25 10:00"
-            },
-            "distributionConflict": {
-              "hasConflict": true,
-              "conflictDesc": "与B站独家分销协议冲突，B站独家授权期至2026.06.30",
-              "conflictPlatform": "B站",
-              "conflictPeriod": "2025.07.01 - 2026.06.30"
-            },
-            "rightsReview": [
-              {
-                "rightsId": "RID-006-01",
-                "rightsName": "信息网络传播权",
-                "contractComparison": [
-                  {
-                    "id": "cc-006-01-1",
-                    "rule": "授权平台仅限抖音APP及其关联产品",
-                    "rightsOption": "信息网络传播权-非独家",
-                    "contractText": "甲方授予乙方对《风起洛阳2》在抖音平台的信息网络传播权。",
-                    "aiConflict": false,
-                    "aiNote": "",
-                    "conclusion": ""
-                  },
-                  {
-                    "id": "cc-006-01-2",
-                    "rule": "不得与现有独家分销协议冲突",
-                    "rightsOption": "排他性审查",
-                    "contractText": "乙方声明不存在与其他平台就该作品签署的独家协议。",
-                    "aiConflict": true,
-                    "aiNote": "AI判定：经核实，该作品与B站存在独家分销协议（有效期至2026年6月30日），与本合同授权期存在重叠，构成直接冲突。",
-                    "conclusion": ""
-                  }
-                ],
-                "steps": [
-                  {
-                    "role": "版权运营",
-                    "name": "版权运营初审",
-                    "status": "completed",
-                    "result": "存在风险",
-                    "operator": "张运营",
-                    "time": "2026.01.22 09:00"
-                  },
-                  {
-                    "role": "法务",
-                    "name": "法务复审",
-                    "status": "completed",
-                    "result": "权利瑕疵",
-                    "operator": "李法务",
-                    "time": "2026.01.24 15:00"
-                  },
-                  {
-                    "role": "品类运营",
-                    "name": "品类运营授权判定",
-                    "status": "completed",
-                    "result": "暂缓授权",
-                    "operator": "王品类",
-                    "time": "2026.01.25 09:00"
-                  }
-                ]
-              },
-              {
-                "rightsId": "RID-006-02",
-                "rightsName": "转授权",
-                "contractComparison": [
-                  {
-                    "id": "cc-006-02-1",
-                    "rule": "转授权需获得原版权方书面同意",
-                    "rightsOption": "转授权许可",
-                    "contractText": "经甲方书面同意后，乙方可进行转授权。",
-                    "aiConflict": false,
-                    "aiNote": "",
-                    "conclusion": ""
-                  }
-                ],
-                "steps": [
-                  {
-                    "role": "版权运营",
-                    "name": "版权运营初审",
-                    "status": "completed",
-                    "result": "通过",
-                    "operator": "张运营",
-                    "time": "2026.01.22 10:00"
-                  },
-                  {
-                    "role": "法务",
-                    "name": "法务复审",
-                    "status": "completed",
-                    "result": "通过",
-                    "operator": "李法务",
-                    "time": "2026.01.24 16:00"
-                  },
-                  {
-                    "role": "品类运营",
-                    "name": "品类运营授权判定",
-                    "status": "completed",
-                    "result": "可授权",
-                    "operator": "王品类",
-                    "time": "2026.01.25 10:00"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "id": "AUTH-007",
-            "workName": "超新星运动会2026",
-            "category": "综艺",
-            "releaseDate": "2026.03.01",
-            "bqid": "bq2078947",
-            "mainCid": "mzc002004tjy8zp",
-            "rightsId": "bq2078947-o1160995",
-            "contractNo": "T180-PCG-2025032200015",
-            "status": "授权中",
-            "authStartDate": "2026.03.01",
-            "authEndDate": "2026.04.30",
-            "internalAuthPeriod": "2026.02.01 - 2029.01.31",
-            "projectAuthPeriod": "",
-            "workConclusion": null,
-            "rightsReview": [
-              {
-                "rightsId": "RID-007-01",
-                "rightsName": "信息网络传播权",
-                "steps": [
-                  {
-                    "role": "版权运营",
-                    "name": "版权运营初审",
-                    "status": "pending",
-                    "result": "",
-                    "operator": "",
-                    "time": ""
-                  },
-                  {
-                    "role": "法务",
-                    "name": "法务复审",
-                    "status": "pending",
-                    "result": "",
-                    "operator": "",
-                    "time": ""
-                  },
-                  {
-                    "role": "品类运营",
-                    "name": "品类运营授权判定",
-                    "status": "pending",
-                    "result": "",
-                    "operator": "",
-                    "time": ""
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "id": "AUTH-008",
-            "workName": "我的阿勒泰",
-            "category": "电视剧",
-            "releaseDate": "2025.11.15",
-            "bqid": "bq2079102",
-            "mainCid": "mzc00200abcd1ef",
-            "rightsId": "bq2079102-o1161105",
-            "contractNo": "T180-PCG-2025050800006",
-            "status": "已回收",
-            "authStartDate": "2025.11.20",
-            "authEndDate": "2026.01.19",
-            "internalAuthPeriod": "2025.03.01 - 2026.02.28",
-            "projectAuthPeriod": "2026.01.15 - 2027.01.14",
-            "workConclusion": {
-              "result": "待复核",
-              "modifier": "赵法务",
-              "modifyTime": "2026.01.18 11:00"
-            },
-            "rightsReview": [
-              {
-                "rightsId": "RID-008-01",
-                "rightsName": "信息网络传播权",
-                "steps": [
-                  {
-                    "role": "版权运营",
-                    "name": "版权运营初审",
-                    "status": "completed",
-                    "result": "不通过",
-                    "operator": "张运营",
-                    "time": "2026.01.16 09:00"
-                  },
-                  {
-                    "role": "法务",
-                    "name": "法务复审",
-                    "status": "completed",
-                    "result": "不可授权",
-                    "operator": "赵法务",
-                    "time": "2026.01.17 14:00"
-                  },
-                  {
-                    "role": "品类运营",
-                    "name": "品类运营授权判定",
-                    "status": "completed",
-                    "result": "不可授权",
-                    "operator": "王品类",
-                    "time": "2026.01.18 10:00"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "id": "AUTH-009",
-            "workName": "蓝色星球·中国篇",
-            "category": "纪录片",
-            "releaseDate": "2026.01.28",
-            "bqid": "bq2078955",
-            "mainCid": "mzc002005ukz7yo",
-            "rightsId": "bq2078955-o1161003",
-            "contractNo": "T180-PCG-2025032200021",
-            "status": "授权中",
-            "authStartDate": "2026.02.01",
-            "authEndDate": "2026.04.02",
-            "internalAuthPeriod": "2025.12.01 - 2028.11.30",
-            "projectAuthPeriod": "2026.01.15 - 2027.01.14",
-            "workConclusion": {
-              "result": "系统判定可授权",
-              "modifier": "李法务",
-              "modifyTime": "2026.02.01 09:30"
-            },
-            "rightsReview": [
-              {
-                "rightsId": "RID-009-01",
-                "rightsName": "信息网络传播权",
-                "steps": [
-                  {
-                    "role": "版权运营",
-                    "name": "版权运营初审",
-                    "status": "completed",
-                    "result": "通过",
-                    "operator": "张运营",
-                    "time": "2026.01.30 09:00"
-                  },
-                  {
-                    "role": "法务",
-                    "name": "法务复审",
-                    "status": "completed",
-                    "result": "通过",
-                    "operator": "李法务",
-                    "time": "2026.01.31 14:00"
-                  },
-                  {
-                    "role": "品类运营",
-                    "name": "品类运营授权判定",
-                    "status": "completed",
-                    "result": "可授权",
-                    "operator": "王品类",
-                    "time": "2026.02.01 09:00"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "id": "AUTH-031",
-            "workName": "玫瑰的故事",
-            "category": "电视剧",
-            "releaseDate": "2025.10.08",
-            "bqid": "bq2079118",
-            "mainCid": "mzc00200bcde2fg",
-            "rightsId": "bq2079118-o1161121",
-            "contractNo": "T180-PCG-2025052000003",
-            "status": "已回收",
-            "authStartDate": "2025.10.15",
-            "authEndDate": "2025.12.14",
-            "internalAuthPeriod": "2025.08.01 - 2028.07.31",
-            "projectAuthPeriod": "2026.01.15 - 2027.01.14",
-            "workConclusion": {
-              "result": "复审判定可授权",
-              "modifier": "李法务",
-              "modifyTime": "2026.02.15 14:30"
-            },
-            "rightsReview": [
-              {
-                "rightsId": "RID-031-01",
-                "rightsName": "信息网络传播权",
-                "contractComparison": [
-                  {
-                    "id": "cc-031-01-1",
-                    "rule": "授权平台仅限抖音APP及其关联产品",
-                    "rightsOption": "信息网络传播权-非独家",
-                    "contractText": "甲方授予乙方对《玫瑰的故事》在抖音平台的非独家信息网络传播权。",
-                    "aiConflict": false,
-                    "aiNote": "",
-                    "conclusion": "可授权"
-                  },
-                  {
-                    "id": "cc-031-01-2",
-                    "rule": "授权期限不得超过内部版权期限",
-                    "rightsOption": "授权期限合规性",
-                    "contractText": "本合同授权期限自2026年1月15日起至2027年1月14日止。",
-                    "aiConflict": false,
-                    "aiNote": "",
-                    "conclusion": "可授权"
-                  }
-                ],
-                "steps": [
-                  {
-                    "role": "版权运营",
-                    "name": "版权运营初审",
-                    "status": "completed",
-                    "result": "存在风险",
-                    "operator": "张运营",
-                    "time": "2026.02.10 09:00"
-                  },
-                  {
-                    "role": "法务",
-                    "name": "法务复审",
-                    "status": "completed",
-                    "result": "通过",
-                    "operator": "李法务",
-                    "time": "2026.02.12 15:00"
-                  },
-                  {
-                    "role": "品类运营",
-                    "name": "品类运营授权判定",
-                    "status": "completed",
-                    "result": "可授权",
-                    "operator": "王品类",
-                    "time": "2026.02.15 10:00"
-                  }
-                ]
-              },
-              {
-                "rightsId": "RID-031-02",
-                "rightsName": "转授权",
-                "steps": [
-                  {
-                    "role": "版权运营",
-                    "name": "版权运营初审",
-                    "status": "completed",
-                    "result": "通过",
-                    "operator": "张运营",
-                    "time": "2026.02.10 10:00"
-                  },
-                  {
-                    "role": "法务",
-                    "name": "法务复审",
-                    "status": "completed",
-                    "result": "通过",
-                    "operator": "李法务",
-                    "time": "2026.02.12 16:00"
-                  },
-                  {
-                    "role": "品类运营",
-                    "name": "品类运营授权判定",
-                    "status": "completed",
-                    "result": "可授权",
-                    "operator": "王品类",
-                    "time": "2026.02.15 11:00"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "id": "AUTH-032",
-            "workName": "仙剑奇侠传四",
-            "category": "电视剧",
-            "releaseDate": "2026.01.20",
-            "bqid": "bq2078859",
-            "mainCid": "mzc00200txhp8jd",
-            "rightsId": "bq2078859-o1160905",
-            "contractNo": "T180-PCG-2025012000021",
-            "status": "授权中",
-            "authStartDate": "2026.02.20",
-            "authEndDate": "2026.04.21",
-            "internalAuthPeriod": "2025.11.01 - 2028.10.31",
-            "projectAuthPeriod": "2026.01.15 - 2027.01.14",
-            "workConclusion": {
-              "result": "复审判定可授权",
-              "modifier": "赵法务",
-              "modifyTime": "2026.02.20 16:00"
-            },
-            "rightsReview": [
-              {
-                "rightsId": "RID-032-01",
-                "rightsName": "信息网络传播权",
-                "contractComparison": [
-                  {
-                    "id": "cc-032-01-1",
-                    "rule": "授权平台仅限抖音APP及其关联产品",
-                    "rightsOption": "信息网络传播权-非独家",
-                    "contractText": "甲方授予乙方对《仙剑奇侠传四》在抖音平台的非独家信息网络传播权，含正片及衍生花絮内容。",
-                    "aiConflict": false,
-                    "aiNote": "",
-                    "conclusion": "可授权"
-                  },
-                  {
-                    "id": "cc-032-01-2",
-                    "rule": "授权期限不得超过内部版权期限",
-                    "rightsOption": "授权期限合规性",
-                    "contractText": "本合同授权期限自2026年1月15日起至2027年1月14日止。甲方确认版权持有期至2028年10月31日。",
-                    "aiConflict": false,
-                    "aiNote": "",
-                    "conclusion": "可授权"
-                  },
-                  {
-                    "id": "cc-032-01-3",
-                    "rule": "游戏改编剧需确认游戏版权方授权",
-                    "rightsOption": "游戏IP关联权利",
-                    "contractText": "甲方已取得原游戏版权方对电视剧改编作品在信息网络渠道传播的书面授权。",
-                    "aiConflict": true,
-                    "aiNote": "AI判定：合同提及甲方已取得书面授权，但未附相关授权文件作为合同附件，建议核实授权文件真实性。",
-                    "conclusion": "权利瑕疵"
-                  }
-                ],
-                "steps": [
-                  {
-                    "role": "版权运营",
-                    "name": "版权运营初审",
-                    "status": "completed",
-                    "result": "存在风险",
-                    "operator": "张运营",
-                    "time": "2026.02.16 09:00"
-                  },
-                  {
-                    "role": "法务",
-                    "name": "法务复审",
-                    "status": "completed",
-                    "result": "权利瑕疵",
-                    "operator": "赵法务",
-                    "time": "2026.02.18 14:00"
-                  },
-                  {
-                    "role": "品类运营",
-                    "name": "品类运营授权判定",
-                    "status": "completed",
-                    "result": "可授权",
-                    "operator": "王品类",
-                    "time": "2026.02.20 10:00"
-                  }
-                ]
-              },
-              {
-                "rightsId": "RID-032-02",
-                "rightsName": "改编权",
-                "contractComparison": [
-                  {
-                    "id": "cc-032-02-1",
-                    "rule": "改编权需明确授权范围和改编形式",
-                    "rightsOption": "改编权授权",
-                    "contractText": "甲方授予乙方对《仙剑奇侠传四》进行短视频二次创作的改编权利，包括但不限于混剪、解说、花絮制作等形式。",
-                    "aiConflict": false,
-                    "aiNote": "",
-                    "conclusion": "可授权"
-                  }
-                ],
-                "steps": [
-                  {
-                    "role": "版权运营",
-                    "name": "版权运营初审",
-                    "status": "completed",
-                    "result": "通过",
-                    "operator": "张运营",
-                    "time": "2026.02.16 10:00"
-                  },
-                  {
-                    "role": "法务",
-                    "name": "法务复审",
-                    "status": "completed",
-                    "result": "通过",
-                    "operator": "赵法务",
-                    "time": "2026.02.18 15:00"
-                  },
-                  {
-                    "role": "品类运营",
-                    "name": "品类运营授权判定",
-                    "status": "completed",
-                    "result": "可授权",
-                    "operator": "王品类",
-                    "time": "2026.02.20 11:00"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "id": "AUTH-030",
-            "workName": "大唐来的苏无名",
-            "category": "横屏短剧",
-            "releaseDate": "2026.02.18",
-            "bqid": "bq2078873",
-            "mainCid": "mzc00200wkcr6gz",
-            "rightsId": "bq2078873-o1160924",
-            "contractNo": "T180-PCG-2025020300008",
-            "status": "授权中",
-            "authStartDate": "2026.02.25",
-            "authEndDate": "2026.04.26",
-            "internalAuthPeriod": "2026.01.15 - 2029.01.14",
-            "projectAuthPeriod": "",
-            "workConclusion": null,
-            "rightsReview": [
-              {
-                "rightsId": "RID-030-01",
-                "rightsName": "信息网络传播权",
-                "contractComparison": [
-                  {
-                    "id": "cc-030-01-1",
-                    "rule": "授权平台仅限抖音APP及其关联产品",
-                    "rightsOption": "信息网络传播权-非独家",
-                    "contractText": "甲方授予乙方对《大唐来的苏无名》在抖音平台的非独家信息网络传播权，授权形式为横屏短剧专区播放。",
-                    "aiConflict": false,
-                    "aiNote": "",
-                    "conclusion": ""
-                  },
-                  {
-                    "id": "cc-030-01-2",
-                    "rule": "短剧单集时长不超过15分钟",
-                    "rightsOption": "内容格式要求",
-                    "contractText": "本合同项下授权内容为横屏短剧，单集时长应控制在10至20分钟之间，每季不少于12集。",
-                    "aiConflict": true,
-                    "aiNote": "AI判定：合同约定单集时长上限为20分钟，超过授权规则限制的15分钟，存在格式合规风险。",
-                    "conclusion": ""
-                  },
-                  {
-                    "id": "cc-030-01-3",
-                    "rule": "授权期限不得超过内部版权期限",
-                    "rightsOption": "授权期限合规性",
-                    "contractText": "本合同授权期限自2026年2月18日起至2027年1月14日止。甲方确认内部版权持有期限为2026年1月15日至2029年1月14日。",
-                    "aiConflict": false,
-                    "aiNote": "",
-                    "conclusion": ""
-                  }
-                ],
-                "steps": [
-                  {
-                    "role": "版权运营",
-                    "name": "版权运营初审",
-                    "status": "completed",
-                    "result": "通过",
-                    "operator": "张运营",
-                    "time": "2026.02.20 09:00"
-                  },
-                  {
-                    "role": "法务",
-                    "name": "法务复审",
-                    "status": "in_progress",
-                    "result": "",
-                    "operator": "",
-                    "time": ""
-                  },
-                  {
-                    "role": "品类运营",
-                    "name": "品类运营授权判定",
-                    "status": "pending",
-                    "result": "",
-                    "operator": "",
-                    "time": ""
-                  }
-                ]
-              },
-              {
-                "rightsId": "RID-030-02",
-                "rightsName": "转授权",
-                "contractComparison": [
-                  {
-                    "id": "cc-030-02-1",
-                    "rule": "转授权需获得原版权方书面同意",
-                    "rightsOption": "转授权许可",
-                    "contractText": "本合同不包含转授权条款，乙方不得将本合同项下的任何权利转授权给第三方。",
-                    "aiConflict": false,
-                    "aiNote": "",
-                    "conclusion": ""
-                  }
-                ],
-                "steps": [
-                  {
-                    "role": "版权运营",
-                    "name": "版权运营初审",
-                    "status": "pending",
-                    "result": "",
-                    "operator": "",
-                    "time": ""
-                  },
-                  {
-                    "role": "法务",
-                    "name": "法务复审",
-                    "status": "pending",
-                    "result": "",
-                    "operator": "",
-                    "time": ""
-                  },
-                  {
-                    "role": "品类运营",
-                    "name": "品类运营授权判定",
-                    "status": "pending",
-                    "result": "",
-                    "operator": "",
-                    "time": ""
-                  }
-                ]
-              }
-            ]
-          }
-        ],
-        "applications": [
-          {
-            "id": "APP-001",
-            "title": "新增综艺类目授权申请",
-            "type": "品类扩展",
-            "applicant": "张三",
-            "time": "2026.02.20",
-            "status": "审批中",
-            "approvalSteps": [
-              {
-                "name": "提交申请",
-                "status": "completed",
-                "operator": "张三",
-                "time": "2026.02.20 10:00",
-                "result": "已提交"
-              },
-              {
-                "name": "运营审核",
-                "status": "in_progress",
-                "operator": "",
-                "time": "",
-                "result": ""
-              },
-              {
-                "name": "负责人审批",
-                "status": "pending",
-                "operator": "",
-                "time": "",
-                "result": ""
-              }
-            ]
-          },
-          {
-            "id": "APP-002",
-            "title": "扩展短剧品类授权范围",
-            "type": "品类扩展",
-            "applicant": "李四",
-            "time": "2026.02.25",
-            "status": "已通过",
-            "approvalSteps": [
-              {
-                "name": "提交申请",
-                "status": "completed",
-                "operator": "李四",
-                "time": "2026.02.25 09:00",
-                "result": "已提交"
-              },
-              {
-                "name": "运营审核",
-                "status": "completed",
-                "operator": "王品类",
-                "time": "2026.02.26 14:00",
-                "result": "通过"
-              },
-              {
-                "name": "负责人审批",
-                "status": "completed",
-                "operator": "赵总",
-                "time": "2026.02.27 10:00",
-                "result": "通过"
-              }
-            ]
-          }
-        ],
-        "approvals": [
-          {
-            "id": "APR-001",
-            "title": "新增综艺类目授权申请",
-            "type": "品类扩展",
-            "applicant": "张三",
-            "time": "2026.02.20",
-            "status": "待审批",
-            "node": "部门负责人审批",
-            "relatedAppId": "APP-001",
-            "approvalSteps": [
-              {
-                "name": "提交申请",
-                "status": "completed",
-                "operator": "张三",
-                "time": "2026.02.20 10:00",
-                "result": "已提交"
-              },
-              {
-                "name": "运营审核",
-                "status": "in_progress",
-                "operator": "",
-                "time": "",
-                "result": ""
-              },
-              {
-                "name": "负责人审批",
-                "status": "pending",
-                "operator": "",
-                "time": "",
-                "result": ""
-              }
-            ]
-          },
-          {
-            "id": "APR-002",
-            "title": "扩展短剧品类授权范围",
-            "type": "品类扩展",
-            "applicant": "李四",
-            "time": "2026.02.25",
-            "status": "已通过",
-            "node": "已完成",
-            "relatedAppId": "APP-002",
-            "approvalSteps": [
-              {
-                "name": "提交申请",
-                "status": "completed",
-                "operator": "李四",
-                "time": "2026.02.25 09:00",
-                "result": "已提交"
-              },
-              {
-                "name": "运营审核",
-                "status": "completed",
-                "operator": "王品类",
-                "time": "2026.02.26 14:00",
-                "result": "通过"
-              },
-              {
-                "name": "负责人审批",
-                "status": "completed",
-                "operator": "赵总",
-                "time": "2026.02.27 10:00",
-                "result": "通过"
-              }
-            ]
-          }
-        ]
-      }
+      "name": "快手二创授权2026",
+      "rights_type": "secondary_creation",
+      "audit_mode": "rolling",
+      "status": "running",
+      "partner_name": "快手",
+      "partner_contract_no": "KS-2026-001",
+      "partner_contact": "张三",
+      "category_scope": [
+        "电视剧",
+        "电影",
+        "综艺",
+        "动漫",
+        "纪录片",
+        "少儿",
+        "微短剧"
+      ],
+      "auth_window_start": "2026-01-01",
+      "auth_window_end": "2026-12-31",
+      "daily_target": 3500,
+      "authorized_count": 3500,
+      "recovered_count": 12
     },
     {
       "id": "PRJ-2026-002",
-      "name": "快手授权项目",
-      "authPeriod": "2026.02.01 - 2026.08.01",
-      "type": "长期授权项目",
-      "status": "applying",
-      "statusLabel": "申请中",
-      "pendingConfirm": 8,
-      "pendingApply": 4,
-      "pendingApproval": 1,
-      "detail": {
-        "applications": [
-          {
-            "id": "APP-003",
-            "title": "快手平台长期授权合作申请",
-            "type": "项目授权",
-            "applicant": "王五",
-            "time": "2026.01.28",
-            "status": "审批中",
-            "approvalSteps": [
-              {
-                "name": "提交申请",
-                "status": "completed",
-                "operator": "王五",
-                "time": "2026.01.28 09:00",
-                "result": "已提交"
-              },
-              {
-                "name": "法务审核",
-                "status": "in_progress",
-                "operator": "",
-                "time": "",
-                "result": ""
-              },
-              {
-                "name": "负责人审批",
-                "status": "pending",
-                "operator": "",
-                "time": "",
-                "result": ""
-              }
-            ]
-          },
-          {
-            "id": "APP-004",
-            "title": "快手短剧频道授权补充申请",
-            "type": "品类扩展",
-            "applicant": "赵六",
-            "time": "2026.02.05",
-            "status": "待提交",
-            "approvalSteps": []
-          }
-        ],
-        "approvals": [
-          {
-            "id": "APR-003",
-            "title": "快手平台长期授权合作申请",
-            "type": "项目授权",
-            "applicant": "王五",
-            "time": "2026.01.28",
-            "status": "待审批",
-            "node": "法务审核",
-            "relatedAppId": "APP-003",
-            "approvalSteps": [
-              {
-                "name": "提交申请",
-                "status": "completed",
-                "operator": "王五",
-                "time": "2026.01.28 09:00",
-                "result": "已提交"
-              },
-              {
-                "name": "法务审核",
-                "status": "in_progress",
-                "operator": "",
-                "time": "",
-                "result": ""
-              },
-              {
-                "name": "负责人审批",
-                "status": "pending",
-                "operator": "",
-                "time": "",
-                "result": ""
-              }
-            ]
-          },
-          {
-            "id": "APR-004",
-            "title": "快手短剧频道授权补充申请",
-            "type": "品类扩展",
-            "applicant": "赵六",
-            "time": "2026.02.05",
-            "status": "待提交",
-            "node": "未开始",
-            "relatedAppId": "APP-004",
-            "approvalSteps": []
-          }
-        ]
-      }
-    },
-    {
-      "id": "PRJ-2025-018",
-      "name": "B站联合授权项目",
-      "authPeriod": "2025.06.01 - 2026.05.31",
-      "type": "长期授权项目",
-      "status": "terminated",
-      "statusLabel": "已终止",
-      "pendingConfirm": 0,
-      "pendingApply": 0,
-      "pendingApproval": 0,
-      "detail": {
-        "projectData": {
-          "totalDaily": 186,
-          "expiringWithin35Days": 23,
-          "rightsConflictRisk": 5,
-          "categories": {
-            "tv": 62,
-            "anime": 48,
-            "movie": 22,
-            "variety": 18,
-            "documentary": 15,
-            "kids": 12,
-            "shortDrama": 9
-          },
-          "monthlyData": [
-            {
-              "month": "2025-06",
-              "daily": 145
-            },
-            {
-              "month": "2025-07",
-              "daily": 168
-            },
-            {
-              "month": "2025-08",
-              "daily": 182
-            },
-            {
-              "month": "2025-09",
-              "daily": 190
-            },
-            {
-              "month": "2025-10",
-              "daily": 195
-            },
-            {
-              "month": "2025-11",
-              "daily": 186
-            },
-            {
-              "month": "2025-12",
-              "daily": 172
-            },
-            {
-              "month": "2026-01",
-              "daily": 160
-            },
-            {
-              "month": "2026-02",
-              "daily": 148
-            }
-          ],
-          "quarterlyData": [
-            {
-              "quarter": "2025Q2",
-              "daily": 145,
-              "type": "actual"
-            },
-            {
-              "quarter": "2025Q3",
-              "daily": 180,
-              "type": "actual"
-            },
-            {
-              "quarter": "2025Q4",
-              "daily": 184,
-              "type": "actual"
-            },
-            {
-              "quarter": "2026Q1",
-              "daily": 156,
-              "type": "estimated"
-            }
-          ]
-        },
-        "authDetails": [
-          {
-            "id": "AUTH-010",
-            "workName": "鬼吹灯之昆仑神宫",
-            "category": "电视剧",
-            "releaseDate": "2025.05.20",
-            "bqid": "bq2078963",
-            "mainCid": "mzc002006vla6xn",
-            "rightsId": "bq2078963-o1161011",
-            "contractNo": "T180-PCG-2025040500002",
-            "status": "已回收",
-            "authStartDate": "2025.06.10",
-            "authEndDate": "2025.08.09"
-          },
-          {
-            "id": "AUTH-011",
-            "workName": "斗破苍穹年番",
-            "category": "动漫",
-            "releaseDate": "2025.06.01",
-            "bqid": "bq2078971",
-            "mainCid": "mzc002007wmb5wm",
-            "rightsId": "bq2078971-o1161019",
-            "contractNo": "T180-PCG-2025040500008",
-            "status": "已回收",
-            "authStartDate": "2025.06.15",
-            "authEndDate": "2025.08.14"
-          },
-          {
-            "id": "AUTH-012",
-            "workName": "人世间",
-            "category": "电视剧",
-            "releaseDate": "2025.03.15",
-            "bqid": "bq2078986",
-            "mainCid": "mzc002008xnc4vl",
-            "rightsId": "bq2078986-o1161034",
-            "contractNo": "T180-PCG-2025041800011",
-            "status": "已回收",
-            "authStartDate": "2025.07.01",
-            "authEndDate": "2025.08.30"
-          },
-          {
-            "id": "AUTH-013",
-            "workName": "夏花",
-            "category": "电影",
-            "releaseDate": "2025.08.10",
-            "bqid": "bq2079201",
-            "mainCid": "mzc00200cdef3gh",
-            "rightsId": "bq2079201-o1161201",
-            "contractNo": "T180-PCG-2025060200003",
-            "status": "已回收",
-            "authStartDate": "2025.08.15",
-            "authEndDate": "2025.10.14"
-          },
-          {
-            "id": "AUTH-014",
-            "workName": "漫长的季节",
-            "category": "电视剧",
-            "releaseDate": "2025.04.22",
-            "bqid": "bq2078994",
-            "mainCid": "mzc002009yod3uk",
-            "rightsId": "bq2078994-o1161042",
-            "contractNo": "T180-PCG-2025041800017",
-            "status": "已回收",
-            "authStartDate": "2025.07.10",
-            "authEndDate": "2025.09.08",
-            "internalAuthPeriod": "2025.02.01 - 2027.01.31",
-            "projectAuthPeriod": "2025.06.01 - 2025.12.31",
-            "workConclusion": {
-              "result": "复审判定可授权",
-              "modifier": "赵法务",
-              "modifyTime": "2025.07.10 11:30"
-            },
-            "rightsReview": [
-              {
-                "rightsId": "RID-014-01",
-                "rightsName": "信息网络传播权",
-                "contractComparison": [
-                  {
-                    "id": "cc-014-01-1",
-                    "rule": "授权平台仅限B站及其关联产品",
-                    "rightsOption": "信息网络传播权-非独家",
-                    "contractText": "甲方授予乙方对《漫长的季节》在B站平台的非独家信息网络传播权。",
-                    "aiConflict": false,
-                    "aiNote": "",
-                    "conclusion": "可授权"
-                  },
-                  {
-                    "id": "cc-014-01-2",
-                    "rule": "授权期限不得超过内部版权期限",
-                    "rightsOption": "授权期限合规性",
-                    "contractText": "本合同授权期限自2025年6月1日起至2025年12月31日止。",
-                    "aiConflict": false,
-                    "aiNote": "",
-                    "conclusion": "可授权"
-                  }
-                ],
-                "steps": [
-                  {
-                    "role": "版权运营",
-                    "name": "版权运营初审",
-                    "status": "completed",
-                    "result": "存在风险",
-                    "operator": "张运营",
-                    "time": "2025.07.05 09:00"
-                  },
-                  {
-                    "role": "法务",
-                    "name": "法务复审",
-                    "status": "completed",
-                    "result": "通过",
-                    "operator": "赵法务",
-                    "time": "2025.07.08 14:00"
-                  },
-                  {
-                    "role": "品类运营",
-                    "name": "品类运营授权判定",
-                    "status": "completed",
-                    "result": "可授权",
-                    "operator": "王品类",
-                    "time": "2025.07.10 10:00"
-                  }
-                ]
-              }
-            ]
-          }
-        ],
-        "applications": [
-          {
-            "id": "APP-005",
-            "title": "B站联合授权终止申请",
-            "type": "项目终止",
-            "applicant": "钱七",
-            "time": "2026.01.15",
-            "status": "已通过",
-            "approvalSteps": [
-              {
-                "name": "提交申请",
-                "status": "completed",
-                "operator": "钱七",
-                "time": "2026.01.15 09:00",
-                "result": "已提交"
-              },
-              {
-                "name": "运营审核",
-                "status": "completed",
-                "operator": "张运营",
-                "time": "2026.01.16 14:00",
-                "result": "通过"
-              },
-              {
-                "name": "负责人审批",
-                "status": "completed",
-                "operator": "赵总",
-                "time": "2026.01.17 10:00",
-                "result": "通过"
-              }
-            ]
-          }
-        ],
-        "approvals": [
-          {
-            "id": "APR-005",
-            "title": "B站联合授权终止申请",
-            "type": "项目终止",
-            "applicant": "钱七",
-            "time": "2026.01.15",
-            "status": "已通过",
-            "node": "已完成",
-            "relatedAppId": "APP-005",
-            "approvalSteps": [
-              {
-                "name": "提交申请",
-                "status": "completed",
-                "operator": "钱七",
-                "time": "2026.01.15 09:00",
-                "result": "已提交"
-              },
-              {
-                "name": "运营审核",
-                "status": "completed",
-                "operator": "张运营",
-                "time": "2026.01.16 14:00",
-                "result": "通过"
-              },
-              {
-                "name": "负责人审批",
-                "status": "completed",
-                "operator": "赵总",
-                "time": "2026.01.17 10:00",
-                "result": "通过"
-              }
-            ]
-          }
-        ]
-      }
+      "name": "抖音二创授权2026",
+      "rights_type": "secondary_creation",
+      "audit_mode": "rolling",
+      "status": "running",
+      "partner_name": "抖音",
+      "partner_contract_no": "DY-2026-001",
+      "partner_contact": "李四",
+      "category_scope": [
+        "电视剧",
+        "电影",
+        "综艺",
+        "动漫"
+      ],
+      "auth_window_start": "2026-01-15",
+      "auth_window_end": "2027-01-14",
+      "daily_target": 2000,
+      "authorized_count": 1850,
+      "recovered_count": 5
     },
     {
       "id": "PRJ-2026-003",
-      "name": "微信视频号授权项目",
-      "authPeriod": "2026.01.20 - 2027.01.19",
-      "type": "长期授权项目",
-      "status": "authorizing",
-      "statusLabel": "授权中",
-      "pendingConfirm": 3,
-      "pendingApply": 2,
-      "pendingApproval": 1,
-      "detail": {
-        "projectData": {
-          "totalDaily": 245,
-          "expiringWithin35Days": 31,
-          "rightsConflictRisk": 8,
-          "categories": {
-            "tv": 78,
-            "anime": 38,
-            "movie": 35,
-            "variety": 40,
-            "documentary": 22,
-            "kids": 18,
-            "shortDrama": 14
-          },
-          "monthlyData": [
-            {
-              "month": "2026-01",
-              "daily": 220
-            },
-            {
-              "month": "2026-02",
-              "daily": 238
-            },
-            {
-              "month": "2026-03",
-              "daily": 245
-            }
-          ],
-          "quarterlyData": [
-            {
-              "quarter": "2025Q4",
-              "daily": 198,
-              "type": "actual"
-            },
-            {
-              "quarter": "2026Q1",
-              "daily": 234,
-              "type": "estimated"
-            },
-            {
-              "quarter": "2026Q2",
-              "daily": 260,
-              "type": "forecast"
-            },
-            {
-              "quarter": "2026Q3",
-              "daily": 275,
-              "type": "forecast"
-            },
-            {
-              "quarter": "2026Q4",
-              "daily": 290,
-              "type": "forecast"
-            }
-          ]
-        },
-        "authDetails": [
-          {
-            "id": "AUTH-020",
-            "workName": "繁花",
-            "category": "电视剧",
-            "releaseDate": "2026.01.10",
-            "bqid": "bq2078889",
-            "mainCid": "mzc00200xjds5fv",
-            "rightsId": "bq2078889-o1160937",
-            "contractNo": "T180-PCG-2025021500011",
-            "status": "授权中",
-            "authStartDate": "2026.01.25",
-            "authEndDate": "2026.03.26"
-          },
-          {
-            "id": "AUTH-021",
-            "workName": "完美世界",
-            "category": "动漫",
-            "releaseDate": "2026.01.18",
-            "bqid": "bq2078895",
-            "mainCid": "mzc00200ynet7eu",
-            "rightsId": "bq2078895-o1160943",
-            "contractNo": "T180-PCG-2025021500017",
-            "status": "授权中",
-            "authStartDate": "2026.02.01",
-            "authEndDate": "2026.04.02"
-          },
-          {
-            "id": "AUTH-022",
-            "workName": "十日游戏",
-            "category": "电视剧",
-            "releaseDate": "2026.02.05",
-            "bqid": "bq2078908",
-            "mainCid": "mzc00200zpfu9dt",
-            "rightsId": "bq2078908-o1160956",
-            "contractNo": "T180-PCG-2025022800006",
-            "status": "授权中",
-            "authStartDate": "2026.02.15",
-            "authEndDate": "2026.04.16"
-          },
-          {
-            "id": "AUTH-023",
-            "workName": "萌探2026",
-            "category": "综艺",
-            "releaseDate": "2026.02.20",
-            "bqid": "bq2078916",
-            "mainCid": "mzc002001qgv0cs",
-            "rightsId": "bq2078916-o1160964",
-            "contractNo": "T180-PCG-2025022800012",
-            "status": "授权中",
-            "authStartDate": "2026.02.28",
-            "authEndDate": "2026.04.29"
-          },
-          {
-            "id": "AUTH-024",
-            "workName": "小巷人家",
-            "category": "电视剧",
-            "releaseDate": "2025.12.28",
-            "bqid": "bq2079305",
-            "mainCid": "mzc00200defg4hi",
-            "rightsId": "bq2079305-o1161305",
-            "contractNo": "T180-PCG-2025070100006",
-            "status": "已回收",
-            "authStartDate": "2025.12.30",
-            "authEndDate": "2026.02.28"
-          },
-          {
-            "id": "AUTH-025",
-            "workName": "宝宝巴士",
-            "category": "少儿",
-            "releaseDate": "2026.01.05",
-            "bqid": "bq2078924",
-            "mainCid": "mzc002002rhw3br",
-            "rightsId": "bq2078924-o1160972",
-            "contractNo": "T180-PCG-2025031000003",
-            "status": "授权中",
-            "authStartDate": "2026.01.10",
-            "authEndDate": "2026.03.11"
-          },
-          {
-            "id": "AUTH-026",
-            "workName": "去有风的地方",
-            "category": "电视剧",
-            "releaseDate": "2025.11.20",
-            "bqid": "bq2078932",
-            "mainCid": "mzc002003six2aq",
-            "rightsId": "bq2078932-o1160980",
-            "contractNo": "T180-PCG-2025031000009",
-            "status": "已回收",
-            "authStartDate": "2025.11.25",
-            "authEndDate": "2026.01.24",
-            "internalAuthPeriod": "2025.09.01 - 2028.08.31",
-            "projectAuthPeriod": "2026.01.20 - 2027.01.19",
-            "workConclusion": {
-              "result": "复审判定可授权",
-              "modifier": "李法务",
-              "modifyTime": "2026.02.08 15:00"
-            },
-            "rightsReview": [
-              {
-                "rightsId": "RID-026-01",
-                "rightsName": "信息网络传播权",
-                "contractComparison": [
-                  {
-                    "id": "cc-026-01-1",
-                    "rule": "授权平台仅限微信视频号及其关联产品",
-                    "rightsOption": "信息网络传播权-非独家",
-                    "contractText": "甲方授予乙方对《去有风的地方》在微信视频号平台的非独家信息网络传播权，含正片及精彩片段。",
-                    "aiConflict": false,
-                    "aiNote": "",
-                    "conclusion": "可授权"
-                  },
-                  {
-                    "id": "cc-026-01-2",
-                    "rule": "需确认与其他平台独家协议不冲突",
-                    "rightsOption": "排他性审查",
-                    "contractText": "乙方确认本授权为非独家授权，不影响甲方与其他平台已签署的授权协议。",
-                    "aiConflict": true,
-                    "aiNote": "AI判定：虽然合同声明为非独家授权，但需确认甲方与其他平台的独家协议条款是否限制了视频号平台的传播权授予。",
-                    "conclusion": "可授权"
-                  }
-                ],
-                "steps": [
-                  {
-                    "role": "版权运营",
-                    "name": "版权运营初审",
-                    "status": "completed",
-                    "result": "存在风险",
-                    "operator": "张运营",
-                    "time": "2026.02.02 09:00"
-                  },
-                  {
-                    "role": "法务",
-                    "name": "法务复审",
-                    "status": "completed",
-                    "result": "通过",
-                    "operator": "李法务",
-                    "time": "2026.02.05 14:00"
-                  },
-                  {
-                    "role": "品类运营",
-                    "name": "品类运营授权判定",
-                    "status": "completed",
-                    "result": "可授权",
-                    "operator": "王品类",
-                    "time": "2026.02.08 10:00"
-                  }
-                ]
-              },
-              {
-                "rightsId": "RID-026-02",
-                "rightsName": "转授权",
-                "steps": [
-                  {
-                    "role": "版权运营",
-                    "name": "版权运营初审",
-                    "status": "completed",
-                    "result": "通过",
-                    "operator": "张运营",
-                    "time": "2026.02.02 10:00"
-                  },
-                  {
-                    "role": "法务",
-                    "name": "法务复审",
-                    "status": "completed",
-                    "result": "通过",
-                    "operator": "李法务",
-                    "time": "2026.02.05 15:00"
-                  },
-                  {
-                    "role": "品类运营",
-                    "name": "品类运营授权判定",
-                    "status": "completed",
-                    "result": "可授权",
-                    "operator": "王品类",
-                    "time": "2026.02.08 11:00"
-                  }
-                ]
-              }
-            ]
-          }
-        ],
-        "applications": [
-          {
-            "id": "APP-006",
-            "title": "视频号短剧专区授权扩展",
-            "type": "品类扩展",
-            "applicant": "孙八",
-            "time": "2026.02.28",
-            "status": "审批中",
-            "approvalSteps": [
-              {
-                "name": "提交申请",
-                "status": "completed",
-                "operator": "孙八",
-                "time": "2026.02.28 09:00",
-                "result": "已提交"
-              },
-              {
-                "name": "内容审核",
-                "status": "in_progress",
-                "operator": "",
-                "time": "",
-                "result": ""
-              },
-              {
-                "name": "负责人审批",
-                "status": "pending",
-                "operator": "",
-                "time": "",
-                "result": ""
-              }
-            ]
-          }
-        ],
-        "approvals": [
-          {
-            "id": "APR-006",
-            "title": "视频号短剧专区授权扩展",
-            "type": "品类扩展",
-            "applicant": "孙八",
-            "time": "2026.02.28",
-            "status": "待审批",
-            "node": "内容审核",
-            "relatedAppId": "APP-006",
-            "approvalSteps": [
-              {
-                "name": "提交申请",
-                "status": "completed",
-                "operator": "孙八",
-                "time": "2026.02.28 09:00",
-                "result": "已提交"
-              },
-              {
-                "name": "内容审核",
-                "status": "in_progress",
-                "operator": "",
-                "time": "",
-                "result": ""
-              },
-              {
-                "name": "负责人审批",
-                "status": "pending",
-                "operator": "",
-                "time": "",
-                "result": ""
-              }
-            ]
-          }
-        ]
-      }
+      "name": "酷狗彩铃授权",
+      "rights_type": "distribution",
+      "audit_mode": "one_time",
+      "status": "running",
+      "partner_name": "酷狗",
+      "partner_contract_no": "KG-2026-001",
+      "partner_contact": "王五",
+      "category_scope": [
+        "电视剧",
+        "电影"
+      ],
+      "auth_window_start": "2026-03-01",
+      "auth_window_end": "2026-09-30",
+      "authorized_count": 120,
+      "recovered_count": 0
     },
     {
       "id": "PRJ-2026-004",
-      "name": "小红书短剧授权项目",
-      "authPeriod": "2026.03.01 - 2026.09.30",
-      "type": "单次授权项目",
-      "status": "applying",
-      "statusLabel": "申请中",
-      "pendingConfirm": 6,
-      "pendingApply": 3,
-      "pendingApproval": 0,
-      "detail": {
-        "applications": [
-          {
-            "id": "APP-007",
-            "title": "小红书短剧平台单次授权申请",
-            "type": "项目授权",
-            "applicant": "周九",
-            "time": "2026.02.20",
-            "status": "审批中",
-            "approvalSteps": [
-              {
-                "name": "提交申请",
-                "status": "completed",
-                "operator": "周九",
-                "time": "2026.02.20 10:00",
-                "result": "已提交"
-              },
-              {
-                "name": "商务审核",
-                "status": "in_progress",
-                "operator": "",
-                "time": "",
-                "result": ""
-              },
-              {
-                "name": "负责人审批",
-                "status": "pending",
-                "operator": "",
-                "time": "",
-                "result": ""
-              }
-            ]
-          }
-        ],
-        "approvals": [
-          {
-            "id": "APR-007",
-            "title": "小红书短剧平台单次授权申请",
-            "type": "项目授权",
-            "applicant": "周九",
-            "time": "2026.02.20",
-            "status": "待审批",
-            "node": "商务审核",
-            "relatedAppId": "APP-007",
-            "approvalSteps": [
-              {
-                "name": "提交申请",
-                "status": "completed",
-                "operator": "周九",
-                "time": "2026.02.20 10:00",
-                "result": "已提交"
-              },
-              {
-                "name": "商务审核",
-                "status": "in_progress",
-                "operator": "",
-                "time": "",
-                "result": ""
-              },
-              {
-                "name": "负责人审批",
-                "status": "pending",
-                "operator": "",
-                "time": "",
-                "result": ""
-              }
-            ]
-          }
-        ]
-      }
+      "name": "小红书二创合作",
+      "rights_type": "secondary_creation",
+      "audit_mode": "rolling",
+      "status": "configuring",
+      "partner_name": "小红书",
+      "partner_contract_no": "",
+      "partner_contact": "赵六",
+      "category_scope": [
+        "电视剧",
+        "综艺"
+      ],
+      "auth_window_start": "2026-06-01",
+      "auth_window_end": "2027-05-31",
+      "authorized_count": 0,
+      "recovered_count": 0
+    },
+    {
+      "id": "PRJ-2025-018",
+      "name": "梧桐稳智合作",
+      "rights_type": "comprehensive",
+      "audit_mode": "one_time",
+      "status": "archived",
+      "partner_name": "梧桐稳智",
+      "partner_contract_no": "WT-2025-018",
+      "partner_contact": "钱七",
+      "category_scope": [
+        "电视剧",
+        "电影",
+        "动漫"
+      ],
+      "auth_window_start": "2025-06-01",
+      "auth_window_end": "2025-12-31",
+      "authorized_count": 85,
+      "recovered_count": 3
     },
     {
       "id": "PRJ-2026-005",
-      "name": "星光大赏大屏广告素材授权项目",
-      "authPeriod": "2026.03.10 - 2026.04.10",
-      "type": "单次授权项目",
-      "status": "applying",
-      "statusLabel": "申请中",
-      "pendingConfirm": 4,
-      "pendingApply": 1,
-      "pendingApproval": 2,
-      "detail": {
-        "applications": [
-          {
-            "id": "APP-008",
-            "title": "星光大赏大屏广告素材授权申请",
-            "type": "项目授权",
-            "applicant": "吴十",
-            "time": "2026.03.01",
-            "status": "审批中",
-            "approvalSteps": [
-              {
-                "name": "提交申请",
-                "status": "completed",
-                "operator": "吴十",
-                "time": "2026.03.01 10:00",
-                "result": "已提交"
-              },
-              {
-                "name": "市场部审核",
-                "status": "in_progress",
-                "operator": "",
-                "time": "",
-                "result": ""
-              },
-              {
-                "name": "负责人审批",
-                "status": "pending",
-                "operator": "",
-                "time": "",
-                "result": ""
-              }
-            ]
-          }
-        ],
-        "approvals": [
-          {
-            "id": "APR-008",
-            "title": "星光大赏大屏广告素材授权申请",
-            "type": "项目授权",
-            "applicant": "吴十",
-            "time": "2026.03.01",
-            "status": "待审批",
-            "node": "市场部审核",
-            "relatedAppId": "APP-008",
-            "approvalSteps": [
-              {
-                "name": "提交申请",
-                "status": "completed",
-                "operator": "吴十",
-                "time": "2026.03.01 10:00",
-                "result": "已提交"
-              },
-              {
-                "name": "市场部审核",
-                "status": "in_progress",
-                "operator": "",
-                "time": "",
-                "result": ""
-              },
-              {
-                "name": "负责人审批",
-                "status": "pending",
-                "operator": "",
-                "time": "",
-                "result": ""
-              }
-            ]
-          }
-        ]
-      }
+      "name": "B站播控授权",
+      "rights_type": "broadcast",
+      "audit_mode": "rolling",
+      "status": "suspended",
+      "partner_name": "B站",
+      "partner_contract_no": "BL-2026-001",
+      "partner_contact": "孙八",
+      "category_scope": [
+        "动漫",
+        "纪录片"
+      ],
+      "auth_window_start": "2026-02-01",
+      "auth_window_end": "2026-12-31",
+      "daily_target": 500,
+      "authorized_count": 320,
+      "recovered_count": 2
     }
   ]
 }

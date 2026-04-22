@@ -25,6 +25,9 @@
                     <span>创建项目</span>
                 </button>
             </div>
+            <div class="project-filter-area" id="projectFilterArea">
+                <!-- JS 动态渲染筛选区 -->
+            </div>
             <div class="project-list-container" id="projectListContainer">
                 <!-- JS动态渲染 -->
             </div>
@@ -196,11 +199,17 @@
 
     <!-- 授权审查详情页（由 rights-review.js 渲染） -->
     <div class="rights-review-detail-page" id="rightsReviewDetailPage" style="display:none;">
-        <!-- 面包屑导航 -->
-        <div class="detail-breadcrumb">
-            <span class="breadcrumb-link" id="btnBackToRightsReview">授权管理</span>
-            <i data-lucide="chevron-right" class="breadcrumb-sep"></i>
-            <span class="breadcrumb-current" id="rrDetailPageTitle">作品授权详情</span>
+        <!-- 面包屑导航 + 审核历史按钮 -->
+        <div class="detail-breadcrumb" style="display:flex;justify-content:space-between;align-items:center">
+            <div style="display:flex;align-items:center;gap:6px">
+                <span class="breadcrumb-link" id="btnBackToRightsReview">授权管理</span>
+                <i data-lucide="chevron-right" class="breadcrumb-sep"></i>
+                <span class="breadcrumb-current" id="rrDetailPageTitle">作品授权详情</span>
+            </div>
+            <button class="rrd-btn-history" id="btnAuthHistory" style="display:none">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                审核历史
+            </button>
         </div>
 
         <!-- 作品基础信息卡片 -->
