@@ -1,0 +1,148 @@
+.export-center-page {
+    padding: 24px 32px;
+    min-height: 100%;
+    animation: ecFadeIn 0.3s ease;
+}
+@keyframes ecFadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.export-center-page .page-breadcrumb {
+    margin-bottom: 20px;
+}
+.export-center-page .breadcrumb-item {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 600;
+    color: #1a1a1a;
+}
+.ec-filter-area {
+    margin-bottom: 20px;
+}
+.ec-filters {
+    display: flex;
+    gap: 16px;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 14px 20px;
+}
+.ec-filter-group {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.ec-filter-group label {
+    font-size: 11px;
+    color: #999;
+    font-weight: 500;
+}
+.ec-filter-sel {
+    padding: 6px 10px;
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+    font-size: 13px;
+    min-width: 140px;
+    background: #fff;
+    cursor: pointer;
+}
+.ec-task-list {
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.ec-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+}
+.ec-table th {
+    background: #f8fafc;
+    padding: 10px 14px;
+    text-align: left;
+    font-weight: 500;
+    color: #666;
+    font-size: 12px;
+    border-bottom: 1px solid #e5e7eb;
+    white-space: nowrap;
+}
+.ec-table td {
+    padding: 12px 14px;
+    border-bottom: 1px solid #f3f4f6;
+    color: #333;
+}
+.ec-table tr:last-child td {
+    border-bottom: none;
+}
+.ec-table tr:hover td {
+    background: #fafbfc;
+}
+.ec-sortable {
+    cursor: pointer;
+    user-select: none;
+}
+.ec-sortable:hover {
+    color: #006eff;
+}
+.ec-mono {
+    font-family: monospace;
+    font-size: 12px;
+    color: #666;
+}
+.ec-status-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 500;
+}
+.ec-status-processing {
+    background: #e6f2ff;
+    color: #006eff;
+}
+.ec-status-completed {
+    background: #e6f9f0;
+    color: #00b578;
+}
+.ec-status-failed {
+    background: #fef2f2;
+    color: #ee3f4d;
+}
+.ec-status-expired {
+    background: #f3f4f6;
+    color: #999;
+}
+.ec-btn-action {
+    padding: 4px 12px;
+    border: 1px solid #e5e7eb;
+    border-radius: 4px;
+    background: #fff;
+    font-size: 12px;
+    cursor: pointer;
+    color: #333;
+    margin-right: 6px;
+    transition: all 0.2s;
+}
+.ec-btn-action:hover:not(.disabled) {
+    border-color: #006eff;
+    color: #006eff;
+}
+.ec-btn-action.disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+.ec-btn-del {
+    color: #999;
+}
+.ec-btn-del:hover {
+    border-color: #ee3f4d;
+    color: #ee3f4d;
+}
+.ec-empty {
+    text-align: center;
+    padding: 60px 0;
+    color: #999;
+    font-size: 14px;
+}

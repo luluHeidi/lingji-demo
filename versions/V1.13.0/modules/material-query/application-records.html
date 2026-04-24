@@ -1,0 +1,711 @@
+<!-- 申用记录页面 -->
+<div class="application-records-container">
+    <!-- 页面导航 -->
+    <div class="page-breadcrumb">
+        <div>
+            <span class="breadcrumb-item" id="backToMaterialQuery">
+                <i data-lucide="folder" class="breadcrumb-icon"></i>
+                <span>素材查询与申用</span>
+            </span>
+            <i data-lucide="chevron-right" class="breadcrumb-separator"></i>
+            <span class="breadcrumb-item active">申用记录</span>
+        </div>
+    </div>
+
+    <!-- 页面标题 -->
+    <div class="page-header">
+        <div class="page-title">
+            <h1>申用记录</h1>
+            <span class="record-count">共 <strong id="totalRecords">0</strong> 条记录</span>
+        </div>
+    </div>
+
+    <!-- 筛选区域 -->
+    <div class="filter-section">
+        <!-- 申请状态筛选 -->
+        <div class="filter-group">
+            <label class="filter-label">申请状态</label>
+            <div class="select-wrapper">
+                <select class="filter-select" id="statusFilter">
+                    <option value="all">全部状态</option>
+                    <option value="draft">已保存</option>
+                    <option value="pending">待审核</option>
+                    <option value="approved">已通过</option>
+                    <option value="rejected">已驳回</option>
+                    <option value="cancelled">已取消</option>
+                </select>
+                <i data-lucide="chevron-down" class="select-icon"></i>
+            </div>
+        </div>
+
+        <!-- 申请时间筛选 -->
+        <div class="filter-group">
+            <label class="filter-label">申请时间</label>
+            <div class="select-wrapper">
+                <select class="filter-select" id="timeFilter">
+                    <option value="all">全部时间</option>
+                    <option value="today">今天</option>
+                    <option value="week">最近一周</option>
+                    <option value="month">最近一月</option>
+                    <option value="quarter">最近三月</option>
+                </select>
+                <i data-lucide="chevron-down" class="select-icon"></i>
+            </div>
+        </div>
+
+        <!-- 搜索框 -->
+        <div class="search-group">
+            <div class="search-input-wrapper">
+                <i data-lucide="search" class="search-icon"></i>
+                <input 
+                    type="text" 
+                    class="search-input" 
+                    placeholder="搜索项目名称或IP名称"
+                    id="recordSearchInput"
+                />
+                <button class="search-clear" id="searchClearRecords" style="display: none;">
+                    <i data-lucide="x"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 申用记录表格 -->
+    <div class="records-table-wrapper">
+        <table class="records-table">
+            <thead>
+                <tr>
+                    <th width="8%">申请编号</th>
+                    <th width="14%">项目名称</th>
+                    <th width="10%">IP名称</th>
+                    <th width="8%">素材数量</th>
+                    <th width="10%">使用类型</th>
+                    <th width="9%">申请人</th>
+                    <th width="11%">申请时间</th>
+                    <th width="10%">申请状态</th>
+                    <th width="10%">申请预览</th>
+                    <th width="10%">操作</th>
+                </tr>
+            </thead>
+            <tbody id="recordsTableBody">
+                <!-- 表格内容由JavaScript动态生成 -->
+            </tbody>
+        </table>
+    </div>
+
+    <!-- 空状态提示 -->
+    <div class="empty-state" id="emptyState" style="display: none;">
+        <i data-lucide="inbox" class="empty-icon"></i>
+        <p>暂无申用记录</p>
+    </div>
+
+    <!-- 分页器 -->
+    <div class="pagination" id="pagination">
+        <button class="pagination-btn" id="prevPage" disabled>
+            <i data-lucide="chevron-left"></i>
+            <span>上一页</span>
+        </button>
+        <div class="pagination-info">
+            <span>第 <strong id="currentPage">1</strong> / <strong id="totalPages">1</strong> 页</span>
+        </div>
+        <button class="pagination-btn" id="nextPage">
+            <span>下一页</span>
+            <i data-lucide="chevron-right"></i>
+        </button>
+    </div>
+</div>
+
+<!-- 申请详情弹窗 -->
+<div class="modal" id="recordDetailModal">
+    <div class="modal-content modal-large">
+        <div class="modal-header">
+            <h3>申请详情</h3>
+            <button class="modal-close" data-modal="recordDetailModal">
+                <i data-lucide="x"></i>
+            </button>
+        </div>
+        <div class="modal-body">
+            <div class="detail-section">
+                <h4 class="detail-title">基本信息</h4>
+                <div class="detail-grid">
+                    <div class="detail-item">
+                        <span class="detail-label">申请编号：</span>
+                        <span class="detail-value" id="detailApplyNo">-</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">项目名称：</span>
+                        <span class="detail-value" id="detailProjectName">-</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">IP名称：</span>
+                        <span class="detail-value" id="detailIPName">-</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">使用类型：</span>
+                        <span class="detail-value" id="detailUsageType">-</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">申请人：</span>
+                        <span class="detail-value" id="detailApplicant">-</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">所属部门：</span>
+                        <span class="detail-value" id="detailDepartment">-</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">申请时间：</span>
+                        <span class="detail-value" id="detailApplyTime">-</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">申请状态：</span>
+                        <span class="detail-value" id="detailStatus">-</span>
+                    </div>
+                    <div class="detail-item full-width">
+                        <span class="detail-label">用途说明：</span>
+                        <span class="detail-value" id="detailUsageDesc">-</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="detail-section">
+                <h4 class="detail-title">申请素材列表 (<span id="detailMaterialCount">0</span>个)</h4>
+                <div class="detail-materials" id="detailMaterialsList">
+                    <!-- 素材列表由JavaScript动态生成 -->
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button class="btn-secondary" data-modal="recordDetailModal">关闭</button>
+        </div>
+    </div>
+</div>
+
+<!-- 确认提交申请弹窗 -->
+<div class="modal" id="confirmSubmitModal">
+    <div class="modal-content modal-small">
+        <div class="modal-header">
+            <h3>确认提交申请</h3>
+            <button class="modal-close" data-modal="confirmSubmitModal">
+                <i data-lucide="x"></i>
+            </button>
+        </div>
+        <div class="modal-body">
+            <div class="confirm-message">
+                <i data-lucide="alert-circle" class="warning-icon"></i>
+                <p>确定要提交该申请吗？</p>
+                <p class="hint-text">提交后将进入审核流程，无法撤回修改。</p>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button class="btn-secondary" data-modal="confirmSubmitModal">取消</button>
+            <button class="btn-primary" id="confirmSubmitBtn">确认提交</button>
+        </div>
+    </div>
+</div>
+
+<script>
+// 申用记录数据加载和交互
+(function() {
+    // 待确认的申请ID
+    let pendingConfirmId = null;
+    
+    // 模拟申用记录数据
+    const mockRecords = [
+        {
+            applyNo: 'APP20260122005',
+            projectName: '长相思角色小卡_SY20260121ZYG',
+            ipName: '长相思',
+            materialCount: 4,
+            usageType: '商品开发',
+            applicant: '鲁海洋',
+            department: 'IP产品组',
+            applyTime: '2026-01-22 09:15',
+            status: 'draft',
+            usageDesc: '长相思角色小卡系列第二批素材申请，用于新增角色设计',
+            materials: [
+                { id: 'MAT011', name: '防风角色立绘', format: 'PSD', size: '3840×2160', projectFile: true },
+                { id: 'MAT012', name: '玱玹角色立绘', format: 'PSD', size: '3840×2160', projectFile: true },
+                { id: 'MAT013', name: '场景背景-青丘', format: 'PSD', size: '4096×2304', projectFile: false },
+                { id: 'MAT014', name: 'IP标准字', format: 'AI', size: '矢量', projectFile: true }
+            ]
+        },
+        {
+            applyNo: 'APP20260122004',
+            projectName: '长相思剧情盲盒_SY20260110MH',
+            ipName: '长相思',
+            materialCount: 6,
+            usageType: '商品开发',
+            applicant: '鲁海洋',
+            department: 'IP产品组',
+            applyTime: '2026-01-22 08:30',
+            status: 'draft',
+            usageDesc: '盲盒系列产品设计素材，包含主要角色的Q版形象和经典场景',
+            materials: [
+                { id: 'MAT015', name: '小夭Q版设计', format: 'PSD', size: '2048×2048', projectFile: true },
+                { id: 'MAT016', name: '涂山璟Q版设计', format: 'PSD', size: '2048×2048', projectFile: true },
+                { id: 'MAT017', name: '相柳Q版设计', format: 'PSD', size: '2048×2048', projectFile: true },
+                { id: 'MAT018', name: '防风Q版设计', format: 'PSD', size: '2048×2048', projectFile: true },
+                { id: 'MAT019', name: '场景素材包', format: 'PSD', size: '多尺寸', projectFile: false },
+                { id: 'MAT020', name: '盲盒包装底纹', format: 'AI', size: '矢量', projectFile: true }
+            ]
+        },
+        {
+            applyNo: 'APP20260121001',
+            projectName: '长相思角色小卡_SY20260121ZYG',
+            ipName: '长相思',
+            materialCount: 5,
+            usageType: '商品开发',
+            applicant: '鲁海洋',
+            department: 'IP产品组',
+            applyTime: '2026-01-21 14:30',
+            status: 'pending',
+            usageDesc: '用于长相思角色小卡商品设计开发，需要主要角色的高清立绘和场景素材',
+            materials: [
+                { id: 'MAT001', name: '小夭角色立绘', format: 'PSD', size: '3840×2160', projectFile: true },
+                { id: 'MAT002', name: '涂山璟角色立绘', format: 'PSD', size: '3840×2160', projectFile: true },
+                { id: 'MAT003', name: '相柳角色立绘', format: 'PSD', size: '3840×2160', projectFile: true },
+                { id: 'MAT004', name: '经典场景合集', format: 'PSD', size: '4096×2304', projectFile: false },
+                { id: 'MAT005', name: 'Logo标准图', format: 'AI', size: '矢量', projectFile: true }
+            ]
+        },
+        {
+            applyNo: 'APP20260120005',
+            projectName: '长相思纪念册设计_SY20260102JNC',
+            ipName: '长相思',
+            materialCount: 12,
+            usageType: '内容制作',
+            applicant: '鲁海洋',
+            department: 'IP产品组',
+            applyTime: '2026-01-20 16:20',
+            status: 'pending',
+            usageDesc: '用于长相思纪念册内页设计，需要角色高清图、剧照和文字素材',
+            materials: [
+                { id: 'MAT021', name: '小夭剧照合集', format: 'JPG', size: '多尺寸', projectFile: false },
+                { id: 'MAT022', name: '涂山璟剧照合集', format: 'JPG', size: '多尺寸', projectFile: false },
+                { id: 'MAT023', name: '相柳剧照合集', format: 'JPG', size: '多尺寸', projectFile: false }
+            ]
+        },
+        {
+            applyNo: 'APP20260120003',
+            projectName: '长相思周边手办_SY20260118SB',
+            ipName: '长相思',
+            materialCount: 3,
+            usageType: '商品开发',
+            applicant: '鲁海洋',
+            department: 'IP产品组',
+            applyTime: '2026-01-20 10:15',
+            status: 'approved',
+            usageDesc: '用于周边手办3D建模参考',
+            materials: [
+                { id: 'MAT006', name: '小夭全身设计稿', format: 'PSD', size: '2048×2048', projectFile: true },
+                { id: 'MAT007', name: '服饰细节图', format: 'JPG', size: '1920×1080', projectFile: false },
+                { id: 'MAT008', name: '配饰设计图', format: 'AI', size: '矢量', projectFile: true }
+            ]
+        },
+        {
+            applyNo: 'APP20260119002',
+            projectName: '长相思IP联名服饰_SY20260115FS',
+            ipName: '长相思',
+            materialCount: 8,
+            usageType: '营销宣传',
+            applicant: '鲁海洋',
+            department: 'IP产品组',
+            applyTime: '2026-01-19 16:45',
+            status: 'approved',
+            usageDesc: '联名服饰系列设计和宣传物料制作',
+            materials: [
+                { id: 'MAT009', name: '角色服装设计图', format: 'AI', size: '矢量', projectFile: true },
+                { id: 'MAT010', name: '纹样素材包', format: 'PSD', size: '多尺寸', projectFile: false }
+            ]
+        },
+        {
+            applyNo: 'APP20260118004',
+            projectName: '长相思角色徽章套装_SY20260105HZ',
+            ipName: '长相思',
+            materialCount: 7,
+            usageType: '商品开发',
+            applicant: '鲁海洋',
+            department: 'IP产品组',
+            applyTime: '2026-01-18 11:30',
+            status: 'approved',
+            usageDesc: '徽章套装产品设计，需要角色头像和标志性元素',
+            materials: [
+                { id: 'MAT024', name: '小夭头像', format: 'AI', size: '矢量', projectFile: true },
+                { id: 'MAT025', name: '涂山璟头像', format: 'AI', size: '矢量', projectFile: true },
+                { id: 'MAT026', name: '相柳头像', format: 'AI', size: '矢量', projectFile: true }
+            ]
+        },
+        {
+            applyNo: 'APP20260117003',
+            projectName: '长相思主题文创礼盒_SY20251228WC',
+            ipName: '长相思',
+            materialCount: 10,
+            usageType: '商品开发',
+            applicant: '鲁海洋',
+            department: 'IP产品组',
+            applyTime: '2026-01-17 14:50',
+            status: 'rejected',
+            usageDesc: '文创礼盒包装设计素材申请',
+            rejectReason: '部分素材版权归属不明确，需补充版权证明文件',
+            materials: [
+                { id: 'MAT027', name: '古风纹样素材', format: 'AI', size: '矢量', projectFile: true },
+                { id: 'MAT028', name: '书法字体素材', format: 'TTF', size: '-', projectFile: false }
+            ]
+        },
+        {
+            applyNo: 'APP20260116002',
+            projectName: '长相思周边手办_SY20260118SB',
+            ipName: '长相思',
+            materialCount: 5,
+            usageType: '商品开发',
+            applicant: '鲁海洋',
+            department: 'IP产品组',
+            applyTime: '2026-01-16 09:40',
+            status: 'cancelled',
+            usageDesc: '手办细节素材补充（已取消，改用新方案）',
+            materials: []
+        },
+        {
+            applyNo: 'APP20260115001',
+            projectName: '长相思角色小卡_SY20260121ZYG',
+            ipName: '长相思',
+            materialCount: 3,
+            usageType: '商品开发',
+            applicant: '鲁海洋',
+            department: 'IP产品组',
+            applyTime: '2026-01-15 15:20',
+            status: 'approved',
+            usageDesc: '角色小卡初版设计素材',
+            materials: [
+                { id: 'MAT029', name: '角色设定稿', format: 'PSD', size: '多尺寸', projectFile: true }
+            ]
+        },
+        {
+            applyNo: 'APP20260114003',
+            projectName: '长相思IP联名服饰_SY20260115FS',
+            ipName: '长相思',
+            materialCount: 6,
+            usageType: '营销宣传',
+            applicant: '鲁海洋',
+            department: 'IP产品组',
+            applyTime: '2026-01-14 13:15',
+            status: 'approved',
+            usageDesc: '联名服饰宣传海报制作',
+            materials: []
+        }
+    ];
+
+    let currentRecords = [...mockRecords];
+    let currentPage = 1;
+    const pageSize = 10;
+
+    // 状态标签样式映射
+    const statusConfig = {
+        draft: { text: '已保存', class: 'status-draft' },
+        pending: { text: '待审核', class: 'status-pending' },
+        approved: { text: '已通过', class: 'status-approved' },
+        rejected: { text: '已驳回', class: 'status-rejected' },
+        cancelled: { text: '已取消', class: 'status-cancelled' }
+    };
+
+    // 根据状态返回操作按钮
+    function getActionButton(record) {
+        switch(record.status) {
+            case 'draft':
+                // 已保存记录 - 确认申请
+                return `
+                    <button class="action-btn btn-confirm" data-action="confirm" data-id="${record.applyNo}">
+                        确认申请
+                    </button>
+                `;
+            case 'pending':
+                // 待审核记录 - 取消申请
+                return `
+                    <button class="action-btn btn-cancel" data-action="cancel" data-id="${record.applyNo}">
+                        取消申请
+                    </button>
+                `;
+            case 'approved':
+                // 已通过记录 - 无操作
+                return '<span style="color: #999; font-size: 13px;">-</span>';
+            case 'rejected':
+            case 'cancelled':
+                // 已驳回/已取消记录 - 重新申请
+                return `
+                    <button class="action-btn btn-reapply" data-action="reapply" data-id="${record.applyNo}">
+                        重新申请
+                    </button>
+                `;
+            default:
+                return '';
+        }
+    }
+
+    // 初始化页面
+    function init() {
+        renderRecords();
+        bindEvents();
+        lucide.createIcons();
+    }
+
+    // 渲染记录表格
+    function renderRecords() {
+        const tbody = document.getElementById('recordsTableBody');
+        const emptyState = document.getElementById('emptyState');
+        const recordsTable = document.querySelector('.records-table-wrapper');
+
+        if (currentRecords.length === 0) {
+            recordsTable.style.display = 'none';
+            emptyState.style.display = 'flex';
+            document.getElementById('totalRecords').textContent = '0';
+            return;
+        }
+
+        recordsTable.style.display = 'block';
+        emptyState.style.display = 'none';
+        document.getElementById('totalRecords').textContent = currentRecords.length;
+
+        const start = (currentPage - 1) * pageSize;
+        const end = start + pageSize;
+        const pageRecords = currentRecords.slice(start, end);
+
+        tbody.innerHTML = pageRecords.map(record => {
+            const statusInfo = statusConfig[record.status];
+            return `
+                <tr data-record-id="${record.applyNo}">
+                    <td><span class="apply-no">${record.applyNo}</span></td>
+                    <td><span class="project-name" title="${record.projectName}">${record.projectName}</span></td>
+                    <td>${record.ipName}</td>
+                    <td><span class="material-count">${record.materialCount}</span></td>
+                    <td>${record.usageType}</td>
+                    <td>${record.applicant}</td>
+                    <td>${record.applyTime}</td>
+                    <td><span class="status-badge ${statusInfo.class}">${statusInfo.text}</span></td>
+                    <td>
+                        <div class="view-action">
+                            <button class="action-btn btn-view" data-action="view" data-id="${record.applyNo}">
+                                查看
+                            </button>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="table-actions">
+                            ${getActionButton(record)}
+                        </div>
+                    </td>
+                </tr>
+            `;
+        }).join('');
+
+        lucide.createIcons();
+        updatePagination();
+    }
+
+    // 更新分页信息
+    function updatePagination() {
+        const totalPages = Math.ceil(currentRecords.length / pageSize);
+        document.getElementById('currentPage').textContent = currentPage;
+        document.getElementById('totalPages').textContent = totalPages;
+        document.getElementById('prevPage').disabled = currentPage === 1;
+        document.getElementById('nextPage').disabled = currentPage >= totalPages;
+    }
+
+    // 显示详情弹窗
+    function showDetailModal(applyNo) {
+        const record = mockRecords.find(r => r.applyNo === applyNo);
+        if (!record) return;
+
+        document.getElementById('detailApplyNo').textContent = record.applyNo;
+        document.getElementById('detailProjectName').textContent = record.projectName;
+        document.getElementById('detailIPName').textContent = record.ipName;
+        document.getElementById('detailUsageType').textContent = record.usageType;
+        document.getElementById('detailApplicant').textContent = record.applicant;
+        document.getElementById('detailDepartment').textContent = record.department;
+        document.getElementById('detailApplyTime').textContent = record.applyTime;
+        
+        const statusInfo = statusConfig[record.status];
+        document.getElementById('detailStatus').innerHTML = `<span class="status-badge ${statusInfo.class}">${statusInfo.text}</span>`;
+        document.getElementById('detailUsageDesc').textContent = record.usageDesc;
+        document.getElementById('detailMaterialCount').textContent = record.materials.length;
+
+        const materialsList = document.getElementById('detailMaterialsList');
+        materialsList.innerHTML = record.materials.map(material => `
+            <div class="material-item">
+                <div class="material-icon">
+                    <i data-lucide="file-image"></i>
+                </div>
+                <div class="material-info">
+                    <div class="material-name">
+                        ${material.name}
+                        ${material.projectFile ? '<span class="project-file-badge">含工程文件</span>' : ''}
+                    </div>
+                    <div class="material-meta">${material.id} · ${material.format} · ${material.size}</div>
+                </div>
+            </div>
+        `).join('');
+
+        document.getElementById('recordDetailModal').style.display = 'flex';
+        lucide.createIcons();
+    }
+
+    // 绑定事件
+    function bindEvents() {
+        // 返回按钮
+        const backBtn = document.getElementById('backToMaterialQuery');
+        console.log('[申用记录] 绑定返回按钮:', backBtn);
+        
+        if (backBtn) {
+            backBtn.addEventListener('click', function(e) {
+                console.log('[申用记录] 点击返回按钮');
+                e.preventDefault();
+                e.stopPropagation();
+                
+                // 使用全局的模块加载器重新加载一级页
+                if (typeof loadModule === 'function') {
+                    console.log('[申用记录] 调用loadModule重新加载一级页');
+                    loadModule('module-material-query');
+                } else if (window.moduleLoader && typeof window.moduleLoader.loadModule === 'function') {
+                    console.log('[申用记录] 调用moduleLoader.loadModule重新加载一级页');
+                    window.moduleLoader.loadModule('module-material-query');
+                } else {
+                    console.error('[申用记录] 未找到模块加载器，尝试手动重新加载');
+                    // 手动触发模块加载事件
+                    const event = new CustomEvent('loadModule', {
+                        detail: { moduleId: 'module-material-query' }
+                    });
+                    document.dispatchEvent(event);
+                }
+            });
+        } else {
+            console.error('[申用记录] 未找到返回按钮元素');
+        }
+
+        // 筛选器
+        document.getElementById('statusFilter')?.addEventListener('change', filterRecords);
+        document.getElementById('timeFilter')?.addEventListener('change', filterRecords);
+        document.getElementById('recordSearchInput')?.addEventListener('input', filterRecords);
+
+        // 表格操作按钮
+        document.getElementById('recordsTableBody')?.addEventListener('click', (e) => {
+            const btn = e.target.closest('.action-btn');
+            if (!btn) return;
+
+            const action = btn.dataset.action;
+            const id = btn.dataset.id;
+
+            if (action === 'view') {
+                showDetailModal(id);
+            } else if (action === 'confirm') {
+                // 确认申请 - 打开确认弹窗
+                pendingConfirmId = id;
+                document.getElementById('confirmSubmitModal').style.display = 'flex';
+                lucide.createIcons();
+            } else if (action === 'cancel') {
+                // 取消申请
+                const record = mockRecords.find(r => r.applyNo === id);
+                if (record) {
+                    record.status = 'cancelled';
+                    currentRecords = [...mockRecords];
+                    renderRecords();
+                    alert('申请已取消');
+                }
+            } else if (action === 'reapply') {
+                // 重新申请
+                const record = mockRecords.find(r => r.applyNo === id);
+                if (record) {
+                    record.status = 'draft';
+                    currentRecords = [...mockRecords];
+                    renderRecords();
+                    alert('已恢复为草稿状态，请修改后重新提交');
+                }
+            }
+        });
+
+        // 确认提交按钮
+        document.getElementById('confirmSubmitBtn')?.addEventListener('click', () => {
+            if (pendingConfirmId) {
+                const record = mockRecords.find(r => r.applyNo === pendingConfirmId);
+                if (record) {
+                    record.status = 'pending';
+                    currentRecords = [...mockRecords];
+                    renderRecords();
+                    
+                    // 关闭弹窗
+                    document.getElementById('confirmSubmitModal').style.display = 'none';
+                    pendingConfirmId = null;
+                    
+                    // 显示成功提示
+                    alert('申请已提交，等待审核！');
+                }
+            }
+        });
+
+        // 分页按钮
+        document.getElementById('prevPage')?.addEventListener('click', () => {
+            if (currentPage > 1) {
+                currentPage--;
+                renderRecords();
+            }
+        });
+
+        document.getElementById('nextPage')?.addEventListener('click', () => {
+            const totalPages = Math.ceil(currentRecords.length / pageSize);
+            if (currentPage < totalPages) {
+                currentPage++;
+                renderRecords();
+            }
+        });
+
+        // 弹窗关闭
+        document.querySelectorAll('[data-modal]').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const modalId = btn.dataset.modal;
+                document.getElementById(modalId).style.display = 'none';
+            });
+        });
+    }
+
+    // 筛选记录
+    function filterRecords() {
+        const statusFilter = document.getElementById('statusFilter').value;
+        const searchText = document.getElementById('recordSearchInput').value.toLowerCase();
+
+        currentRecords = mockRecords.filter(record => {
+            const matchStatus = statusFilter === 'all' || record.status === statusFilter;
+            const matchSearch = !searchText || 
+                record.projectName.toLowerCase().includes(searchText) ||
+                record.ipName.toLowerCase().includes(searchText);
+            
+            return matchStatus && matchSearch;
+        });
+
+        currentPage = 1;
+        renderRecords();
+    }
+
+    // 页面加载后初始化
+    console.log('[申用记录] 脚本开始执行，mockRecords数量:', mockRecords.length);
+    console.log('[申用记录] recordsTableBody元素:', document.getElementById('recordsTableBody'));
+    
+    // 检查是否有新创建的记录
+    if (window.newApplicationRecord) {
+        console.log('[申用记录] 检测到新记录:', window.newApplicationRecord);
+        const newRec = window.newApplicationRecord;
+        // 将新记录添加到列表开头
+        mockRecords.unshift(newRec);
+        currentRecords = [...mockRecords];
+        
+        // 显示成功提示
+        const statusText = newRec.status === 'draft' ? '保存成功' : '提交成功';
+        setTimeout(() => {
+            alert(`申请${statusText}！\n\n申请编号：${newRec.applyNo}\n项目名称：${newRec.projectName}\n申请素材：${newRec.materialCount}个`);
+        }, 300);
+        
+        // 清除全局变量
+        delete window.newApplicationRecord;
+    }
+    
+    // 立即初始化
+    init();
+})();
+</script>

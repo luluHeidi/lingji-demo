@@ -1,0 +1,31 @@
+{
+  "id": "module-auth-management",
+  "name": "授权管理",
+  "version": "1.0.0",
+  "description": "视频作品授权管理首页，汇总展示用户相关的任务和项目信息",
+  "category": "视频作品授权",
+  "priority": "P0",
+  "status": "completed",
+  "author": "AI Assistant",
+  "createdAt": "2026-02-09",
+  "features": [
+    "我的任务指标卡（申请任务/审批任务/作品任务）",
+    "我的项目列表（项目信息卡片）",
+    "任务数字跳转",
+    "创建项目入口"
+  ],
+  "dependencies": {
+    "lucide": "latest",
+    "framework.css": "^0.2.0",
+    "framework.js": "^0.2.0"
+  },
+  "files": {
+    "html": "index.html",
+    "css": "style.css",
+    "js": "main.js",
+    "data": "data.json"
+  },
+  "routes": {
+    "main": "/modules/auth-management/index.html"
+  }
+}

@@ -1147,9 +1147,9 @@
 /* 表格 */
 .auth-management-page .auth-detail-table-wrap {
     background: var(--bg-primary, #ffffff);
-    border: 1px solid var(--border-primary, #e5e7eb);
-    border-radius: 8px;
-    overflow: hidden;
+    border: none;
+    border-radius: 0;
+    overflow: visible;
 }
 
 /* 筛选器区域（下拉选框风格） */
@@ -6784,3 +6784,1118 @@
 
 .rr-checkbox-group{display:flex;flex-wrap:wrap;gap:6px 12px}
 
+
+/* ========== M9 重新授权三级页 ========== */
+
+.reauth-page {
+    animation: authFadeIn 0.3s ease;
+}
+
+/* 作品信息卡 */
+.reauth-work-card {
+    background: var(--bg-primary, #ffffff);
+    border: 1px solid var(--border-primary, #e5e7eb);
+    border-radius: 8px;
+    padding: 20px 24px;
+    margin-bottom: 20px;
+}
+
+.reauth-work-card .work-card-title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--text-primary, #1a1a1a);
+    margin: 0 0 16px 0;
+}
+
+.reauth-work-card .work-card-title svg {
+    width: 18px;
+    height: 18px;
+    color: var(--primary-color, #006eff);
+    flex-shrink: 0;
+}
+
+.reauth-work-card .work-info-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px 24px;
+}
+
+.reauth-work-card .work-info-item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.reauth-work-card .work-info-label {
+    font-size: 11px;
+    color: var(--text-placeholder, #999999);
+    font-weight: 500;
+}
+
+.reauth-work-card .work-info-value {
+    font-size: 13px;
+    color: var(--text-primary, #1a1a1a);
+    line-height: 1.4;
+}
+
+.reauth-work-card .work-info-value.mono {
+    font-family: 'SF Mono', 'Monaco', 'Menlo', 'Consolas', monospace;
+    letter-spacing: 0.3px;
+    color: var(--text-secondary, #666666);
+}
+
+.reauth-work-card .work-info-value.link {
+    color: var(--primary-color, #006eff);
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 11px;
+}
+
+.reauth-work-card .work-info-value.link:hover {
+    color: var(--primary-dark, #0050cc);
+}
+
+/* 流程步骤条 */
+.reauth-flow-section {
+    background: var(--bg-primary, #ffffff);
+    border: 1px solid var(--border-primary, #e5e7eb);
+    border-radius: 8px;
+    padding: 20px 24px;
+    margin-bottom: 20px;
+}
+
+.reauth-steps {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    padding: 24px 0;
+    margin-bottom: 24px;
+}
+
+.reauth-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    position: relative;
+    flex: 1;
+    max-width: 180px;
+}
+
+.reauth-step-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--border-primary, #e5e7eb);
+    background: var(--bg-primary, #ffffff);
+    color: var(--text-placeholder, #999999);
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 2;
+}
+
+.reauth-step-icon svg {
+    width: 16px;
+    height: 16px;
+}
+
+.reauth-step-label {
+    font-size: 12px;
+    color: var(--text-placeholder, #999999);
+    font-weight: 500;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+/* 步骤状态 */
+.reauth-step.completed .reauth-step-icon {
+    border-color: var(--success-color, #00b578);
+    background: var(--success-color, #00b578);
+    color: #ffffff;
+}
+
+.reauth-step.completed .reauth-step-label {
+    color: var(--success-color, #00b578);
+}
+
+.reauth-step.active .reauth-step-icon {
+    border-color: var(--primary-color, #006eff);
+    background: var(--primary-color, #006eff);
+    color: #ffffff;
+    box-shadow: 0 0 0 4px rgba(0, 110, 255, 0.15);
+}
+
+.reauth-step.active .reauth-step-label {
+    color: var(--primary-color, #006eff);
+    font-weight: 600;
+}
+
+.reauth-step.rejected .reauth-step-icon {
+    border-color: var(--error-color, #ee3f4d);
+    background: var(--error-color, #ee3f4d);
+    color: #ffffff;
+}
+
+.reauth-step.rejected .reauth-step-label {
+    color: var(--error-color, #ee3f4d);
+}
+
+/* 步骤连接线 */
+.reauth-step-line {
+    flex: 1;
+    height: 2px;
+    background: var(--border-primary, #e5e7eb);
+    min-width: 40px;
+    transition: background 0.3s ease;
+}
+
+.reauth-step-line.done {
+    background: var(--success-color, #00b578);
+}
+
+.reauth-step-line.active-line {
+    background: linear-gradient(to right, var(--success-color, #00b578), var(--primary-color, #006eff));
+}
+
+.reauth-step-line.rejected-line {
+    background: var(--error-color, #ee3f4d);
+}
+
+/* 操作区 */
+.reauth-action-area {
+    padding: 16px 0;
+    min-height: 60px;
+}
+
+.reauth-action-area .action-placeholder {
+    text-align: center;
+    padding: 20px;
+    color: var(--text-placeholder, #999999);
+    font-size: 13px;
+}
+
+.reauth-action-area .action-qw-group {
+    background: var(--bg-secondary, #f8f9fa);
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin-bottom: 12px;
+}
+
+.reauth-action-area .action-qw-label {
+    font-size: 12px;
+    color: var(--text-placeholder, #999999);
+    margin-bottom: 6px;
+}
+
+.reauth-action-area .action-qw-value {
+    font-size: 13px;
+    color: var(--text-primary, #1a1a1a);
+    font-weight: 500;
+}
+
+.reauth-action-area .action-form-group {
+    margin-bottom: 16px;
+}
+
+.reauth-action-area .action-form-label {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--text-primary, #1a1a1a);
+    margin-bottom: 8px;
+    display: block;
+}
+
+.reauth-action-area .action-radio-group {
+    display: flex;
+    gap: 12px;
+}
+
+.reauth-action-area .action-radio-option {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 10px 16px;
+    border: 1px solid var(--border-primary, #e5e7eb);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 13px;
+    color: var(--text-secondary, #666666);
+    background: var(--bg-primary, #ffffff);
+}
+
+.reauth-action-area .action-radio-option:hover {
+    border-color: var(--primary-light, #3d8eff);
+}
+
+.reauth-action-area .action-radio-option.selected {
+    border-color: var(--primary-color, #006eff);
+    background: var(--primary-lighter, #e6f2ff);
+    color: var(--primary-color, #006eff);
+    font-weight: 500;
+}
+
+.reauth-action-area .action-radio-option input[type="radio"] {
+    display: none;
+}
+
+.reauth-action-area .action-textarea {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid var(--border-primary, #e5e7eb);
+    border-radius: 6px;
+    font-size: 13px;
+    font-family: inherit;
+    resize: vertical;
+    min-height: 80px;
+    box-sizing: border-box;
+    color: var(--text-primary, #1a1a1a);
+    background: var(--bg-primary, #ffffff);
+    transition: all 0.2s ease;
+}
+
+.reauth-action-area .action-textarea:focus {
+    outline: none;
+    border-color: var(--primary-color, #006eff);
+    box-shadow: 0 0 0 3px rgba(0, 110, 255, 0.08);
+}
+
+.reauth-action-area .action-btn-row {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    margin-top: 16px;
+}
+
+.reauth-action-area .btn-reauth-action {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 20px;
+    background: var(--primary-color, #006eff);
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-family: inherit;
+}
+
+.reauth-action-area .btn-reauth-action:hover {
+    background: var(--primary-dark, #0050cc);
+    box-shadow: 0 2px 8px rgba(0, 110, 255, 0.2);
+}
+
+.reauth-action-area .btn-reauth-action:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+.reauth-action-area .btn-reauth-cancel {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 20px;
+    background: transparent;
+    color: var(--text-secondary, #666666);
+    border: 1px solid var(--border-primary, #e5e7eb);
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-family: inherit;
+}
+
+.reauth-action-area .btn-reauth-cancel:hover {
+    background: var(--bg-secondary, #f8f9fa);
+}
+
+/* 历史记录 */
+.reauth-history-section {
+    background: var(--bg-primary, #ffffff);
+    border: 1px solid var(--border-primary, #e5e7eb);
+    border-radius: 8px;
+    padding: 20px 24px;
+}
+
+.reauth-history-table-wrap {
+    overflow-x: auto;
+    margin-top: 12px;
+}
+
+.reauth-history-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 700px;
+}
+
+.reauth-history-table th {
+    padding: 10px 14px;
+    text-align: left;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--text-secondary, #666666);
+    background: var(--bg-secondary, #f8f9fa);
+    border-bottom: 1px solid var(--border-primary, #e5e7eb);
+}
+
+.reauth-history-table td {
+    padding: 10px 14px;
+    font-size: 12px;
+    color: var(--text-primary, #1a1a1a);
+    border-bottom: 1px solid var(--border-light, #f0f2f5);
+}
+
+.reauth-history-table tr:hover td {
+    background: var(--bg-secondary, #f8f9fa);
+}
+
+.reauth-history-table .history-status {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.reauth-history-table .history-status.ongoing {
+    background: var(--primary-lighter, #e6f2ff);
+    color: var(--primary-color, #006eff);
+}
+
+.reauth-history-table .history-status.can Supplement {
+    background: #f0fdf4;
+    color: var(--success-color, #00b578);
+}
+
+.reauth-history-table .history-status.recovered {
+    background: var(--success-light, #e6f9f0);
+    color: var(--success-color, #00b578);
+}
+
+.reauth-history-table .history-status.closed {
+    background: var(--bg-tertiary, #f0f2f5);
+    color: var(--text-placeholder, #999999);
+}
+
+.reauth-history-empty {
+    text-align: center;
+    padding: 40px 0;
+    color: var(--text-placeholder, #999999);
+    font-size: 13px;
+}
+
+/* 流程完成状态 */
+.reauth-result-box {
+    text-align: center;
+    padding: 24px 20px;
+}
+
+.reauth-result-box .result-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+}
+
+.reauth-result-box .result-icon.success {
+    background: var(--success-light, #e6f9f0);
+    color: var(--success-color, #00b578);
+}
+
+.reauth-result-box .result-icon.rejected {
+    background: var(--error-light, #ffeef0);
+    color: var(--error-color, #ee3f4d);
+}
+
+.reauth-result-box .result-icon svg {
+    width: 24px;
+    height: 24px;
+}
+
+.reauth-result-box .result-text {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-primary, #1a1a1a);
+    margin-bottom: 4px;
+}
+
+.reauth-result-box .result-detail {
+    font-size: 12px;
+    color: var(--text-placeholder, #999999);
+}
+
+/* ========== M9 Flow Body - Conclusion + Action Layout ========== */
+.reauth-flow-body {
+    padding: 0;
+    margin-top: 8px;
+}
+
+/* Two-column layout: left conclusions, right action form */
+.reauth-flow-columns {
+    display: flex;
+    gap: 28px;
+    align-items: flex-start;
+}
+
+.reauth-flow-left {
+    flex: 1;
+    min-width: 0;
+}
+
+.reauth-flow-right {
+    flex: 1;
+    min-width: 0;
+    background: var(--bg-secondary, #f8f9fa);
+    border-radius: 8px;
+    padding: 20px 24px;
+    border: 1px solid var(--border-primary, #e5e7eb);
+}
+
+.reauth-flow-right .action-form-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-primary, #1a1a1a);
+    margin-bottom: 16px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--border-primary, #e5e7eb);
+}
+
+/* Horizontal row of conclusions (for completed flow) */
+.reauth-conclusions-row {
+    display: flex;
+    gap: 0;
+    border-bottom: 1px solid var(--border-primary, #e5e7eb);
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+/* Single conclusion column */
+.reauth-conclusion-col {
+    flex: 1;
+    padding: 0 16px;
+    border-right: 1px solid var(--border-primary, #e5e7eb);
+}
+
+.reauth-conclusion-col:last-child {
+    border-right: none;
+}
+
+.reauth-conclusion-col:first-child {
+    padding-left: 0;
+}
+
+.reauth-conclusion-col .conclusion-title {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-primary, #1a1a1a);
+    margin-bottom: 8px;
+}
+
+.reauth-conclusion-col .conclusion-meta {
+    font-size: 12px;
+    color: var(--text-placeholder, #999999);
+    margin-bottom: 10px;
+}
+
+.reauth-conclusion-col .conclusion-item {
+    font-size: 12px;
+    color: var(--text-secondary, #666666);
+    margin-bottom: 5px;
+    line-height: 1.6;
+}
+
+.reauth-conclusion-col .conclusion-label {
+    color: var(--text-placeholder, #999999);
+}
+
+.reauth-conclusion-col .conclusion-value {
+    color: var(--text-primary, #1a1a1a);
+}
+
+/* Conclusion tags */
+.reauth-conclusion-col .tag-success {
+    display: inline-block;
+    padding: 1px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 500;
+    background: rgba(0, 181, 120, 0.1);
+    color: var(--success-color, #00b578);
+}
+
+.reauth-conclusion-col .tag-error {
+    display: inline-block;
+    padding: 1px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 500;
+    background: rgba(238, 63, 77, 0.1);
+    color: var(--error-color, #ee3f4d);
+}
+
+.reauth-conclusion-col .tag-pending {
+    display: inline-block;
+    padding: 1px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 500;
+    background: rgba(0, 0, 0, 0.04);
+    color: var(--text-placeholder, #999999);
+}
+
+/* Vertical stacked conclusions in left column */
+.reauth-flow-left .reauth-conclusion-col {
+    border-right: none;
+    padding: 0;
+    margin-bottom: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px dashed var(--border-primary, #e5e7eb);
+}
+
+.reauth-flow-left .reauth-conclusion-col:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+/* Final result centered below conclusions */
+.reauth-final-result {
+    text-align: center;
+    padding: 20px 0 4px;
+}
+
+.reauth-final-result .result-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 10px;
+}
+
+.reauth-final-result .result-icon.success {
+    background: rgba(0, 181, 120, 0.1);
+    color: var(--success-color, #00b578);
+}
+
+.reauth-final-result .result-icon.rejected {
+    background: rgba(238, 63, 77, 0.1);
+    color: var(--error-color, #ee3f4d);
+}
+
+.reauth-final-result .result-icon svg {
+    width: 24px;
+    height: 24px;
+}
+
+.reauth-final-result .result-text {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-primary, #1a1a1a);
+    margin-bottom: 4px;
+}
+
+.reauth-final-result .result-detail {
+    font-size: 12px;
+    color: var(--text-placeholder, #999999);
+}
+
+/* Pending no-conclusion placeholder */
+.reauth-conclusion-col.is-pending .conclusion-title {
+    color: var(--text-placeholder, #999999);
+}
+
+.reauth-conclusion-col.is-pending .conclusion-item {
+    color: var(--text-placeholder, #bbb);
+}
+
+/* Duplicate action form styles for .reauth-flow-right context */
+.reauth-flow-right .action-qw-group {
+    background: var(--bg-primary, #ffffff);
+    border-radius: 8px;
+    padding: 12px 16px;
+    margin-bottom: 12px;
+    border: 1px solid var(--border-primary, #e5e7eb);
+}
+
+.reauth-flow-right .action-qw-label {
+    font-size: 12px;
+    color: var(--text-placeholder, #999999);
+    margin-bottom: 4px;
+}
+
+.reauth-flow-right .action-qw-value {
+    font-size: 13px;
+    color: var(--text-primary, #1a1a1a);
+    font-weight: 500;
+}
+
+.reauth-flow-right .action-form-group {
+    margin-bottom: 16px;
+}
+
+.reauth-flow-right .action-form-label {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--text-primary, #1a1a1a);
+    margin-bottom: 8px;
+    display: block;
+}
+
+.reauth-flow-right .action-radio-group {
+    display: flex;
+    gap: 12px;
+}
+
+.reauth-flow-right .action-radio-option {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 10px 16px;
+    border: 1px solid var(--border-primary, #e5e7eb);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 13px;
+    color: var(--text-secondary, #666666);
+    background: var(--bg-primary, #ffffff);
+}
+
+.reauth-flow-right .action-radio-option:hover {
+    border-color: var(--primary-light, #3d8eff);
+}
+
+.reauth-flow-right .action-radio-option.selected {
+    border-color: var(--primary-color, #006eff);
+    background: var(--primary-lighter, #e6f2ff);
+    color: var(--primary-color, #006eff);
+    font-weight: 500;
+}
+
+.reauth-flow-right .action-radio-option input[type="radio"] {
+    display: none;
+}
+
+.reauth-flow-right .action-btn-row {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    margin-top: 16px;
+}
+
+.reauth-flow-right .btn-reauth-action {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 20px;
+    background: var(--primary-color, #006eff);
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-family: inherit;
+}
+
+.reauth-flow-right .btn-reauth-action:hover {
+    background: var(--primary-dark, #0050cc);
+    box-shadow: 0 2px 8px rgba(0, 110, 255, 0.2);
+}
+
+.reauth-flow-right .btn-reauth-action:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+.reauth-flow-right .btn-reauth-cancel {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 20px;
+    background: transparent;
+    color: var(--text-secondary, #666666);
+    border: 1px solid var(--border-primary, #e5e7eb);
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-family: inherit;
+}
+
+.reauth-flow-right .btn-reauth-cancel:hover {
+    background: var(--bg-primary, #ffffff);
+}
+
+/* ========== M4 Tab A: date range inline ========== */
+.date-range-inline {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.date-range-inline input[type="date"] {
+    width: 130px;
+    padding: 6px 8px;
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+    font-size: 12px;
+    font-family: inherit;
+}
+
+/* ========== Export dropdown ========== */
+.export-dropdown {
+    position: relative;
+    display: inline-block;
+}
+.export-dropdown-menu {
+    position: absolute;
+    right: 0;
+    top: 100%;
+    margin-top: 4px;
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    z-index: 100;
+    min-width: 260px;
+    overflow: hidden;
+}
+.export-dropdown-item {
+    padding: 10px 16px;
+    font-size: 13px;
+    cursor: pointer;
+    color: #333;
+    transition: background 0.15s;
+}
+.export-dropdown-item:hover {
+    background: #f0f7ff;
+    color: #006eff;
+}
+
+/* ========== Multi-select dropdown ========== */
+.multi-select-dropdown {
+    position: relative;
+    margin-bottom: 12px;
+}
+.multi-select-input {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    padding: 6px 8px;
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+    min-height: 36px;
+    cursor: pointer;
+    background: #fff;
+    align-items: center;
+}
+.multi-select-input:focus-within {
+    border-color: #006eff;
+    box-shadow: 0 0 0 2px rgba(0,110,255,0.1);
+}
+.multi-select-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 2px 8px;
+    background: #e6f2ff;
+    color: #006eff;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 500;
+    white-space: nowrap;
+}
+.multi-select-tag .tag-remove {
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 1;
+    opacity: 0.6;
+}
+.multi-select-tag .tag-remove:hover {
+    opacity: 1;
+}
+.multi-select-search {
+    border: none;
+    outline: none;
+    flex: 1;
+    min-width: 80px;
+    font-size: 13px;
+    background: transparent;
+}
+.multi-select-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    margin-top: 4px;
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    z-index: 200;
+    max-height: 240px;
+    overflow-y: auto;
+}
+.multi-select-option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 12px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: background 0.1s;
+}
+.multi-select-option:hover {
+    background: #f0f7ff;
+}
+.multi-select-option.selected {
+    font-weight: 500;
+    background: #f0f7ff;
+}
+.multi-select-option .check-icon {
+    width: 16px;
+    height: 16px;
+    color: #006eff;
+    display: none;
+}
+.multi-select-option.selected .check-icon {
+    display: block;
+}
+
+/* ========== Custom export modal ========== */
+.custom-export-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+.custom-export-modal {
+    background: #fff;
+    border-radius: 12px;
+    width: 560px;
+    max-height: 80vh;
+    overflow-y: auto;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+}
+.custom-export-header {
+    padding: 16px 24px;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 15px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.custom-export-body {
+    padding: 20px 24px;
+}
+.custom-export-footer {
+    padding: 12px 24px;
+    border-top: 1px solid #f0f0f0;
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+}
+.custom-export-section {
+    margin-bottom: 16px;
+}
+.custom-export-label {
+    font-size: 13px;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 8px;
+    display: block;
+}
+.custom-export-radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+.custom-export-radio-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 12px;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.15s;
+}
+.custom-export-radio-item:hover {
+    border-color: #006eff;
+}
+.custom-export-radio-item.active {
+    border-color: #006eff;
+    background: #f0f7ff;
+}
+.custom-export-radio-item input[type="radio"] {
+    accent-color: #006eff;
+}
+.custom-export-sub-area {
+    padding: 16px;
+    background: #f8fafc;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+.custom-export-sub-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+.custom-export-sub-row select {
+    flex: 1;
+    padding: 7px 10px;
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+    font-size: 13px;
+    font-family: inherit;
+}
+.custom-export-btn-upload {
+    padding: 7px 14px;
+    border: 1px solid #006eff;
+    border-radius: 6px;
+    background: #fff;
+    color: #006eff;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.custom-export-btn-upload:hover {
+    background: #f0f7ff;
+}
+.custom-export-btn-download {
+    font-size: 12px;
+    color: #006eff;
+    text-decoration: underline;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0;
+}
+.custom-export-btn-download:disabled {
+    color: #ccc;
+    cursor: not-allowed;
+    text-decoration: none;
+}
+
+/* ==================== M5 Project Data Charts ==================== */
+
+.m5-chart-legend { display:flex; gap:16px; margin-bottom:12px; flex-wrap:wrap; }
+.m5-legend-item { display:inline-flex; align-items:center; gap:4px; font-size:12px; color:#666; }
+.m5-legend-dot { display:inline-block; width:10px; height:10px; border-radius:2px; }
+.m5-chart-area { position:relative; padding-left:40px; min-height:200px; }
+.m5-safety-line { position:absolute; left:40px; right:0; border-top:1.5px dashed #ee3f4d; z-index:2; }
+.m5-safety-line span { position:absolute; right:100%; top:-8px; font-size:10px; color:#ee3f4d; white-space:nowrap; padding-right:4px; }
+.m5-bars-row { display:flex; align-items:flex-end; gap:24px; justify-content:center; }
+.m5-bar-group { display:flex; flex-direction:column; align-items:center; gap:6px; flex:1; max-width:120px; }
+.m5-bar-pair { display:flex; align-items:flex-end; gap:4px; }
+.m5-bar { width:28px; border-radius:4px 4px 0 0; position:relative; transition:height 0.3s ease; min-height:4px; }
+.m5-bar.actual { background:#3b82f6; }
+.m5-bar.newhot { background:#93c5fd; }
+.m5-bar.estimated { background:#60a5fa; }
+.m5-bar.forecast { background:#bfdbfe; }
+.m5-bar-val { position:absolute; top:-18px; left:50%; transform:translateX(-50%); font-size:10px; color:#333; white-space:nowrap; font-weight:500; }
+.m5-bar-label { font-size:11px; color:#999; }
+
+.m5-stacked-bar { display:flex; flex-direction:column-reverse; align-items:stretch; width:48px; }
+.m5-stack { position:relative; min-height:2px; }
+.m5-stack.auth { background:#3b82f6; border-radius:0 0 0 0; }
+.m5-stack.reserve { background:#d1d5db; border-radius:4px 4px 0 0; }
+.m5-stack .m5-bar-val { position:absolute; left:50%; transform:translateX(-50%); font-size:9px; white-space:nowrap; }
+.m5-stack.auth .m5-bar-val { bottom:2px; color:#fff; }
+.m5-stack.reserve .m5-bar-val { top:-16px; }
+
+/* ==================== M6 Project Config ==================== */
+
+.config-grid { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+.config-card { background:#fff; border:1px solid #e5e7eb; border-radius:8px; padding:16px 20px; }
+.config-card-title { font-size:14px; font-weight:500; color:#1a1a1a; margin-bottom:12px; padding-bottom:8px; border-bottom:1px solid #f0f0f0; display:flex; align-items:center; gap:6px; }
+.config-row { display:flex; justify-content:space-between; align-items:center; padding:6px 0; font-size:13px; }
+.config-label { color:#999; display:flex; align-items:center; gap:4px; }
+.config-value { color:#333; font-weight:500; }
+.config-editable { color:#006eff; cursor:pointer; border-bottom:1px dashed #006eff; }
+.config-tag { display:inline-block; padding:2px 8px; background:#e6f2ff; color:#006eff; border-radius:4px; font-size:11px; margin:1px 2px; }
+.config-flow-steps { display:flex; align-items:center; gap:8px; flex-wrap:wrap; }
+.config-flow-step { display:flex; align-items:center; gap:6px; padding:6px 12px; background:#f8f9fa; border-radius:6px; font-size:12px; color:#333; }
+.config-flow-num { width:20px; height:20px; border-radius:50%; background:#006eff; color:#fff; display:flex; align-items:center; justify-content:center; font-size:11px; font-weight:500; }
+.config-flow-arrow { color:#ccc; font-size:16px; }
+.config-ops-area { margin-top:16px; padding:16px 20px; background:#fff; border:1px solid #e5e7eb; border-radius:8px; }
+.config-ops-btns { display:flex; gap:12px; margin-top:8px; }
+.config-op-btn { padding:8px 20px; border:none; border-radius:6px; font-size:13px; font-weight:500; cursor:pointer; transition:opacity 0.2s; }
+.config-op-btn:hover { opacity:0.85; }
+.config-op-success { background:#00b578; color:#fff; }
+.config-op-danger { background:#ee3f4d; color:#fff; }
+.config-op-warning { background:#f59e0b; color:#fff; }
+.config-op-primary { background:#006eff; color:#fff; }
+.config-op-gray { background:#e5e7eb; color:#666; }
+
+/* ==================== M7 New Hot ==================== */
+
+.nh-toolbar { display:flex; gap:12px; margin-bottom:16px; }
+.nh-btn-import, .nh-btn-export { display:inline-flex; align-items:center; gap:6px; padding:8px 16px; border:1px solid #e5e7eb; border-radius:6px; background:#fff; font-size:13px; cursor:pointer; transition:all 0.2s; color:#333; }
+.nh-btn-import:hover, .nh-btn-export:hover { border-color:#006eff; color:#006eff; }
+.nh-notice { display:flex; align-items:center; gap:8px; padding:10px 16px; background:#fffbeb; border:1px solid #fde68a; border-radius:6px; font-size:13px; color:#92400e; margin-bottom:16px; }
+.nh-table-wrap { overflow-x:auto; }
+.nh-table { width:100%; border-collapse:collapse; font-size:13px; }
+.nh-table th { background:#f8f9fa; padding:10px 12px; text-align:left; font-weight:500; color:#666; border-bottom:1px solid #e5e7eb; white-space:nowrap; font-size:12px; }
+.nh-table td { padding:10px 12px; border-bottom:1px solid #f0f0f0; color:#333; }
+.nh-table tr:hover td { background:#f8fafc; }
+.nh-level-badge { display:inline-block; padding:1px 8px; border-radius:4px; font-size:11px; font-weight:500; }
+.nh-tag-success { display:inline-block; padding:2px 8px; background:#ecfdf5; color:#166534; border-radius:4px; font-size:12px; }
+.nh-tag-warning { display:inline-block; padding:2px 8px; background:#fffbeb; color:#92400e; border-radius:4px; font-size:12px; }
+.nh-tag-error { display:inline-block; padding:2px 8px; background:#fef2f2; color:#991b1b; border-radius:4px; font-size:12px; }
+
+
+/* M4 项目详情 Tab 切换 */
+.detail-tabs {
+    display: flex;
+    gap: 32px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+    padding-bottom: 0;
+}
+.detail-tab {
+    padding: 12px 0;
+    font-size: 14px;
+    font-weight: 500;
+    color: #999;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    transition: all 0.2s ease;
+    margin-bottom: -1px;
+    white-space: nowrap;
+}
+.detail-tab:hover {
+    color: #666;
+}
+.detail-tab.active {
+    color: #006eff;
+    border-bottom-color: #006eff;
+}

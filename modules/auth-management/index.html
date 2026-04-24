@@ -108,7 +108,7 @@
             </div>
         </div>
 
-        <!-- 授权作品管理区域 -->
+        <!-- 授权作品管理区域（M4 Tab A 授权片单） -->
         <div class="detail-section" id="sectionAuthDetails" style="display:none;">
             <div class="detail-section-anchor" id="anchorAuthDetails"></div>
             <div class="detail-section-header">
@@ -116,48 +116,21 @@
                     <i data-lucide="file-text" class="detail-section-icon"></i>
                     授权片单管理
                 </h3>
-                <span class="auth-detail-count" id="authDetailCount"></span>
-            </div>
-            <!-- 筛选器 -->
-            <div class="auth-detail-filters">
-                <div class="filter-group">
-                    <label class="filter-label">授权状态</label>
-                    <div class="select-wrapper">
-                        <select class="filter-select" id="filterStatus">
-                            <option value="全部">全部</option>
-                            <option value="授权中">授权中</option>
-                            <option value="已回收">已回收</option>
-                        </select>
-                        <i data-lucide="chevron-down" class="select-icon"></i>
-                    </div>
-                </div>
-                <div class="filter-group">
-                    <label class="filter-label">品类</label>
-                    <div class="select-wrapper">
-                        <select class="filter-select" id="filterCategory">
-                            <option value="全部">全部</option>
-                            <option value="电视剧">电视剧</option>
-                            <option value="动漫">动漫</option>
-                            <option value="综艺">综艺</option>
-                            <option value="电影">电影</option>
-                            <option value="纪录片">纪录片</option>
-                            <option value="少儿">少儿</option>
-                            <option value="横屏短剧">横屏短剧</option>
-                        </select>
-                        <i data-lucide="chevron-down" class="select-icon"></i>
-                    </div>
-                </div>
-                <!-- 批量操作栏 -->
-                <div class="batch-approval-bar" id="batchApprovalBar" style="display:none;">
-                    <span class="batch-count">已选中 0 条</span>
-                    <button class="btn-batch-approval" onclick="openBatchApprovalModal()">
-                        <i data-lucide="check-circle" style="width:14px;height:14px;"></i>
-                        批量审批
+                <div class="export-dropdown" id="tabAExportDropdown">
+                    <button class="btn-export" onclick="toggleExportDropdown()">
+                        <i data-lucide="download"></i>
+                        导出数据
+                        <i data-lucide="chevron-down" style="width:14px;height:14px"></i>
                     </button>
+                    <div class="export-dropdown-menu" id="tabAExportDropdownMenu" style="display:none">
+                        <div class="export-dropdown-item" onclick="doExport('reconciliation')">二创对账明细表导出</div>
+                        <div class="export-dropdown-item" onclick="doExport('rights_import')">二创授权对应引入权益信息导出</div>
+                        <div class="export-dropdown-item" onclick="openCustomExportModal()">自定义导出</div>
+                    </div>
                 </div>
             </div>
             <div class="auth-detail-table-wrap" id="authDetailTable">
-                <!-- JS 动态渲染 -->
+                <!-- M4 JS 动态渲染 -->
             </div>
         </div>
 
@@ -193,6 +166,80 @@
                 <div class="application-list" id="applicationList">
                     <!-- JS 动态渲染 -->
                 </div>
+            </div>
+        </div>
+
+        <!-- 项目配置区域（M6） -->
+        <div class="detail-section" id="sectionProjectConfig" style="display:none;">
+            <div class="detail-section-anchor" id="anchorProjectConfig"></div>
+            <div class="detail-section-header">
+                <h3 class="detail-section-title">
+                    <i data-lucide="settings" class="detail-section-icon"></i>
+                    项目配置
+                </h3>
+            </div>
+            <div class="config-content" id="projectConfigContent">
+                <!-- JS 动态渲染 -->
+            </div>
+        </div>
+
+        <!-- 新热预告区域（M7） -->
+        <div class="detail-section" id="sectionNewHot" style="display:none;">
+            <div class="detail-section-anchor" id="anchorNewHot"></div>
+            <div class="detail-section-header">
+                <h3 class="detail-section-title">
+                    <i data-lucide="flame" class="detail-section-icon"></i>
+                    新热预告
+                </h3>
+            </div>
+            <div class="newhot-content" id="newHotContent">
+                <!-- JS 动态渲染 -->
+            </div>
+        </div>
+    </div>
+    <div class="reauth-page" id="reauthPage" style="display:none;">
+        <!-- 面包屑 -->
+        <div class="detail-breadcrumb">
+            <span class="breadcrumb-link" id="btnBackFromReauth">授权管理</span>
+            <i data-lucide="chevron-right" class="breadcrumb-sep"></i>
+            <span class="breadcrumb-link" id="btnBackToDetailFromReauth">项目详情</span>
+            <i data-lucide="chevron-right" class="breadcrumb-sep"></i>
+            <span class="breadcrumb-current" id="reauthPageTitle">《》重新授权</span>
+        </div>
+
+        <!-- 作品信息卡 -->
+        <div class="reauth-work-card" id="reauthWorkCard">
+            <!-- JS 动态渲染 -->
+        </div>
+
+        <!-- 流程操作区 -->
+        <div class="reauth-flow-section">
+            <div class="detail-section-header">
+                <h3 class="detail-section-title">
+                    <i data-lucide="git-branch" class="detail-section-icon"></i>
+                    重新授权流程
+                </h3>
+            </div>
+            <!-- 步骤条 -->
+            <div class="reauth-steps" id="reauthSteps">
+                <!-- JS 动态渲染 -->
+            </div>
+            <!-- 流程内容区（结论展示 + 操作区） -->
+            <div class="reauth-flow-body" id="reauthFlowBody">
+                <!-- JS 动态渲染 -->
+            </div>
+        </div>
+
+        <!-- 历史记录 -->
+        <div class="reauth-history-section">
+            <div class="detail-section-header">
+                <h3 class="detail-section-title">
+                    <i data-lucide="history" class="detail-section-icon"></i>
+                    历史记录
+                </h3>
+            </div>
+            <div class="reauth-history-table-wrap" id="reauthHistoryTable">
+                <!-- JS 动态渲染 -->
             </div>
         </div>
     </div>

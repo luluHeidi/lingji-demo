@@ -502,15 +502,40 @@
         // ==========================================
         const MENU_TREE = [
             {
-                id: 'rights-library', name: '商业化权益库', icon: '📦',
+                id: 'video-auth', name: '二创权应用', icon: '🎬',
                 children: [
-                    { id: 'rights-overview', name: '商业化权益大盘', children: [] },
-                    { id: 'video-rights', name: '视频授权权益明细', children: [] },
-                    { id: 'derivative-rights', name: '衍生权益明细', children: [] }
+                    {
+                        id: 'auth-management', name: '授权管理',
+                        children: [
+                            { id: 'am-projects', name: '我的项目' },
+                            { id: 'am-rights-review', name: '授权审查' },
+                            { id: 'am-project-data', name: '项目数据' },
+                            { id: 'am-auth-list', name: '授权片单管理' },
+                            { id: 'am-approvals', name: '项目审批管理' }
+                        ]
+                    }
                 ]
             },
             {
-                id: 'material-library', name: '商业化素材库', icon: '📁',
+                id: 'adaptation-auth', name: '改编权应用', icon: '✏️',
+                children: [
+                    { id: 'adaptation-management', name: '授权管理', children: [] }
+                ]
+            },
+            {
+                id: 'broadcast-auth', name: '播放权应用', icon: '📺',
+                children: [
+                    { id: 'broadcast-management', name: '授权管理', children: [] }
+                ]
+            },
+            {
+                id: 'commercial-auth', name: '商业化权应用', icon: '💰',
+                children: [
+                    { id: 'commercial-management', name: '授权管理', children: [] }
+                ]
+            },
+            {
+                id: 'material-library', name: 'IP资产应用', icon: '📁',
                 children: [
                     { id: 'material-overview', name: '素材库概览', children: [] },
                     {
@@ -532,50 +557,6 @@
                         ]
                     },
                     { id: 'material-tools', name: '素材工具箱', children: [] }
-                ]
-            },
-            {
-                id: 'video-auth', name: '视频作品授权', icon: '🎬',
-                children: [
-                    {
-                        id: 'auth-management', name: '授权管理',
-                        children: [
-                            { id: 'am-projects', name: '我的项目' },
-                            { id: 'am-rights-review', name: '授权审查' },
-                            { id: 'am-project-data', name: '项目数据' },
-                            { id: 'am-auth-list', name: '授权片单管理' },
-                            { id: 'am-approvals', name: '项目审批管理' }
-                        ]
-                    }
-                ]
-            },
-            {
-                id: 'derivative-auth', name: '衍生授权管理', icon: '🌿',
-                children: [
-                    { id: 'derivative-project', name: '项目管理', children: [] },
-                    { id: 'derivative-supervision', name: '监修管理', children: [] }
-                ]
-            },
-            {
-                id: 'product-dev', name: '自研商品开发管理', icon: '📦',
-                children: [
-                    { id: 'product-project', name: '项目管理', children: [] },
-                    { id: 'product-workflow', name: '流程管理', children: [] }
-                ]
-            },
-            {
-                id: 'anti-fake', name: '防伪互动技术', icon: '🛡️',
-                children: [
-                    { id: 'tech-selection', name: '技术选型', children: [] },
-                    { id: 'material-config', name: '素材配置', children: [] },
-                    { id: 'guzi-code', name: '谷子码管理', children: [] }
-                ]
-            },
-            {
-                id: 'data-service', name: '数据服务', icon: '📊',
-                children: [
-                    { id: 'business-data', name: '经营数据', children: [] },
-                    { id: 'industry-data', name: '行业数据', children: [] }
                 ]
             }
         ];

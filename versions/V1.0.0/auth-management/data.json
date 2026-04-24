@@ -1,0 +1,1013 @@
+{
+  "rightsReviewData": {
+    "categories": [
+      {
+        "type": "ugc",
+        "label": "二创权益",
+        "totalPending": 20,
+        "items": [
+          {"id":"RR-UGC-001","taskId":"SQ074231pm","taskInitTime":"2026-02-28 16:42:33","bqid":"bq2078802","cid":"mzc00200djsz2lc","rightsId":"bq2078802-o1160834","contractNo":"T180-PCG-2024121700007","workName":"庆余年第三季","alias":"庆余年3","category":"电视剧","director":"孙皓","starring":"张若昀、李沁","productionYear":"2026","productionRegion":"中国大陆","episodeCount":"40集","listType":"新热","isTalkShow":false,"isGala":false,"infoNetStatus":"生效中","externalAuthRights":"可用","systemDenyReason":"","rightsType":"二创权益","applicant":"张三","applyTime":"2026.03.01 09:30","platform":"抖音","status":"待审核","priority":"高","rightsScope":"短视频二创、混剪、解说","authPeriod":"2026.03.01 - 2027.03.01","aiRiskNote":"","reviewStatus":"权益复审待审"},
+          {"id":"RR-UGC-002","taskId":"SQ074232am","taskInitTime":"2026-02-28 17:05:18","bqid":"bq2078815","cid":"mzc00200kfts7nb","rightsId":"bq2078815-o1160847","contractNo":"T180-PCG-2024121700012","workName":"斗罗大陆3","alias":"斗罗3","category":"动漫","director":"沈乐平","starring":"配音：张杰、庄曼","productionYear":"2026","productionRegion":"中国大陆","episodeCount":"52集","listType":"新热","isTalkShow":false,"isGala":false,"infoNetStatus":"生效中","externalAuthRights":"可用","systemDenyReason":"","rightsType":"二创权益","applicant":"李四","applyTime":"2026.03.01 10:15","platform":"B站","status":"待审核","priority":"中","rightsScope":"同人创作、剧情解说","authPeriod":"2026.03.01 - 2026.09.01","aiRiskNote":"","reviewStatus":"已确权"},
+          {"id":"RR-UGC-003","taskId":"SQ074233bk","taskInitTime":"2026-02-28 18:22:07","bqid":"bq2078823","cid":"mzc00200mptr9ex","rightsId":"bq2078823-o1160862","contractNo":"T180-PCG-2025010800003","workName":"三体动画版","alias":"三体动画","category":"动漫","director":"赵奔","starring":"配音：刘琮、季冠霖","productionYear":"2025","productionRegion":"中国大陆","episodeCount":"15集","listType":"新热","isTalkShow":false,"isGala":false,"infoNetStatus":"生效中","externalAuthRights":"权利瑕疵","systemDenyReason":"合同授权期限末尾与内部版权期限完全重合，存在到期日衔接风险","rightsType":"二创权益","applicant":"王五","applyTime":"2026.03.01 11:00","platform":"快手","status":"待审核","priority":"高","rightsScope":"片段混剪、科普解读","authPeriod":"2026.03.01 - 2027.03.01","aiRiskNote":"","reviewStatus":"运营授权评估待审"},
+          {"id":"RR-UGC-004","taskId":"SQ074234cn","taskInitTime":"2026-03-01 09:10:45","bqid":"bq2078831","cid":"mzc00200qwvk5pa","rightsId":"bq2078831-o1160879","contractNo":"T180-PCG-2025010800009","workName":"长相思第三季","alias":"长相思3","category":"电视剧","director":"秦榛","starring":"杨紫、邓为","productionYear":"2026","productionRegion":"中国大陆","episodeCount":"36集","listType":"新热","isTalkShow":false,"isGala":false,"infoNetStatus":"生效中","externalAuthRights":"可用","systemDenyReason":"","rightsType":"二创权益","applicant":"赵六","applyTime":"2026.03.01 14:00","platform":"抖音","status":"待审核","priority":"中","rightsScope":"剧情解说、人物分析","authPeriod":"2026.03.01 - 2026.12.31","aiRiskNote":""},
+          {"id":"RR-UGC-005","taskId":"SQ074235dp","taskInitTime":"2026-03-01 10:33:12","bqid":"bq2078846","cid":"mzc00200rxnm3fc","rightsId":"bq2078846-o1160891","contractNo":"T180-PCG-2025012000015","workName":"创造营2026","alias":"创造营","category":"综艺","director":"孙莉","starring":"黄子韬、鹿晗","productionYear":"2026","productionRegion":"中国大陆","episodeCount":"12期","listType":"新热","isTalkShow":false,"isGala":false,"infoNetStatus":"生效中","externalAuthRights":"可用","systemDenyReason":"","rightsType":"二创权益","applicant":"钱七","applyTime":"2026.03.02 09:00","platform":"微信视频号","status":"待审核","priority":"高","rightsScope":"选手cut、舞台混剪","authPeriod":"2026.03.01 - 2026.09.30","aiRiskNote":""},
+          {"id":"RR-UGC-006","taskId":"SQ074236eq","taskInitTime":"2026-03-01 11:48:29","bqid":"bq2078859","cid":"mzc00200txhp8jd","rightsId":"bq2078859-o1160905","contractNo":"T180-PCG-2025012000021","workName":"仙剑奇侠传四","alias":"仙剑4","category":"电视剧","director":"李国立","starring":"鞠婧祎、陈星旭","productionYear":"2026","productionRegion":"中国大陆","episodeCount":"40集","listType":"新热","isTalkShow":false,"isGala":false,"infoNetStatus":"生效中","externalAuthRights":"权利瑕疵","systemDenyReason":"游戏版权方授权文件未附合同附件，需核实授权文件真实性","rightsType":"二创权益","applicant":"孙八","applyTime":"2026.03.02 10:30","platform":"抖音","status":"待审核","priority":"中","rightsScope":"情感向混剪、COS翻拍","authPeriod":"2026.03.01 - 2027.03.01","aiRiskNote":""},
+          {"id":"RR-UGC-007","taskId":"SQ074237fr","taskInitTime":"2026-03-01 14:15:56","bqid":"bq2078867","cid":"mzc00200vnbq4hy","rightsId":"bq2078867-o1160918","contractNo":"T180-PCG-2025020300002","workName":"风起洛阳2","alias":"洛阳2","category":"电视剧","director":"谢泽","starring":"黄轩、宋茜","productionYear":"2025","productionRegion":"中国大陆","episodeCount":"39集","listType":"普通","isTalkShow":false,"isGala":false,"infoNetStatus":"已失效","externalAuthRights":"不可用","systemDenyReason":"与B站独家分销协议冲突，B站独家授权期至2026.06.30","rightsType":"二创权益","applicant":"周九","applyTime":"2026.03.02 11:45","platform":"B站","status":"待审核","priority":"低","rightsScope":"历史科普、场景解析","authPeriod":"2026.03.01 - 2026.06.30","aiRiskNote":""},
+          {"id":"RR-UGC-008","taskId":"SQ074238gs","taskInitTime":"2026-03-01 15:37:04","bqid":"bq2078873","cid":"mzc00200wkcr6gz","rightsId":"bq2078873-o1160924","contractNo":"T180-PCG-2025020300008","workName":"大唐来的苏无名","alias":"苏无名","category":"横屏短剧","director":"刘国楠","starring":"成毅、杨超越","productionYear":"2026","productionRegion":"中国大陆","episodeCount":"16集","listType":"新热","isTalkShow":false,"isGala":false,"infoNetStatus":"生效中","externalAuthRights":"可用","systemDenyReason":"","rightsType":"二创权益","applicant":"吴十","applyTime":"2026.03.02 14:20","platform":"快手","status":"待审核","priority":"中","rightsScope":"剧情解说、悬疑分析","authPeriod":"2026.03.01 - 2026.12.31","aiRiskNote":""},
+          {"id":"RR-UGC-009","taskId":"SQ074239ht","taskInitTime":"2026-03-02 08:55:31","bqid":"bq2078889","cid":"mzc00200xjds5fv","rightsId":"bq2078889-o1160937","contractNo":"T180-PCG-2025021500011","workName":"繁花","alias":"繁花","category":"电视剧","director":"王家卫","starring":"胡歌、马伊琍","productionYear":"2025","productionRegion":"中国大陆","episodeCount":"30集","listType":"新热","isTalkShow":false,"isGala":false,"infoNetStatus":"生效中","externalAuthRights":"可用","systemDenyReason":"","rightsType":"二创权益","applicant":"郑十一","applyTime":"2026.03.03 09:15","platform":"抖音","status":"待审核","priority":"高","rightsScope":"名场面混剪、OST混剪","authPeriod":"2026.03.01 - 2027.03.01","aiRiskNote":""},
+          {"id":"RR-UGC-010","taskId":"SQ074240ju","taskInitTime":"2026-03-02 10:12:48","bqid":"bq2078895","cid":"mzc00200ynet7eu","rightsId":"bq2078895-o1160943","contractNo":"T180-PCG-2025021500017","workName":"完美世界","alias":"完美世界","category":"动漫","director":"庄磊","starring":"配音：阿杰、苏尚卿","productionYear":"2026","productionRegion":"中国大陆","episodeCount":"260集","listType":"普通","isTalkShow":false,"isGala":false,"infoNetStatus":"生效中","externalAuthRights":"可用","systemDenyReason":"","rightsType":"二创权益","applicant":"冯十二","applyTime":"2026.03.03 10:40","platform":"B站","status":"待审核","priority":"中","rightsScope":"战斗场面混剪、原创配音","authPeriod":"2026.03.01 - 2026.09.01","aiRiskNote":""},
+          {"id":"RR-UGC-011","taskId":"SQ074241kv","taskInitTime":"2026-03-02 11:28:15","bqid":"bq2078908","cid":"mzc00200zpfu9dt","rightsId":"bq2078908-o1160956","contractNo":"T180-PCG-2025022800006","workName":"十日游戏","alias":"十日游戏","category":"电视剧","director":"臧溪川","starring":"朱亚文、金晨","productionYear":"2025","productionRegion":"中国大陆","episodeCount":"12集","listType":"普通","isTalkShow":false,"isGala":false,"infoNetStatus":"生效中","externalAuthRights":"可用","systemDenyReason":"","rightsType":"二创权益","applicant":"陈十三","applyTime":"2026.03.03 11:30","platform":"微信视频号","status":"待审核","priority":"低","rightsScope":"悬疑推理解析","authPeriod":"2026.03.01 - 2026.06.30","aiRiskNote":""},
+          {"id":"RR-UGC-012","taskId":"SQ074242lw","taskInitTime":"2026-03-02 14:45:22","bqid":"bq2078916","cid":"mzc002001qgv0cs","rightsId":"bq2078916-o1160964","contractNo":"T180-PCG-2025022800012","workName":"萌探2026","alias":"萌探","category":"综艺","director":"吴彤","starring":"孙红雷、黄渤","productionYear":"2026","productionRegion":"中国大陆","episodeCount":"10期","listType":"普通","isTalkShow":false,"isGala":false,"infoNetStatus":"生效中","externalAuthRights":"可用","systemDenyReason":"","rightsType":"二创权益","applicant":"褚十四","applyTime":"2026.03.03 14:00","platform":"抖音","status":"待审核","priority":"中","rightsScope":"搞笑片段剪辑、嘉宾名场面","authPeriod":"2026.03.01 - 2026.12.31","aiRiskNote":""},
+          {"id":"RR-UGC-013","taskId":"SQ074243mx","taskInitTime":"2026-03-03 09:03:41","bqid":"bq2078924","cid":"mzc002002rhw3br","rightsId":"bq2078924-o1160972","contractNo":"T180-PCG-2025031000003","workName":"宝宝巴士","alias":"宝宝巴士","category":"少儿","director":"卢庆","starring":"-","productionYear":"2025","productionRegion":"中国大陆","episodeCount":"200集","listType":"普通","isTalkShow":false,"isGala":false,"infoNetStatus":"生效中","externalAuthRights":"可用","systemDenyReason":"","rightsType":"二创权益","applicant":"卫十五","applyTime":"2026.03.04 09:00","platform":"快手","status":"待审核","priority":"高","rightsScope":"儿童教育内容二创","authPeriod":"2026.03.01 - 2027.03.01","aiRiskNote":""},
+          {"id":"RR-UGC-014","taskId":"SQ074244ny","taskInitTime":"2026-03-03 10:19:58","bqid":"bq2078932","cid":"mzc002003six2aq","rightsId":"bq2078932-o1160980","contractNo":"T180-PCG-2025031000009","workName":"去有风的地方","alias":"有风","category":"电视剧","director":"丁梓光","starring":"刘亦菲、李现","productionYear":"2025","productionRegion":"中国大陆","episodeCount":"40集","listType":"普通","isTalkShow":false,"isGala":false,"infoNetStatus":"生效中","externalAuthRights":"可用","systemDenyReason":"","rightsType":"二创权益","applicant":"蒋十六","applyTime":"2026.03.04 10:20","platform":"小红书","status":"待审核","priority":"中","rightsScope":"旅行vlog式混剪、取景地推荐","authPeriod":"2026.03.01 - 2026.09.01","aiRiskNote":""},
+          {"id":"RR-UGC-015","taskId":"SQ074245pz","taskInitTime":"2026-03-03 11:36:07","bqid":"bq2078947","cid":"mzc002004tjy8zp","rightsId":"bq2078947-o1160995","contractNo":"T180-PCG-2025032200015","workName":"超新星运动会2026","alias":"超新星运动会","category":"综艺","director":"严敏","starring":"杨洋、蔡徐坤","productionYear":"2026","productionRegion":"中国大陆","episodeCount":"8期","listType":"新热","isTalkShow":false,"isGala":false,"infoNetStatus":"生效中","externalAuthRights":"可用","systemDenyReason":"","rightsType":"二创权益","applicant":"沈十七","applyTime":"2026.03.04 11:45","platform":"抖音","status":"待审核","priority":"中","rightsScope":"精彩比赛集锦、选手高光时刻","authPeriod":"2026.03.01 - 2026.06.30","aiRiskNote":""},
+          {"id":"RR-UGC-016","taskId":"SQ074246qa","taskInitTime":"2026-03-03 14:52:34","bqid":"bq2078955","cid":"mzc002005ukz7yo","rightsId":"bq2078955-o1161003","contractNo":"T180-PCG-2025032200021","workName":"蓝色星球·中国篇","alias":"蓝色星球","category":"纪录片","director":"田文","starring":"-","productionYear":"2025","productionRegion":"中国大陆/英国","episodeCount":"6集","listType":"普通","isTalkShow":false,"isGala":false,"infoNetStatus":"生效中","externalAuthRights":"可用","systemDenyReason":"","rightsType":"二创权益","applicant":"韩十八","applyTime":"2026.03.04 14:30","platform":"B站","status":"待审核","priority":"低","rightsScope":"科普解读、自然知识分享","authPeriod":"2026.03.01 - 2027.03.01","aiRiskNote":""},
+          {"id":"RR-UGC-017","taskId":"SQ074247rb","taskInitTime":"2026-03-04 09:08:19","bqid":"bq2078963","cid":"mzc002006vla6xn","rightsId":"bq2078963-o1161011","contractNo":"T180-PCG-2025040500002","workName":"鬼吹灯之昆仑神宫","alias":"昆仑神宫","category":"电视剧","director":"费振翔","starring":"潘粤明、张雨绮","productionYear":"2025","productionRegion":"中国大陆","episodeCount":"16集","listType":"普通","isTalkShow":false,"isGala":false,"infoNetStatus":"生效中","externalAuthRights":"可用","systemDenyReason":"","rightsType":"二创权益","applicant":"杨十九","applyTime":"2026.03.05 09:30","platform":"抖音","status":"待审核","priority":"中","rightsScope":"探险解说、特效解析","authPeriod":"2026.03.01 - 2026.12.31","aiRiskNote":""},
+          {"id":"RR-UGC-018","taskId":"SQ074248sc","taskInitTime":"2026-03-04 10:25:46","bqid":"bq2078971","cid":"mzc002007wmb5wm","rightsId":"bq2078971-o1161019","contractNo":"T180-PCG-2025040500008","workName":"斗破苍穹年番","alias":"斗破年番","category":"动漫","director":"沈乐平","starring":"配音：刘三木、醋醋","productionYear":"2026","productionRegion":"中国大陆","episodeCount":"52集","listType":"新热","isTalkShow":false,"isGala":false,"infoNetStatus":"生效中","externalAuthRights":"可用","systemDenyReason":"","rightsType":"二创权益","applicant":"朱二十","applyTime":"2026.03.05 10:45","platform":"快手","status":"待审核","priority":"高","rightsScope":"战斗集锦、人物成长线剪辑","authPeriod":"2026.03.01 - 2027.03.01","aiRiskNote":""},
+          {"id":"RR-UGC-019","taskId":"SQ074249td","taskInitTime":"2026-03-04 11:42:03","bqid":"bq2078986","cid":"mzc002008xnc4vl","rightsId":"bq2078986-o1161034","contractNo":"T180-PCG-2025041800011","workName":"人世间","alias":"人世间","category":"电视剧","director":"李路","starring":"雷佳音、辛柏青","productionYear":"2025","productionRegion":"中国大陆","episodeCount":"58集","listType":"普通","isTalkShow":false,"isGala":false,"infoNetStatus":"生效中","externalAuthRights":"可用","systemDenyReason":"","rightsType":"二创权益","applicant":"秦二一","applyTime":"2026.03.05 11:30","platform":"微信视频号","status":"待审核","priority":"中","rightsScope":"情感向混剪、时代记忆解读","authPeriod":"2026.03.01 - 2026.09.01","aiRiskNote":""},
+          {"id":"RR-UGC-020","taskId":"SQ074250ue","taskInitTime":"2026-03-04 14:58:30","bqid":"bq2078994","cid":"mzc002009yod3uk","rightsId":"bq2078994-o1161042","contractNo":"T180-PCG-2025041800017","workName":"漫长的季节","alias":"漫长的季节","category":"电视剧","director":"辛爽","starring":"范伟、秦昊","productionYear":"2025","productionRegion":"中国大陆","episodeCount":"12集","listType":"新热","isTalkShow":false,"isGala":false,"infoNetStatus":"生效中","externalAuthRights":"可用","systemDenyReason":"","rightsType":"二创权益","applicant":"尤二二","applyTime":"2026.03.05 14:00","platform":"B站","status":"待审核","priority":"高","rightsScope":"悬疑解析、彩蛋盘点、OST混剪","authPeriod":"2026.03.01 - 2027.03.01","aiRiskNote":""}
+        ]
+      },
+      {
+        "type": "distribution",
+        "label": "分销权益",
+        "totalPending": 2,
+        "items": [
+          {"id":"RR-DIST-001","taskId":"SQ074251vf","taskInitTime":"2026-02-28 15:30:17","bqid":"bq2079001","cid":"mzc00200djsz2lc","rightsId":"bq2079001-o1161050","contractNo":"T180-PCG-2025050200003","workName":"庆余年第三季","alias":"庆余年3","category":"电视剧","director":"孙皓","starring":"张若昀、李沁","productionYear":"2026","productionRegion":"中国大陆","episodeCount":"40集","listType":"新热","isTalkShow":false,"isGala":false,"infoNetStatus":"生效中","externalAuthRights":"可用","systemDenyReason":"","rightsType":"分销权益","applicant":"张运营","applyTime":"2026.03.01 09:00","platform":"芒果TV","status":"待审核","priority":"高","rightsScope":"信息网络传播权-非独家分销","authPeriod":"2026.03.15 - 2027.03.14","aiRiskNote":"","reviewStatus":"综控初审待审"},
+          {"id":"RR-DIST-002","taskId":"SQ074252wg","taskInitTime":"2026-03-01 13:47:52","bqid":"bq2079015","cid":"mzc00200xjds5fv","rightsId":"bq2079015-o1161068","contractNo":"T180-PCG-2025050200009","workName":"繁花","alias":"繁花","category":"电视剧","director":"王家卫","starring":"胡歌、马伊琍","productionYear":"2025","productionRegion":"中国大陆","episodeCount":"30集","listType":"新热","isTalkShow":false,"isGala":false,"infoNetStatus":"生效中","externalAuthRights":"权利瑕疵","systemDenyReason":"转授权条款分成比例需法务确认","rightsType":"分销权益","applicant":"李运营","applyTime":"2026.03.02 14:00","platform":"优酷","status":"待审核","priority":"中","rightsScope":"信息网络传播权-非独家分销、转授权","authPeriod":"2026.04.01 - 2026.12.31","aiRiskNote":"","reviewStatus":"已确权"}
+        ]
+      }
+    ]
+  },
+  "tasks": {
+    "apply": {
+      "label": "申请任务",
+      "icon": "file-edit",
+      "total": 8,
+      "normal": 5,
+      "urgent": 3,
+      "description": "项目创建申请相关任务"
+    },
+    "approve": {
+      "label": "审批任务",
+      "icon": "check-circle",
+      "total": 12,
+      "normal": 9,
+      "urgent": 3,
+      "description": "项目审批相关任务"
+    },
+    "work": {
+      "label": "作品任务",
+      "icon": "film",
+      "total": 15,
+      "normal": 11,
+      "urgent": 4,
+      "description": "作品授权确权、回收、撤回相关任务"
+    }
+  },
+  "projects": [
+    {
+      "id": "PRJ-2026-001",
+      "name": "抖音授权项目",
+      "authPeriod": "2026.01.15 - 2027.01.14",
+      "type": "长期授权项目",
+      "status": "authorizing",
+      "statusLabel": "授权中",
+      "pendingConfirm": 5,
+      "pendingApply": 3,
+      "pendingApproval": 2,
+      "detail": {
+        "projectData": {
+          "totalDaily": 326,
+          "expiringWithin35Days": 47,
+          "rightsConflictRisk": 12,
+          "categories": {
+            "tv": 98,
+            "anime": 52,
+            "movie": 41,
+            "variety": 45,
+            "documentary": 28,
+            "kids": 32,
+            "shortDrama": 30
+          },
+          "monthlyData": [
+            {"month": "2026-01", "daily": 285},
+            {"month": "2026-02", "daily": 312},
+            {"month": "2026-03", "daily": 326}
+          ],
+          "quarterlyData": [
+            {"quarter": "2025Q4", "daily": 268, "type": "actual"},
+            {"quarter": "2026Q1", "daily": 308, "type": "estimated"},
+            {"quarter": "2026Q2", "daily": 340, "type": "forecast"},
+            {"quarter": "2026Q3", "daily": 365, "type": "forecast"},
+            {"quarter": "2026Q4", "daily": 380, "type": "forecast"}
+          ]
+        },
+        "authDetails": [
+          {
+            "id": "AUTH-001", "workName": "庆余年第三季", "category": "电视剧", "releaseDate": "2026.01.15", "bqid": "bq2078802", "mainCid": "mzc00200djsz2lc", "rightsId": "bq2078802-o1160834", "contractNo": "T180-PCG-2024121700007", "status": "授权中", "authStartDate": "2026.01.20", "authEndDate": "2026.03.21",
+            "internalAuthPeriod": "2025.06.01 - 2028.05.31", "projectAuthPeriod": "2026.01.15 - 2027.01.14",
+            "workConclusion": {"result": "系统判定可授权", "modifier": "李法务", "modifyTime": "2026.01.20 14:30"},
+            "rightsReview": [
+              {"rightsId": "RID-001-01", "rightsName": "信息网络传播权", "contractComparison": [
+                {"id":"cc-001-01-1","rule":"授权平台仅限抖音APP及其关联产品","rightsOption":"信息网络传播权-非独家","contractText":"甲方授予乙方在抖音短视频平台及其关联产品（包括但不限于抖音极速版、今日头条）上的信息网络传播权，授权性质为非独家授权，授权期限自2026年1月15日起至2027年1月14日止。","aiConflict":false,"aiNote":"","conclusion":""},
+                {"id":"cc-001-01-2","rule":"授权期限不得超过内部版权期限","rightsOption":"授权期限合规性","contractText":"本合同授权期限为2026年1月15日至2027年1月14日。甲方确认该作品内部版权持有期限为2025年6月1日至2028年5月31日，本次授权期限在版权有效期内。","aiConflict":false,"aiNote":"","conclusion":""},
+                {"id":"cc-001-01-3","rule":"不得与现有独家分销协议冲突","rightsOption":"排他性审查","contractText":"乙方确认不存在与其他平台签署的排他性播放协议，本次非独家授权不影响甲方在其他平台的分发权利。","aiConflict":false,"aiNote":"","conclusion":""}
+              ], "steps": [
+                {"role": "版权运营", "name": "版权运营初审", "status": "completed", "result": "通过", "operator": "张运营", "time": "2026.01.18 10:00"},
+                {"role": "法务", "name": "法务复审", "status": "completed", "result": "通过", "operator": "李法务", "time": "2026.01.19 15:30"},
+                {"role": "品类运营", "name": "品类运营授权判定", "status": "completed", "result": "可授权", "operator": "王品类", "time": "2026.01.20 09:00"}
+              ]},
+              {"rightsId": "RID-001-02", "rightsName": "转授权", "contractComparison": [
+                {"id":"cc-001-02-1","rule":"转授权需获得原版权方书面同意","rightsOption":"转授权许可","contractText":"甲方同意乙方在取得甲方书面同意的前提下，可将本合同项下的部分权利转授权给第三方。转授权范围不得超出本合同约定的权利范围。","aiConflict":false,"aiNote":"","conclusion":""},
+                {"id":"cc-001-02-2","rule":"转授权收益分成比例须明确","rightsOption":"收益分配","contractText":"转授权产生的收益，甲乙双方按照7:3的比例进行分配，乙方应在每季度末向甲方提供转授权收益明细报告。","aiConflict":false,"aiNote":"","conclusion":""}
+              ], "steps": [
+                {"role": "版权运营", "name": "版权运营初审", "status": "completed", "result": "通过", "operator": "张运营", "time": "2026.01.18 10:30"},
+                {"role": "法务", "name": "法务复审", "status": "completed", "result": "通过", "operator": "李法务", "time": "2026.01.19 16:00"},
+                {"role": "品类运营", "name": "品类运营授权判定", "status": "completed", "result": "可授权", "operator": "王品类", "time": "2026.01.20 09:30"}
+              ]}
+            ]
+          },
+          {
+            "id": "AUTH-002", "workName": "斗罗大陆3", "category": "动漫", "releaseDate": "2026.01.08", "bqid": "bq2078815", "mainCid": "mzc00200kfts7nb", "rightsId": "bq2078815-o1160847", "contractNo": "T180-PCG-2024121700012", "status": "授权中", "authStartDate": "2026.01.22", "authEndDate": "2026.03.23",
+            "internalAuthPeriod": "2025.08.01 - 2028.07.31", "projectAuthPeriod": "2026.01.15 - 2027.01.14",
+            "workConclusion": {"result": "系统判定可授权", "modifier": "李法务", "modifyTime": "2026.01.22 11:00"},
+            "rightsReview": [
+              {"rightsId": "RID-002-01", "rightsName": "信息网络传播权", "steps": [
+                {"role": "版权运营", "name": "版权运营初审", "status": "completed", "result": "通过", "operator": "张运营", "time": "2026.01.20 09:00"},
+                {"role": "法务", "name": "法务复审", "status": "completed", "result": "通过", "operator": "李法务", "time": "2026.01.21 14:00"},
+                {"role": "品类运营", "name": "品类运营授权判定", "status": "completed", "result": "可授权", "operator": "王品类", "time": "2026.01.22 10:00"}
+              ]}
+            ]
+          },
+          {
+            "id": "AUTH-003", "workName": "三体动画版", "category": "动漫", "releaseDate": "2026.02.01", "bqid": "bq2078823", "mainCid": "mzc00200mptr9ex", "rightsId": "bq2078823-o1160862", "contractNo": "T180-PCG-2025010800003", "status": "授权中", "authStartDate": "2026.02.10", "authEndDate": "2026.04.11",
+            "internalAuthPeriod": "2025.10.01 - 2028.09.30", "projectAuthPeriod": "",
+            "workConclusion": null,
+            "rightsReview": [
+              {"rightsId": "RID-003-01", "rightsName": "信息网络传播权", "contractComparison": [
+                {"id":"cc-003-01-1","rule":"授权平台仅限抖音APP及其关联产品","rightsOption":"信息网络传播权-非独家","contractText":"甲方授予乙方对《三体动画版》在抖音短视频平台及关联产品上的信息网络传播权，授权性质为非独家授权，有效期自合同签署日起至2028年9月30日止。","aiConflict":false,"aiNote":"","conclusion":""},
+                {"id":"cc-003-01-2","rule":"授权期限不得超过内部版权期限","rightsOption":"授权期限合规性","contractText":"合同约定授权截止日期为2028年9月30日，甲方内部版权持有期限为2025年10月1日至2028年9月30日。","aiConflict":true,"aiNote":"AI判定：合同授权期限末尾与内部版权期限完全重合（均为2028.09.30），存在到期日衔接风险，建议预留至少30天缓冲期。","conclusion":""},
+                {"id":"cc-003-01-3","rule":"不得与现有独家分销协议冲突","rightsOption":"排他性审查","contractText":"乙方声明在签约时不存在与其他平台就《三体动画版》签署的独家播放协议。甲方已确认该作品当前未对任何第三方平台进行独家授权。","aiConflict":false,"aiNote":"","conclusion":""},
+                {"id":"cc-003-01-4","rule":"片段使用时长不超过单集时长的10%","rightsOption":"内容使用限制","contractText":"乙方在平台上传播甲方内容时，单条短视频使用的原片素材累计不得超过对应单集正片时长的15%，且须注明内容来源。","aiConflict":true,"aiNote":"AI判定：合同约定片段使用上限为15%，但授权规则要求不超过10%，存在比例冲突，合同条款宽于内部规则限制。","conclusion":""}
+              ], "steps": [
+                {"role": "版权运营", "name": "版权运营初审", "status": "completed", "result": "通过", "operator": "张运营", "time": "2026.02.05 10:00"},
+                {"role": "法务", "name": "法务复审", "status": "in_progress", "result": "", "operator": "", "time": ""},
+                {"role": "品类运营", "name": "品类运营授权判定", "status": "pending", "result": "", "operator": "", "time": ""}
+              ]},
+              {"rightsId": "RID-003-02", "rightsName": "转授权", "contractComparison": [
+                {"id":"cc-003-02-1","rule":"转授权需获得原版权方书面同意","rightsOption":"转授权许可","contractText":"经甲方书面同意，乙方可将本合同约定的部分权利转授权予第三方使用。未经甲方事先书面同意，乙方不得擅自转授权。","aiConflict":false,"aiNote":"","conclusion":""},
+                {"id":"cc-003-02-2","rule":"转授权对象须经甲方审核备案","rightsOption":"转授权对象管理","contractText":"乙方拟转授权的第三方须事先提交甲方审核，甲方有权基于品牌保护等合理理由拒绝特定第三方的转授权申请。审核期限不超过5个工作日。","aiConflict":false,"aiNote":"","conclusion":""},
+                {"id":"cc-003-02-3","rule":"转授权收益分成比例须明确","rightsOption":"收益分配","contractText":"转授权收益分配比例为甲方65%、乙方35%。乙方应于每月10日前向甲方提交上月转授权收益报告及结算单。","aiConflict":true,"aiNote":"AI判定：合同约定分成比例为甲方65%:乙方35%，与该项目标准转授权分成比例（甲方70%:乙方30%）存在偏差，乙方分成高于标准5个百分点。","conclusion":""}
+              ], "steps": [
+                {"role": "版权运营", "name": "版权运营初审", "status": "in_progress", "result": "", "operator": "", "time": ""},
+                {"role": "法务", "name": "法务复审", "status": "pending", "result": "", "operator": "", "time": ""},
+                {"role": "品类运营", "name": "品类运营授权判定", "status": "pending", "result": "", "operator": "", "time": ""}
+              ]},
+              {"rightsId": "RID-003-03", "rightsName": "改编权", "contractComparison": [
+                {"id":"cc-003-03-1","rule":"改编作品须保留原作核心要素","rightsOption":"改编范围限制","contractText":"乙方基于甲方作品进行的改编创作，须保留原作品的核心角色设定、主要故事线及世界观架构，改编方案须事先提交甲方审核批准。","aiConflict":false,"aiNote":"","conclusion":""},
+                {"id":"cc-003-03-2","rule":"改编衍生作品著作权归属须明确","rightsOption":"著作权归属","contractText":"基于甲方原作改编产生的衍生作品，其著作权由甲乙双方共同所有。任何一方未经另一方同意，不得单独许可第三方使用该衍生作品。","aiConflict":true,"aiNote":"AI判定：合同约定改编衍生作品著作权为甲乙双方共有，但授权规则要求改编衍生作品著作权应归甲方单独所有，存在权利归属冲突。","conclusion":""}
+              ], "steps": [
+                {"role": "版权运营", "name": "版权运营初审", "status": "pending", "result": "", "operator": "", "time": ""},
+                {"role": "法务", "name": "法务复审", "status": "pending", "result": "", "operator": "", "time": ""},
+                {"role": "品类运营", "name": "品类运营授权判定", "status": "pending", "result": "", "operator": "", "time": ""}
+              ]}
+            ]
+          },
+          {
+            "id": "AUTH-004", "workName": "长相思第三季", "category": "电视剧", "releaseDate": "2026.02.06", "bqid": "bq2078831", "mainCid": "mzc00200qwvk5pa", "rightsId": "bq2078831-o1160879", "contractNo": "T180-PCG-2025010800009", "status": "授权中", "authStartDate": "2026.02.15", "authEndDate": "2026.04.16",
+            "internalAuthPeriod": "2025.12.01 - 2028.11.30", "projectAuthPeriod": "2026.01.15 - 2027.01.14",
+            "workConclusion": {"result": "系统判定可授权", "modifier": "赵法务", "modifyTime": "2026.02.10 16:00"},
+            "rightsReview": [
+              {"rightsId": "RID-004-01", "rightsName": "信息网络传播权", "steps": [
+                {"role": "版权运营", "name": "版权运营初审", "status": "completed", "result": "通过", "operator": "张运营", "time": "2026.02.08 09:00"},
+                {"role": "法务", "name": "法务复审", "status": "completed", "result": "通过", "operator": "赵法务", "time": "2026.02.09 14:00"},
+                {"role": "品类运营", "name": "品类运营授权判定", "status": "completed", "result": "可授权", "operator": "王品类", "time": "2026.02.10 10:00"}
+              ]}
+            ]
+          },
+          {
+            "id": "AUTH-005", "workName": "创造营2026", "category": "综艺", "releaseDate": "2026.02.10", "bqid": "bq2078846", "mainCid": "mzc00200rxnm3fc", "rightsId": "bq2078846-o1160891", "contractNo": "T180-PCG-2025012000015", "status": "授权中", "authStartDate": "2026.02.20", "authEndDate": "2026.04.21",
+            "internalAuthPeriod": "2026.01.01 - 2029.12.31", "projectAuthPeriod": "",
+            "workConclusion": null,
+            "rightsReview": [
+              {"rightsId": "RID-005-01", "rightsName": "信息网络传播权", "contractComparison": [
+                {"id":"cc-005-01-1","rule":"授权平台仅限抖音APP及其关联产品","rightsOption":"信息网络传播权-非独家","contractText":"甲方授予乙方对《创造营2026》在抖音平台的非独家信息网络传播权，包括但不限于节目正片、花絮及衍生短视频的传播权利。","aiConflict":false,"aiNote":"","conclusion":""},
+                {"id":"cc-005-01-2","rule":"综艺节目需确认嘉宾肖像权授权","rightsOption":"肖像权合规","contractText":"乙方在传播过程中涉及的节目嘉宾肖像使用，由甲方负责取得嘉宾本人或其经纪公司的授权许可，并承担相应法律责任。","aiConflict":true,"aiNote":"AI判定：合同仅约定由甲方负责取得嘉宾肖像授权，但未明确提供肖像授权证明文件的时间节点和方式，存在执行风险。","conclusion":""}
+              ], "steps": [
+                {"role": "版权运营", "name": "版权运营初审", "status": "in_progress", "result": "", "operator": "", "time": ""},
+                {"role": "法务", "name": "法务复审", "status": "pending", "result": "", "operator": "", "time": ""},
+                {"role": "品类运营", "name": "品类运营授权判定", "status": "pending", "result": "", "operator": "", "time": ""}
+              ]}
+            ]
+          },
+          {
+            "id": "AUTH-006", "workName": "风起洛阳2", "category": "电视剧", "releaseDate": "2025.12.20", "bqid": "bq2078867", "mainCid": "mzc00200vnbq4hy", "rightsId": "bq2078867-o1160918", "contractNo": "T180-PCG-2025020300002", "status": "已回收", "authStartDate": "2025.12.25", "authEndDate": "2026.02.23",
+            "internalAuthPeriod": "2025.06.01 - 2027.05.31", "projectAuthPeriod": "2026.01.15 - 2027.01.14",
+            "workConclusion": {"result": "待复核", "subNote": "可补函", "modifier": "李法务", "modifyTime": "2026.01.25 10:00"},
+            "distributionConflict": {"hasConflict": true, "conflictDesc": "与B站独家分销协议冲突，B站独家授权期至2026.06.30", "conflictPlatform": "B站", "conflictPeriod": "2025.07.01 - 2026.06.30"},
+            "rightsReview": [
+              {"rightsId": "RID-006-01", "rightsName": "信息网络传播权", "contractComparison": [
+                {"id":"cc-006-01-1","rule":"授权平台仅限抖音APP及其关联产品","rightsOption":"信息网络传播权-非独家","contractText":"甲方授予乙方对《风起洛阳2》在抖音平台的信息网络传播权。","aiConflict":false,"aiNote":"","conclusion":""},
+                {"id":"cc-006-01-2","rule":"不得与现有独家分销协议冲突","rightsOption":"排他性审查","contractText":"乙方声明不存在与其他平台就该作品签署的独家协议。","aiConflict":true,"aiNote":"AI判定：经核实，该作品与B站存在独家分销协议（有效期至2026年6月30日），与本合同授权期存在重叠，构成直接冲突。","conclusion":""}
+              ], "steps": [
+                {"role": "版权运营", "name": "版权运营初审", "status": "completed", "result": "存在风险", "operator": "张运营", "time": "2026.01.22 09:00"},
+                {"role": "法务", "name": "法务复审", "status": "completed", "result": "权利瑕疵", "operator": "李法务", "time": "2026.01.24 15:00"},
+                {"role": "品类运营", "name": "品类运营授权判定", "status": "completed", "result": "暂缓授权", "operator": "王品类", "time": "2026.01.25 09:00"}
+              ]},
+              {"rightsId": "RID-006-02", "rightsName": "转授权", "contractComparison": [
+                {"id":"cc-006-02-1","rule":"转授权需获得原版权方书面同意","rightsOption":"转授权许可","contractText":"经甲方书面同意后，乙方可进行转授权。","aiConflict":false,"aiNote":"","conclusion":""}
+              ], "steps": [
+                {"role": "版权运营", "name": "版权运营初审", "status": "completed", "result": "通过", "operator": "张运营", "time": "2026.01.22 10:00"},
+                {"role": "法务", "name": "法务复审", "status": "completed", "result": "通过", "operator": "李法务", "time": "2026.01.24 16:00"},
+                {"role": "品类运营", "name": "品类运营授权判定", "status": "completed", "result": "可授权", "operator": "王品类", "time": "2026.01.25 10:00"}
+              ]}
+            ]
+          },
+          {
+            "id": "AUTH-007", "workName": "超新星运动会2026", "category": "综艺", "releaseDate": "2026.03.01", "bqid": "bq2078947", "mainCid": "mzc002004tjy8zp", "rightsId": "bq2078947-o1160995", "contractNo": "T180-PCG-2025032200015", "status": "授权中", "authStartDate": "2026.03.01", "authEndDate": "2026.04.30",
+            "internalAuthPeriod": "2026.02.01 - 2029.01.31", "projectAuthPeriod": "",
+            "workConclusion": null,
+            "rightsReview": [
+              {"rightsId": "RID-007-01", "rightsName": "信息网络传播权", "steps": [
+                {"role": "版权运营", "name": "版权运营初审", "status": "pending", "result": "", "operator": "", "time": ""},
+                {"role": "法务", "name": "法务复审", "status": "pending", "result": "", "operator": "", "time": ""},
+                {"role": "品类运营", "name": "品类运营授权判定", "status": "pending", "result": "", "operator": "", "time": ""}
+              ]}
+            ]
+          },
+          {
+            "id": "AUTH-008", "workName": "我的阿勒泰", "category": "电视剧", "releaseDate": "2025.11.15", "bqid": "bq2079102", "mainCid": "mzc00200abcd1ef", "rightsId": "bq2079102-o1161105", "contractNo": "T180-PCG-2025050800006", "status": "已回收", "authStartDate": "2025.11.20", "authEndDate": "2026.01.19",
+            "internalAuthPeriod": "2025.03.01 - 2026.02.28", "projectAuthPeriod": "2026.01.15 - 2027.01.14",
+            "workConclusion": {"result": "待复核", "modifier": "赵法务", "modifyTime": "2026.01.18 11:00"},
+            "rightsReview": [
+              {"rightsId": "RID-008-01", "rightsName": "信息网络传播权", "steps": [
+                {"role": "版权运营", "name": "版权运营初审", "status": "completed", "result": "不通过", "operator": "张运营", "time": "2026.01.16 09:00"},
+                {"role": "法务", "name": "法务复审", "status": "completed", "result": "不可授权", "operator": "赵法务", "time": "2026.01.17 14:00"},
+                {"role": "品类运营", "name": "品类运营授权判定", "status": "completed", "result": "不可授权", "operator": "王品类", "time": "2026.01.18 10:00"}
+              ]}
+            ]
+          },
+          {
+            "id": "AUTH-009", "workName": "蓝色星球·中国篇", "category": "纪录片", "releaseDate": "2026.01.28", "bqid": "bq2078955", "mainCid": "mzc002005ukz7yo", "rightsId": "bq2078955-o1161003", "contractNo": "T180-PCG-2025032200021", "status": "授权中", "authStartDate": "2026.02.01", "authEndDate": "2026.04.02",
+            "internalAuthPeriod": "2025.12.01 - 2028.11.30", "projectAuthPeriod": "2026.01.15 - 2027.01.14",
+            "workConclusion": {"result": "系统判定可授权", "modifier": "李法务", "modifyTime": "2026.02.01 09:30"},
+            "rightsReview": [
+              {"rightsId": "RID-009-01", "rightsName": "信息网络传播权", "steps": [
+                {"role": "版权运营", "name": "版权运营初审", "status": "completed", "result": "通过", "operator": "张运营", "time": "2026.01.30 09:00"},
+                {"role": "法务", "name": "法务复审", "status": "completed", "result": "通过", "operator": "李法务", "time": "2026.01.31 14:00"},
+                {"role": "品类运营", "name": "品类运营授权判定", "status": "completed", "result": "可授权", "operator": "王品类", "time": "2026.02.01 09:00"}
+              ]}
+            ]
+          },
+          {
+            "id": "AUTH-031", "workName": "玫瑰的故事", "category": "电视剧", "releaseDate": "2025.10.08", "bqid": "bq2079118", "mainCid": "mzc00200bcde2fg", "rightsId": "bq2079118-o1161121", "contractNo": "T180-PCG-2025052000003", "status": "已回收", "authStartDate": "2025.10.15", "authEndDate": "2025.12.14",
+            "internalAuthPeriod": "2025.08.01 - 2028.07.31", "projectAuthPeriod": "2026.01.15 - 2027.01.14",
+            "workConclusion": {"result": "复审判定可授权", "modifier": "李法务", "modifyTime": "2026.02.15 14:30"},
+            "rightsReview": [
+              {"rightsId": "RID-031-01", "rightsName": "信息网络传播权", "contractComparison": [
+                {"id":"cc-031-01-1","rule":"授权平台仅限抖音APP及其关联产品","rightsOption":"信息网络传播权-非独家","contractText":"甲方授予乙方对《玫瑰的故事》在抖音平台的非独家信息网络传播权。","aiConflict":false,"aiNote":"","conclusion":"可授权"},
+                {"id":"cc-031-01-2","rule":"授权期限不得超过内部版权期限","rightsOption":"授权期限合规性","contractText":"本合同授权期限自2026年1月15日起至2027年1月14日止。","aiConflict":false,"aiNote":"","conclusion":"可授权"}
+              ], "steps": [
+                {"role": "版权运营", "name": "版权运营初审", "status": "completed", "result": "存在风险", "operator": "张运营", "time": "2026.02.10 09:00"},
+                {"role": "法务", "name": "法务复审", "status": "completed", "result": "通过", "operator": "李法务", "time": "2026.02.12 15:00"},
+                {"role": "品类运营", "name": "品类运营授权判定", "status": "completed", "result": "可授权", "operator": "王品类", "time": "2026.02.15 10:00"}
+              ]},
+              {"rightsId": "RID-031-02", "rightsName": "转授权", "steps": [
+                {"role": "版权运营", "name": "版权运营初审", "status": "completed", "result": "通过", "operator": "张运营", "time": "2026.02.10 10:00"},
+                {"role": "法务", "name": "法务复审", "status": "completed", "result": "通过", "operator": "李法务", "time": "2026.02.12 16:00"},
+                {"role": "品类运营", "name": "品类运营授权判定", "status": "completed", "result": "可授权", "operator": "王品类", "time": "2026.02.15 11:00"}
+              ]}
+            ]
+          },
+          {
+            "id": "AUTH-032", "workName": "仙剑奇侠传四", "category": "电视剧", "releaseDate": "2026.01.20", "bqid": "bq2078859", "mainCid": "mzc00200txhp8jd", "rightsId": "bq2078859-o1160905", "contractNo": "T180-PCG-2025012000021", "status": "授权中", "authStartDate": "2026.02.20", "authEndDate": "2026.04.21",
+            "internalAuthPeriod": "2025.11.01 - 2028.10.31", "projectAuthPeriod": "2026.01.15 - 2027.01.14",
+            "workConclusion": {"result": "复审判定可授权", "modifier": "赵法务", "modifyTime": "2026.02.20 16:00"},
+            "rightsReview": [
+              {"rightsId": "RID-032-01", "rightsName": "信息网络传播权", "contractComparison": [
+                {"id":"cc-032-01-1","rule":"授权平台仅限抖音APP及其关联产品","rightsOption":"信息网络传播权-非独家","contractText":"甲方授予乙方对《仙剑奇侠传四》在抖音平台的非独家信息网络传播权，含正片及衍生花絮内容。","aiConflict":false,"aiNote":"","conclusion":"可授权"},
+                {"id":"cc-032-01-2","rule":"授权期限不得超过内部版权期限","rightsOption":"授权期限合规性","contractText":"本合同授权期限自2026年1月15日起至2027年1月14日止。甲方确认版权持有期至2028年10月31日。","aiConflict":false,"aiNote":"","conclusion":"可授权"},
+                {"id":"cc-032-01-3","rule":"游戏改编剧需确认游戏版权方授权","rightsOption":"游戏IP关联权利","contractText":"甲方已取得原游戏版权方对电视剧改编作品在信息网络渠道传播的书面授权。","aiConflict":true,"aiNote":"AI判定：合同提及甲方已取得书面授权，但未附相关授权文件作为合同附件，建议核实授权文件真实性。","conclusion":"权利瑕疵"}
+              ], "steps": [
+                {"role": "版权运营", "name": "版权运营初审", "status": "completed", "result": "存在风险", "operator": "张运营", "time": "2026.02.16 09:00"},
+                {"role": "法务", "name": "法务复审", "status": "completed", "result": "权利瑕疵", "operator": "赵法务", "time": "2026.02.18 14:00"},
+                {"role": "品类运营", "name": "品类运营授权判定", "status": "completed", "result": "可授权", "operator": "王品类", "time": "2026.02.20 10:00"}
+              ]},
+              {"rightsId": "RID-032-02", "rightsName": "改编权", "contractComparison": [
+                {"id":"cc-032-02-1","rule":"改编权需明确授权范围和改编形式","rightsOption":"改编权授权","contractText":"甲方授予乙方对《仙剑奇侠传四》进行短视频二次创作的改编权利，包括但不限于混剪、解说、花絮制作等形式。","aiConflict":false,"aiNote":"","conclusion":"可授权"}
+              ], "steps": [
+                {"role": "版权运营", "name": "版权运营初审", "status": "completed", "result": "通过", "operator": "张运营", "time": "2026.02.16 10:00"},
+                {"role": "法务", "name": "法务复审", "status": "completed", "result": "通过", "operator": "赵法务", "time": "2026.02.18 15:00"},
+                {"role": "品类运营", "name": "品类运营授权判定", "status": "completed", "result": "可授权", "operator": "王品类", "time": "2026.02.20 11:00"}
+              ]}
+            ]
+          },
+          { "id": "AUTH-030", "workName": "大唐来的苏无名", "category": "横屏短剧", "releaseDate": "2026.02.18", "bqid": "bq2078873", "mainCid": "mzc00200wkcr6gz", "rightsId": "bq2078873-o1160924", "contractNo": "T180-PCG-2025020300008", "status": "授权中", "authStartDate": "2026.02.25", "authEndDate": "2026.04.26",
+            "internalAuthPeriod": "2026.01.15 - 2029.01.14", "projectAuthPeriod": "",
+            "workConclusion": null,
+            "rightsReview": [
+              {"rightsId": "RID-030-01", "rightsName": "信息网络传播权", "contractComparison": [
+                {"id":"cc-030-01-1","rule":"授权平台仅限抖音APP及其关联产品","rightsOption":"信息网络传播权-非独家","contractText":"甲方授予乙方对《大唐来的苏无名》在抖音平台的非独家信息网络传播权，授权形式为横屏短剧专区播放。","aiConflict":false,"aiNote":"","conclusion":""},
+                {"id":"cc-030-01-2","rule":"短剧单集时长不超过15分钟","rightsOption":"内容格式要求","contractText":"本合同项下授权内容为横屏短剧，单集时长应控制在10至20分钟之间，每季不少于12集。","aiConflict":true,"aiNote":"AI判定：合同约定单集时长上限为20分钟，超过授权规则限制的15分钟，存在格式合规风险。","conclusion":""},
+                {"id":"cc-030-01-3","rule":"授权期限不得超过内部版权期限","rightsOption":"授权期限合规性","contractText":"本合同授权期限自2026年2月18日起至2027年1月14日止。甲方确认内部版权持有期限为2026年1月15日至2029年1月14日。","aiConflict":false,"aiNote":"","conclusion":""}
+              ], "steps": [
+                {"role": "版权运营", "name": "版权运营初审", "status": "completed", "result": "通过", "operator": "张运营", "time": "2026.02.20 09:00"},
+                {"role": "法务", "name": "法务复审", "status": "in_progress", "result": "", "operator": "", "time": ""},
+                {"role": "品类运营", "name": "品类运营授权判定", "status": "pending", "result": "", "operator": "", "time": ""}
+              ]},
+              {"rightsId": "RID-030-02", "rightsName": "转授权", "contractComparison": [
+                {"id":"cc-030-02-1","rule":"转授权需获得原版权方书面同意","rightsOption":"转授权许可","contractText":"本合同不包含转授权条款，乙方不得将本合同项下的任何权利转授权给第三方。","aiConflict":false,"aiNote":"","conclusion":""}
+              ], "steps": [
+                {"role": "版权运营", "name": "版权运营初审", "status": "pending", "result": "", "operator": "", "time": ""},
+                {"role": "法务", "name": "法务复审", "status": "pending", "result": "", "operator": "", "time": ""},
+                {"role": "品类运营", "name": "品类运营授权判定", "status": "pending", "result": "", "operator": "", "time": ""}
+              ]}
+            ]
+          }
+        ],
+        "applications": [
+          {"id": "APP-001", "title": "新增综艺类目授权申请", "type": "品类扩展", "applicant": "张三", "time": "2026.02.20", "status": "审批中", "approvalSteps": [
+            {"name": "提交申请", "status": "completed", "operator": "张三", "time": "2026.02.20 10:00", "result": "已提交"},
+            {"name": "运营审核", "status": "in_progress", "operator": "", "time": "", "result": ""},
+            {"name": "负责人审批", "status": "pending", "operator": "", "time": "", "result": ""}
+          ]},
+          {"id": "APP-002", "title": "扩展短剧品类授权范围", "type": "品类扩展", "applicant": "李四", "time": "2026.02.25", "status": "已通过", "approvalSteps": [
+            {"name": "提交申请", "status": "completed", "operator": "李四", "time": "2026.02.25 09:00", "result": "已提交"},
+            {"name": "运营审核", "status": "completed", "operator": "王品类", "time": "2026.02.26 14:00", "result": "通过"},
+            {"name": "负责人审批", "status": "completed", "operator": "赵总", "time": "2026.02.27 10:00", "result": "通过"}
+          ]}
+        ],
+        "approvals": [
+          {"id": "APR-001", "title": "新增综艺类目授权申请", "type": "品类扩展", "applicant": "张三", "time": "2026.02.20", "status": "待审批", "node": "部门负责人审批", "relatedAppId": "APP-001", "approvalSteps": [
+            {"name": "提交申请", "status": "completed", "operator": "张三", "time": "2026.02.20 10:00", "result": "已提交"},
+            {"name": "运营审核", "status": "in_progress", "operator": "", "time": "", "result": ""},
+            {"name": "负责人审批", "status": "pending", "operator": "", "time": "", "result": ""}
+          ]},
+          {"id": "APR-002", "title": "扩展短剧品类授权范围", "type": "品类扩展", "applicant": "李四", "time": "2026.02.25", "status": "已通过", "node": "已完成", "relatedAppId": "APP-002", "approvalSteps": [
+            {"name": "提交申请", "status": "completed", "operator": "李四", "time": "2026.02.25 09:00", "result": "已提交"},
+            {"name": "运营审核", "status": "completed", "operator": "王品类", "time": "2026.02.26 14:00", "result": "通过"},
+            {"name": "负责人审批", "status": "completed", "operator": "赵总", "time": "2026.02.27 10:00", "result": "通过"}
+          ]}
+        ]
+      }
+    },
+    {
+      "id": "PRJ-2026-002",
+      "name": "快手授权项目",
+      "authPeriod": "2026.02.01 - 2026.08.01",
+      "type": "长期授权项目",
+      "status": "applying",
+      "statusLabel": "申请中",
+      "pendingConfirm": 8,
+      "pendingApply": 4,
+      "pendingApproval": 1,
+      "detail": {
+        "applications": [
+          {"id": "APP-003", "title": "快手平台长期授权合作申请", "type": "项目授权", "applicant": "王五", "time": "2026.01.28", "status": "审批中", "approvalSteps": [
+            {"name": "提交申请", "status": "completed", "operator": "王五", "time": "2026.01.28 09:00", "result": "已提交"},
+            {"name": "法务审核", "status": "in_progress", "operator": "", "time": "", "result": ""},
+            {"name": "负责人审批", "status": "pending", "operator": "", "time": "", "result": ""}
+          ]},
+          {"id": "APP-004", "title": "快手短剧频道授权补充申请", "type": "品类扩展", "applicant": "赵六", "time": "2026.02.05", "status": "待提交", "approvalSteps": []}
+        ],
+        "approvals": [
+          {"id": "APR-003", "title": "快手平台长期授权合作申请", "type": "项目授权", "applicant": "王五", "time": "2026.01.28", "status": "待审批", "node": "法务审核", "relatedAppId": "APP-003", "approvalSteps": [
+            {"name": "提交申请", "status": "completed", "operator": "王五", "time": "2026.01.28 09:00", "result": "已提交"},
+            {"name": "法务审核", "status": "in_progress", "operator": "", "time": "", "result": ""},
+            {"name": "负责人审批", "status": "pending", "operator": "", "time": "", "result": ""}
+          ]},
+          {"id": "APR-004", "title": "快手短剧频道授权补充申请", "type": "品类扩展", "applicant": "赵六", "time": "2026.02.05", "status": "待提交", "node": "未开始", "relatedAppId": "APP-004", "approvalSteps": []}
+        ]
+      }
+    },
+    {
+      "id": "PRJ-2025-018",
+      "name": "B站联合授权项目",
+      "authPeriod": "2025.06.01 - 2026.05.31",
+      "type": "长期授权项目",
+      "status": "terminated",
+      "statusLabel": "已终止",
+      "pendingConfirm": 0,
+      "pendingApply": 0,
+      "pendingApproval": 0,
+      "detail": {
+        "projectData": {
+          "totalDaily": 186,
+          "expiringWithin35Days": 23,
+          "rightsConflictRisk": 5,
+          "categories": {
+            "tv": 62,
+            "anime": 48,
+            "movie": 22,
+            "variety": 18,
+            "documentary": 15,
+            "kids": 12,
+            "shortDrama": 9
+          },
+          "monthlyData": [
+            {"month": "2025-06", "daily": 145},
+            {"month": "2025-07", "daily": 168},
+            {"month": "2025-08", "daily": 182},
+            {"month": "2025-09", "daily": 190},
+            {"month": "2025-10", "daily": 195},
+            {"month": "2025-11", "daily": 186},
+            {"month": "2025-12", "daily": 172},
+            {"month": "2026-01", "daily": 160},
+            {"month": "2026-02", "daily": 148}
+          ],
+          "quarterlyData": [
+            {"quarter": "2025Q2", "daily": 145, "type": "actual"},
+            {"quarter": "2025Q3", "daily": 180, "type": "actual"},
+            {"quarter": "2025Q4", "daily": 184, "type": "actual"},
+            {"quarter": "2026Q1", "daily": 156, "type": "estimated"}
+          ]
+        },
+        "authDetails": [
+          {"id": "AUTH-010", "workName": "鬼吹灯之昆仑神宫", "category": "电视剧", "releaseDate": "2025.05.20", "bqid": "bq2078963", "mainCid": "mzc002006vla6xn", "rightsId": "bq2078963-o1161011", "contractNo": "T180-PCG-2025040500002", "status": "已回收", "authStartDate": "2025.06.10", "authEndDate": "2025.08.09"},
+          {"id": "AUTH-011", "workName": "斗破苍穹年番", "category": "动漫", "releaseDate": "2025.06.01", "bqid": "bq2078971", "mainCid": "mzc002007wmb5wm", "rightsId": "bq2078971-o1161019", "contractNo": "T180-PCG-2025040500008", "status": "已回收", "authStartDate": "2025.06.15", "authEndDate": "2025.08.14"},
+          {"id": "AUTH-012", "workName": "人世间", "category": "电视剧", "releaseDate": "2025.03.15", "bqid": "bq2078986", "mainCid": "mzc002008xnc4vl", "rightsId": "bq2078986-o1161034", "contractNo": "T180-PCG-2025041800011", "status": "已回收", "authStartDate": "2025.07.01", "authEndDate": "2025.08.30"},
+          {"id": "AUTH-013", "workName": "夏花", "category": "电影", "releaseDate": "2025.08.10", "bqid": "bq2079201", "mainCid": "mzc00200cdef3gh", "rightsId": "bq2079201-o1161201", "contractNo": "T180-PCG-2025060200003", "status": "已回收", "authStartDate": "2025.08.15", "authEndDate": "2025.10.14"},
+          {
+            "id": "AUTH-014", "workName": "漫长的季节", "category": "电视剧", "releaseDate": "2025.04.22", "bqid": "bq2078994", "mainCid": "mzc002009yod3uk", "rightsId": "bq2078994-o1161042", "contractNo": "T180-PCG-2025041800017", "status": "已回收", "authStartDate": "2025.07.10", "authEndDate": "2025.09.08",
+            "internalAuthPeriod": "2025.02.01 - 2027.01.31", "projectAuthPeriod": "2025.06.01 - 2025.12.31",
+            "workConclusion": {"result": "复审判定可授权", "modifier": "赵法务", "modifyTime": "2025.07.10 11:30"},
+            "rightsReview": [
+              {"rightsId": "RID-014-01", "rightsName": "信息网络传播权", "contractComparison": [
+                {"id":"cc-014-01-1","rule":"授权平台仅限B站及其关联产品","rightsOption":"信息网络传播权-非独家","contractText":"甲方授予乙方对《漫长的季节》在B站平台的非独家信息网络传播权。","aiConflict":false,"aiNote":"","conclusion":"可授权"},
+                {"id":"cc-014-01-2","rule":"授权期限不得超过内部版权期限","rightsOption":"授权期限合规性","contractText":"本合同授权期限自2025年6月1日起至2025年12月31日止。","aiConflict":false,"aiNote":"","conclusion":"可授权"}
+              ], "steps": [
+                {"role": "版权运营", "name": "版权运营初审", "status": "completed", "result": "存在风险", "operator": "张运营", "time": "2025.07.05 09:00"},
+                {"role": "法务", "name": "法务复审", "status": "completed", "result": "通过", "operator": "赵法务", "time": "2025.07.08 14:00"},
+                {"role": "品类运营", "name": "品类运营授权判定", "status": "completed", "result": "可授权", "operator": "王品类", "time": "2025.07.10 10:00"}
+              ]}
+            ]
+          }
+        ],
+        "applications": [
+          {"id": "APP-005", "title": "B站联合授权终止申请", "type": "项目终止", "applicant": "钱七", "time": "2026.01.15", "status": "已通过", "approvalSteps": [
+            {"name": "提交申请", "status": "completed", "operator": "钱七", "time": "2026.01.15 09:00", "result": "已提交"},
+            {"name": "运营审核", "status": "completed", "operator": "张运营", "time": "2026.01.16 14:00", "result": "通过"},
+            {"name": "负责人审批", "status": "completed", "operator": "赵总", "time": "2026.01.17 10:00", "result": "通过"}
+          ]}
+        ],
+        "approvals": [
+          {"id": "APR-005", "title": "B站联合授权终止申请", "type": "项目终止", "applicant": "钱七", "time": "2026.01.15", "status": "已通过", "node": "已完成", "relatedAppId": "APP-005", "approvalSteps": [
+            {"name": "提交申请", "status": "completed", "operator": "钱七", "time": "2026.01.15 09:00", "result": "已提交"},
+            {"name": "运营审核", "status": "completed", "operator": "张运营", "time": "2026.01.16 14:00", "result": "通过"},
+            {"name": "负责人审批", "status": "completed", "operator": "赵总", "time": "2026.01.17 10:00", "result": "通过"}
+          ]}
+        ]
+      }
+    },
+    {
+      "id": "PRJ-2026-003",
+      "name": "微信视频号授权项目",
+      "authPeriod": "2026.01.20 - 2027.01.19",
+      "type": "长期授权项目",
+      "status": "authorizing",
+      "statusLabel": "授权中",
+      "pendingConfirm": 3,
+      "pendingApply": 2,
+      "pendingApproval": 1,
+      "detail": {
+        "projectData": {
+          "totalDaily": 245,
+          "expiringWithin35Days": 31,
+          "rightsConflictRisk": 8,
+          "categories": {
+            "tv": 78,
+            "anime": 38,
+            "movie": 35,
+            "variety": 40,
+            "documentary": 22,
+            "kids": 18,
+            "shortDrama": 14
+          },
+          "monthlyData": [
+            {"month": "2026-01", "daily": 220},
+            {"month": "2026-02", "daily": 238},
+            {"month": "2026-03", "daily": 245}
+          ],
+          "quarterlyData": [
+            {"quarter": "2025Q4", "daily": 198, "type": "actual"},
+            {"quarter": "2026Q1", "daily": 234, "type": "estimated"},
+            {"quarter": "2026Q2", "daily": 260, "type": "forecast"},
+            {"quarter": "2026Q3", "daily": 275, "type": "forecast"},
+            {"quarter": "2026Q4", "daily": 290, "type": "forecast"}
+          ]
+        },
+        "authDetails": [
+          {"id": "AUTH-020", "workName": "繁花", "category": "电视剧", "releaseDate": "2026.01.10", "bqid": "bq2078889", "mainCid": "mzc00200xjds5fv", "rightsId": "bq2078889-o1160937", "contractNo": "T180-PCG-2025021500011", "status": "授权中", "authStartDate": "2026.01.25", "authEndDate": "2026.03.26"},
+          {"id": "AUTH-021", "workName": "完美世界", "category": "动漫", "releaseDate": "2026.01.18", "bqid": "bq2078895", "mainCid": "mzc00200ynet7eu", "rightsId": "bq2078895-o1160943", "contractNo": "T180-PCG-2025021500017", "status": "授权中", "authStartDate": "2026.02.01", "authEndDate": "2026.04.02"},
+          {"id": "AUTH-022", "workName": "十日游戏", "category": "电视剧", "releaseDate": "2026.02.05", "bqid": "bq2078908", "mainCid": "mzc00200zpfu9dt", "rightsId": "bq2078908-o1160956", "contractNo": "T180-PCG-2025022800006", "status": "授权中", "authStartDate": "2026.02.15", "authEndDate": "2026.04.16"},
+          {"id": "AUTH-023", "workName": "萌探2026", "category": "综艺", "releaseDate": "2026.02.20", "bqid": "bq2078916", "mainCid": "mzc002001qgv0cs", "rightsId": "bq2078916-o1160964", "contractNo": "T180-PCG-2025022800012", "status": "授权中", "authStartDate": "2026.02.28", "authEndDate": "2026.04.29"},
+          {"id": "AUTH-024", "workName": "小巷人家", "category": "电视剧", "releaseDate": "2025.12.28", "bqid": "bq2079305", "mainCid": "mzc00200defg4hi", "rightsId": "bq2079305-o1161305", "contractNo": "T180-PCG-2025070100006", "status": "已回收", "authStartDate": "2025.12.30", "authEndDate": "2026.02.28"},
+          {"id": "AUTH-025", "workName": "宝宝巴士", "category": "少儿", "releaseDate": "2026.01.05", "bqid": "bq2078924", "mainCid": "mzc002002rhw3br", "rightsId": "bq2078924-o1160972", "contractNo": "T180-PCG-2025031000003", "status": "授权中", "authStartDate": "2026.01.10", "authEndDate": "2026.03.11"},
+          {
+            "id": "AUTH-026", "workName": "去有风的地方", "category": "电视剧", "releaseDate": "2025.11.20", "bqid": "bq2078932", "mainCid": "mzc002003six2aq", "rightsId": "bq2078932-o1160980", "contractNo": "T180-PCG-2025031000009", "status": "已回收", "authStartDate": "2025.11.25", "authEndDate": "2026.01.24",
+            "internalAuthPeriod": "2025.09.01 - 2028.08.31", "projectAuthPeriod": "2026.01.20 - 2027.01.19",
+            "workConclusion": {"result": "复审判定可授权", "modifier": "李法务", "modifyTime": "2026.02.08 15:00"},
+            "rightsReview": [
+              {"rightsId": "RID-026-01", "rightsName": "信息网络传播权", "contractComparison": [
+                {"id":"cc-026-01-1","rule":"授权平台仅限微信视频号及其关联产品","rightsOption":"信息网络传播权-非独家","contractText":"甲方授予乙方对《去有风的地方》在微信视频号平台的非独家信息网络传播权，含正片及精彩片段。","aiConflict":false,"aiNote":"","conclusion":"可授权"},
+                {"id":"cc-026-01-2","rule":"需确认与其他平台独家协议不冲突","rightsOption":"排他性审查","contractText":"乙方确认本授权为非独家授权，不影响甲方与其他平台已签署的授权协议。","aiConflict":true,"aiNote":"AI判定：虽然合同声明为非独家授权，但需确认甲方与其他平台的独家协议条款是否限制了视频号平台的传播权授予。","conclusion":"可授权"}
+              ], "steps": [
+                {"role": "版权运营", "name": "版权运营初审", "status": "completed", "result": "存在风险", "operator": "张运营", "time": "2026.02.02 09:00"},
+                {"role": "法务", "name": "法务复审", "status": "completed", "result": "通过", "operator": "李法务", "time": "2026.02.05 14:00"},
+                {"role": "品类运营", "name": "品类运营授权判定", "status": "completed", "result": "可授权", "operator": "王品类", "time": "2026.02.08 10:00"}
+              ]},
+              {"rightsId": "RID-026-02", "rightsName": "转授权", "steps": [
+                {"role": "版权运营", "name": "版权运营初审", "status": "completed", "result": "通过", "operator": "张运营", "time": "2026.02.02 10:00"},
+                {"role": "法务", "name": "法务复审", "status": "completed", "result": "通过", "operator": "李法务", "time": "2026.02.05 15:00"},
+                {"role": "品类运营", "name": "品类运营授权判定", "status": "completed", "result": "可授权", "operator": "王品类", "time": "2026.02.08 11:00"}
+              ]}
+            ]
+          }
+        ],
+        "applications": [
+          {"id": "APP-006", "title": "视频号短剧专区授权扩展", "type": "品类扩展", "applicant": "孙八", "time": "2026.02.28", "status": "审批中", "approvalSteps": [
+            {"name": "提交申请", "status": "completed", "operator": "孙八", "time": "2026.02.28 09:00", "result": "已提交"},
+            {"name": "内容审核", "status": "in_progress", "operator": "", "time": "", "result": ""},
+            {"name": "负责人审批", "status": "pending", "operator": "", "time": "", "result": ""}
+          ]}
+        ],
+        "approvals": [
+          {"id": "APR-006", "title": "视频号短剧专区授权扩展", "type": "品类扩展", "applicant": "孙八", "time": "2026.02.28", "status": "待审批", "node": "内容审核", "relatedAppId": "APP-006", "approvalSteps": [
+            {"name": "提交申请", "status": "completed", "operator": "孙八", "time": "2026.02.28 09:00", "result": "已提交"},
+            {"name": "内容审核", "status": "in_progress", "operator": "", "time": "", "result": ""},
+            {"name": "负责人审批", "status": "pending", "operator": "", "time": "", "result": ""}
+          ]}
+        ]
+      }
+    },
+    {
+      "id": "PRJ-2026-004",
+      "name": "小红书短剧授权项目",
+      "authPeriod": "2026.03.01 - 2026.09.30",
+      "type": "单次授权项目",
+      "status": "applying",
+      "statusLabel": "申请中",
+      "pendingConfirm": 6,
+      "pendingApply": 3,
+      "pendingApproval": 0,
+      "detail": {
+        "applications": [
+          {"id": "APP-007", "title": "小红书短剧平台单次授权申请", "type": "项目授权", "applicant": "周九", "time": "2026.02.20", "status": "审批中", "approvalSteps": [
+            {"name": "提交申请", "status": "completed", "operator": "周九", "time": "2026.02.20 10:00", "result": "已提交"},
+            {"name": "商务审核", "status": "in_progress", "operator": "", "time": "", "result": ""},
+            {"name": "负责人审批", "status": "pending", "operator": "", "time": "", "result": ""}
+          ]}
+        ],
+        "approvals": [
+          {"id": "APR-007", "title": "小红书短剧平台单次授权申请", "type": "项目授权", "applicant": "周九", "time": "2026.02.20", "status": "待审批", "node": "商务审核", "relatedAppId": "APP-007", "approvalSteps": [
+            {"name": "提交申请", "status": "completed", "operator": "周九", "time": "2026.02.20 10:00", "result": "已提交"},
+            {"name": "商务审核", "status": "in_progress", "operator": "", "time": "", "result": ""},
+            {"name": "负责人审批", "status": "pending", "operator": "", "time": "", "result": ""}
+          ]}
+        ]
+      }
+    },
+    {
+      "id": "PRJ-2026-005",
+      "name": "星光大赏大屏广告素材授权项目",
+      "authPeriod": "2026.03.10 - 2026.04.10",
+      "type": "单次授权项目",
+      "status": "applying",
+      "statusLabel": "申请中",
+      "pendingConfirm": 4,
+      "pendingApply": 1,
+      "pendingApproval": 2,
+      "detail": {
+        "applications": [
+          {"id": "APP-008", "title": "星光大赏大屏广告素材授权申请", "type": "项目授权", "applicant": "吴十", "time": "2026.03.01", "status": "审批中", "approvalSteps": [
+            {"name": "提交申请", "status": "completed", "operator": "吴十", "time": "2026.03.01 10:00", "result": "已提交"},
+            {"name": "市场部审核", "status": "in_progress", "operator": "", "time": "", "result": ""},
+            {"name": "负责人审批", "status": "pending", "operator": "", "time": "", "result": ""}
+          ]}
+        ],
+        "approvals": [
+          {"id": "APR-008", "title": "星光大赏大屏广告素材授权申请", "type": "项目授权", "applicant": "吴十", "time": "2026.03.01", "status": "待审批", "node": "市场部审核", "relatedAppId": "APP-008", "approvalSteps": [
+            {"name": "提交申请", "status": "completed", "operator": "吴十", "time": "2026.03.01 10:00", "result": "已提交"},
+            {"name": "市场部审核", "status": "in_progress", "operator": "", "time": "", "result": ""},
+            {"name": "负责人审批", "status": "pending", "operator": "", "time": "", "result": ""}
+          ]}
+        ]
+      }
+    }
+  ],
+  "rightsReviewDetail": {
+    "reviewNodes": [
+      {
+        "id": "node-1",
+        "name": "权益初审",
+        "role": "版权运营",
+        "status": "reviewed",
+        "reviewer": "张运营",
+        "reviewTime": "2026.03.04 10:30",
+        "conclusionOptions": ["可用", "权利瑕疵"],
+        "defectTypeOptions": ["转授或剪辑需书面确认", "联合转授", "收益共享", "无剪辑权", "非独可转授"],
+        "conclusion": "权利瑕疵",
+        "defectType": "转授或剪辑需书面确认",
+        "defectReason": "",
+        "remark": "合同授权范围不含短视频二创权益，需补充确认函"
+      },
+      {
+        "id": "node-2",
+        "name": "权益复审",
+        "role": "法务",
+        "status": "pending",
+        "reviewer": "",
+        "reviewTime": "",
+        "conclusionOptions": ["可用", "权利瑕疵"],
+        "defectTypeOptions": ["转授或剪辑需书面确认", "联合转授", "收益共享", "无剪辑权", "非独可转授"],
+        "disposalOptions": ["需补剪辑确认函", "需补权利回收函", "需补其他文件，待沟通"],
+        "conclusion": "",
+        "defectType": "",
+        "disposal": "",
+        "remark": "",
+        "authBasisRightsId": ""
+      },
+      {
+        "id": "node-3",
+        "name": "运营授权评估",
+        "role": "品类运营",
+        "status": "pending",
+        "reviewer": "",
+        "reviewTime": "",
+        "authJudgeOptions": ["可授权", "不授权"],
+        "authJudge": "",
+        "defectDisposalConclusionOptions": ["可补确认函", "无法补确认函", "不补函"],
+        "defectDisposalConclusion": "",
+        "denyReasonOptions": ["时长考量", "内容考量", "无法补确认函"],
+        "denyReason": "",
+        "authPlatformOptions": ["快手", "抖音"],
+        "authPlatform": "",
+        "platformDates": {},
+        "authDateDisplay": ""
+      }
+    ],
+    "sampleRightsDetail": {
+      "RR-UGC-001": [
+        {
+          "rightsId": "bq2078802-o1160834",
+          "contractNo": "T180-PCG-2024121700007",
+          "copyrightType": "引入版权",
+          "authRights": "信息网络传播权",
+          "clipLimitCondition": "片段使用不超过单集时长10%",
+          "clipOtherCondition": "",
+          "clipDurationRequirement": "单条≤5分钟",
+          "authRightsContractClause": "甲方授予乙方在抖音短视频平台的信息网络传播权",
+          "authStartDate": "2026.03.01",
+          "authEndDate": "2027.03.01",
+          "authPeriod": "12个月",
+          "authExpiryBuffer": "30天",
+          "payType": "免费",
+          "authNature": "非独占",
+          "sublicenseAllowed": "否",
+          "sublicenseLimitCondition": "",
+          "sublicenseOtherCondition": "",
+          "sublicenseDateType": "",
+          "sublicenseDate": "",
+          "authPlatformSpecialNote": "",
+          "authPlatformContractClause": "仅限抖音APP及关联产品",
+          "authTerritory": "中国大陆",
+          "authTerritoryOther": "",
+          "ugcRightsExist": "有",
+          "ugcRightsExtraPay": "否",
+          "ugcRightsExtraPayRemark": "",
+          "ugcRightsExclusive": "非独占",
+          "ugcRightsExclusiveRemark": "",
+          "ugcRightsSublicense": "否",
+          "ugcRightsSublicenseCondition": "",
+          "ugcOutputDuration": "≤5分钟",
+          "ugcOutputDurationRemark": "",
+          "ugcOutputQuantity": "不限",
+          "ugcOutputQuantityRemark": "",
+          "ugcSpreadChannel": "抖音、头条",
+          "ugcSpreadChannelRemark": "",
+          "ugcSpreadPeriod": "授权期内",
+          "ugcSpreadPeriodRemark": "",
+          "ugcSpreadTerritory": "中国大陆",
+          "ugcSpreadTerritoryRemark": "",
+          "clipConfirmLetter": "无需",
+          "manualAuthExternal": "可授权",
+          "rightsFirstReviewOpinion": "合同范围覆盖，可用",
+          "rightsSecondReviewOpinion": "",
+          "copyrightAuthExternal": "可用",
+          "systemDenyReason": "",
+          "reviewNode": "权益复审待审",
+          "distributionPlatform": "抖音",
+          "distributionTerminal": "移动端",
+          "distributionPlatformSpecialNote": "",
+          "specialNote": "",
+          "specialNoteRemark": ""
+        },
+        {
+          "rightsId": "bq2078802-o1160835",
+          "contractNo": "T180-PCG-2024121700010",
+          "copyrightType": "引入自制",
+          "authRights": "改编权",
+          "clipLimitCondition": "需注明来源",
+          "clipOtherCondition": "仅限剧情类二创",
+          "clipDurationRequirement": "单条≤15分钟",
+          "authRightsContractClause": "甲方授予乙方基于本剧的改编二创权利",
+          "authStartDate": "2026.03.01",
+          "authEndDate": "2027.03.01",
+          "authPeriod": "12个月",
+          "authExpiryBuffer": "15天",
+          "payType": "分成",
+          "authNature": "非独占",
+          "sublicenseAllowed": "否",
+          "sublicenseLimitCondition": "",
+          "sublicenseOtherCondition": "",
+          "sublicenseDateType": "",
+          "sublicenseDate": "",
+          "authPlatformSpecialNote": "",
+          "authPlatformContractClause": "抖音及关联产品",
+          "authTerritory": "中国大陆",
+          "authTerritoryOther": "",
+          "ugcRightsExist": "有",
+          "ugcRightsExtraPay": "否",
+          "ugcRightsExtraPayRemark": "",
+          "ugcRightsExclusive": "非独占",
+          "ugcRightsExclusiveRemark": "",
+          "ugcRightsSublicense": "否",
+          "ugcRightsSublicenseCondition": "",
+          "ugcOutputDuration": "≤15分钟",
+          "ugcOutputDurationRemark": "",
+          "ugcOutputQuantity": "不限",
+          "ugcOutputQuantityRemark": "",
+          "ugcSpreadChannel": "抖音",
+          "ugcSpreadChannelRemark": "",
+          "ugcSpreadPeriod": "授权期内",
+          "ugcSpreadPeriodRemark": "",
+          "ugcSpreadTerritory": "中国大陆",
+          "ugcSpreadTerritoryRemark": "",
+          "clipConfirmLetter": "无需",
+          "manualAuthExternal": "可授权",
+          "rightsFirstReviewOpinion": "改编范围合规",
+          "rightsSecondReviewOpinion": "",
+          "copyrightAuthExternal": "可用",
+          "systemDenyReason": "",
+          "reviewNode": "权益复审待审",
+          "distributionPlatform": "抖音",
+          "distributionTerminal": "移动端",
+          "distributionPlatformSpecialNote": "",
+          "specialNote": "",
+          "specialNoteRemark": ""
+        },
+        {
+          "rightsId": "bq2078802-o1160836",
+          "contractNo": "T180-PCG-2024121700011",
+          "copyrightType": "引入定制",
+          "authRights": "信息网络传播权",
+          "clipLimitCondition": "品牌定制内容专用",
+          "clipOtherCondition": "品牌审核通过方可使用",
+          "clipDurationRequirement": "单条≤3分钟",
+          "authRightsContractClause": "甲方授予乙方对品牌定制内容的传播权",
+          "authStartDate": "2026.04.01",
+          "authEndDate": "2026.12.31",
+          "authPeriod": "9个月",
+          "authExpiryBuffer": "0天",
+          "payType": "固定费用",
+          "authNature": "独占",
+          "sublicenseAllowed": "否",
+          "sublicenseLimitCondition": "",
+          "sublicenseOtherCondition": "",
+          "sublicenseDateType": "",
+          "sublicenseDate": "",
+          "authPlatformSpecialNote": "品牌植入内容需提前审核",
+          "authPlatformContractClause": "抖音品牌专区",
+          "authTerritory": "中国大陆",
+          "authTerritoryOther": "",
+          "ugcRightsExist": "无",
+          "ugcRightsExtraPay": "",
+          "ugcRightsExtraPayRemark": "",
+          "ugcRightsExclusive": "",
+          "ugcRightsExclusiveRemark": "",
+          "ugcRightsSublicense": "",
+          "ugcRightsSublicenseCondition": "",
+          "ugcOutputDuration": "",
+          "ugcOutputDurationRemark": "",
+          "ugcOutputQuantity": "",
+          "ugcOutputQuantityRemark": "",
+          "ugcSpreadChannel": "",
+          "ugcSpreadChannelRemark": "",
+          "ugcSpreadPeriod": "",
+          "ugcSpreadPeriodRemark": "",
+          "ugcSpreadTerritory": "",
+          "ugcSpreadTerritoryRemark": "",
+          "clipConfirmLetter": "无需",
+          "manualAuthExternal": "可授权",
+          "rightsFirstReviewOpinion": "品牌定制授权合规",
+          "rightsSecondReviewOpinion": "",
+          "copyrightAuthExternal": "可用",
+          "systemDenyReason": "",
+          "reviewNode": "权益复审待审",
+          "distributionPlatform": "抖音",
+          "distributionTerminal": "移动端",
+          "distributionPlatformSpecialNote": "品牌植入内容需审核",
+          "specialNote": "品牌植入内容需审核",
+          "specialNoteRemark": "需品牌方和版权方双重确认"
+        }
+      ],
+      "RR-UGC-002": [
+        {
+          "rightsId": "bq2078803-o1160835",
+          "contractNo": "T180-PCG-2024121700008",
+          "copyrightType": "引入版权",
+          "authRights": "信息网络传播权",
+          "clipLimitCondition": "仅限同人创作",
+          "clipOtherCondition": "",
+          "clipDurationRequirement": "单条≤3分钟",
+          "authRightsContractClause": "甲方授予乙方在B站平台的信息网络传播权",
+          "authStartDate": "2026.02.15",
+          "authEndDate": "2026.08.15",
+          "authPeriod": "6个月",
+          "authExpiryBuffer": "15天",
+          "payType": "固定费用",
+          "authNature": "独占",
+          "sublicenseAllowed": "否",
+          "sublicenseLimitCondition": "",
+          "sublicenseOtherCondition": "",
+          "sublicenseDateType": "",
+          "sublicenseDate": "",
+          "authPlatformSpecialNote": "",
+          "authPlatformContractClause": "B站及关联产品",
+          "authTerritory": "中国大陆",
+          "authTerritoryOther": "",
+          "ugcRightsExist": "有",
+          "ugcRightsExtraPay": "否",
+          "ugcRightsExtraPayRemark": "",
+          "ugcRightsExclusive": "独占",
+          "ugcRightsExclusiveRemark": "B站平台独占",
+          "ugcRightsSublicense": "否",
+          "ugcRightsSublicenseCondition": "",
+          "ugcOutputDuration": "≤3分钟",
+          "ugcOutputDurationRemark": "",
+          "ugcOutputQuantity": "不限",
+          "ugcOutputQuantityRemark": "",
+          "ugcSpreadChannel": "B站",
+          "ugcSpreadChannelRemark": "",
+          "ugcSpreadPeriod": "授权期内",
+          "ugcSpreadPeriodRemark": "",
+          "ugcSpreadTerritory": "中国大陆",
+          "ugcSpreadTerritoryRemark": "",
+          "clipConfirmLetter": "无需",
+          "manualAuthExternal": "可授权",
+          "rightsFirstReviewOpinion": "合同范围覆盖",
+          "rightsSecondReviewOpinion": "",
+          "copyrightAuthExternal": "可用",
+          "systemDenyReason": "",
+          "reviewNode": "已确权",
+          "distributionPlatform": "B站",
+          "distributionTerminal": "全终端",
+          "distributionPlatformSpecialNote": "",
+          "specialNote": "需审核片段内容",
+          "specialNoteRemark": ""
+        },
+        {
+          "rightsId": "bq2078803-o1160836",
+          "contractNo": "T180-PCG-2024121700009",
+          "copyrightType": "引入置换",
+          "authRights": "信息网络传播权",
+          "clipLimitCondition": "解说类二创",
+          "clipOtherCondition": "",
+          "clipDurationRequirement": "单条≤15分钟",
+          "authRightsContractClause": "甲方与乙方进行内容置换合作",
+          "authStartDate": "2026.03.01",
+          "authEndDate": "2026.09.01",
+          "authPeriod": "6个月",
+          "authExpiryBuffer": "0天",
+          "payType": "分成",
+          "authNature": "非独占",
+          "sublicenseAllowed": "是",
+          "sublicenseLimitCondition": "仅限合作MCN机构",
+          "sublicenseOtherCondition": "",
+          "sublicenseDateType": "固定期限",
+          "sublicenseDate": "2026.03.01-2026.09.01",
+          "authPlatformSpecialNote": "",
+          "authPlatformContractClause": "B站及关联产品",
+          "authTerritory": "中国大陆",
+          "authTerritoryOther": "",
+          "ugcRightsExist": "有",
+          "ugcRightsExtraPay": "否",
+          "ugcRightsExtraPayRemark": "",
+          "ugcRightsExclusive": "非独占",
+          "ugcRightsExclusiveRemark": "",
+          "ugcRightsSublicense": "是",
+          "ugcRightsSublicenseCondition": "限合作MCN",
+          "ugcOutputDuration": "≤15分钟",
+          "ugcOutputDurationRemark": "",
+          "ugcOutputQuantity": "不限",
+          "ugcOutputQuantityRemark": "",
+          "ugcSpreadChannel": "B站",
+          "ugcSpreadChannelRemark": "",
+          "ugcSpreadPeriod": "授权期内",
+          "ugcSpreadPeriodRemark": "",
+          "ugcSpreadTerritory": "中国大陆",
+          "ugcSpreadTerritoryRemark": "",
+          "clipConfirmLetter": "无需",
+          "manualAuthExternal": "可授权",
+          "rightsFirstReviewOpinion": "置换合作合规",
+          "rightsSecondReviewOpinion": "",
+          "copyrightAuthExternal": "可用",
+          "systemDenyReason": "",
+          "reviewNode": "已确权",
+          "distributionPlatform": "B站",
+          "distributionTerminal": "全终端",
+          "distributionPlatformSpecialNote": "",
+          "specialNote": "",
+          "specialNoteRemark": ""
+        },
+        {
+          "rightsId": "bq2078803-o1160837",
+          "contractNo": "T180-PCG-2024121700012",
+          "copyrightType": "引入自制",
+          "authRights": "广播权",
+          "clipLimitCondition": "直播间播放",
+          "clipOtherCondition": "",
+          "clipDurationRequirement": "不限",
+          "authRightsContractClause": "甲方授予乙方直播间播放权利",
+          "authStartDate": "2026.03.01",
+          "authEndDate": "2026.06.30",
+          "authPeriod": "4个月",
+          "authExpiryBuffer": "0天",
+          "payType": "固定费用",
+          "authNature": "非独占",
+          "sublicenseAllowed": "否",
+          "sublicenseLimitCondition": "",
+          "sublicenseOtherCondition": "",
+          "sublicenseDateType": "",
+          "sublicenseDate": "",
+          "authPlatformSpecialNote": "",
+          "authPlatformContractClause": "B站直播间",
+          "authTerritory": "中国大陆",
+          "authTerritoryOther": "",
+          "ugcRightsExist": "无",
+          "ugcRightsExtraPay": "",
+          "ugcRightsExtraPayRemark": "",
+          "ugcRightsExclusive": "",
+          "ugcRightsExclusiveRemark": "",
+          "ugcRightsSublicense": "",
+          "ugcRightsSublicenseCondition": "",
+          "ugcOutputDuration": "",
+          "ugcOutputDurationRemark": "",
+          "ugcOutputQuantity": "",
+          "ugcOutputQuantityRemark": "",
+          "ugcSpreadChannel": "",
+          "ugcSpreadChannelRemark": "",
+          "ugcSpreadPeriod": "",
+          "ugcSpreadPeriodRemark": "",
+          "ugcSpreadTerritory": "",
+          "ugcSpreadTerritoryRemark": "",
+          "clipConfirmLetter": "无需",
+          "manualAuthExternal": "可授权",
+          "rightsFirstReviewOpinion": "直播授权合规",
+          "rightsSecondReviewOpinion": "",
+          "copyrightAuthExternal": "可用",
+          "systemDenyReason": "",
+          "reviewNode": "已确权",
+          "distributionPlatform": "B站",
+          "distributionTerminal": "全终端",
+          "distributionPlatformSpecialNote": "",
+          "specialNote": "",
+          "specialNoteRemark": ""
+        }
+      ]
+    },
+    "sampleContractTexts": {
+      "bq2078802-o1160834": {
+        "contractTitle": "版权引入合同",
+        "contractNo": "T180-PCG-2024121700007",
+        "contractText": "版权引入合同\n\n合同编号：T180-PCG-2024121700007\n版权权益ID：bq2078802-o1160834\n\n甲方：深圳市腾讯计算机系统有限公司\n乙方：北京字节跳动科技有限公司\n\n鉴于甲方依法享有电视剧《庆余年第三季》（以下简称“本作品”）的信息网络传播权及相关权利，甲乙双方经友好协商，就本作品的版权引入授权事宜达成如下协议：\n\n第一条 版权类型\n本合同涉及的版权类型为引入版权。\n\n第二条 授权权利\n甲方授予乙方在抖音短视频平台的信息网络传播权。\n\n第三条 剪辑权限定条件\n乙方使用本作品素材时，片段使用不超过单集时长10%。剪辑时长要求：单条视频时长不超过5分钟（单条≤5分钟）。\n\n第四条 授权期限\n授权开始日期：2026年3月1日\n授权结束日期：2027年3月1日\n授权期限：12个月\n授权期满后，乙方享有30天缓冲期用于下架已发布内容。\n\n第五条 付费类型与授权性质\n本合同为免费授权，授权性质为非独占。乙方不享有排他性权利，甲方有权将相同权利授予第三方。\n\n第六条 转授权\n本合同项下权利不可转授权，乙方不得将本合同授予的权利再许可给任何第三方。\n\n第七条 授权平台\n仅限抖音APP及关联产品。授权区域：中国大陆。\n\n第八条 二创权利\n甲方确认本作品存在二创权利（权利有无：有）。乙方行使二创权利无需另行付费。二创权利性质为非独占，不可转授权。二创创作成果时长要求：授权使用时长不超过5分钟（≤5分钟），数量不限。二创传播限制：传播渠道限抖音、头条平台，传播期限为授权期内，传播地域为中国大陆。\n\n第九条 剪辑确认函\n本合同无需另行签署剪辑确认函。人工确认授权对外状态：可授权。\n\n第十条 分销信息\n分销平台：抖音。分销终端：移动端。\n\n第十一条 争议解决\n本合同适用中华人民共和国法律，因本合同引起的任何争议，双方应友好协商解决。协商不成的，提交深圳国际仲裁院仲裁。\n\n甲方（盖章）：深圳市腾讯计算机系统有限公司\n乙方（盖章）：北京字节跳动科技有限公司\n签署日期：2024年12月17日"
+      },
+      "bq2078802-o1160835": {
+        "contractTitle": "版权引入合同",
+        "contractNo": "T180-PCG-2024121700010",
+        "contractText": "版权引入合同\n\n合同编号：T180-PCG-2024121700010\n版权权益ID：bq2078802-o1160835\n\n甲方：深圳市腾讯计算机系统有限公司\n乙方：北京字节跳动科技有限公司\n\n鉴于甲方依法享有电视剧《庆余年第三季》（以下简称“本作品”）的改编权及相关权利，甲乙双方就本作品的引入自制授权事宜达成如下协议：\n\n第一条 版权类型\n本合同涉及的版权类型为引入自制。\n\n第二条 授权权利\n甲方授予乙方基于本剧的改编二创权利（改编权）。剪辑权限定条件：需注明来源。剪辑权其他限定条件：仅限剧情类二创。剪辑时长要求：单条≤15分钟。\n\n第三条 授权权利合同条款\n甲方授予乙方基于本剧的改编二创权利，乙方可在授权范围内对本作品内容进行改编创作。\n\n第四条 授权期限\n授权开始日期：2026年3月1日\n授权结束日期：2027年3月1日\n授权期限：12个月\n授权期满缓冲期：15天。\n\n第五条 付费类型与授权性质\n付费类型：分成。授权性质：非独占。\n\n第六条 转授权\n转授权许可：否。\n\n第七条 授权平台与区域\n授权平台合同条款：抖音及关联产品。授权区域：中国大陆。\n\n第八条 二创权利\n二创权利有无：有。另行付费：否。独占性：非独占。转授权：否。创作成果时长要求：≤15分钟。数量要求：不限。传播渠道：抖音。传播期限：授权期内。传播地域：中国大陆。\n\n第九条 审核相关\n剪辑确认函：无需。人工确认授权对外：可授权。分销平台：抖音。分销终端：移动端。\n\n甲方（盖章）：深圳市腾讯计算机系统有限公司\n乙方（盖章）：北京字节跳动科技有限公司\n签署日期：2024年12月17日"
+      },
+      "bq2078802-o1160836": {
+        "contractTitle": "版权引入合同",
+        "contractNo": "T180-PCG-2024121700011",
+        "contractText": "版权引入合同\n\n合同编号：T180-PCG-2024121700011\n版权权益ID：bq2078802-o1160836\n\n甲方：深圳市腾讯计算机系统有限公司\n乙方：某品牌方\n\n鉴于甲方享有电视剧《庆余年第三季》的信息网络传播权，就本作品的引入定制授权事宜达成如下协议：\n\n第一条 版权类型\n本合同涉及的版权类型为引入定制。\n\n第二条 授权权利\n授权权利：信息网络传播权。剪辑权限定条件：品牌定制内容专用。剪辑权其他限定条件：品牌审核通过方可使用。剪辑时长要求：单条≤3分钟。授权权利合同条款：甲方授予乙方对品牌定制内容的传播权。\n\n第三条 授权期限\n授权开始日期：2026年4月1日。授权结束日期：2026年12月31日。授权期限：9个月。授权期满缓冲期：0天。\n\n第四条 付费类型与授权性质\n付费类型：固定费用。授权性质：独占。甲方在本合同有效期内，不得将相同权利授予第三方。\n\n第五条 转授权\n转授权许可：否。\n\n第六条 授权平台与区域\n授权平台特殊说明：品牌植入内容需提前审核。授权平台合同条款：抖音品牌专区。授权区域：中国大陆。\n\n第七条 二创权利\n二创权利有无：无。本合同不包含二创权利。\n\n第八条 审核相关\n剪辑确认函：无需。人工确认授权对外：可授权。\n\n第九条 分销信息\n分销平台：抖音。分销终端：移动端。分销平台特殊说明：品牌植入内容需审核。特殊说明：品牌植入内容需审核。特殊说明备注：需品牌方和版权方双重确认。\n\n甲方（盖章）：深圳市腾讯计算机系统有限公司\n乙方（盖章）：某品牌方\n签署日期：2024年12月17日"
+      },
+      "bq2078803-o1160835": {
+        "contractTitle": "版权引入合同",
+        "contractNo": "T180-PCG-2024121700008",
+        "contractText": "版权引入合同\n\n合同编号：T180-PCG-2024121700008\n版权权益ID：bq2078803-o1160835\n\n甲方：深圳市腾讯计算机系统有限公司\n乙方：上海哔哩哔哩科技有限公司\n\n鉴于甲方依法享有动漫作品《斗罗大陆3》（以下简称“本作品”）的信息网络传播权及相关权利，甲乙双方就本作品的版权引入授权事宜达成如下协议：\n\n第一条 版权类型\n本合同涉及的版权类型为引入版权。\n\n第二条 授权权利\n甲方授予乙方在B站平台的信息网络传播权。剪辑权限定条件：仅限同人创作。剪辑时长要求：单条≤3分钟。授权权利合同条款：甲方授予乙方在B站平台的信息网络传播权。\n\n第三条 授权期限\n授权开始日期：2026年2月15日。授权结束日期：2026年8月15日。授权期限：6个月。授权期满缓冲期：15天。\n\n第四条 付费类型与授权性质\n付费类型：固定费用。授权性质：独占。在授权期内甲方不得将相同权利授予其他平台。\n\n第五条 转授权\n转授权许可：否。\n\n第六条 授权平台与区域\n授权平台合同条款：B站及关联产品。授权区域：中国大陆。\n\n第七条 二创权利\n二创权利有无：有。另行付费：否。独占性：独占（B站平台独占）。转授权：否。创作成果时长要求：≤3分钟。数量要求：不限。传播渠道：B站。传播期限：授权期内。传播地域：中国大陆。\n\n第八条 审核相关\n剪辑确认函：无需。人工确认授权对外：可授权。版权可授权对外：可用。审核节点：已确权。\n\n第九条 分销信息\n分销平台：B站。分销终端：全终端。特殊说明：需审核片段内容。\n\n甲方（盖章）：深圳市腾讯计算机系统有限公司\n乙方（盖章）：上海哔哩哔哩科技有限公司\n签署日期：2024年12月17日"
+      },
+      "bq2078803-o1160836": {
+        "contractTitle": "版权引入合同",
+        "contractNo": "T180-PCG-2024121700009",
+        "contractText": "版权引入合同\n\n合同编号：T180-PCG-2024121700009\n版权权益ID：bq2078803-o1160836\n\n甲方：深圳市腾讯计算机系统有限公司\n乙方：某MCN机构\n\n鉴于甲方享有动漫作品《斗罗大陆3》的信息网络传播权，甲乙双方就本作品的引入置换授权事宜达成如下协议：\n\n第一条 版权类型\n本合同涉及的版权类型为引入置换。\n\n第二条 授权权利\n授权权利：信息网络传播权。剪辑权限定条件：解说类二创。剪辑时长要求：单条≤15分钟。授权权利合同条款：甲方与乙方进行内容置换合作。\n\n第三条 授权期限\n授权开始日期：2026年3月1日。授权结束日期：2026年9月1日。授权期限：6个月。授权期满缓冲期：0天。\n\n第四条 付费类型与授权性质\n付费类型：分成。授权性质：非独占。\n\n第五条 转授权\n转授权许可：是。转授权限定条件：仅限合作MCN机构。转授权起止日期类型：固定期限。转授权起止日期：2026.03.01-2026.09.01。\n\n第六条 授权平台与区域\n授权平台合同条款：B站及关联产品。授权区域：中国大陆。\n\n第七条 二创权利\n二创权利有无：有。另行付费：否。独占性：非独占。转授权：是，限定条件为限合作MCN。创作成果时长要求：≤15分钟。数量要求：不限。传播渠道：B站。传播期限：授权期内。传播地域：中国大陆。\n\n第八条 审核相关\n剪辑确认函：无需。人工确认授权对外：可授权。版权可授权对外：可用。审核节点：已确权。\n\n第九条 分销信息\n分销平台：B站。分销终端：全终端。\n\n甲方（盖章）：深圳市腾讯计算机系统有限公司\n乙方（盖章）：某MCN机构\n签署日期：2024年12月17日"
+      },
+      "bq2078803-o1160837": {
+        "contractTitle": "版权引入合同",
+        "contractNo": "T180-PCG-2024121700012",
+        "contractText": "版权引入合同\n\n合同编号：T180-PCG-2024121700012\n版权权益ID：bq2078803-o1160837\n\n甲方：深圳市腾讯计算机系统有限公司\n乙方：某直播平台\n\n鉴于甲方享有动漫作品《斗罗大陆3》的广播权及相关权利，甲乙双方就本作品的引入自制授权事宜达成如下协议：\n\n第一条 版权类型\n本合同涉及的版权类型为引入自制。\n\n第二条 授权权利\n授权权利：广播权。剪辑权限定条件：直播间播放。剪辑时长要求：不限。授权权利合同条款：甲方授予乙方直播间播放权利。\n\n第三条 授权期限\n授权开始日期：2026年3月1日。授权结束日期：2026年6月30日。授权期限：4个月。授权期满缓冲期：0天。\n\n第四条 付费类型与授权性质\n付费类型：固定费用。授权性质：非独占。\n\n第五条 转授权\n转授权许可：否。\n\n第六条 授权平台与区域\n授权平台合同条款：B站直播间。授权区域：中国大陆。\n\n第七条 二创权利\n二创权利有无：无。本合同不包含二创权利相关条款。\n\n第八条 审核相关\n剪辑确认函：无需。人工确认授权对外：可授权。版权可授权对外：可用。审核节点：已确权。\n\n第九条 分销信息\n分销平台：B站。分销终端：全终端。\n\n第十条 争议解决\n本合同适用中华人民共和国法律，因本合同引起的争议提交深圳国际仲裁院仲裁。\n\n甲方（盖章）：深圳市腾讯计算机系统有限公司\n乙方（盖章）：某直播平台\n签署日期：2024年12月17日"
+      }
+    }
+  }
+}

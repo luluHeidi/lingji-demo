@@ -1,0 +1,226 @@
+{
+  "_dataSource": "⚠️ MOCK DATA — 待替换为正式数据",
+  "_mockReason": "用户确认使用 mock 数据，日期：2026-03-24",
+  "_version": "v2.0",
+
+  "users": [
+    { "userId": "U001", "name": "张小明", "role": "pm", "department": "IP运营一组" },
+    { "userId": "U002", "name": "李小华", "role": "pm", "department": "会员运营组" },
+    { "userId": "U003", "name": "王大伟", "role": "pm", "department": "衍生品运营组" },
+    { "userId": "U004", "name": "赵小丽", "role": "pm", "department": "OTT运营组" },
+    { "userId": "U005", "name": "刘外包A", "role": "outsource", "company": "光影视觉传媒" },
+    { "userId": "U006", "name": "陈外包B", "role": "outsource", "company": "映像工作室" }
+  ],
+
+  "ipList": [
+    { "id": "IP001", "name": "长风渡", "category": "电视剧", "level": "S+", "currentMilestone": "scheduled", "coverUrl": "" },
+    { "id": "IP002", "name": "与凤行", "category": "电视剧", "level": "S", "currentMilestone": "premiere", "coverUrl": "" },
+    { "id": "IP003", "name": "庆余年2", "category": "电视剧", "level": "S+", "currentMilestone": "airing", "coverUrl": "" },
+    { "id": "IP004", "name": "莲花楼2", "category": "电视剧", "level": "S", "currentMilestone": "post_production", "coverUrl": "" },
+    { "id": "IP005", "name": "大奉打更人", "category": "动漫", "level": "A", "currentMilestone": "airing", "coverUrl": "" },
+    { "id": "IP006", "name": "斗罗大陆2", "category": "动漫", "level": "S", "currentMilestone": "scheduled", "coverUrl": "" }
+  ],
+
+  "milestones": [
+    { "id": "pre_production", "label": "筹备期" },
+    { "id": "filming", "label": "拍摄中" },
+    { "id": "post_production", "label": "后期制作" },
+    { "id": "scheduled", "label": "定档" },
+    { "id": "premiere", "label": "开播" },
+    { "id": "airing", "label": "热播中" },
+    { "id": "completed", "label": "完播" }
+  ],
+
+  "materialTypes": [
+    { "id": "poster", "label": "海报", "subTypes": [
+      { "id": "poster_concept", "label": "概念海报" },
+      { "id": "poster_scheduled", "label": "定档海报" },
+      { "id": "poster_premiere", "label": "开播海报" },
+      { "id": "poster_character", "label": "角色海报" },
+      { "id": "poster_reservation", "label": "预约量海报" },
+      { "id": "poster_popularity", "label": "热度值海报" }
+    ]},
+    { "id": "trailer", "label": "预告片", "subTypes": [
+      { "id": "trailer_scheduled", "label": "定档预告" },
+      { "id": "trailer_premiere", "label": "开播预告" },
+      { "id": "trailer_character", "label": "人物预告" }
+    ]},
+    { "id": "still", "label": "剧照", "subTypes": [] },
+    { "id": "special", "label": "特辑/彩蛋/花絮/MV", "subTypes": [
+      { "id": "special_feature", "label": "特辑" },
+      { "id": "special_behind_scenes", "label": "花絮" },
+      { "id": "special_mv", "label": "MV" }
+    ]},
+    { "id": "rare", "label": "稀有素材", "subTypes": [
+      { "id": "rare_exclusive_poster", "label": "独家海报" },
+      { "id": "rare_cp_photo", "label": "CP合体图" }
+    ]},
+    { "id": "ai_raw", "label": "AI训练原料", "subTypes": [
+      { "id": "ai_raw_scene", "label": "场景照片" },
+      { "id": "ai_raw_shot", "label": "镜头截取" }
+    ]}
+  ],
+
+  "uploadTasks": [
+    {
+      "taskId": "TASK-20260320-001",
+      "taskName": "《长风渡》定档期素材采集",
+      "ipId": "IP001", "ipName": "长风渡",
+      "milestone": "scheduled",
+      "status": "active",
+      "creatorId": "U001", "creatorName": "张小明",
+      "createdAt": "2026-03-20T10:00:00",
+      "updatedAt": "2026-03-24T08:30:00",
+      "deadline": "2026-04-15",
+      "description": "定档期全套宣发素材采集，含海报、预告片、首批剧照"
+    },
+    {
+      "taskId": "TASK-20260318-002",
+      "taskName": "《与凤行》开播期素材采集",
+      "ipId": "IP002", "ipName": "与凤行",
+      "milestone": "premiere",
+      "status": "active",
+      "creatorId": "U001", "creatorName": "张小明",
+      "createdAt": "2026-03-18T09:00:00",
+      "updatedAt": "2026-03-23T16:00:00",
+      "deadline": "2026-04-01",
+      "description": "开播期素材补充：开播海报、开播预告、角色海报"
+    },
+    {
+      "taskId": "TASK-20260315-003",
+      "taskName": "《庆余年2》热播期素材补充",
+      "ipId": "IP003", "ipName": "庆余年2",
+      "milestone": "airing",
+      "status": "completed",
+      "creatorId": "U002", "creatorName": "李小华",
+      "createdAt": "2026-03-15T14:00:00",
+      "updatedAt": "2026-03-22T18:00:00",
+      "deadline": "2026-03-25",
+      "description": "热播期花絮、MV、剧照补充"
+    },
+    {
+      "taskId": "TASK-20260322-004",
+      "taskName": "《莲花楼2》筹备期素材预采",
+      "ipId": "IP004", "ipName": "莲花楼2",
+      "milestone": "post_production",
+      "status": "active",
+      "creatorId": "U001", "creatorName": "张小明",
+      "createdAt": "2026-03-22T11:00:00",
+      "updatedAt": "2026-03-24T09:00:00",
+      "deadline": "2026-05-01",
+      "description": "后期制作阶段预采集概念海报和预告片"
+    },
+    {
+      "taskId": "TASK-20260310-005",
+      "taskName": "《大奉打更人》热播期素材采集",
+      "ipId": "IP005", "ipName": "大奉打更人",
+      "milestone": "airing",
+      "status": "active",
+      "creatorId": "U003", "creatorName": "王大伟",
+      "createdAt": "2026-03-10T09:30:00",
+      "updatedAt": "2026-03-23T14:00:00",
+      "deadline": "2026-04-10",
+      "description": "动漫热播期素材采集，含角色海报、花絮、剧照"
+    },
+    {
+      "taskId": "TASK-20260305-006",
+      "taskName": "《斗罗大陆2》定档期素材采集",
+      "ipId": "IP006", "ipName": "斗罗大陆2",
+      "milestone": "scheduled",
+      "status": "completed",
+      "creatorId": "U002", "creatorName": "李小华",
+      "createdAt": "2026-03-05T10:00:00",
+      "updatedAt": "2026-03-20T16:00:00",
+      "deadline": "2026-03-22",
+      "description": "动漫定档期全套素材"
+    },
+    {
+      "taskId": "TASK-20260323-007",
+      "taskName": "《长风渡》角色单人照补充",
+      "ipId": "IP001", "ipName": "长风渡",
+      "milestone": "scheduled",
+      "status": "draft",
+      "creatorId": "U001", "creatorName": "张小明",
+      "createdAt": "2026-03-23T15:00:00",
+      "updatedAt": "2026-03-23T15:00:00",
+      "deadline": null,
+      "description": "补充主演单人角色照"
+    }
+  ],
+
+  "subTasks": [
+    { "subtaskId": "ST-001-01", "taskId": "TASK-20260320-001", "materialType": "定档海报", "materialSubType": "poster_scheduled", "quantity": "横版×2 + 竖版×2", "formatRequirement": "JPG + PSD源文件", "specRequirement": "≥3000px，300dpi，RGB", "deadline": "2026-04-01", "assigneeType": "self", "isSensitive": false, "status": "archived", "uploadedCount": 6, "expectedCount": 6, "note": "" },
+    { "subtaskId": "ST-001-02", "taskId": "TASK-20260320-001", "materialType": "角色海报", "materialSubType": "poster_character", "quantity": "主演5位×横竖各1", "formatRequirement": "JPG + PSD源文件", "specRequirement": "≥3000px，300dpi，RGB", "deadline": "2026-04-05", "assigneeType": "outsource", "isSensitive": false, "status": "delegated", "uploadedCount": 0, "expectedCount": 10, "note": "" },
+    { "subtaskId": "ST-001-03", "taskId": "TASK-20260320-001", "materialType": "定档预告片", "materialSubType": "trailer_scheduled", "quantity": "30s + 60s + 完整版", "formatRequirement": "MP4 H.264", "specRequirement": "1920×1080，≥5Mbps", "deadline": "2026-04-08", "assigneeType": "outsource", "isSensitive": false, "status": "reviewing", "uploadedCount": 3, "expectedCount": 3, "note": "" },
+    { "subtaskId": "ST-001-04", "taskId": "TASK-20260320-001", "materialType": "首批剧照", "materialSubType": "still", "quantity": "≥20张", "formatRequirement": "JPG", "specRequirement": "≥2000px宽", "deadline": "2026-04-10", "assigneeType": "self", "isSensitive": false, "status": "pending", "uploadedCount": 0, "expectedCount": 20, "note": "" },
+    { "subtaskId": "ST-001-05", "taskId": "TASK-20260320-001", "materialType": "授权肖像", "materialSubType": "rare_exclusive_poster", "quantity": "8张", "formatRequirement": "RAW + JPG", "specRequirement": "原始尺寸", "deadline": "2026-04-12", "assigneeType": "self", "isSensitive": true, "status": "pending", "uploadedCount": 0, "expectedCount": 8, "note": "敏感素材，仅限内部上传" },
+
+    { "subtaskId": "ST-002-01", "taskId": "TASK-20260318-002", "materialType": "开播海报", "materialSubType": "poster_premiere", "quantity": "横版×2 + 竖版×2", "formatRequirement": "JPG + PSD", "specRequirement": "≥3000px", "deadline": "2026-03-28", "assigneeType": "outsource", "isSensitive": false, "status": "submitted", "uploadedCount": 4, "expectedCount": 4, "note": "" },
+    { "subtaskId": "ST-002-02", "taskId": "TASK-20260318-002", "materialType": "开播预告", "materialSubType": "trailer_premiere", "quantity": "30s + 完整版", "formatRequirement": "MP4", "specRequirement": "1920×1080", "deadline": "2026-03-30", "assigneeType": "outsource", "isSensitive": false, "status": "submitted", "uploadedCount": 2, "expectedCount": 2, "note": "" },
+    { "subtaskId": "ST-002-03", "taskId": "TASK-20260318-002", "materialType": "角色海报", "materialSubType": "poster_character", "quantity": "主演4位×横竖各1", "formatRequirement": "JPG + PSD", "specRequirement": "≥3000px", "deadline": "2026-04-01", "assigneeType": "outsource", "isSensitive": false, "status": "delegated", "uploadedCount": 0, "expectedCount": 8, "note": "" },
+    { "subtaskId": "ST-002-04", "taskId": "TASK-20260318-002", "materialType": "首批剧照", "materialSubType": "still", "quantity": "≥15张", "formatRequirement": "JPG", "specRequirement": "≥2000px", "deadline": "2026-04-01", "assigneeType": "self", "isSensitive": false, "status": "sorting", "uploadedCount": 18, "expectedCount": 15, "note": "" },
+
+    { "subtaskId": "ST-003-01", "taskId": "TASK-20260315-003", "materialType": "花絮", "materialSubType": "special_behind_scenes", "quantity": "3个", "formatRequirement": "MP4", "specRequirement": "1920×1080", "deadline": "2026-03-22", "assigneeType": "self", "isSensitive": false, "status": "archived", "uploadedCount": 3, "expectedCount": 3, "note": "" },
+    { "subtaskId": "ST-003-02", "taskId": "TASK-20260315-003", "materialType": "MV", "materialSubType": "special_mv", "quantity": "1个", "formatRequirement": "MP4 H.265", "specRequirement": "3840×2160", "deadline": "2026-03-24", "assigneeType": "self", "isSensitive": false, "status": "archived", "uploadedCount": 1, "expectedCount": 1, "note": "" },
+    { "subtaskId": "ST-003-03", "taskId": "TASK-20260315-003", "materialType": "剧照", "materialSubType": "still", "quantity": "≥30张", "formatRequirement": "JPG", "specRequirement": "≥2000px", "deadline": "2026-03-25", "assigneeType": "outsource", "isSensitive": false, "status": "archived", "uploadedCount": 35, "expectedCount": 30, "note": "" },
+
+    { "subtaskId": "ST-004-01", "taskId": "TASK-20260322-004", "materialType": "概念海报", "materialSubType": "poster_concept", "quantity": "3张", "formatRequirement": "JPG + PSD", "specRequirement": "≥3000px", "deadline": "2026-04-15", "assigneeType": "outsource", "isSensitive": false, "status": "delegated", "uploadedCount": 0, "expectedCount": 3, "note": "" },
+    { "subtaskId": "ST-004-02", "taskId": "TASK-20260322-004", "materialType": "预告片", "materialSubType": "trailer_scheduled", "quantity": "概念版1个", "formatRequirement": "MP4", "specRequirement": "1920×1080", "deadline": "2026-04-20", "assigneeType": "self", "isSensitive": false, "status": "pending", "uploadedCount": 0, "expectedCount": 1, "note": "" },
+
+    { "subtaskId": "ST-005-01", "taskId": "TASK-20260310-005", "materialType": "角色海报", "materialSubType": "poster_character", "quantity": "主要角色6个×横竖各1", "formatRequirement": "PNG + PSD", "specRequirement": "≥3000px", "deadline": "2026-03-30", "assigneeType": "outsource", "isSensitive": false, "status": "approved", "uploadedCount": 12, "expectedCount": 12, "note": "" },
+    { "subtaskId": "ST-005-02", "taskId": "TASK-20260310-005", "materialType": "花絮", "materialSubType": "special_behind_scenes", "quantity": "2个", "formatRequirement": "MP4", "specRequirement": "1920×1080", "deadline": "2026-04-05", "assigneeType": "self", "isSensitive": false, "status": "self_upload", "uploadedCount": 1, "expectedCount": 2, "note": "" },
+    { "subtaskId": "ST-005-03", "taskId": "TASK-20260310-005", "materialType": "剧照", "materialSubType": "still", "quantity": "≥20张", "formatRequirement": "JPG", "specRequirement": "≥2000px", "deadline": "2026-04-10", "assigneeType": "self", "isSensitive": false, "status": "pending", "uploadedCount": 0, "expectedCount": 20, "note": "" },
+
+    { "subtaskId": "ST-006-01", "taskId": "TASK-20260305-006", "materialType": "定档海报", "materialSubType": "poster_scheduled", "quantity": "横版×2 + 竖版×2", "formatRequirement": "PNG + PSD", "specRequirement": "≥3000px", "deadline": "2026-03-18", "assigneeType": "outsource", "isSensitive": false, "status": "archived", "uploadedCount": 4, "expectedCount": 4, "note": "" },
+    { "subtaskId": "ST-006-02", "taskId": "TASK-20260305-006", "materialType": "定档预告", "materialSubType": "trailer_scheduled", "quantity": "30s + 完整版", "formatRequirement": "MP4", "specRequirement": "1920×1080", "deadline": "2026-03-20", "assigneeType": "self", "isSensitive": false, "status": "archived", "uploadedCount": 2, "expectedCount": 2, "note": "" }
+  ],
+
+  "tempLinks": [
+    { "linkId": "LINK-001", "taskId": "TASK-20260320-001", "token": "abc123def", "subtaskIds": ["ST-001-02"], "expireAt": "2026-03-29T23:59:59", "expireDays": 7, "maxUploadCount": null, "requireRealName": false, "note": "角色海报素材采集，请按要求提供PSD源文件", "status": "active", "createdAt": "2026-03-22T14:00:00", "createdBy": "U001" },
+    { "linkId": "LINK-002", "taskId": "TASK-20260320-001", "token": "xyz789uvw", "subtaskIds": ["ST-001-03"], "expireAt": "2026-03-25T23:59:59", "expireDays": 7, "maxUploadCount": 3, "requireRealName": true, "note": "预告片交付", "status": "active", "createdAt": "2026-03-18T10:00:00", "createdBy": "U001" },
+    { "linkId": "LINK-003", "taskId": "TASK-20260318-002", "token": "qwe456rty", "subtaskIds": ["ST-002-01", "ST-002-02"], "expireAt": "2026-03-22T23:59:59", "expireDays": 7, "maxUploadCount": null, "requireRealName": false, "note": "开播素材打包交付", "status": "expired", "createdAt": "2026-03-15T16:00:00", "createdBy": "U001" },
+    { "linkId": "LINK-004", "taskId": "TASK-20260318-002", "token": "mnb321cxz", "subtaskIds": ["ST-002-03"], "expireAt": "2026-04-01T23:59:59", "expireDays": 14, "maxUploadCount": null, "requireRealName": false, "note": "角色海报", "status": "active", "createdAt": "2026-03-18T11:00:00", "createdBy": "U001" },
+    { "linkId": "LINK-005", "taskId": "TASK-20260322-004", "token": "lkj654poi", "subtaskIds": ["ST-004-01"], "expireAt": "2026-04-05T23:59:59", "expireDays": 14, "maxUploadCount": null, "requireRealName": false, "note": "概念海报初稿", "status": "active", "createdAt": "2026-03-22T15:00:00", "createdBy": "U001" },
+    { "linkId": "LINK-006", "taskId": "TASK-20260310-005", "token": "asd987fgh", "subtaskIds": ["ST-005-01"], "expireAt": "2026-03-28T23:59:59", "expireDays": 14, "maxUploadCount": null, "requireRealName": true, "note": "动漫角色海报", "status": "active", "createdAt": "2026-03-14T09:00:00", "createdBy": "U003" }
+  ],
+
+  "uploadFiles": [
+    { "fileId": "F001", "subtaskId": "ST-001-01", "taskId": "TASK-20260320-001", "linkId": null, "fileName": "changfengdu_dingdang_poster_h1.jpg", "fileType": "image/jpeg", "fileExtension": "jpg", "fileSize": 12500000, "resolution": "3000x4500", "duration": null, "uploaderId": "U001", "uploaderName": "张小明", "uploadedAt": "2026-03-21T10:30:00", "channel": "premium", "status": "archived", "aiRecognition": { "inferredType": "定档海报", "confidence": "high", "inferredLabel": "海报-定档-《长风渡》-横版", "recognitionBasis": "文件名含'dingdang'+JPG+高分辨率" }, "manualLabel": "定档海报-横版1", "complianceCheck": { "formatOk": true, "sizeOk": true, "resolutionOk": true, "issues": [] } },
+    { "fileId": "F002", "subtaskId": "ST-001-01", "taskId": "TASK-20260320-001", "linkId": null, "fileName": "changfengdu_dingdang_poster_h1.psd", "fileType": "image/vnd.adobe.photoshop", "fileExtension": "psd", "fileSize": 85000000, "resolution": "3000x4500", "duration": null, "uploaderId": "U001", "uploaderName": "张小明", "uploadedAt": "2026-03-21T10:32:00", "channel": "premium", "status": "archived", "aiRecognition": { "inferredType": "定档海报-源文件", "confidence": "high", "inferredLabel": "海报PSD源文件", "recognitionBasis": "PSD格式+文件名匹配" }, "manualLabel": "定档海报-横版1-PSD", "complianceCheck": { "formatOk": true, "sizeOk": true, "resolutionOk": true, "issues": [] } },
+    { "fileId": "F003", "subtaskId": "ST-001-01", "taskId": "TASK-20260320-001", "linkId": null, "fileName": "changfengdu_dingdang_poster_h2.jpg", "fileType": "image/jpeg", "fileExtension": "jpg", "fileSize": 11800000, "resolution": "3000x4500", "duration": null, "uploaderId": "U001", "uploaderName": "张小明", "uploadedAt": "2026-03-21T11:00:00", "channel": "premium", "status": "archived", "aiRecognition": { "inferredType": "定档海报", "confidence": "high", "inferredLabel": "海报-定档-《长风渡》-横版2", "recognitionBasis": "文件名+格式+尺寸" }, "manualLabel": null, "complianceCheck": { "formatOk": true, "sizeOk": true, "resolutionOk": true, "issues": [] } },
+    { "fileId": "F004", "subtaskId": "ST-001-01", "taskId": "TASK-20260320-001", "linkId": null, "fileName": "changfengdu_dingdang_poster_v1.jpg", "fileType": "image/jpeg", "fileExtension": "jpg", "fileSize": 9500000, "resolution": "2400x3600", "duration": null, "uploaderId": "U001", "uploaderName": "张小明", "uploadedAt": "2026-03-21T11:10:00", "channel": "premium", "status": "archived", "aiRecognition": { "inferredType": "定档海报", "confidence": "high", "inferredLabel": "海报-定档-竖版", "recognitionBasis": "竖版比例+文件名" }, "manualLabel": null, "complianceCheck": { "formatOk": true, "sizeOk": true, "resolutionOk": true, "issues": [] } },
+    { "fileId": "F005", "subtaskId": "ST-001-01", "taskId": "TASK-20260320-001", "linkId": null, "fileName": "changfengdu_dingdang_poster_v2.jpg", "fileType": "image/jpeg", "fileExtension": "jpg", "fileSize": 10200000, "resolution": "2400x3600", "duration": null, "uploaderId": "U001", "uploaderName": "张小明", "uploadedAt": "2026-03-21T11:15:00", "channel": "premium", "status": "archived", "aiRecognition": { "inferredType": "定档海报", "confidence": "high", "inferredLabel": "海报-定档-竖版2", "recognitionBasis": "竖版比例+文件名" }, "manualLabel": null, "complianceCheck": { "formatOk": true, "sizeOk": true, "resolutionOk": true, "issues": [] } },
+    { "fileId": "F006", "subtaskId": "ST-001-01", "taskId": "TASK-20260320-001", "linkId": null, "fileName": "changfengdu_dingdang_poster_v2.psd", "fileType": "image/vnd.adobe.photoshop", "fileExtension": "psd", "fileSize": 78000000, "resolution": "2400x3600", "duration": null, "uploaderId": "U001", "uploaderName": "张小明", "uploadedAt": "2026-03-21T11:20:00", "channel": "premium", "status": "archived", "aiRecognition": { "inferredType": "定档海报-源文件", "confidence": "high", "inferredLabel": "PSD源文件", "recognitionBasis": "PSD格式" }, "manualLabel": null, "complianceCheck": { "formatOk": true, "sizeOk": true, "resolutionOk": true, "issues": [] } },
+
+    { "fileId": "F007", "subtaskId": "ST-001-03", "taskId": "TASK-20260320-001", "linkId": "LINK-002", "fileName": "changfengdu_trailer_30s.mp4", "fileType": "video/mp4", "fileExtension": "mp4", "fileSize": 45000000, "resolution": "1920x1080", "duration": 30, "uploaderId": "U006", "uploaderName": "陈外包B", "uploadedAt": "2026-03-23T14:00:00", "channel": "premium", "status": "review_approved", "aiRecognition": { "inferredType": "预告片-30s", "confidence": "high", "inferredLabel": "定档预告-30s版", "recognitionBasis": "视频时长30s+文件名含trailer" }, "manualLabel": null, "complianceCheck": { "formatOk": true, "sizeOk": true, "resolutionOk": true, "issues": [] } },
+    { "fileId": "F008", "subtaskId": "ST-001-03", "taskId": "TASK-20260320-001", "linkId": "LINK-002", "fileName": "changfengdu_trailer_60s.mp4", "fileType": "video/mp4", "fileExtension": "mp4", "fileSize": 92000000, "resolution": "1920x1080", "duration": 62, "uploaderId": "U006", "uploaderName": "陈外包B", "uploadedAt": "2026-03-23T14:10:00", "channel": "premium", "status": "review_approved", "aiRecognition": { "inferredType": "预告片-60s", "confidence": "high", "inferredLabel": "定档预告-60s版", "recognitionBasis": "视频时长62s" }, "manualLabel": null, "complianceCheck": { "formatOk": true, "sizeOk": true, "resolutionOk": true, "issues": [] } },
+    { "fileId": "F009", "subtaskId": "ST-001-03", "taskId": "TASK-20260320-001", "linkId": "LINK-002", "fileName": "changfengdu_trailer_full.mp4", "fileType": "video/mp4", "fileExtension": "mp4", "fileSize": 280000000, "resolution": "1920x1080", "duration": 185, "uploaderId": "U006", "uploaderName": "陈外包B", "uploadedAt": "2026-03-23T14:20:00", "channel": "premium", "status": "review_approved", "aiRecognition": { "inferredType": "预告片-完整版", "confidence": "high", "inferredLabel": "定档预告-完整版", "recognitionBasis": "视频时长>2分钟" }, "manualLabel": null, "complianceCheck": { "formatOk": true, "sizeOk": true, "resolutionOk": true, "issues": [] } },
+
+    { "fileId": "F010", "subtaskId": "ST-002-01", "taskId": "TASK-20260318-002", "linkId": "LINK-003", "fileName": "yufengxing_kaibo_poster_h1.jpg", "fileType": "image/jpeg", "fileExtension": "jpg", "fileSize": 11000000, "resolution": "3200x4800", "duration": null, "uploaderId": "U005", "uploaderName": "刘外包A", "uploadedAt": "2026-03-22T09:00:00", "channel": "premium", "status": "review_approved", "aiRecognition": { "inferredType": "开播海报", "confidence": "high", "inferredLabel": "海报-开播-横版", "recognitionBasis": "文件名含kaibo" }, "manualLabel": null, "complianceCheck": { "formatOk": true, "sizeOk": true, "resolutionOk": true, "issues": [] } },
+    { "fileId": "F011", "subtaskId": "ST-002-01", "taskId": "TASK-20260318-002", "linkId": "LINK-003", "fileName": "yufengxing_kaibo_poster_h2.jpg", "fileType": "image/jpeg", "fileExtension": "jpg", "fileSize": 10500000, "resolution": "3200x4800", "duration": null, "uploaderId": "U005", "uploaderName": "刘外包A", "uploadedAt": "2026-03-22T09:05:00", "channel": "premium", "status": "review_approved", "aiRecognition": { "inferredType": "开播海报", "confidence": "high", "inferredLabel": "海报-开播-横版2", "recognitionBasis": "文件名+格式" }, "manualLabel": null, "complianceCheck": { "formatOk": true, "sizeOk": true, "resolutionOk": true, "issues": [] } },
+    { "fileId": "F012", "subtaskId": "ST-002-01", "taskId": "TASK-20260318-002", "linkId": "LINK-003", "fileName": "yufengxing_kaibo_poster_v1.jpg", "fileType": "image/jpeg", "fileExtension": "jpg", "fileSize": 8900000, "resolution": "2400x3600", "duration": null, "uploaderId": "U005", "uploaderName": "刘外包A", "uploadedAt": "2026-03-22T09:10:00", "channel": "premium", "status": "review_approved", "aiRecognition": { "inferredType": "开播海报-竖版", "confidence": "high", "inferredLabel": "海报-开播-竖版", "recognitionBasis": "竖版比例" }, "manualLabel": null, "complianceCheck": { "formatOk": true, "sizeOk": true, "resolutionOk": true, "issues": [] } },
+    { "fileId": "F013", "subtaskId": "ST-002-01", "taskId": "TASK-20260318-002", "linkId": "LINK-003", "fileName": "yufengxing_kaibo_poster_v2.png", "fileType": "image/png", "fileExtension": "png", "fileSize": 15000000, "resolution": "2000x3000", "duration": null, "uploaderId": "U005", "uploaderName": "刘外包A", "uploadedAt": "2026-03-22T09:15:00", "channel": "premium", "status": "review_approved", "aiRecognition": { "inferredType": "开播海报-竖版", "confidence": "medium", "inferredLabel": "海报?", "recognitionBasis": "PNG格式+竖版比例" }, "manualLabel": null, "complianceCheck": { "formatOk": false, "sizeOk": true, "resolutionOk": false, "issues": ["格式应为JPG+PSD而非PNG", "分辨率不足(2000px < 3000px)"] } },
+
+    { "fileId": "F014", "subtaskId": "ST-002-02", "taskId": "TASK-20260318-002", "linkId": "LINK-003", "fileName": "yufengxing_trailer_30s.mp4", "fileType": "video/mp4", "fileExtension": "mp4", "fileSize": 42000000, "resolution": "1920x1080", "duration": 31, "uploaderId": "U005", "uploaderName": "刘外包A", "uploadedAt": "2026-03-22T10:00:00", "channel": "premium", "status": "review_approved", "aiRecognition": { "inferredType": "预告片", "confidence": "high", "inferredLabel": "开播预告-30s", "recognitionBasis": "视频时长+文件名" }, "manualLabel": null, "complianceCheck": { "formatOk": true, "sizeOk": true, "resolutionOk": true, "issues": [] } },
+    { "fileId": "F015", "subtaskId": "ST-002-02", "taskId": "TASK-20260318-002", "linkId": "LINK-003", "fileName": "yufengxing_trailer_full.mp4", "fileType": "video/mp4", "fileExtension": "mp4", "fileSize": 250000000, "resolution": "1920x1080", "duration": 168, "uploaderId": "U005", "uploaderName": "刘外包A", "uploadedAt": "2026-03-22T10:30:00", "channel": "premium", "status": "review_approved", "aiRecognition": { "inferredType": "预告片-完整版", "confidence": "high", "inferredLabel": "开播预告-完整版", "recognitionBasis": "视频时长>2分钟" }, "manualLabel": null, "complianceCheck": { "formatOk": true, "sizeOk": true, "resolutionOk": true, "issues": [] } }
+  ],
+
+  "reviewRecords": [
+    { "reviewId": "RV001", "taskId": "TASK-20260320-001", "subtaskId": "ST-001-03", "fileIds": ["F007", "F008", "F009"], "reviewerId": "U001", "reviewerName": "张小明", "action": "approve", "comment": "三版预告片质量OK", "reviewedAt": "2026-03-24T08:00:00" },
+    { "reviewId": "RV002", "taskId": "TASK-20260318-002", "subtaskId": "ST-002-01", "fileIds": ["F010", "F011", "F012"], "reviewerId": "U001", "reviewerName": "张小明", "action": "batch_approve", "comment": "合规项批量通过", "reviewedAt": "2026-03-23T11:00:00" }
+  ],
+
+  "materialRequests": [
+    { "requestId": "REQ001", "requesterId": "U002", "requesterName": "李小华", "requesterDept": "会员运营组", "ipId": "IP001", "ipName": "长风渡", "materialType": "角色单人照", "purpose": "会员卡面设计", "scenario": "会员中心-长风渡专属卡面", "urgency": "高", "status": "pending", "assignedPmId": null, "assignedPmName": null, "responseNote": null, "createdAt": "2026-03-23T15:00:00", "respondedAt": null },
+    { "requestId": "REQ002", "requesterId": "U003", "requesterName": "王大伟", "requesterDept": "衍生品运营组", "ipId": "IP002", "ipName": "与凤行", "materialType": "CP合体图", "purpose": "小卡印制", "scenario": "实体衍生品-角色小卡", "urgency": "中", "status": "pending", "assignedPmId": null, "assignedPmName": null, "responseNote": null, "createdAt": "2026-03-22T10:00:00", "respondedAt": null },
+    { "requestId": "REQ003", "requesterId": "U004", "requesterName": "赵小丽", "requesterDept": "OTT运营组", "ipId": "IP003", "ipName": "庆余年2", "materialType": "4K空镜", "purpose": "OTT壁纸", "scenario": "电视端壁纸/屏保", "urgency": "低", "status": "replied_available", "assignedPmId": "U002", "assignedPmName": "李小华", "responseNote": "已联系片方提供4K空镜素材，预计本周内到位", "createdAt": "2026-03-20T09:00:00", "respondedAt": "2026-03-21T14:00:00" },
+    { "requestId": "REQ004", "requesterId": "U002", "requesterName": "李小华", "requesterDept": "会员运营组", "ipId": "IP005", "ipName": "大奉打更人", "materialType": "角色表情包", "purpose": "社区互动", "scenario": "弹幕表情/评论表情", "urgency": "低", "status": "replied_unavailable", "assignedPmId": "U003", "assignedPmName": "王大伟", "responseNote": "动漫角色表情包版权归属制作方，暂无法提供。建议联系制作方授权", "createdAt": "2026-03-19T16:00:00", "respondedAt": "2026-03-20T10:00:00" }
+  ],
+
+  "ipSpaces": [
+    { "ipId": "IP001", "ipName": "长风渡", "category": "电视剧", "currentMilestone": "定档", "completeness": { "poster": { "required": 16, "uploaded": 12 }, "trailer": { "required": 6, "uploaded": 5 }, "still": { "required": 100, "uploaded": 45 }, "special": { "required": 8, "uploaded": 2 }, "rare": { "required": 8, "uploaded": 0 } }, "promotionMaterialCount": 64, "aiMaterialCount": 120, "pendingRequestCount": 1 },
+    { "ipId": "IP002", "ipName": "与凤行", "category": "电视剧", "currentMilestone": "开播", "completeness": { "poster": { "required": 12, "uploaded": 8 }, "trailer": { "required": 4, "uploaded": 4 }, "still": { "required": 80, "uploaded": 60 }, "special": { "required": 6, "uploaded": 4 }, "rare": { "required": 6, "uploaded": 3 } }, "promotionMaterialCount": 79, "aiMaterialCount": 200, "pendingRequestCount": 1 },
+    { "ipId": "IP003", "ipName": "庆余年2", "category": "电视剧", "currentMilestone": "热播中", "completeness": { "poster": { "required": 20, "uploaded": 20 }, "trailer": { "required": 8, "uploaded": 8 }, "still": { "required": 150, "uploaded": 148 }, "special": { "required": 10, "uploaded": 10 }, "rare": { "required": 10, "uploaded": 8 } }, "promotionMaterialCount": 194, "aiMaterialCount": 500, "pendingRequestCount": 1 },
+    { "ipId": "IP005", "ipName": "大奉打更人", "category": "动漫", "currentMilestone": "热播中", "completeness": { "poster": { "required": 14, "uploaded": 12 }, "trailer": { "required": 4, "uploaded": 3 }, "still": { "required": 60, "uploaded": 35 }, "special": { "required": 4, "uploaded": 1 }, "rare": { "required": 4, "uploaded": 0 } }, "promotionMaterialCount": 51, "aiMaterialCount": 80, "pendingRequestCount": 1 }
+  ]
+}

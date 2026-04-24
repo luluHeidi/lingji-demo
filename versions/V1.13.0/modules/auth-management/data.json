@@ -1,0 +1,4489 @@
+{
+  "rightsReviewData": {
+    "items": [
+      {
+        "audit_id": "AUD-2026042001",
+        "copyright_id": "bq2078802",
+        "play_name": "庆余年第三季",
+        "play_name_alias": "庆余年3",
+        "play_category": "1",
+        "task_type": "authorization_review",
+        "task_time": "2026-03-01 09:30:00",
+        "audit_progress": "rights_first_review",
+        "rights_first_review_result": "",
+        "rights_first_review_defect_type": [],
+        "rights_first_review_other_defect_type": "",
+        "rights_first_review_authorized_platforms": [],
+        "rights_first_review_excluded_platforms": [],
+        "rights_first_review_by": "",
+        "rights_first_review_at": "",
+        "rights_first_review_remark": "",
+        "rights_second_review_result": "",
+        "rights_second_review_authorized_platforms": [],
+        "rights_second_review_excluded_platforms": [],
+        "rights_second_review_defect_type": [],
+        "rights_second_review_defect_disposal_method": "",
+        "rights_second_review_by": "",
+        "rights_second_review_at": "",
+        "rights_second_review_remark": "",
+        "import_copr_rights_id": "",
+        "rights_third_review_result": "",
+        "rights_third_review_defect_disposal_result": "",
+        "rights_third_review_authorized_platform_kuaishou": "",
+        "rights_third_review_authorized_platform_kuaishou_start_date": "",
+        "rights_third_review_authorized_platform_kuaishou_end_date": "",
+        "rights_third_review_authorized_platform_douyin": "",
+        "rights_third_review_authorized_platform_douyin_start_date": "",
+        "rights_third_review_authorized_platform_douyin_end_date": "",
+        "rights_third_review_by": "",
+        "rights_third_review_at": "",
+        "import_copr_rights_ids": [
+          "bq2078802-o1160834"
+        ],
+        "defect_copy_rights_ids": [],
+        "export_copr_rights_id_kuaishou": "",
+        "export_copr_rights_id_douyin": "",
+        "is_restricted_kuaishou": false,
+        "is_risk_vertical_short_drama": false,
+        "is_risk_edit_duration": false,
+        "main_cid": "mzc00200djsz2lc",
+        "cid_info": {
+          "cid": "mzc00200djsz2lc",
+          "title": "庆余年第三季",
+          "hot_level": "S",
+          "new_pic_hz": "https://picsum.photos/seed/qyn3/320/180",
+          "new_pic_vt": "https://picsum.photos/seed/qyn3v/180/240"
+        },
+        "proxy_time_end_kuaishou": "2029-03-13",
+        "proxy_time_end_douyin": "2026-05-06",
+        "operator": "system",
+        "created_at": "2026-03-01 09:30:00",
+        "updated_at": "2026-03-01 09:30:00",
+        "xwq_status": "生效中",
+        "online_status": "在线",
+        "defect_type": "",
+        "authorized_projects": [],
+        "rights_infos": [
+          {
+            "copr_rights_id": "bq2078802-o1160834",
+            "contract_codes": "T180-PCG-20260100000001",
+            "copyright_type": "import",
+            "copyright_time_start": "2025-01-01",
+            "copyright_time_end": "2027-12-31",
+            "ip_authorize_right_external": "pending",
+            "rights_type_label": "信息网络传播权",
+            "authorized_platforms": [
+              "快手",
+              "抖音"
+            ],
+            "co_intention": "non_exclusive",
+            "copyright_rights": [
+              "information_network",
+              "editing"
+            ],
+            "resell_time_type": "inherit_auth_period",
+            "sub_license_permission": "joint_sublicense",
+            "resell_right_term": [
+              "platform_restriction"
+            ],
+            "resell_right_other_term": "",
+            "copyright_area": [
+              "mainland_china"
+            ],
+            "edit_right_term_option": [
+              "duration_limit"
+            ],
+            "edit_right_other_term": "",
+            "edit_right_duration_term": "3",
+            "second_creation_has_rights": "123127036",
+            "second_creation_exclusivity": "non_exclusive",
+            "second_creation_sublicense": "allowed",
+            "second_creation_sublicense_remark": "",
+            "achievements_time_requirement_authorized_use": "no_limit",
+            "achievements_quantity_requirement_authorized_use": "no_limit",
+            "second_creation_new_attribution": "joint_ownership",
+            "dissemination_restrictions_channels_authorized_use": "no_limit",
+            "dissemination_restrictions_period_authorized_use": "no_limit",
+            "dissemination_restrictions_area_authorized_use": "no_limit"
+          }
+        ]
+      },
+      {
+        "audit_id": "AUD-2026042002",
+        "copyright_id": "bq2078815",
+        "play_name": "斗罗大陆3",
+        "play_name_alias": "斗罗3",
+        "play_category": "7",
+        "task_type": "authorization_review",
+        "task_time": "2026-03-01 10:15:00",
+        "audit_progress": "rights_first_review",
+        "rights_first_review_result": "",
+        "rights_first_review_defect_type": [],
+        "rights_first_review_other_defect_type": "",
+        "rights_first_review_authorized_platforms": [],
+        "rights_first_review_excluded_platforms": [],
+        "rights_first_review_by": "",
+        "rights_first_review_at": "",
+        "rights_first_review_remark": "",
+        "rights_second_review_result": "",
+        "rights_second_review_authorized_platforms": [],
+        "rights_second_review_excluded_platforms": [],
+        "rights_second_review_defect_type": [],
+        "rights_second_review_defect_disposal_method": "",
+        "rights_second_review_by": "",
+        "rights_second_review_at": "",
+        "rights_second_review_remark": "",
+        "import_copr_rights_id": "",
+        "rights_third_review_result": "",
+        "rights_third_review_defect_disposal_result": "",
+        "rights_third_review_authorized_platform_kuaishou": "",
+        "rights_third_review_authorized_platform_kuaishou_start_date": "",
+        "rights_third_review_authorized_platform_kuaishou_end_date": "",
+        "rights_third_review_authorized_platform_douyin": "",
+        "rights_third_review_authorized_platform_douyin_start_date": "",
+        "rights_third_review_authorized_platform_douyin_end_date": "",
+        "rights_third_review_by": "",
+        "rights_third_review_at": "",
+        "import_copr_rights_ids": [
+          "bq2078815-o1160847"
+        ],
+        "defect_copy_rights_ids": [],
+        "export_copr_rights_id_kuaishou": "",
+        "export_copr_rights_id_douyin": "",
+        "is_restricted_kuaishou": false,
+        "is_risk_vertical_short_drama": false,
+        "is_risk_edit_duration": false,
+        "main_cid": "mzc00200kfts7nb",
+        "cid_info": {
+          "cid": "mzc00200kfts7nb",
+          "title": "斗罗大陆3",
+          "hot_level": "A",
+          "new_pic_hz": "https://picsum.photos/seed/dl3/320/180",
+          "new_pic_vt": "https://picsum.photos/seed/dl3v/180/240"
+        },
+        "proxy_time_end_kuaishou": "2029-03-13",
+        "proxy_time_end_douyin": "2026-05-06",
+        "operator": "system",
+        "created_at": "2026-03-01 10:15:00",
+        "updated_at": "2026-03-01 10:15:00",
+        "xwq_status": "生效中",
+        "online_status": "在线",
+        "defect_type": "",
+        "authorized_projects": [],
+        "rights_infos": [
+          {
+            "copr_rights_id": "bq2078815-o1160847",
+            "contract_codes": "T180-PCG-20260100000002",
+            "copyright_type": "import",
+            "copyright_time_start": "2025-01-01",
+            "copyright_time_end": "2027-12-31",
+            "ip_authorize_right_external": "pending",
+            "rights_type_label": "信息网络传播权",
+            "authorized_platforms": [
+              "快手",
+              "抖音"
+            ],
+            "co_intention": "non_exclusive",
+            "copyright_rights": [
+              "information_network",
+              "editing"
+            ],
+            "resell_time_type": "inherit_auth_period",
+            "sub_license_permission": "joint_sublicense",
+            "resell_right_term": [
+              "platform_restriction"
+            ],
+            "resell_right_other_term": "",
+            "copyright_area": [
+              "mainland_china"
+            ],
+            "edit_right_term_option": [
+              "duration_limit"
+            ],
+            "edit_right_other_term": "",
+            "edit_right_duration_term": "3",
+            "second_creation_has_rights": "123127036",
+            "second_creation_exclusivity": "non_exclusive",
+            "second_creation_sublicense": "allowed",
+            "second_creation_sublicense_remark": "",
+            "achievements_time_requirement_authorized_use": "no_limit",
+            "achievements_quantity_requirement_authorized_use": "no_limit",
+            "second_creation_new_attribution": "joint_ownership",
+            "dissemination_restrictions_channels_authorized_use": "no_limit",
+            "dissemination_restrictions_period_authorized_use": "no_limit",
+            "dissemination_restrictions_area_authorized_use": "no_limit"
+          }
+        ]
+      },
+      {
+        "audit_id": "AUD-2026042003",
+        "copyright_id": "bq2078823",
+        "play_name": "长相思第三季",
+        "play_name_alias": "长相思3",
+        "play_category": "1",
+        "task_type": "authorization_review",
+        "task_time": "2026-03-01 11:00:00",
+        "audit_progress": "rights_second_review",
+        "rights_first_review_result": "rights_available",
+        "rights_first_review_defect_type": [],
+        "rights_first_review_other_defect_type": "",
+        "rights_first_review_authorized_platforms": [
+          "kuaishou",
+          "douyin"
+        ],
+        "rights_first_review_excluded_platforms": [],
+        "rights_first_review_by": "zhangsan",
+        "rights_first_review_at": "2026-03-02 10:00:00",
+        "rights_first_review_remark": "权利状态良好",
+        "rights_second_review_result": "",
+        "rights_second_review_authorized_platforms": [],
+        "rights_second_review_excluded_platforms": [],
+        "rights_second_review_defect_type": [],
+        "rights_second_review_defect_disposal_method": "",
+        "rights_second_review_by": "",
+        "rights_second_review_at": "",
+        "rights_second_review_remark": "",
+        "import_copr_rights_id": "",
+        "rights_third_review_result": "",
+        "rights_third_review_defect_disposal_result": "",
+        "rights_third_review_authorized_platform_kuaishou": "",
+        "rights_third_review_authorized_platform_kuaishou_start_date": "",
+        "rights_third_review_authorized_platform_kuaishou_end_date": "",
+        "rights_third_review_authorized_platform_douyin": "",
+        "rights_third_review_authorized_platform_douyin_start_date": "",
+        "rights_third_review_authorized_platform_douyin_end_date": "",
+        "rights_third_review_by": "",
+        "rights_third_review_at": "",
+        "import_copr_rights_ids": [
+          "bq2078823-o1160862"
+        ],
+        "defect_copy_rights_ids": [],
+        "export_copr_rights_id_kuaishou": "",
+        "export_copr_rights_id_douyin": "",
+        "is_restricted_kuaishou": false,
+        "is_risk_vertical_short_drama": false,
+        "is_risk_edit_duration": false,
+        "main_cid": "mzc00200mptr9ex",
+        "cid_info": {
+          "cid": "mzc00200mptr9ex",
+          "title": "长相思第三季",
+          "hot_level": "S",
+          "new_pic_hz": "https://picsum.photos/seed/cxs3/320/180",
+          "new_pic_vt": "https://picsum.photos/seed/cxs3v/180/240"
+        },
+        "proxy_time_end_kuaishou": "2029-03-13",
+        "proxy_time_end_douyin": "2026-05-06",
+        "operator": "system",
+        "created_at": "2026-03-01 11:00:00",
+        "updated_at": "2026-03-02 10:00:00",
+        "xwq_status": "生效中",
+        "online_status": "在线",
+        "defect_type": "",
+        "authorized_projects": [],
+        "rights_infos": [
+          {
+            "copr_rights_id": "bq2078823-o1160862",
+            "contract_codes": "T180-PCG-20260100000003",
+            "copyright_type": "import",
+            "copyright_time_start": "2025-01-01",
+            "copyright_time_end": "2027-12-31",
+            "ip_authorize_right_external": "pending",
+            "rights_type_label": "信息网络传播权",
+            "authorized_platforms": [
+              "快手",
+              "抖音"
+            ],
+            "co_intention": "non_exclusive",
+            "copyright_rights": [
+              "information_network",
+              "editing"
+            ],
+            "resell_time_type": "inherit_auth_period",
+            "sub_license_permission": "joint_sublicense",
+            "resell_right_term": [
+              "platform_restriction"
+            ],
+            "resell_right_other_term": "",
+            "copyright_area": [
+              "mainland_china"
+            ],
+            "edit_right_term_option": [
+              "duration_limit"
+            ],
+            "edit_right_other_term": "",
+            "edit_right_duration_term": "3",
+            "second_creation_has_rights": "123127036",
+            "second_creation_exclusivity": "non_exclusive",
+            "second_creation_sublicense": "allowed",
+            "second_creation_sublicense_remark": "",
+            "achievements_time_requirement_authorized_use": "no_limit",
+            "achievements_quantity_requirement_authorized_use": "no_limit",
+            "second_creation_new_attribution": "joint_ownership",
+            "dissemination_restrictions_channels_authorized_use": "no_limit",
+            "dissemination_restrictions_period_authorized_use": "no_limit",
+            "dissemination_restrictions_area_authorized_use": "no_limit"
+          }
+        ]
+      },
+      {
+        "audit_id": "AUD-2026042004",
+        "copyright_id": "bq2078846",
+        "play_name": "创造营2026",
+        "play_name_alias": "创造营",
+        "play_category": "5",
+        "task_type": "authorization_review",
+        "task_time": "2026-03-02 09:00:00",
+        "audit_progress": "rights_second_review",
+        "rights_first_review_result": "rights_defect",
+        "rights_first_review_defect_type": [
+          "123128944",
+          "other"
+        ],
+        "rights_first_review_other_defect_type": "综艺嘉宾肖像授权文件缺失",
+        "rights_first_review_authorized_platforms": [
+          "douyin"
+        ],
+        "rights_first_review_excluded_platforms": [
+          "kuaishou"
+        ],
+        "rights_first_review_by": "zhangsan",
+        "rights_first_review_at": "2026-03-03 09:30:00",
+        "rights_first_review_remark": "需补充嘉宾肖像授权证明",
+        "rights_second_review_result": "",
+        "rights_second_review_authorized_platforms": [],
+        "rights_second_review_excluded_platforms": [],
+        "rights_second_review_defect_type": [],
+        "rights_second_review_defect_disposal_method": "",
+        "rights_second_review_by": "",
+        "rights_second_review_at": "",
+        "rights_second_review_remark": "",
+        "import_copr_rights_id": "",
+        "rights_third_review_result": "",
+        "rights_third_review_defect_disposal_result": "",
+        "rights_third_review_authorized_platform_kuaishou": "",
+        "rights_third_review_authorized_platform_kuaishou_start_date": "",
+        "rights_third_review_authorized_platform_kuaishou_end_date": "",
+        "rights_third_review_authorized_platform_douyin": "",
+        "rights_third_review_authorized_platform_douyin_start_date": "",
+        "rights_third_review_authorized_platform_douyin_end_date": "",
+        "rights_third_review_by": "",
+        "rights_third_review_at": "",
+        "import_copr_rights_ids": [
+          "bq2078846-o1160891"
+        ],
+        "defect_copy_rights_ids": [
+          "bq2078846-d001"
+        ],
+        "export_copr_rights_id_kuaishou": "",
+        "export_copr_rights_id_douyin": "",
+        "is_restricted_kuaishou": false,
+        "is_risk_vertical_short_drama": false,
+        "is_risk_edit_duration": false,
+        "main_cid": "mzc00200rxnm3fc",
+        "cid_info": {
+          "cid": "mzc00200rxnm3fc",
+          "title": "创造营2026",
+          "hot_level": "A",
+          "new_pic_hz": "https://picsum.photos/seed/czn/320/180",
+          "new_pic_vt": "https://picsum.photos/seed/cznv/180/240"
+        },
+        "proxy_time_end_kuaishou": "2029-03-13",
+        "proxy_time_end_douyin": "2026-05-06",
+        "operator": "system",
+        "created_at": "2026-03-02 09:00:00",
+        "updated_at": "2026-03-03 09:30:00",
+        "xwq_status": "生效中",
+        "online_status": "在线",
+        "defect_type": "",
+        "authorized_projects": [],
+        "rights_infos": [
+          {
+            "copr_rights_id": "bq2078846-o1160891",
+            "contract_codes": "T180-PCG-20260100000004",
+            "copyright_type": "import",
+            "copyright_time_start": "2025-01-01",
+            "copyright_time_end": "2027-12-31",
+            "ip_authorize_right_external": "pending",
+            "rights_type_label": "信息网络传播权",
+            "authorized_platforms": [
+              "快手",
+              "抖音"
+            ],
+            "co_intention": "non_exclusive",
+            "copyright_rights": [
+              "information_network",
+              "editing"
+            ],
+            "resell_time_type": "inherit_auth_period",
+            "sub_license_permission": "joint_sublicense",
+            "resell_right_term": [
+              "platform_restriction"
+            ],
+            "resell_right_other_term": "",
+            "copyright_area": [
+              "mainland_china"
+            ],
+            "edit_right_term_option": [
+              "duration_limit"
+            ],
+            "edit_right_other_term": "",
+            "edit_right_duration_term": "3",
+            "second_creation_has_rights": "123127036",
+            "second_creation_exclusivity": "non_exclusive",
+            "second_creation_sublicense": "allowed",
+            "second_creation_sublicense_remark": "",
+            "achievements_time_requirement_authorized_use": "no_limit",
+            "achievements_quantity_requirement_authorized_use": "no_limit",
+            "second_creation_new_attribution": "joint_ownership",
+            "dissemination_restrictions_channels_authorized_use": "no_limit",
+            "dissemination_restrictions_period_authorized_use": "no_limit",
+            "dissemination_restrictions_area_authorized_use": "no_limit"
+          }
+        ]
+      },
+      {
+        "audit_id": "AUD-2026042005",
+        "copyright_id": "bq2078859",
+        "play_name": "仙剑奇侠传四",
+        "play_name_alias": "仙剑4",
+        "play_category": "1",
+        "task_type": "authorization_review",
+        "task_time": "2026-03-02 10:30:00",
+        "audit_progress": "rights_third_review",
+        "rights_first_review_result": "rights_available",
+        "rights_first_review_defect_type": [],
+        "rights_first_review_other_defect_type": "",
+        "rights_first_review_authorized_platforms": [
+          "kuaishou",
+          "douyin"
+        ],
+        "rights_first_review_excluded_platforms": [],
+        "rights_first_review_by": "zhangsan",
+        "rights_first_review_at": "2026-03-03 10:00:00",
+        "rights_first_review_remark": "",
+        "rights_second_review_result": "rights_available",
+        "rights_second_review_authorized_platforms": [
+          "kuaishou",
+          "douyin"
+        ],
+        "rights_second_review_excluded_platforms": [],
+        "rights_second_review_defect_type": [],
+        "rights_second_review_defect_disposal_method": "",
+        "rights_second_review_by": "lifawu",
+        "rights_second_review_at": "2026-03-04 14:00:00",
+        "rights_second_review_remark": "法务审核通过",
+        "import_copr_rights_id": "bq2078859-o1160905",
+        "rights_third_review_result": "",
+        "rights_third_review_defect_disposal_result": "",
+        "rights_third_review_authorized_platform_kuaishou": "",
+        "rights_third_review_authorized_platform_kuaishou_start_date": "",
+        "rights_third_review_authorized_platform_kuaishou_end_date": "",
+        "rights_third_review_authorized_platform_douyin": "",
+        "rights_third_review_authorized_platform_douyin_start_date": "",
+        "rights_third_review_authorized_platform_douyin_end_date": "",
+        "rights_third_review_by": "",
+        "rights_third_review_at": "",
+        "import_copr_rights_ids": [
+          "bq2078859-o1160905"
+        ],
+        "defect_copy_rights_ids": [],
+        "export_copr_rights_id_kuaishou": "",
+        "export_copr_rights_id_douyin": "",
+        "is_restricted_kuaishou": false,
+        "is_risk_vertical_short_drama": false,
+        "is_risk_edit_duration": false,
+        "main_cid": "mzc00200txhp8jd",
+        "cid_info": {
+          "cid": "mzc00200txhp8jd",
+          "title": "仙剑奇侠传四",
+          "hot_level": "A",
+          "new_pic_hz": "https://picsum.photos/seed/xj4/320/180",
+          "new_pic_vt": "https://picsum.photos/seed/xj4v/180/240"
+        },
+        "proxy_time_end_kuaishou": "2029-03-13",
+        "proxy_time_end_douyin": "2026-05-06",
+        "operator": "system",
+        "created_at": "2026-03-02 10:30:00",
+        "updated_at": "2026-03-04 14:00:00",
+        "xwq_status": "生效中",
+        "online_status": "在线",
+        "defect_type": "",
+        "authorized_projects": [],
+        "rights_infos": [
+          {
+            "copr_rights_id": "bq2078859-o1160905",
+            "contract_codes": "T180-PCG-20260100000005",
+            "copyright_type": "import",
+            "copyright_time_start": "2025-01-01",
+            "copyright_time_end": "2027-12-31",
+            "ip_authorize_right_external": "pending",
+            "rights_type_label": "信息网络传播权",
+            "authorized_platforms": [
+              "快手",
+              "抖音"
+            ],
+            "co_intention": "non_exclusive",
+            "copyright_rights": [
+              "information_network",
+              "editing"
+            ],
+            "resell_time_type": "inherit_auth_period",
+            "sub_license_permission": "joint_sublicense",
+            "resell_right_term": [
+              "platform_restriction"
+            ],
+            "resell_right_other_term": "",
+            "copyright_area": [
+              "mainland_china"
+            ],
+            "edit_right_term_option": [
+              "duration_limit"
+            ],
+            "edit_right_other_term": "",
+            "edit_right_duration_term": "3",
+            "second_creation_has_rights": "123127036",
+            "second_creation_exclusivity": "non_exclusive",
+            "second_creation_sublicense": "allowed",
+            "second_creation_sublicense_remark": "",
+            "achievements_time_requirement_authorized_use": "no_limit",
+            "achievements_quantity_requirement_authorized_use": "no_limit",
+            "second_creation_new_attribution": "joint_ownership",
+            "dissemination_restrictions_channels_authorized_use": "no_limit",
+            "dissemination_restrictions_period_authorized_use": "no_limit",
+            "dissemination_restrictions_area_authorized_use": "no_limit"
+          },
+          {
+            "copr_rights_id": "bq2078859-exp-8150",
+            "contract_codes": "T180-PCG-20260100000006",
+            "copyright_type": "export",
+            "export_platform": "抖音",
+            "export_rights_type": "二创授权",
+            "export_time_start": "2026-01-01",
+            "export_time_end": "2026-12-31",
+            "ip_authorize_right_external": "pending"
+          }
+        ]
+      },
+      {
+        "audit_id": "AUD-2026042006",
+        "copyright_id": "bq2078867",
+        "play_name": "三体动画版",
+        "play_name_alias": "三体动画",
+        "play_category": "7",
+        "task_type": "authorization_review",
+        "task_time": "2026-03-02 11:45:00",
+        "audit_progress": "rights_third_review",
+        "rights_first_review_result": "rights_defect",
+        "rights_first_review_defect_type": [
+          "123128944"
+        ],
+        "rights_first_review_other_defect_type": "到期日衔接风险",
+        "rights_first_review_authorized_platforms": [
+          "douyin"
+        ],
+        "rights_first_review_excluded_platforms": [],
+        "rights_first_review_by": "zhangsan",
+        "rights_first_review_at": "2026-03-03 11:00:00",
+        "rights_first_review_remark": "授权期末尾重合",
+        "rights_second_review_result": "rights_defect",
+        "rights_second_review_authorized_platforms": [
+          "douyin"
+        ],
+        "rights_second_review_excluded_platforms": [
+          "kuaishou"
+        ],
+        "rights_second_review_defect_type": [
+          "123128944"
+        ],
+        "rights_second_review_defect_disposal_method": "need_edit_confirmation_letter",
+        "rights_second_review_by": "lifawu",
+        "rights_second_review_at": "2026-03-04 15:00:00",
+        "rights_second_review_remark": "需补函确认",
+        "import_copr_rights_id": "bq2078867-o1160918",
+        "rights_third_review_result": "",
+        "rights_third_review_defect_disposal_result": "",
+        "rights_third_review_authorized_platform_kuaishou": "",
+        "rights_third_review_authorized_platform_kuaishou_start_date": "",
+        "rights_third_review_authorized_platform_kuaishou_end_date": "",
+        "rights_third_review_authorized_platform_douyin": "",
+        "rights_third_review_authorized_platform_douyin_start_date": "",
+        "rights_third_review_authorized_platform_douyin_end_date": "",
+        "rights_third_review_by": "",
+        "rights_third_review_at": "",
+        "import_copr_rights_ids": [
+          "bq2078867-o1160918"
+        ],
+        "defect_copy_rights_ids": [
+          "bq2078867-d001"
+        ],
+        "export_copr_rights_id_kuaishou": "",
+        "export_copr_rights_id_douyin": "",
+        "is_restricted_kuaishou": false,
+        "is_risk_vertical_short_drama": false,
+        "is_risk_edit_duration": false,
+        "main_cid": "mzc00200vnbq4hy",
+        "cid_info": {
+          "cid": "mzc00200vnbq4hy",
+          "title": "三体动画版",
+          "hot_level": "S",
+          "new_pic_hz": "https://picsum.photos/seed/st/320/180",
+          "new_pic_vt": "https://picsum.photos/seed/stv/180/240"
+        },
+        "proxy_time_end_kuaishou": "2029-03-13",
+        "proxy_time_end_douyin": "2026-05-06",
+        "operator": "system",
+        "created_at": "2026-03-02 11:45:00",
+        "updated_at": "2026-03-04 15:00:00",
+        "xwq_status": "生效中",
+        "online_status": "在线",
+        "defect_type": "",
+        "authorized_projects": [],
+        "rights_infos": [
+          {
+            "copr_rights_id": "bq2078867-o1160918",
+            "contract_codes": "T180-PCG-20260100000007",
+            "copyright_type": "import",
+            "copyright_time_start": "2025-01-01",
+            "copyright_time_end": "2027-12-31",
+            "ip_authorize_right_external": "pending",
+            "rights_type_label": "信息网络传播权",
+            "authorized_platforms": [
+              "快手",
+              "抖音"
+            ],
+            "co_intention": "non_exclusive",
+            "copyright_rights": [
+              "information_network",
+              "editing"
+            ],
+            "resell_time_type": "inherit_auth_period",
+            "sub_license_permission": "joint_sublicense",
+            "resell_right_term": [
+              "platform_restriction"
+            ],
+            "resell_right_other_term": "",
+            "copyright_area": [
+              "mainland_china"
+            ],
+            "edit_right_term_option": [
+              "duration_limit"
+            ],
+            "edit_right_other_term": "",
+            "edit_right_duration_term": "3",
+            "second_creation_has_rights": "123127036",
+            "second_creation_exclusivity": "non_exclusive",
+            "second_creation_sublicense": "allowed",
+            "second_creation_sublicense_remark": "",
+            "achievements_time_requirement_authorized_use": "no_limit",
+            "achievements_quantity_requirement_authorized_use": "no_limit",
+            "second_creation_new_attribution": "joint_ownership",
+            "dissemination_restrictions_channels_authorized_use": "no_limit",
+            "dissemination_restrictions_period_authorized_use": "no_limit",
+            "dissemination_restrictions_area_authorized_use": "no_limit"
+          },
+          {
+            "copr_rights_id": "bq2078867-exp-1691",
+            "contract_codes": "T180-PCG-20260100000008",
+            "copyright_type": "export",
+            "export_platform": "抖音",
+            "export_rights_type": "二创授权",
+            "export_time_start": "2026-01-01",
+            "export_time_end": "2026-12-31",
+            "ip_authorize_right_external": "pending"
+          }
+        ]
+      },
+      {
+        "audit_id": "AUD-2026042007",
+        "copyright_id": "bq2078873",
+        "play_name": "大唐来的苏无名",
+        "play_name_alias": "苏无名",
+        "play_category": "9",
+        "task_type": "authorization_review",
+        "task_time": "2026-03-02 14:20:00",
+        "audit_progress": "rights_third_review",
+        "rights_first_review_result": "rights_available",
+        "rights_first_review_defect_type": [],
+        "rights_first_review_other_defect_type": "",
+        "rights_first_review_authorized_platforms": [
+          "douyin"
+        ],
+        "rights_first_review_excluded_platforms": [
+          "kuaishou"
+        ],
+        "rights_first_review_by": "zhangsan",
+        "rights_first_review_at": "2026-03-03 14:00:00",
+        "rights_first_review_remark": "竖屏微短剧，快手受限",
+        "rights_second_review_result": "rights_available",
+        "rights_second_review_authorized_platforms": [
+          "douyin"
+        ],
+        "rights_second_review_excluded_platforms": [
+          "kuaishou"
+        ],
+        "rights_second_review_defect_type": [],
+        "rights_second_review_defect_disposal_method": "",
+        "rights_second_review_by": "lifawu",
+        "rights_second_review_at": "2026-03-04 16:00:00",
+        "rights_second_review_remark": "",
+        "import_copr_rights_id": "bq2078873-o1160924",
+        "rights_third_review_result": "",
+        "rights_third_review_defect_disposal_result": "",
+        "rights_third_review_authorized_platform_kuaishou": "",
+        "rights_third_review_authorized_platform_kuaishou_start_date": "",
+        "rights_third_review_authorized_platform_kuaishou_end_date": "",
+        "rights_third_review_authorized_platform_douyin": "",
+        "rights_third_review_authorized_platform_douyin_start_date": "",
+        "rights_third_review_authorized_platform_douyin_end_date": "",
+        "rights_third_review_by": "",
+        "rights_third_review_at": "",
+        "import_copr_rights_ids": [
+          "bq2078873-o1160924"
+        ],
+        "defect_copy_rights_ids": [],
+        "export_copr_rights_id_kuaishou": "",
+        "export_copr_rights_id_douyin": "",
+        "is_restricted_kuaishou": true,
+        "is_risk_vertical_short_drama": true,
+        "is_risk_edit_duration": false,
+        "main_cid": "mzc00200wkcr6gz",
+        "cid_info": {
+          "cid": "mzc00200wkcr6gz",
+          "title": "大唐来的苏无名",
+          "hot_level": "B",
+          "new_pic_hz": "https://picsum.photos/seed/swm/320/180",
+          "new_pic_vt": "https://picsum.photos/seed/swmv/180/240"
+        },
+        "proxy_time_end_kuaishou": "2029-03-13",
+        "proxy_time_end_douyin": "2026-05-06",
+        "operator": "system",
+        "created_at": "2026-03-02 14:20:00",
+        "updated_at": "2026-03-04 16:00:00",
+        "xwq_status": "生效中",
+        "online_status": "在线",
+        "defect_type": "",
+        "authorized_projects": [],
+        "rights_infos": [
+          {
+            "copr_rights_id": "bq2078873-o1160924",
+            "contract_codes": "T180-PCG-20260100000009",
+            "copyright_type": "import",
+            "copyright_time_start": "2025-01-01",
+            "copyright_time_end": "2027-12-31",
+            "ip_authorize_right_external": "pending",
+            "rights_type_label": "信息网络传播权",
+            "authorized_platforms": [
+              "快手",
+              "抖音"
+            ],
+            "co_intention": "non_exclusive",
+            "copyright_rights": [
+              "information_network",
+              "editing"
+            ],
+            "resell_time_type": "inherit_auth_period",
+            "sub_license_permission": "joint_sublicense",
+            "resell_right_term": [
+              "platform_restriction"
+            ],
+            "resell_right_other_term": "",
+            "copyright_area": [
+              "mainland_china"
+            ],
+            "edit_right_term_option": [
+              "duration_limit"
+            ],
+            "edit_right_other_term": "",
+            "edit_right_duration_term": "3",
+            "second_creation_has_rights": "123127036",
+            "second_creation_exclusivity": "non_exclusive",
+            "second_creation_sublicense": "allowed",
+            "second_creation_sublicense_remark": "",
+            "achievements_time_requirement_authorized_use": "no_limit",
+            "achievements_quantity_requirement_authorized_use": "no_limit",
+            "second_creation_new_attribution": "joint_ownership",
+            "dissemination_restrictions_channels_authorized_use": "no_limit",
+            "dissemination_restrictions_period_authorized_use": "no_limit",
+            "dissemination_restrictions_area_authorized_use": "no_limit"
+          },
+          {
+            "copr_rights_id": "bq2078873-exp-2820",
+            "contract_codes": "T180-PCG-20260100000010",
+            "copyright_type": "export",
+            "export_platform": "快手",
+            "export_rights_type": "二创授权",
+            "export_time_start": "2026-01-01",
+            "export_time_end": "2026-12-31",
+            "ip_authorize_right_external": "pending"
+          }
+        ]
+      },
+      {
+        "audit_id": "AUD-2026042008",
+        "copyright_id": "bq2078889",
+        "play_name": "繁花",
+        "play_name_alias": "繁花",
+        "play_category": "1",
+        "task_type": "authorization_review",
+        "task_time": "2026-03-03 09:15:00",
+        "audit_progress": "confirmed_rights",
+        "rights_first_review_result": "rights_available",
+        "rights_first_review_defect_type": [],
+        "rights_first_review_other_defect_type": "",
+        "rights_first_review_authorized_platforms": [
+          "kuaishou",
+          "douyin"
+        ],
+        "rights_first_review_excluded_platforms": [],
+        "rights_first_review_by": "zhangsan",
+        "rights_first_review_at": "2026-03-04 10:00:00",
+        "rights_first_review_remark": "",
+        "rights_second_review_result": "rights_available",
+        "rights_second_review_authorized_platforms": [
+          "kuaishou",
+          "douyin"
+        ],
+        "rights_second_review_excluded_platforms": [],
+        "rights_second_review_defect_type": [],
+        "rights_second_review_defect_disposal_method": "",
+        "rights_second_review_by": "lifawu",
+        "rights_second_review_at": "2026-03-05 14:00:00",
+        "rights_second_review_remark": "",
+        "import_copr_rights_id": "bq2078889-o1160937",
+        "rights_third_review_result": "can_authorized",
+        "rights_third_review_defect_disposal_result": "",
+        "rights_third_review_authorized_platform_kuaishou": "Y",
+        "rights_third_review_authorized_platform_kuaishou_start_date": "2026-03-06",
+        "rights_third_review_authorized_platform_kuaishou_end_date": "2027-03-05",
+        "rights_third_review_authorized_platform_douyin": "Y",
+        "rights_third_review_authorized_platform_douyin_start_date": "2026-03-06",
+        "rights_third_review_authorized_platform_douyin_end_date": "2026-05-06",
+        "rights_third_review_by": "wangpinlei",
+        "rights_third_review_at": "2026-03-06 09:00:00",
+        "import_copr_rights_ids": [
+          "bq2078889-o1160937"
+        ],
+        "defect_copy_rights_ids": [],
+        "export_copr_rights_id_kuaishou": "bq2078889-exp-ks001",
+        "export_copr_rights_id_douyin": "bq2078889-exp-dy001",
+        "is_restricted_kuaishou": false,
+        "is_risk_vertical_short_drama": false,
+        "is_risk_edit_duration": false,
+        "main_cid": "mzc00200xjds5fv",
+        "cid_info": {
+          "cid": "mzc00200xjds5fv",
+          "title": "繁花",
+          "hot_level": "S",
+          "new_pic_hz": "https://picsum.photos/seed/fh/320/180",
+          "new_pic_vt": "https://picsum.photos/seed/fhv/180/240"
+        },
+        "kuaishou_is_ott_available": "1",
+        "proxy_time_end_kuaishou": "2029-03-13",
+        "proxy_time_end_douyin": "2026-05-06",
+        "operator": "wangpinlei",
+        "created_at": "2026-03-03 09:15:00",
+        "updated_at": "2026-03-06 09:00:00",
+        "xwq_status": "生效中",
+        "online_status": "在线",
+        "defect_type": "",
+        "authorized_projects": [],
+        "rights_infos": [
+          {
+            "copr_rights_id": "bq2078889-o1160937",
+            "contract_codes": "T180-PCG-20260100000011",
+            "copyright_type": "import",
+            "copyright_time_start": "2025-01-01",
+            "copyright_time_end": "2027-12-31",
+            "ip_authorize_right_external": "pending",
+            "rights_type_label": "信息网络传播权",
+            "authorized_platforms": [
+              "快手",
+              "抖音"
+            ],
+            "co_intention": "non_exclusive",
+            "copyright_rights": [
+              "information_network",
+              "editing"
+            ],
+            "resell_time_type": "inherit_auth_period",
+            "sub_license_permission": "joint_sublicense",
+            "resell_right_term": [
+              "platform_restriction"
+            ],
+            "resell_right_other_term": "",
+            "copyright_area": [
+              "mainland_china"
+            ],
+            "edit_right_term_option": [
+              "duration_limit"
+            ],
+            "edit_right_other_term": "",
+            "edit_right_duration_term": "3",
+            "second_creation_has_rights": "123127036",
+            "second_creation_exclusivity": "non_exclusive",
+            "second_creation_sublicense": "allowed",
+            "second_creation_sublicense_remark": "",
+            "achievements_time_requirement_authorized_use": "no_limit",
+            "achievements_quantity_requirement_authorized_use": "no_limit",
+            "second_creation_new_attribution": "joint_ownership",
+            "dissemination_restrictions_channels_authorized_use": "no_limit",
+            "dissemination_restrictions_period_authorized_use": "no_limit",
+            "dissemination_restrictions_area_authorized_use": "no_limit"
+          },
+          {
+            "copr_rights_id": "bq2078889-exp-8674",
+            "contract_codes": "T180-PCG-20260100000012",
+            "copyright_type": "export",
+            "export_platform": "快手",
+            "export_rights_type": "二创授权",
+            "export_time_start": "2026-01-01",
+            "export_time_end": "2026-12-31",
+            "ip_authorize_right_external": "authorized"
+          }
+        ]
+      },
+      {
+        "audit_id": "AUD-2026042009",
+        "copyright_id": "bq2078947",
+        "play_name": "超新星运动会2026",
+        "play_name_alias": "超新星运动会",
+        "play_category": "5",
+        "task_type": "authorization_review",
+        "task_time": "2026-03-04 11:45:00",
+        "audit_progress": "confirmed_rights",
+        "rights_first_review_result": "rights_defect",
+        "rights_first_review_defect_type": [
+          "other"
+        ],
+        "rights_first_review_other_defect_type": "",
+        "rights_first_review_authorized_platforms": [
+          "kuaishou"
+        ],
+        "rights_first_review_excluded_platforms": [
+          "douyin"
+        ],
+        "rights_first_review_by": "zhangsan",
+        "rights_first_review_at": "2026-03-05 10:00:00",
+        "rights_first_review_remark": "",
+        "rights_second_review_result": "rights_defect",
+        "rights_second_review_authorized_platforms": [
+          "kuaishou"
+        ],
+        "rights_second_review_excluded_platforms": [
+          "douyin"
+        ],
+        "rights_second_review_defect_type": [
+          "other"
+        ],
+        "rights_second_review_defect_disposal_method": "need_edit_confirmation_letter",
+        "rights_second_review_by": "lifawu",
+        "rights_second_review_at": "2026-03-06 14:00:00",
+        "rights_second_review_remark": "已补充肖像授权",
+        "import_copr_rights_id": "bq2078947-o1160995",
+        "rights_third_review_result": "can_authorized",
+        "rights_third_review_defect_disposal_result": "no_supplement_required",
+        "rights_third_review_authorized_platform_kuaishou": "Y",
+        "rights_third_review_authorized_platform_kuaishou_start_date": "2026-03-07",
+        "rights_third_review_authorized_platform_kuaishou_end_date": "2026-09-30",
+        "rights_third_review_authorized_platform_douyin": "",
+        "rights_third_review_authorized_platform_douyin_start_date": "",
+        "rights_third_review_authorized_platform_douyin_end_date": "",
+        "rights_third_review_by": "wangpinlei",
+        "rights_third_review_at": "2026-03-07 09:00:00",
+        "import_copr_rights_ids": [
+          "bq2078947-o1160995"
+        ],
+        "defect_copy_rights_ids": [
+          "bq2078947-d001"
+        ],
+        "export_copr_rights_id_kuaishou": "bq2078947-exp-ks001",
+        "export_copr_rights_id_douyin": "",
+        "is_restricted_kuaishou": false,
+        "is_risk_vertical_short_drama": false,
+        "is_risk_edit_duration": false,
+        "main_cid": "mzc002004tjy8zp",
+        "cid_info": {
+          "cid": "mzc002004tjy8zp",
+          "title": "超新星运动会2026",
+          "hot_level": "B",
+          "new_pic_hz": "https://picsum.photos/seed/cxx/320/180",
+          "new_pic_vt": "https://picsum.photos/seed/cxxv/180/240"
+        },
+        "proxy_time_end_kuaishou": "2029-03-13",
+        "proxy_time_end_douyin": "2026-05-06",
+        "operator": "wangpinlei",
+        "created_at": "2026-03-04 11:45:00",
+        "updated_at": "2026-03-07 09:00:00",
+        "xwq_status": "生效中",
+        "online_status": "在线",
+        "defect_type": "",
+        "authorized_projects": [],
+        "rights_infos": [
+          {
+            "copr_rights_id": "bq2078947-o1160995",
+            "contract_codes": "T180-PCG-20260100000013",
+            "copyright_type": "import",
+            "copyright_time_start": "2025-01-01",
+            "copyright_time_end": "2027-12-31",
+            "ip_authorize_right_external": "pending",
+            "rights_type_label": "信息网络传播权",
+            "authorized_platforms": [
+              "快手",
+              "抖音"
+            ],
+            "co_intention": "non_exclusive",
+            "copyright_rights": [
+              "information_network",
+              "editing"
+            ],
+            "resell_time_type": "inherit_auth_period",
+            "sub_license_permission": "joint_sublicense",
+            "resell_right_term": [
+              "platform_restriction"
+            ],
+            "resell_right_other_term": "",
+            "copyright_area": [
+              "mainland_china"
+            ],
+            "edit_right_term_option": [
+              "duration_limit"
+            ],
+            "edit_right_other_term": "",
+            "edit_right_duration_term": "3",
+            "second_creation_has_rights": "123127036",
+            "second_creation_exclusivity": "non_exclusive",
+            "second_creation_sublicense": "allowed",
+            "second_creation_sublicense_remark": "",
+            "achievements_time_requirement_authorized_use": "no_limit",
+            "achievements_quantity_requirement_authorized_use": "no_limit",
+            "second_creation_new_attribution": "joint_ownership",
+            "dissemination_restrictions_channels_authorized_use": "no_limit",
+            "dissemination_restrictions_period_authorized_use": "no_limit",
+            "dissemination_restrictions_area_authorized_use": "no_limit"
+          },
+          {
+            "copr_rights_id": "bq2078947-exp-3185",
+            "contract_codes": "T180-PCG-20260100000014",
+            "copyright_type": "export",
+            "export_platform": "抖音",
+            "export_rights_type": "二创授权",
+            "export_time_start": "2026-01-01",
+            "export_time_end": "2026-12-31",
+            "ip_authorize_right_external": "authorized"
+          }
+        ]
+      },
+      {
+        "audit_id": "AUD-2026042010",
+        "copyright_id": "bq2079118",
+        "play_name": "玫瑰的故事",
+        "play_name_alias": "玫瑰",
+        "play_category": "2",
+        "task_type": "authorization_review",
+        "task_time": "2026-03-05 09:30:00",
+        "audit_progress": "confirmed_rights",
+        "rights_first_review_result": "rights_available",
+        "rights_first_review_defect_type": [],
+        "rights_first_review_other_defect_type": "",
+        "rights_first_review_authorized_platforms": [
+          "kuaishou",
+          "douyin"
+        ],
+        "rights_first_review_excluded_platforms": [],
+        "rights_first_review_by": "zhangsan",
+        "rights_first_review_at": "2026-03-06 10:00:00",
+        "rights_first_review_remark": "",
+        "rights_second_review_result": "rights_available",
+        "rights_second_review_authorized_platforms": [
+          "kuaishou",
+          "douyin"
+        ],
+        "rights_second_review_excluded_platforms": [],
+        "rights_second_review_defect_type": [],
+        "rights_second_review_defect_disposal_method": "",
+        "rights_second_review_by": "lifawu",
+        "rights_second_review_at": "2026-03-07 14:00:00",
+        "rights_second_review_remark": "",
+        "import_copr_rights_id": "bq2079118-o1161121",
+        "rights_third_review_result": "not_authorized",
+        "rights_third_review_defect_disposal_result": "",
+        "rights_third_review_authorized_platform_kuaishou": "",
+        "rights_third_review_authorized_platform_kuaishou_start_date": "",
+        "rights_third_review_authorized_platform_kuaishou_end_date": "",
+        "rights_third_review_authorized_platform_douyin": "",
+        "rights_third_review_authorized_platform_douyin_start_date": "",
+        "rights_third_review_authorized_platform_douyin_end_date": "",
+        "rights_third_review_by": "wangpinlei",
+        "rights_third_review_at": "2026-03-08 09:00:00",
+        "import_copr_rights_ids": [
+          "bq2079118-o1161121"
+        ],
+        "defect_copy_rights_ids": [],
+        "export_copr_rights_id_kuaishou": "",
+        "export_copr_rights_id_douyin": "",
+        "is_restricted_kuaishou": false,
+        "is_risk_vertical_short_drama": false,
+        "is_risk_edit_duration": false,
+        "main_cid": "mzc00200bcde2fg",
+        "cid_info": {
+          "cid": "mzc00200bcde2fg",
+          "title": "玫瑰的故事",
+          "hot_level": "A",
+          "new_pic_hz": "https://picsum.photos/seed/mg/320/180",
+          "new_pic_vt": "https://picsum.photos/seed/mgv/180/240"
+        },
+        "proxy_time_end_kuaishou": "2029-03-13",
+        "proxy_time_end_douyin": "2026-05-06",
+        "operator": "wangpinlei",
+        "created_at": "2026-03-05 09:30:00",
+        "updated_at": "2026-03-08 09:00:00",
+        "xwq_status": "生效中",
+        "online_status": "在线",
+        "defect_type": "",
+        "authorized_projects": [],
+        "rights_infos": [
+          {
+            "copr_rights_id": "bq2079118-o1161121",
+            "contract_codes": "T180-PCG-20260100000015",
+            "copyright_type": "import",
+            "copyright_time_start": "2025-01-01",
+            "copyright_time_end": "2027-12-31",
+            "ip_authorize_right_external": "pending",
+            "rights_type_label": "信息网络传播权",
+            "authorized_platforms": [
+              "快手",
+              "抖音"
+            ],
+            "co_intention": "non_exclusive",
+            "copyright_rights": [
+              "information_network",
+              "editing"
+            ],
+            "resell_time_type": "inherit_auth_period",
+            "sub_license_permission": "joint_sublicense",
+            "resell_right_term": [
+              "platform_restriction"
+            ],
+            "resell_right_other_term": "",
+            "copyright_area": [
+              "mainland_china"
+            ],
+            "edit_right_term_option": [
+              "duration_limit"
+            ],
+            "edit_right_other_term": "",
+            "edit_right_duration_term": "3",
+            "second_creation_has_rights": "123127036",
+            "second_creation_exclusivity": "non_exclusive",
+            "second_creation_sublicense": "allowed",
+            "second_creation_sublicense_remark": "",
+            "achievements_time_requirement_authorized_use": "no_limit",
+            "achievements_quantity_requirement_authorized_use": "no_limit",
+            "second_creation_new_attribution": "joint_ownership",
+            "dissemination_restrictions_channels_authorized_use": "no_limit",
+            "dissemination_restrictions_period_authorized_use": "no_limit",
+            "dissemination_restrictions_area_authorized_use": "no_limit"
+          },
+          {
+            "copr_rights_id": "bq2079118-exp-7880",
+            "contract_codes": "T180-PCG-20260100000016",
+            "copyright_type": "export",
+            "export_platform": "快手",
+            "export_rights_type": "二创授权",
+            "export_time_start": "2026-01-01",
+            "export_time_end": "2026-12-31",
+            "ip_authorize_right_external": "authorized"
+          }
+        ]
+      },
+      {
+        "audit_id": "AUD-2026042011",
+        "copyright_id": "bq2078908",
+        "play_name": "人世间",
+        "play_name_alias": "人世间",
+        "play_category": "1",
+        "task_type": "risk_review",
+        "change_type": "distribution_conflict",
+        "task_time": "2026-03-06 09:00:00",
+        "audit_progress": "rights_first_review",
+        "rights_first_review_result": "",
+        "rights_first_review_defect_type": [],
+        "rights_first_review_other_defect_type": "",
+        "rights_first_review_authorized_platforms": [],
+        "rights_first_review_excluded_platforms": [],
+        "rights_first_review_by": "",
+        "rights_first_review_at": "",
+        "rights_first_review_remark": "",
+        "rights_second_review_result": "",
+        "rights_second_review_authorized_platforms": [],
+        "rights_second_review_excluded_platforms": [],
+        "rights_second_review_defect_type": [],
+        "rights_second_review_defect_disposal_method": "",
+        "rights_second_review_by": "",
+        "rights_second_review_at": "",
+        "rights_second_review_remark": "",
+        "import_copr_rights_id": "",
+        "rights_third_review_result": "",
+        "rights_third_review_defect_disposal_result": "",
+        "rights_third_review_authorized_platform_kuaishou": "",
+        "rights_third_review_authorized_platform_kuaishou_start_date": "",
+        "rights_third_review_authorized_platform_kuaishou_end_date": "",
+        "rights_third_review_authorized_platform_douyin": "",
+        "rights_third_review_authorized_platform_douyin_start_date": "",
+        "rights_third_review_authorized_platform_douyin_end_date": "",
+        "rights_third_review_by": "",
+        "rights_third_review_at": "",
+        "import_copr_rights_ids": [
+          "bq2078908-o1160956"
+        ],
+        "defect_copy_rights_ids": [],
+        "risk_export_copr_rights_ids": [
+          "bq2078908-risk001"
+        ],
+        "export_copr_rights_id_kuaishou": "",
+        "export_copr_rights_id_douyin": "",
+        "is_restricted_kuaishou": false,
+        "is_risk_vertical_short_drama": false,
+        "is_risk_edit_duration": false,
+        "main_cid": "mzc00200zpfu9dt",
+        "cid_info": {
+          "cid": "mzc00200zpfu9dt",
+          "title": "人世间",
+          "hot_level": "A",
+          "new_pic_hz": "https://picsum.photos/seed/rsj/320/180",
+          "new_pic_vt": "https://picsum.photos/seed/rsjv/180/240"
+        },
+        "proxy_time_end_kuaishou": "2029-03-13",
+        "proxy_time_end_douyin": "2026-05-06",
+        "operator": "system",
+        "created_at": "2026-03-06 09:00:00",
+        "updated_at": "2026-03-06 09:00:00",
+        "xwq_status": "生效中",
+        "online_status": "在线",
+        "defect_type": "",
+        "authorized_projects": [],
+        "rights_infos": [
+          {
+            "copr_rights_id": "bq2078908-o1160956",
+            "contract_codes": "T180-PCG-20260100000017",
+            "copyright_type": "import",
+            "copyright_time_start": "2025-01-01",
+            "copyright_time_end": "2027-12-31",
+            "ip_authorize_right_external": "pending",
+            "rights_type_label": "信息网络传播权",
+            "authorized_platforms": [
+              "快手",
+              "抖音"
+            ],
+            "co_intention": "non_exclusive",
+            "copyright_rights": [
+              "information_network",
+              "editing"
+            ],
+            "resell_time_type": "inherit_auth_period",
+            "sub_license_permission": "joint_sublicense",
+            "resell_right_term": [
+              "platform_restriction"
+            ],
+            "resell_right_other_term": "",
+            "copyright_area": [
+              "mainland_china"
+            ],
+            "edit_right_term_option": [
+              "duration_limit"
+            ],
+            "edit_right_other_term": "",
+            "edit_right_duration_term": "3",
+            "second_creation_has_rights": "123127036",
+            "second_creation_exclusivity": "non_exclusive",
+            "second_creation_sublicense": "allowed",
+            "second_creation_sublicense_remark": "",
+            "achievements_time_requirement_authorized_use": "no_limit",
+            "achievements_quantity_requirement_authorized_use": "no_limit",
+            "second_creation_new_attribution": "joint_ownership",
+            "dissemination_restrictions_channels_authorized_use": "no_limit",
+            "dissemination_restrictions_period_authorized_use": "no_limit",
+            "dissemination_restrictions_area_authorized_use": "no_limit"
+          }
+        ]
+      },
+      {
+        "audit_id": "AUD-2026042012",
+        "copyright_id": "bq2078895",
+        "play_name": "完美世界",
+        "play_name_alias": "完美世界",
+        "play_category": "7",
+        "task_type": "risk_review",
+        "change_type": "distribution_conflict",
+        "task_time": "2026-03-06 10:40:00",
+        "audit_progress": "rights_second_review",
+        "rights_first_review_result": "rights_defect",
+        "rights_first_review_defect_type": [
+          "distributed_secondary_creation"
+        ],
+        "rights_first_review_other_defect_type": "",
+        "rights_first_review_authorized_platforms": [
+          "douyin"
+        ],
+        "rights_first_review_excluded_platforms": [
+          "kuaishou"
+        ],
+        "rights_first_review_by": "zhangsan",
+        "rights_first_review_at": "2026-03-07 10:00:00",
+        "rights_first_review_remark": "存在分销冲突",
+        "rights_second_review_result": "",
+        "rights_second_review_authorized_platforms": [],
+        "rights_second_review_excluded_platforms": [],
+        "rights_second_review_defect_type": [],
+        "rights_second_review_defect_disposal_method": "",
+        "rights_second_review_by": "",
+        "rights_second_review_at": "",
+        "rights_second_review_remark": "",
+        "import_copr_rights_id": "",
+        "rights_third_review_result": "",
+        "rights_third_review_defect_disposal_result": "",
+        "rights_third_review_authorized_platform_kuaishou": "",
+        "rights_third_review_authorized_platform_kuaishou_start_date": "",
+        "rights_third_review_authorized_platform_kuaishou_end_date": "",
+        "rights_third_review_authorized_platform_douyin": "",
+        "rights_third_review_authorized_platform_douyin_start_date": "",
+        "rights_third_review_authorized_platform_douyin_end_date": "",
+        "rights_third_review_by": "",
+        "rights_third_review_at": "",
+        "import_copr_rights_ids": [
+          "bq2078895-o1160943"
+        ],
+        "defect_copy_rights_ids": [
+          "bq2078895-d001"
+        ],
+        "risk_export_copr_rights_ids": [
+          "bq2078895-risk001"
+        ],
+        "export_copr_rights_id_kuaishou": "",
+        "export_copr_rights_id_douyin": "",
+        "is_restricted_kuaishou": false,
+        "is_risk_vertical_short_drama": false,
+        "is_risk_edit_duration": false,
+        "main_cid": "mzc00200ynet7eu",
+        "cid_info": {
+          "cid": "mzc00200ynet7eu",
+          "title": "完美世界",
+          "hot_level": "B",
+          "new_pic_hz": "https://picsum.photos/seed/wmsj/320/180",
+          "new_pic_vt": "https://picsum.photos/seed/wmsjv/180/240"
+        },
+        "proxy_time_end_kuaishou": "2029-03-13",
+        "proxy_time_end_douyin": "2026-05-06",
+        "operator": "system",
+        "created_at": "2026-03-06 10:40:00",
+        "updated_at": "2026-03-07 10:00:00",
+        "xwq_status": "生效中",
+        "online_status": "在线",
+        "defect_type": "",
+        "authorized_projects": [],
+        "rights_infos": [
+          {
+            "copr_rights_id": "bq2078895-o1160943",
+            "contract_codes": "T180-PCG-20260100000018",
+            "copyright_type": "import",
+            "copyright_time_start": "2025-01-01",
+            "copyright_time_end": "2027-12-31",
+            "ip_authorize_right_external": "pending",
+            "rights_type_label": "信息网络传播权",
+            "authorized_platforms": [
+              "快手",
+              "抖音"
+            ],
+            "co_intention": "non_exclusive",
+            "copyright_rights": [
+              "information_network",
+              "editing"
+            ],
+            "resell_time_type": "inherit_auth_period",
+            "sub_license_permission": "joint_sublicense",
+            "resell_right_term": [
+              "platform_restriction"
+            ],
+            "resell_right_other_term": "",
+            "copyright_area": [
+              "mainland_china"
+            ],
+            "edit_right_term_option": [
+              "duration_limit"
+            ],
+            "edit_right_other_term": "",
+            "edit_right_duration_term": "3",
+            "second_creation_has_rights": "123127036",
+            "second_creation_exclusivity": "non_exclusive",
+            "second_creation_sublicense": "allowed",
+            "second_creation_sublicense_remark": "",
+            "achievements_time_requirement_authorized_use": "no_limit",
+            "achievements_quantity_requirement_authorized_use": "no_limit",
+            "second_creation_new_attribution": "joint_ownership",
+            "dissemination_restrictions_channels_authorized_use": "no_limit",
+            "dissemination_restrictions_period_authorized_use": "no_limit",
+            "dissemination_restrictions_area_authorized_use": "no_limit"
+          }
+        ]
+      },
+      {
+        "audit_id": "AUD-2026042013",
+        "copyright_id": "bq2078916",
+        "play_name": "漫长的季节",
+        "play_name_alias": "漫长的季节",
+        "play_category": "1",
+        "task_type": "risk_review",
+        "change_type": "distribution_conflict",
+        "task_time": "2026-03-07 09:00:00",
+        "audit_progress": "rights_third_review",
+        "rights_first_review_result": "rights_available",
+        "rights_first_review_defect_type": [],
+        "rights_first_review_other_defect_type": "",
+        "rights_first_review_authorized_platforms": [
+          "kuaishou",
+          "douyin"
+        ],
+        "rights_first_review_excluded_platforms": [],
+        "rights_first_review_by": "zhangsan",
+        "rights_first_review_at": "2026-03-08 10:00:00",
+        "rights_first_review_remark": "",
+        "rights_second_review_result": "rights_available",
+        "rights_second_review_authorized_platforms": [
+          "kuaishou",
+          "douyin"
+        ],
+        "rights_second_review_excluded_platforms": [],
+        "rights_second_review_defect_type": [],
+        "rights_second_review_defect_disposal_method": "",
+        "rights_second_review_by": "lifawu",
+        "rights_second_review_at": "2026-03-09 14:00:00",
+        "rights_second_review_remark": "",
+        "import_copr_rights_id": "bq2078916-o1160964",
+        "rights_third_review_result": "",
+        "rights_third_review_defect_disposal_result": "",
+        "rights_third_review_authorized_platform_kuaishou": "",
+        "rights_third_review_authorized_platform_kuaishou_start_date": "",
+        "rights_third_review_authorized_platform_kuaishou_end_date": "",
+        "rights_third_review_authorized_platform_douyin": "",
+        "rights_third_review_authorized_platform_douyin_start_date": "",
+        "rights_third_review_authorized_platform_douyin_end_date": "",
+        "rights_third_review_by": "",
+        "rights_third_review_at": "",
+        "import_copr_rights_ids": [
+          "bq2078916-o1160964"
+        ],
+        "defect_copy_rights_ids": [],
+        "risk_export_copr_rights_ids": [
+          "bq2078916-risk001"
+        ],
+        "export_copr_rights_id_kuaishou": "",
+        "export_copr_rights_id_douyin": "",
+        "is_restricted_kuaishou": false,
+        "is_risk_vertical_short_drama": false,
+        "is_risk_edit_duration": false,
+        "main_cid": "mzc002001qgv0cs",
+        "cid_info": {
+          "cid": "mzc002001qgv0cs",
+          "title": "漫长的季节",
+          "hot_level": "S",
+          "new_pic_hz": "https://picsum.photos/seed/mcjj/320/180",
+          "new_pic_vt": "https://picsum.photos/seed/mcjjv/180/240"
+        },
+        "proxy_time_end_kuaishou": "2029-03-13",
+        "proxy_time_end_douyin": "2026-05-06",
+        "operator": "system",
+        "created_at": "2026-03-07 09:00:00",
+        "updated_at": "2026-03-09 14:00:00",
+        "xwq_status": "生效中",
+        "online_status": "在线",
+        "defect_type": "",
+        "authorized_projects": [],
+        "rights_infos": [
+          {
+            "copr_rights_id": "bq2078916-o1160964",
+            "contract_codes": "T180-PCG-20260100000019",
+            "copyright_type": "import",
+            "copyright_time_start": "2025-01-01",
+            "copyright_time_end": "2027-12-31",
+            "ip_authorize_right_external": "pending",
+            "rights_type_label": "信息网络传播权",
+            "authorized_platforms": [
+              "快手",
+              "抖音"
+            ],
+            "co_intention": "non_exclusive",
+            "copyright_rights": [
+              "information_network",
+              "editing"
+            ],
+            "resell_time_type": "inherit_auth_period",
+            "sub_license_permission": "joint_sublicense",
+            "resell_right_term": [
+              "platform_restriction"
+            ],
+            "resell_right_other_term": "",
+            "copyright_area": [
+              "mainland_china"
+            ],
+            "edit_right_term_option": [
+              "duration_limit"
+            ],
+            "edit_right_other_term": "",
+            "edit_right_duration_term": "3",
+            "second_creation_has_rights": "123127036",
+            "second_creation_exclusivity": "non_exclusive",
+            "second_creation_sublicense": "allowed",
+            "second_creation_sublicense_remark": "",
+            "achievements_time_requirement_authorized_use": "no_limit",
+            "achievements_quantity_requirement_authorized_use": "no_limit",
+            "second_creation_new_attribution": "joint_ownership",
+            "dissemination_restrictions_channels_authorized_use": "no_limit",
+            "dissemination_restrictions_period_authorized_use": "no_limit",
+            "dissemination_restrictions_area_authorized_use": "no_limit"
+          },
+          {
+            "copr_rights_id": "bq2078916-exp-6075",
+            "contract_codes": "T180-PCG-20260100000020",
+            "copyright_type": "export",
+            "export_platform": "快手",
+            "export_rights_type": "二创授权",
+            "export_time_start": "2026-01-01",
+            "export_time_end": "2026-12-31",
+            "ip_authorize_right_external": "pending"
+          }
+        ]
+      },
+      {
+        "audit_id": "AUD-2026042014",
+        "copyright_id": "bq2078955",
+        "play_name": "蓝色星球中国篇",
+        "play_name_alias": "蓝色星球",
+        "play_category": "6",
+        "task_type": "risk_review",
+        "change_type": "distribution_conflict",
+        "task_time": "2026-03-07 14:30:00",
+        "audit_progress": "confirmed_rights",
+        "rights_first_review_result": "rights_available",
+        "rights_first_review_defect_type": [],
+        "rights_first_review_other_defect_type": "",
+        "rights_first_review_authorized_platforms": [
+          "kuaishou",
+          "douyin"
+        ],
+        "rights_first_review_excluded_platforms": [],
+        "rights_first_review_by": "zhangsan",
+        "rights_first_review_at": "2026-03-08 14:00:00",
+        "rights_first_review_remark": "",
+        "rights_second_review_result": "rights_available",
+        "rights_second_review_authorized_platforms": [
+          "kuaishou",
+          "douyin"
+        ],
+        "rights_second_review_excluded_platforms": [],
+        "rights_second_review_defect_type": [],
+        "rights_second_review_defect_disposal_method": "",
+        "rights_second_review_by": "lifawu",
+        "rights_second_review_at": "2026-03-09 16:00:00",
+        "rights_second_review_remark": "",
+        "import_copr_rights_id": "bq2078955-o1161003",
+        "rights_third_review_result": "not_authorized",
+        "rights_third_review_defect_disposal_result": "",
+        "rights_third_review_authorized_platform_kuaishou": "",
+        "rights_third_review_authorized_platform_kuaishou_start_date": "",
+        "rights_third_review_authorized_platform_kuaishou_end_date": "",
+        "rights_third_review_authorized_platform_douyin": "",
+        "rights_third_review_authorized_platform_douyin_start_date": "",
+        "rights_third_review_authorized_platform_douyin_end_date": "",
+        "rights_third_review_by": "wangpinlei",
+        "rights_third_review_at": "2026-03-10 09:00:00",
+        "import_copr_rights_ids": [
+          "bq2078955-o1161003"
+        ],
+        "defect_copy_rights_ids": [],
+        "risk_export_copr_rights_ids": [
+          "bq2078955-risk001"
+        ],
+        "export_copr_rights_id_kuaishou": "",
+        "export_copr_rights_id_douyin": "",
+        "is_restricted_kuaishou": false,
+        "is_risk_vertical_short_drama": false,
+        "is_risk_edit_duration": false,
+        "recovery_reason_kuaishou": "分销冲突",
+        "recovery_date_kuaishou": "2026-03-11 00:00:00",
+        "main_cid": "mzc002005ukz7yo",
+        "cid_info": {
+          "cid": "mzc002005ukz7yo",
+          "title": "蓝色星球中国篇",
+          "hot_level": "B",
+          "new_pic_hz": "https://picsum.photos/seed/lsxq/320/180",
+          "new_pic_vt": "https://picsum.photos/seed/lsxqv/180/240"
+        },
+        "proxy_time_end_kuaishou": "2029-03-13",
+        "proxy_time_end_douyin": "2026-05-06",
+        "operator": "wangpinlei",
+        "created_at": "2026-03-07 14:30:00",
+        "updated_at": "2026-03-10 09:00:00",
+        "xwq_status": "生效中",
+        "online_status": "在线",
+        "defect_type": "",
+        "authorized_projects": [],
+        "rights_infos": [
+          {
+            "copr_rights_id": "bq2078955-o1161003",
+            "contract_codes": "T180-PCG-20260100000021",
+            "copyright_type": "import",
+            "copyright_time_start": "2025-01-01",
+            "copyright_time_end": "2027-12-31",
+            "ip_authorize_right_external": "pending",
+            "rights_type_label": "信息网络传播权",
+            "authorized_platforms": [
+              "快手",
+              "抖音"
+            ],
+            "co_intention": "non_exclusive",
+            "copyright_rights": [
+              "information_network",
+              "editing"
+            ],
+            "resell_time_type": "inherit_auth_period",
+            "sub_license_permission": "joint_sublicense",
+            "resell_right_term": [
+              "platform_restriction"
+            ],
+            "resell_right_other_term": "",
+            "copyright_area": [
+              "mainland_china"
+            ],
+            "edit_right_term_option": [
+              "duration_limit"
+            ],
+            "edit_right_other_term": "",
+            "edit_right_duration_term": "3",
+            "second_creation_has_rights": "123127036",
+            "second_creation_exclusivity": "non_exclusive",
+            "second_creation_sublicense": "allowed",
+            "second_creation_sublicense_remark": "",
+            "achievements_time_requirement_authorized_use": "no_limit",
+            "achievements_quantity_requirement_authorized_use": "no_limit",
+            "second_creation_new_attribution": "joint_ownership",
+            "dissemination_restrictions_channels_authorized_use": "no_limit",
+            "dissemination_restrictions_period_authorized_use": "no_limit",
+            "dissemination_restrictions_area_authorized_use": "no_limit"
+          },
+          {
+            "copr_rights_id": "bq2078955-exp-3925",
+            "contract_codes": "T180-PCG-20260100000022",
+            "copyright_type": "export",
+            "export_platform": "快手",
+            "export_rights_type": "二创授权",
+            "export_time_start": "2026-01-01",
+            "export_time_end": "2026-12-31",
+            "ip_authorize_right_external": "authorized"
+          }
+        ]
+      },
+      {
+        "audit_id": "AUD-2026042017",
+        "copyright_id": "bq2078971",
+        "play_name": "斗破苍穹年番",
+        "play_name_alias": "斗破年番",
+        "play_category": "7",
+        "task_type": "authorization_review",
+        "task_time": "2026-03-09 10:45:00",
+        "audit_progress": "rights_third_review",
+        "rights_first_review_result": "rights_available",
+        "rights_first_review_defect_type": [],
+        "rights_first_review_other_defect_type": "",
+        "rights_first_review_authorized_platforms": [
+          "kuaishou",
+          "douyin"
+        ],
+        "rights_first_review_excluded_platforms": [],
+        "rights_first_review_by": "zhangsan",
+        "rights_first_review_at": "2026-03-10 10:00:00",
+        "rights_first_review_remark": "",
+        "rights_second_review_result": "rights_available",
+        "rights_second_review_authorized_platforms": [
+          "kuaishou",
+          "douyin"
+        ],
+        "rights_second_review_excluded_platforms": [],
+        "rights_second_review_defect_type": [],
+        "rights_second_review_defect_disposal_method": "",
+        "rights_second_review_by": "lifawu",
+        "rights_second_review_at": "2026-03-11 14:00:00",
+        "rights_second_review_remark": "",
+        "import_copr_rights_id": "bq2078971-o1161019",
+        "rights_third_review_result": "",
+        "rights_third_review_defect_disposal_result": "",
+        "rights_third_review_authorized_platform_kuaishou": "",
+        "rights_third_review_authorized_platform_kuaishou_start_date": "",
+        "rights_third_review_authorized_platform_kuaishou_end_date": "",
+        "rights_third_review_authorized_platform_douyin": "",
+        "rights_third_review_authorized_platform_douyin_start_date": "",
+        "rights_third_review_authorized_platform_douyin_end_date": "",
+        "rights_third_review_by": "",
+        "rights_third_review_at": "",
+        "import_copr_rights_ids": [
+          "bq2078971-o1161019"
+        ],
+        "defect_copy_rights_ids": [],
+        "export_copr_rights_id_kuaishou": "",
+        "export_copr_rights_id_douyin": "",
+        "is_restricted_kuaishou": false,
+        "is_risk_vertical_short_drama": false,
+        "is_risk_edit_duration": true,
+        "main_cid": "mzc002007wmb5wm",
+        "cid_info": {
+          "cid": "mzc002007wmb5wm",
+          "title": "斗破苍穹年番",
+          "hot_level": "A",
+          "new_pic_hz": "https://picsum.photos/seed/dpcq/320/180",
+          "new_pic_vt": "https://picsum.photos/seed/dpcqv/180/240"
+        },
+        "proxy_time_end_kuaishou": "2029-03-13",
+        "proxy_time_end_douyin": "2026-05-06",
+        "operator": "system",
+        "created_at": "2026-03-09 10:45:00",
+        "updated_at": "2026-03-11 14:00:00",
+        "xwq_status": "生效中",
+        "online_status": "在线",
+        "defect_type": "",
+        "authorized_projects": [],
+        "rights_infos": [
+          {
+            "copr_rights_id": "bq2078971-o1161019",
+            "contract_codes": "T180-PCG-20260100000023",
+            "copyright_type": "import",
+            "copyright_time_start": "2025-01-01",
+            "copyright_time_end": "2027-12-31",
+            "ip_authorize_right_external": "pending",
+            "rights_type_label": "信息网络传播权",
+            "authorized_platforms": [
+              "快手",
+              "抖音"
+            ],
+            "co_intention": "non_exclusive",
+            "copyright_rights": [
+              "information_network",
+              "editing"
+            ],
+            "resell_time_type": "inherit_auth_period",
+            "sub_license_permission": "joint_sublicense",
+            "resell_right_term": [
+              "platform_restriction"
+            ],
+            "resell_right_other_term": "",
+            "copyright_area": [
+              "mainland_china"
+            ],
+            "edit_right_term_option": [
+              "duration_limit"
+            ],
+            "edit_right_other_term": "",
+            "edit_right_duration_term": "3",
+            "second_creation_has_rights": "123127036",
+            "second_creation_exclusivity": "non_exclusive",
+            "second_creation_sublicense": "allowed",
+            "second_creation_sublicense_remark": "",
+            "achievements_time_requirement_authorized_use": "no_limit",
+            "achievements_quantity_requirement_authorized_use": "no_limit",
+            "second_creation_new_attribution": "joint_ownership",
+            "dissemination_restrictions_channels_authorized_use": "no_limit",
+            "dissemination_restrictions_period_authorized_use": "no_limit",
+            "dissemination_restrictions_area_authorized_use": "no_limit"
+          },
+          {
+            "copr_rights_id": "bq2078971-exp-1022",
+            "contract_codes": "T180-PCG-20260100000024",
+            "copyright_type": "export",
+            "export_platform": "快手",
+            "export_rights_type": "二创授权",
+            "export_time_start": "2026-01-01",
+            "export_time_end": "2026-12-31",
+            "ip_authorize_right_external": "pending"
+          }
+        ]
+      },
+      {
+        "audit_id": "AUD-2026042019",
+        "copyright_id": "bq2078932",
+        "play_name": "去有风的地方",
+        "play_name_alias": "有风",
+        "play_category": "6",
+        "task_type": "authorization_review",
+        "task_time": "2026-03-11 10:20:00",
+        "audit_progress": "rights_second_review",
+        "rights_first_review_result": "rights_available",
+        "rights_first_review_defect_type": [],
+        "rights_first_review_other_defect_type": "",
+        "rights_first_review_authorized_platforms": [
+          "kuaishou",
+          "douyin"
+        ],
+        "rights_first_review_excluded_platforms": [],
+        "rights_first_review_by": "zhangsan",
+        "rights_first_review_at": "2026-03-12 10:00:00",
+        "rights_first_review_remark": "",
+        "rights_second_review_result": "",
+        "rights_second_review_authorized_platforms": [],
+        "rights_second_review_excluded_platforms": [],
+        "rights_second_review_defect_type": [],
+        "rights_second_review_defect_disposal_method": "",
+        "rights_second_review_by": "",
+        "rights_second_review_at": "",
+        "rights_second_review_remark": "",
+        "import_copr_rights_id": "",
+        "rights_third_review_result": "",
+        "rights_third_review_defect_disposal_result": "",
+        "rights_third_review_authorized_platform_kuaishou": "",
+        "rights_third_review_authorized_platform_kuaishou_start_date": "",
+        "rights_third_review_authorized_platform_kuaishou_end_date": "",
+        "rights_third_review_authorized_platform_douyin": "",
+        "rights_third_review_authorized_platform_douyin_start_date": "",
+        "rights_third_review_authorized_platform_douyin_end_date": "",
+        "rights_third_review_by": "",
+        "rights_third_review_at": "",
+        "import_copr_rights_ids": [
+          "bq2078932-o1160980"
+        ],
+        "defect_copy_rights_ids": [],
+        "export_copr_rights_id_kuaishou": "",
+        "export_copr_rights_id_douyin": "",
+        "is_restricted_kuaishou": false,
+        "is_risk_vertical_short_drama": false,
+        "is_risk_edit_duration": false,
+        "main_cid": "mzc002003six2aq",
+        "cid_info": {
+          "cid": "mzc002003six2aq",
+          "title": "去有风的地方",
+          "hot_level": "A",
+          "new_pic_hz": "https://picsum.photos/seed/qyf/320/180",
+          "new_pic_vt": "https://picsum.photos/seed/qyfv/180/240"
+        },
+        "proxy_time_end_kuaishou": "2029-03-13",
+        "proxy_time_end_douyin": "2026-05-06",
+        "operator": "system",
+        "created_at": "2026-03-11 10:20:00",
+        "updated_at": "2026-03-12 10:00:00",
+        "xwq_status": "生效中",
+        "online_status": "在线",
+        "defect_type": "",
+        "authorized_projects": [],
+        "rights_infos": [
+          {
+            "copr_rights_id": "bq2078932-o1160980",
+            "contract_codes": "T180-PCG-20260100000025",
+            "copyright_type": "import",
+            "copyright_time_start": "2025-01-01",
+            "copyright_time_end": "2027-12-31",
+            "ip_authorize_right_external": "pending",
+            "rights_type_label": "信息网络传播权",
+            "authorized_platforms": [
+              "快手",
+              "抖音"
+            ],
+            "co_intention": "non_exclusive",
+            "copyright_rights": [
+              "information_network",
+              "editing"
+            ],
+            "resell_time_type": "inherit_auth_period",
+            "sub_license_permission": "joint_sublicense",
+            "resell_right_term": [
+              "platform_restriction"
+            ],
+            "resell_right_other_term": "",
+            "copyright_area": [
+              "mainland_china"
+            ],
+            "edit_right_term_option": [
+              "duration_limit"
+            ],
+            "edit_right_other_term": "",
+            "edit_right_duration_term": "3",
+            "second_creation_has_rights": "123127036",
+            "second_creation_exclusivity": "non_exclusive",
+            "second_creation_sublicense": "allowed",
+            "second_creation_sublicense_remark": "",
+            "achievements_time_requirement_authorized_use": "no_limit",
+            "achievements_quantity_requirement_authorized_use": "no_limit",
+            "second_creation_new_attribution": "joint_ownership",
+            "dissemination_restrictions_channels_authorized_use": "no_limit",
+            "dissemination_restrictions_period_authorized_use": "no_limit",
+            "dissemination_restrictions_area_authorized_use": "no_limit"
+          }
+        ]
+      },
+      {
+        "audit_id": "AUD-2026042020",
+        "copyright_id": "bq2078994",
+        "play_name": "风起洛阳2",
+        "play_name_alias": "洛阳2",
+        "play_category": "7",
+        "task_type": "authorization_review",
+        "task_time": "2026-03-12 09:00:00",
+        "audit_progress": "confirmed_rights",
+        "rights_first_review_result": "rights_available",
+        "rights_first_review_defect_type": [],
+        "rights_first_review_other_defect_type": "",
+        "rights_first_review_authorized_platforms": [
+          "douyin"
+        ],
+        "rights_first_review_excluded_platforms": [
+          "kuaishou"
+        ],
+        "rights_first_review_by": "zhangsan",
+        "rights_first_review_at": "2026-03-13 10:00:00",
+        "rights_first_review_remark": "",
+        "rights_second_review_result": "rights_available",
+        "rights_second_review_authorized_platforms": [
+          "douyin"
+        ],
+        "rights_second_review_excluded_platforms": [
+          "kuaishou"
+        ],
+        "rights_second_review_defect_type": [],
+        "rights_second_review_defect_disposal_method": "",
+        "rights_second_review_by": "lifawu",
+        "rights_second_review_at": "2026-03-14 14:00:00",
+        "rights_second_review_remark": "",
+        "import_copr_rights_id": "bq2078994-o1161042",
+        "rights_third_review_result": "can_authorized",
+        "rights_third_review_defect_disposal_result": "",
+        "rights_third_review_authorized_platform_kuaishou": "",
+        "rights_third_review_authorized_platform_kuaishou_start_date": "",
+        "rights_third_review_authorized_platform_kuaishou_end_date": "",
+        "rights_third_review_authorized_platform_douyin": "Y",
+        "rights_third_review_authorized_platform_douyin_start_date": "2026-03-15",
+        "rights_third_review_authorized_platform_douyin_end_date": "2026-05-06",
+        "rights_third_review_by": "wangpinlei",
+        "rights_third_review_at": "2026-03-15 09:00:00",
+        "import_copr_rights_ids": [
+          "bq2078994-o1161042"
+        ],
+        "defect_copy_rights_ids": [],
+        "export_copr_rights_id_kuaishou": "",
+        "export_copr_rights_id_douyin": "bq2078994-exp-dy001",
+        "is_restricted_kuaishou": false,
+        "is_risk_vertical_short_drama": false,
+        "is_risk_edit_duration": false,
+        "main_cid": "mzc00200yod3uk",
+        "cid_info": {
+          "cid": "mzc00200yod3uk",
+          "title": "风起洛阳2",
+          "hot_level": "B",
+          "new_pic_hz": "https://picsum.photos/seed/fqly/320/180",
+          "new_pic_vt": "https://picsum.photos/seed/fqlyv/180/240"
+        },
+        "proxy_time_end_kuaishou": "2029-03-13",
+        "proxy_time_end_douyin": "2026-05-06",
+        "operator": "wangpinlei",
+        "created_at": "2026-03-12 09:00:00",
+        "updated_at": "2026-03-15 09:00:00",
+        "xwq_status": "生效中",
+        "online_status": "在线",
+        "defect_type": "",
+        "authorized_projects": [],
+        "rights_infos": [
+          {
+            "copr_rights_id": "bq2078994-o1161042",
+            "contract_codes": "T180-PCG-20260100000026",
+            "copyright_type": "import",
+            "copyright_time_start": "2025-01-01",
+            "copyright_time_end": "2027-12-31",
+            "ip_authorize_right_external": "pending",
+            "rights_type_label": "信息网络传播权",
+            "authorized_platforms": [
+              "快手",
+              "抖音"
+            ],
+            "co_intention": "non_exclusive",
+            "copyright_rights": [
+              "information_network",
+              "editing"
+            ],
+            "resell_time_type": "inherit_auth_period",
+            "sub_license_permission": "joint_sublicense",
+            "resell_right_term": [
+              "platform_restriction"
+            ],
+            "resell_right_other_term": "",
+            "copyright_area": [
+              "mainland_china"
+            ],
+            "edit_right_term_option": [
+              "duration_limit"
+            ],
+            "edit_right_other_term": "",
+            "edit_right_duration_term": "3",
+            "second_creation_has_rights": "123127036",
+            "second_creation_exclusivity": "non_exclusive",
+            "second_creation_sublicense": "allowed",
+            "second_creation_sublicense_remark": "",
+            "achievements_time_requirement_authorized_use": "no_limit",
+            "achievements_quantity_requirement_authorized_use": "no_limit",
+            "second_creation_new_attribution": "joint_ownership",
+            "dissemination_restrictions_channels_authorized_use": "no_limit",
+            "dissemination_restrictions_period_authorized_use": "no_limit",
+            "dissemination_restrictions_area_authorized_use": "no_limit"
+          },
+          {
+            "copr_rights_id": "bq2078994-exp-5871",
+            "contract_codes": "T180-PCG-20260100000027",
+            "copyright_type": "export",
+            "export_platform": "快手",
+            "export_rights_type": "二创授权",
+            "export_time_start": "2026-01-01",
+            "export_time_end": "2026-12-31",
+            "ip_authorize_right_external": "authorized"
+          }
+        ]
+      },
+      {
+        "rights_first_review_result": "",
+        "rights_first_review_defect_type": [],
+        "rights_first_review_other_defect_type": "",
+        "rights_first_review_authorized_platforms": [],
+        "rights_first_review_excluded_platforms": [],
+        "rights_first_review_by": "",
+        "rights_first_review_at": "",
+        "rights_first_review_remark": "",
+        "rights_second_review_result": "",
+        "rights_second_review_authorized_platforms": [],
+        "rights_second_review_excluded_platforms": [],
+        "rights_second_review_defect_type": [],
+        "rights_second_review_defect_disposal_method": "",
+        "rights_second_review_by": "",
+        "rights_second_review_at": "",
+        "rights_second_review_remark": "",
+        "import_copr_rights_id": "bq2079101-o1161133",
+        "import_copr_rights_ids": [
+          "bq2079101-o1161133"
+        ],
+        "defect_copy_rights_ids": [],
+        "rights_third_review_result": "",
+        "rights_third_review_authorized_platform_kuaishou": "",
+        "rights_third_review_authorized_platform_douyin": "",
+        "xwq_status": "生效中",
+        "online_status": "在线",
+        "defect_type": "",
+        "authorized_projects": [],
+        "project_id": "",
+        "audit_id": "AUD-2026042101",
+        "copyright_id": "bq2079101",
+        "play_name": "赘婿第二季",
+        "play_name_alias": "赘婿2",
+        "play_category": "1",
+        "task_type": "risk_review",
+        "change_type": "distribution_conflict",
+        "task_time": "2026-04-18 14:00:00",
+        "audit_progress": "rights_first_review",
+        "main_cid": "mzc00200xyzabc",
+        "cid_info": {
+          "cid": "mzc00200xyzabc",
+          "title": "赘婿第二季",
+          "hot_level": "A"
+        },
+        "operator": "system",
+        "created_at": "2026-04-18 14:00:00",
+        "updated_at": "2026-04-18 14:00:00",
+        "rights_infos": [
+          {
+            "copr_rights_id": "bq2079101-o1161133",
+            "contract_codes": "T180-PCG-20260100000028",
+            "copyright_type": "import",
+            "copyright_time_start": "2025-01-01",
+            "copyright_time_end": "2027-12-31",
+            "ip_authorize_right_external": "pending",
+            "rights_type_label": "信息网络传播权",
+            "authorized_platforms": [
+              "快手",
+              "抖音"
+            ],
+            "co_intention": "non_exclusive",
+            "copyright_rights": [
+              "information_network",
+              "editing"
+            ],
+            "resell_time_type": "inherit_auth_period",
+            "sub_license_permission": "joint_sublicense",
+            "resell_right_term": [
+              "platform_restriction"
+            ],
+            "resell_right_other_term": "",
+            "copyright_area": [
+              "mainland_china"
+            ],
+            "edit_right_term_option": [
+              "duration_limit"
+            ],
+            "edit_right_other_term": "",
+            "edit_right_duration_term": "3",
+            "second_creation_has_rights": "123127036",
+            "second_creation_exclusivity": "non_exclusive",
+            "second_creation_sublicense": "allowed",
+            "second_creation_sublicense_remark": "",
+            "achievements_time_requirement_authorized_use": "no_limit",
+            "achievements_quantity_requirement_authorized_use": "no_limit",
+            "second_creation_new_attribution": "joint_ownership",
+            "dissemination_restrictions_channels_authorized_use": "no_limit",
+            "dissemination_restrictions_period_authorized_use": "no_limit",
+            "dissemination_restrictions_area_authorized_use": "no_limit"
+          }
+        ]
+      },
+      {
+        "rights_first_review_result": "",
+        "rights_first_review_defect_type": [],
+        "rights_first_review_other_defect_type": "",
+        "rights_first_review_authorized_platforms": [],
+        "rights_first_review_excluded_platforms": [],
+        "rights_first_review_by": "",
+        "rights_first_review_at": "",
+        "rights_first_review_remark": "",
+        "rights_second_review_result": "",
+        "rights_second_review_authorized_platforms": [],
+        "rights_second_review_excluded_platforms": [],
+        "rights_second_review_defect_type": [],
+        "rights_second_review_defect_disposal_method": "",
+        "rights_second_review_by": "",
+        "rights_second_review_at": "",
+        "rights_second_review_remark": "",
+        "import_copr_rights_id": "bq2079205-o1161021",
+        "import_copr_rights_ids": [
+          "bq2079205-o1161021"
+        ],
+        "defect_copy_rights_ids": [],
+        "rights_third_review_result": "",
+        "rights_third_review_authorized_platform_kuaishou": "",
+        "rights_third_review_authorized_platform_douyin": "",
+        "xwq_status": "生效中",
+        "online_status": "在线",
+        "defect_type": "已分销二创",
+        "authorized_projects": [],
+        "project_id": "",
+        "audit_id": "AUD-2026042102",
+        "copyright_id": "bq2079205",
+        "play_name": "长相思第二季(风险)",
+        "play_name_alias": "长相思2",
+        "play_category": "1",
+        "task_type": "risk_review",
+        "change_type": "new_defect",
+        "task_time": "2026-04-19 10:30:00",
+        "audit_progress": "rights_first_review",
+        "main_cid": "mzc00200defghi",
+        "cid_info": {
+          "cid": "mzc00200defghi",
+          "title": "长相思第二季",
+          "hot_level": "S"
+        },
+        "operator": "system",
+        "created_at": "2026-04-19 10:30:00",
+        "updated_at": "2026-04-19 10:30:00",
+        "rights_infos": [
+          {
+            "copr_rights_id": "bq2079205-o1161021",
+            "contract_codes": "T180-PCG-20260100000029",
+            "copyright_type": "import",
+            "copyright_time_start": "2025-01-01",
+            "copyright_time_end": "2027-12-31",
+            "ip_authorize_right_external": "pending",
+            "rights_type_label": "信息网络传播权",
+            "authorized_platforms": [
+              "快手",
+              "抖音"
+            ],
+            "co_intention": "non_exclusive",
+            "copyright_rights": [
+              "information_network",
+              "editing"
+            ],
+            "resell_time_type": "inherit_auth_period",
+            "sub_license_permission": "joint_sublicense",
+            "resell_right_term": [
+              "platform_restriction"
+            ],
+            "resell_right_other_term": "",
+            "copyright_area": [
+              "mainland_china"
+            ],
+            "edit_right_term_option": [
+              "duration_limit"
+            ],
+            "edit_right_other_term": "",
+            "edit_right_duration_term": "3",
+            "second_creation_has_rights": "123127036",
+            "second_creation_exclusivity": "non_exclusive",
+            "second_creation_sublicense": "allowed",
+            "second_creation_sublicense_remark": "",
+            "achievements_time_requirement_authorized_use": "no_limit",
+            "achievements_quantity_requirement_authorized_use": "no_limit",
+            "second_creation_new_attribution": "joint_ownership",
+            "dissemination_restrictions_channels_authorized_use": "no_limit",
+            "dissemination_restrictions_period_authorized_use": "no_limit",
+            "dissemination_restrictions_area_authorized_use": "no_limit"
+          }
+        ]
+      },
+      {
+        "rights_first_review_result": "",
+        "rights_first_review_defect_type": [],
+        "rights_first_review_other_defect_type": "",
+        "rights_first_review_authorized_platforms": [],
+        "rights_first_review_excluded_platforms": [],
+        "rights_first_review_by": "",
+        "rights_first_review_at": "",
+        "rights_first_review_remark": "",
+        "rights_second_review_result": "",
+        "rights_second_review_authorized_platforms": [],
+        "rights_second_review_excluded_platforms": [],
+        "rights_second_review_defect_type": [],
+        "rights_second_review_defect_disposal_method": "",
+        "rights_second_review_by": "",
+        "rights_second_review_at": "",
+        "rights_second_review_remark": "",
+        "import_copr_rights_id": "bq2079310-o1161164",
+        "import_copr_rights_ids": [
+          "bq2079310-o1161164"
+        ],
+        "defect_copy_rights_ids": [],
+        "rights_third_review_result": "",
+        "rights_third_review_authorized_platform_kuaishou": "",
+        "rights_third_review_authorized_platform_douyin": "",
+        "xwq_status": "未知",
+        "online_status": "在线",
+        "defect_type": "",
+        "authorized_projects": [],
+        "project_id": "",
+        "audit_id": "AUD-2026042103",
+        "copyright_id": "bq2079310",
+        "play_name": "三体第三季(重审)",
+        "play_name_alias": "三体3",
+        "play_category": "1",
+        "task_type": "authorization_review",
+        "change_type": "defect_reaudit",
+        "task_time": "2026-04-20 16:00:00",
+        "audit_progress": "rights_first_review",
+        "main_cid": "mzc00200jklmno",
+        "cid_info": {
+          "cid": "mzc00200jklmno",
+          "title": "三体第三季",
+          "hot_level": "S"
+        },
+        "operator": "system",
+        "created_at": "2026-04-20 16:00:00",
+        "updated_at": "2026-04-20 16:00:00",
+        "is_reaudit": true,
+        "previous_audit_id": "AUD-2026042015",
+        "rights_infos": [
+          {
+            "copr_rights_id": "bq2079310-o1161164",
+            "contract_codes": "T180-PCG-20260100000030",
+            "copyright_type": "import",
+            "copyright_time_start": "2025-01-01",
+            "copyright_time_end": "2027-12-31",
+            "ip_authorize_right_external": "pending",
+            "rights_type_label": "信息网络传播权",
+            "authorized_platforms": [
+              "快手",
+              "抖音"
+            ],
+            "co_intention": "non_exclusive",
+            "copyright_rights": [
+              "information_network",
+              "editing"
+            ],
+            "resell_time_type": "inherit_auth_period",
+            "sub_license_permission": "joint_sublicense",
+            "resell_right_term": [
+              "platform_restriction"
+            ],
+            "resell_right_other_term": "",
+            "copyright_area": [
+              "mainland_china"
+            ],
+            "edit_right_term_option": [
+              "duration_limit"
+            ],
+            "edit_right_other_term": "",
+            "edit_right_duration_term": "3",
+            "second_creation_has_rights": "123127036",
+            "second_creation_exclusivity": "non_exclusive",
+            "second_creation_sublicense": "allowed",
+            "second_creation_sublicense_remark": "",
+            "achievements_time_requirement_authorized_use": "no_limit",
+            "achievements_quantity_requirement_authorized_use": "no_limit",
+            "second_creation_new_attribution": "joint_ownership",
+            "dissemination_restrictions_channels_authorized_use": "no_limit",
+            "dissemination_restrictions_period_authorized_use": "no_limit",
+            "dissemination_restrictions_area_authorized_use": "no_limit"
+          }
+        ]
+      },
+      {
+        "rights_first_review_result": "",
+        "rights_first_review_defect_type": [],
+        "rights_first_review_other_defect_type": "",
+        "rights_first_review_authorized_platforms": [],
+        "rights_first_review_excluded_platforms": [],
+        "rights_first_review_by": "",
+        "rights_first_review_at": "",
+        "rights_first_review_remark": "",
+        "rights_second_review_result": "",
+        "rights_second_review_authorized_platforms": [],
+        "rights_second_review_excluded_platforms": [],
+        "rights_second_review_defect_type": [],
+        "rights_second_review_defect_disposal_method": "",
+        "rights_second_review_by": "",
+        "rights_second_review_at": "",
+        "rights_second_review_remark": "",
+        "import_copr_rights_id": "bq2079401-o1161104",
+        "import_copr_rights_ids": [
+          "bq2079401-o1161104",
+          "bq2079401-o1161204"
+        ],
+        "defect_copy_rights_ids": [],
+        "rights_third_review_result": "",
+        "rights_third_review_authorized_platform_kuaishou": "",
+        "rights_third_review_authorized_platform_douyin": "",
+        "xwq_status": "生效中",
+        "online_status": "在线",
+        "defect_type": "",
+        "authorized_projects": [],
+        "project_id": "",
+        "task_type": "authorization_review",
+        "audit_progress": "rights_first_review",
+        "operator": "system",
+        "audit_id": "AUD-B001",
+        "copyright_id": "bq2079401",
+        "play_name": "墨雨云间第二季",
+        "play_name_alias": "墨雨2",
+        "play_category": "1",
+        "main_cid": "mzc00200batch00",
+        "cid_info": {
+          "cid": "mzc00200batch00",
+          "title": "墨雨云间第二季",
+          "hot_level": "S"
+        },
+        "task_time": "2026-04-15 10:00:00",
+        "created_at": "2026-04-15 10:00:00",
+        "updated_at": "2026-04-15 10:00:00",
+        "rights_infos": [
+          {
+            "copr_rights_id": "bq2079401-o1161104",
+            "contract_codes": "T180-PCG-20260100000031",
+            "copyright_type": "import",
+            "copyright_time_start": "2025-01-01",
+            "copyright_time_end": "2027-12-31",
+            "ip_authorize_right_external": "pending",
+            "rights_type_label": "信息网络传播权",
+            "authorized_platforms": [
+              "快手",
+              "抖音"
+            ],
+            "co_intention": "non_exclusive",
+            "copyright_rights": [
+              "information_network",
+              "editing"
+            ],
+            "resell_time_type": "inherit_auth_period",
+            "sub_license_permission": "joint_sublicense",
+            "resell_right_term": [
+              "platform_restriction"
+            ],
+            "resell_right_other_term": "",
+            "copyright_area": [
+              "mainland_china"
+            ],
+            "edit_right_term_option": [
+              "duration_limit"
+            ],
+            "edit_right_other_term": "",
+            "edit_right_duration_term": "3",
+            "second_creation_has_rights": "123127036",
+            "second_creation_exclusivity": "non_exclusive",
+            "second_creation_sublicense": "allowed",
+            "second_creation_sublicense_remark": "",
+            "achievements_time_requirement_authorized_use": "no_limit",
+            "achievements_quantity_requirement_authorized_use": "no_limit",
+            "second_creation_new_attribution": "joint_ownership",
+            "dissemination_restrictions_channels_authorized_use": "no_limit",
+            "dissemination_restrictions_period_authorized_use": "no_limit",
+            "dissemination_restrictions_area_authorized_use": "no_limit"
+          },
+          {
+            "copr_rights_id": "bq2079401-o1161204",
+            "contract_codes": "T180-PCG-20260100000032",
+            "copyright_type": "import",
+            "copyright_time_start": "2025-01-01",
+            "copyright_time_end": "2027-12-31",
+            "ip_authorize_right_external": "pending",
+            "rights_type_label": "二次创作权",
+            "authorized_platforms": [
+              "快手"
+            ],
+            "co_intention": "non_exclusive",
+            "copyright_rights": [
+              "information_network",
+              "editing"
+            ],
+            "resell_time_type": "inherit_auth_period",
+            "sub_license_permission": "joint_sublicense",
+            "resell_right_term": [
+              "platform_restriction"
+            ],
+            "resell_right_other_term": "",
+            "copyright_area": [
+              "mainland_china"
+            ],
+            "edit_right_term_option": [
+              "duration_limit"
+            ],
+            "edit_right_other_term": "",
+            "edit_right_duration_term": "3",
+            "second_creation_has_rights": "123127036",
+            "second_creation_exclusivity": "non_exclusive",
+            "second_creation_sublicense": "allowed",
+            "second_creation_sublicense_remark": "",
+            "achievements_time_requirement_authorized_use": "no_limit",
+            "achievements_quantity_requirement_authorized_use": "no_limit",
+            "second_creation_new_attribution": "joint_ownership",
+            "dissemination_restrictions_channels_authorized_use": "no_limit",
+            "dissemination_restrictions_period_authorized_use": "no_limit",
+            "dissemination_restrictions_area_authorized_use": "no_limit"
+          }
+        ]
+      },
+      {
+        "rights_first_review_result": "",
+        "rights_first_review_defect_type": [],
+        "rights_first_review_other_defect_type": "",
+        "rights_first_review_authorized_platforms": [],
+        "rights_first_review_excluded_platforms": [],
+        "rights_first_review_by": "",
+        "rights_first_review_at": "",
+        "rights_first_review_remark": "",
+        "rights_second_review_result": "",
+        "rights_second_review_authorized_platforms": [],
+        "rights_second_review_excluded_platforms": [],
+        "rights_second_review_defect_type": [],
+        "rights_second_review_defect_disposal_method": "",
+        "rights_second_review_by": "",
+        "rights_second_review_at": "",
+        "rights_second_review_remark": "",
+        "import_copr_rights_id": "bq2079402-o1161144",
+        "import_copr_rights_ids": [
+          "bq2079402-o1161144",
+          "bq2079402-o1161244"
+        ],
+        "defect_copy_rights_ids": [],
+        "rights_third_review_result": "",
+        "rights_third_review_authorized_platform_kuaishou": "",
+        "rights_third_review_authorized_platform_douyin": "",
+        "xwq_status": "生效中",
+        "online_status": "在线",
+        "defect_type": "",
+        "authorized_projects": [],
+        "project_id": "",
+        "task_type": "authorization_review",
+        "audit_progress": "rights_first_review",
+        "operator": "system",
+        "audit_id": "AUD-B002",
+        "copyright_id": "bq2079402",
+        "play_name": "长风渡第二季",
+        "play_name_alias": "长风渡2",
+        "play_category": "1",
+        "main_cid": "mzc00200batch01",
+        "cid_info": {
+          "cid": "mzc00200batch01",
+          "title": "长风渡第二季",
+          "hot_level": "A"
+        },
+        "task_time": "2026-04-16 10:00:00",
+        "created_at": "2026-04-16 10:00:00",
+        "updated_at": "2026-04-16 10:00:00",
+        "rights_infos": [
+          {
+            "copr_rights_id": "bq2079402-o1161144",
+            "contract_codes": "T180-PCG-20260100000033",
+            "copyright_type": "import",
+            "copyright_time_start": "2025-01-01",
+            "copyright_time_end": "2027-12-31",
+            "ip_authorize_right_external": "pending",
+            "rights_type_label": "信息网络传播权",
+            "authorized_platforms": [
+              "快手",
+              "抖音"
+            ],
+            "co_intention": "non_exclusive",
+            "copyright_rights": [
+              "information_network",
+              "editing"
+            ],
+            "resell_time_type": "inherit_auth_period",
+            "sub_license_permission": "joint_sublicense",
+            "resell_right_term": [
+              "platform_restriction"
+            ],
+            "resell_right_other_term": "",
+            "copyright_area": [
+              "mainland_china"
+            ],
+            "edit_right_term_option": [
+              "duration_limit"
+            ],
+            "edit_right_other_term": "",
+            "edit_right_duration_term": "3",
+            "second_creation_has_rights": "123127036",
+            "second_creation_exclusivity": "non_exclusive",
+            "second_creation_sublicense": "allowed",
+            "second_creation_sublicense_remark": "",
+            "achievements_time_requirement_authorized_use": "no_limit",
+            "achievements_quantity_requirement_authorized_use": "no_limit",
+            "second_creation_new_attribution": "joint_ownership",
+            "dissemination_restrictions_channels_authorized_use": "no_limit",
+            "dissemination_restrictions_period_authorized_use": "no_limit",
+            "dissemination_restrictions_area_authorized_use": "no_limit"
+          },
+          {
+            "copr_rights_id": "bq2079402-o1161244",
+            "contract_codes": "T180-PCG-20260100000034",
+            "copyright_type": "import",
+            "copyright_time_start": "2025-01-01",
+            "copyright_time_end": "2027-12-31",
+            "ip_authorize_right_external": "pending",
+            "rights_type_label": "二次创作权",
+            "authorized_platforms": [
+              "快手"
+            ],
+            "co_intention": "non_exclusive",
+            "copyright_rights": [
+              "information_network",
+              "editing"
+            ],
+            "resell_time_type": "inherit_auth_period",
+            "sub_license_permission": "joint_sublicense",
+            "resell_right_term": [
+              "platform_restriction"
+            ],
+            "resell_right_other_term": "",
+            "copyright_area": [
+              "mainland_china"
+            ],
+            "edit_right_term_option": [
+              "duration_limit"
+            ],
+            "edit_right_other_term": "",
+            "edit_right_duration_term": "3",
+            "second_creation_has_rights": "123127036",
+            "second_creation_exclusivity": "non_exclusive",
+            "second_creation_sublicense": "allowed",
+            "second_creation_sublicense_remark": "",
+            "achievements_time_requirement_authorized_use": "no_limit",
+            "achievements_quantity_requirement_authorized_use": "no_limit",
+            "second_creation_new_attribution": "joint_ownership",
+            "dissemination_restrictions_channels_authorized_use": "no_limit",
+            "dissemination_restrictions_period_authorized_use": "no_limit",
+            "dissemination_restrictions_area_authorized_use": "no_limit"
+          }
+        ]
+      },
+      {
+        "rights_first_review_result": "",
+        "rights_first_review_defect_type": [],
+        "rights_first_review_other_defect_type": "",
+        "rights_first_review_authorized_platforms": [],
+        "rights_first_review_excluded_platforms": [],
+        "rights_first_review_by": "",
+        "rights_first_review_at": "",
+        "rights_first_review_remark": "",
+        "rights_second_review_result": "",
+        "rights_second_review_authorized_platforms": [],
+        "rights_second_review_excluded_platforms": [],
+        "rights_second_review_defect_type": [],
+        "rights_second_review_defect_disposal_method": "",
+        "rights_second_review_by": "",
+        "rights_second_review_at": "",
+        "rights_second_review_remark": "",
+        "import_copr_rights_id": "bq2079403-o1161140",
+        "import_copr_rights_ids": [
+          "bq2079403-o1161140",
+          "bq2079403-o1161240"
+        ],
+        "defect_copy_rights_ids": [],
+        "rights_third_review_result": "",
+        "rights_third_review_authorized_platform_kuaishou": "",
+        "rights_third_review_authorized_platform_douyin": "",
+        "xwq_status": "生效中",
+        "online_status": "在线",
+        "defect_type": "",
+        "authorized_projects": [],
+        "project_id": "",
+        "task_type": "authorization_review",
+        "audit_progress": "rights_first_review",
+        "operator": "system",
+        "audit_id": "AUD-B003",
+        "copyright_id": "bq2079403",
+        "play_name": "我的人间烟火2",
+        "play_name_alias": "烟火2",
+        "play_category": "1",
+        "main_cid": "mzc00200batch02",
+        "cid_info": {
+          "cid": "mzc00200batch02",
+          "title": "我的人间烟火2",
+          "hot_level": "B"
+        },
+        "task_time": "2026-04-17 10:00:00",
+        "created_at": "2026-04-17 10:00:00",
+        "updated_at": "2026-04-17 10:00:00",
+        "rights_infos": [
+          {
+            "copr_rights_id": "bq2079403-o1161140",
+            "contract_codes": "T180-PCG-20260100000035",
+            "copyright_type": "import",
+            "copyright_time_start": "2025-01-01",
+            "copyright_time_end": "2027-12-31",
+            "ip_authorize_right_external": "pending",
+            "rights_type_label": "信息网络传播权",
+            "authorized_platforms": [
+              "快手",
+              "抖音"
+            ],
+            "co_intention": "non_exclusive",
+            "copyright_rights": [
+              "information_network",
+              "editing"
+            ],
+            "resell_time_type": "inherit_auth_period",
+            "sub_license_permission": "joint_sublicense",
+            "resell_right_term": [
+              "platform_restriction"
+            ],
+            "resell_right_other_term": "",
+            "copyright_area": [
+              "mainland_china"
+            ],
+            "edit_right_term_option": [
+              "duration_limit"
+            ],
+            "edit_right_other_term": "",
+            "edit_right_duration_term": "3",
+            "second_creation_has_rights": "123127036",
+            "second_creation_exclusivity": "non_exclusive",
+            "second_creation_sublicense": "allowed",
+            "second_creation_sublicense_remark": "",
+            "achievements_time_requirement_authorized_use": "no_limit",
+            "achievements_quantity_requirement_authorized_use": "no_limit",
+            "second_creation_new_attribution": "joint_ownership",
+            "dissemination_restrictions_channels_authorized_use": "no_limit",
+            "dissemination_restrictions_period_authorized_use": "no_limit",
+            "dissemination_restrictions_area_authorized_use": "no_limit"
+          },
+          {
+            "copr_rights_id": "bq2079403-o1161240",
+            "contract_codes": "T180-PCG-20260100000036",
+            "copyright_type": "import",
+            "copyright_time_start": "2025-01-01",
+            "copyright_time_end": "2027-12-31",
+            "ip_authorize_right_external": "authorized",
+            "rights_type_label": "二次创作权",
+            "authorized_platforms": [
+              "快手"
+            ],
+            "co_intention": "non_exclusive",
+            "copyright_rights": [
+              "information_network",
+              "editing"
+            ],
+            "resell_time_type": "inherit_auth_period",
+            "sub_license_permission": "joint_sublicense",
+            "resell_right_term": [
+              "platform_restriction"
+            ],
+            "resell_right_other_term": "",
+            "copyright_area": [
+              "mainland_china"
+            ],
+            "edit_right_term_option": [
+              "duration_limit"
+            ],
+            "edit_right_other_term": "",
+            "edit_right_duration_term": "3",
+            "second_creation_has_rights": "123127036",
+            "second_creation_exclusivity": "non_exclusive",
+            "second_creation_sublicense": "allowed",
+            "second_creation_sublicense_remark": "",
+            "achievements_time_requirement_authorized_use": "no_limit",
+            "achievements_quantity_requirement_authorized_use": "no_limit",
+            "second_creation_new_attribution": "joint_ownership",
+            "dissemination_restrictions_channels_authorized_use": "no_limit",
+            "dissemination_restrictions_period_authorized_use": "no_limit",
+            "dissemination_restrictions_area_authorized_use": "no_limit"
+          }
+        ]
+      },
+      {
+        "rights_first_review_result": "",
+        "rights_first_review_defect_type": [],
+        "rights_first_review_other_defect_type": "",
+        "rights_first_review_authorized_platforms": [],
+        "rights_first_review_excluded_platforms": [],
+        "rights_first_review_by": "",
+        "rights_first_review_at": "",
+        "rights_first_review_remark": "",
+        "rights_second_review_result": "",
+        "rights_second_review_authorized_platforms": [],
+        "rights_second_review_excluded_platforms": [],
+        "rights_second_review_defect_type": [],
+        "rights_second_review_defect_disposal_method": "",
+        "rights_second_review_by": "",
+        "rights_second_review_at": "",
+        "rights_second_review_remark": "",
+        "import_copr_rights_id": "bq2079404-o1161133",
+        "import_copr_rights_ids": [
+          "bq2079404-o1161133",
+          "bq2079404-o1161233"
+        ],
+        "defect_copy_rights_ids": [],
+        "rights_third_review_result": "",
+        "rights_third_review_authorized_platform_kuaishou": "",
+        "rights_third_review_authorized_platform_douyin": "",
+        "xwq_status": "生效中",
+        "online_status": "在线",
+        "defect_type": "",
+        "authorized_projects": [],
+        "project_id": "",
+        "task_type": "authorization_review",
+        "audit_progress": "rights_first_review",
+        "operator": "system",
+        "audit_id": "AUD-B004",
+        "copyright_id": "bq2079404",
+        "play_name": "狂飙第二季",
+        "play_name_alias": "狂飙2",
+        "play_category": "1",
+        "main_cid": "mzc00200batch03",
+        "cid_info": {
+          "cid": "mzc00200batch03",
+          "title": "狂飙第二季",
+          "hot_level": "S"
+        },
+        "task_time": "2026-04-18 10:00:00",
+        "created_at": "2026-04-18 10:00:00",
+        "updated_at": "2026-04-18 10:00:00",
+        "rights_infos": [
+          {
+            "copr_rights_id": "bq2079404-o1161133",
+            "contract_codes": "T180-PCG-20260100000037",
+            "copyright_type": "import",
+            "copyright_time_start": "2025-01-01",
+            "copyright_time_end": "2027-12-31",
+            "ip_authorize_right_external": "pending",
+            "rights_type_label": "信息网络传播权",
+            "authorized_platforms": [
+              "快手",
+              "抖音"
+            ],
+            "co_intention": "non_exclusive",
+            "copyright_rights": [
+              "information_network",
+              "editing"
+            ],
+            "resell_time_type": "inherit_auth_period",
+            "sub_license_permission": "joint_sublicense",
+            "resell_right_term": [
+              "platform_restriction"
+            ],
+            "resell_right_other_term": "",
+            "copyright_area": [
+              "mainland_china"
+            ],
+            "edit_right_term_option": [
+              "duration_limit"
+            ],
+            "edit_right_other_term": "",
+            "edit_right_duration_term": "3",
+            "second_creation_has_rights": "123127036",
+            "second_creation_exclusivity": "non_exclusive",
+            "second_creation_sublicense": "allowed",
+            "second_creation_sublicense_remark": "",
+            "achievements_time_requirement_authorized_use": "no_limit",
+            "achievements_quantity_requirement_authorized_use": "no_limit",
+            "second_creation_new_attribution": "joint_ownership",
+            "dissemination_restrictions_channels_authorized_use": "no_limit",
+            "dissemination_restrictions_period_authorized_use": "no_limit",
+            "dissemination_restrictions_area_authorized_use": "no_limit"
+          },
+          {
+            "copr_rights_id": "bq2079404-o1161233",
+            "contract_codes": "T180-PCG-20260100000038",
+            "copyright_type": "import",
+            "copyright_time_start": "2025-01-01",
+            "copyright_time_end": "2027-12-31",
+            "ip_authorize_right_external": "authorized",
+            "rights_type_label": "二次创作权",
+            "authorized_platforms": [
+              "快手"
+            ],
+            "co_intention": "non_exclusive",
+            "copyright_rights": [
+              "information_network",
+              "editing"
+            ],
+            "resell_time_type": "inherit_auth_period",
+            "sub_license_permission": "joint_sublicense",
+            "resell_right_term": [
+              "platform_restriction"
+            ],
+            "resell_right_other_term": "",
+            "copyright_area": [
+              "mainland_china"
+            ],
+            "edit_right_term_option": [
+              "duration_limit"
+            ],
+            "edit_right_other_term": "",
+            "edit_right_duration_term": "3",
+            "second_creation_has_rights": "123127036",
+            "second_creation_exclusivity": "non_exclusive",
+            "second_creation_sublicense": "allowed",
+            "second_creation_sublicense_remark": "",
+            "achievements_time_requirement_authorized_use": "no_limit",
+            "achievements_quantity_requirement_authorized_use": "no_limit",
+            "second_creation_new_attribution": "joint_ownership",
+            "dissemination_restrictions_channels_authorized_use": "no_limit",
+            "dissemination_restrictions_period_authorized_use": "no_limit",
+            "dissemination_restrictions_area_authorized_use": "no_limit"
+          }
+        ]
+      },
+      {
+        "rights_first_review_result": "",
+        "rights_first_review_defect_type": [],
+        "rights_first_review_other_defect_type": "",
+        "rights_first_review_authorized_platforms": [],
+        "rights_first_review_excluded_platforms": [],
+        "rights_first_review_by": "",
+        "rights_first_review_at": "",
+        "rights_first_review_remark": "",
+        "rights_second_review_result": "",
+        "rights_second_review_authorized_platforms": [],
+        "rights_second_review_excluded_platforms": [],
+        "rights_second_review_defect_type": [],
+        "rights_second_review_defect_disposal_method": "",
+        "rights_second_review_by": "",
+        "rights_second_review_at": "",
+        "rights_second_review_remark": "",
+        "import_copr_rights_id": "bq2079405-o1161158",
+        "import_copr_rights_ids": [
+          "bq2079405-o1161158",
+          "bq2079405-o1161258"
+        ],
+        "defect_copy_rights_ids": [],
+        "rights_third_review_result": "",
+        "rights_third_review_authorized_platform_kuaishou": "",
+        "rights_third_review_authorized_platform_douyin": "",
+        "xwq_status": "生效中",
+        "online_status": "在线",
+        "defect_type": "",
+        "authorized_projects": [],
+        "project_id": "",
+        "task_type": "authorization_review",
+        "audit_progress": "rights_first_review",
+        "operator": "system",
+        "audit_id": "AUD-B005",
+        "copyright_id": "bq2079405",
+        "play_name": "莲花楼第二季",
+        "play_name_alias": "莲花楼2",
+        "play_category": "1",
+        "main_cid": "mzc00200batch04",
+        "cid_info": {
+          "cid": "mzc00200batch04",
+          "title": "莲花楼第二季",
+          "hot_level": "A"
+        },
+        "task_time": "2026-04-19 10:00:00",
+        "created_at": "2026-04-19 10:00:00",
+        "updated_at": "2026-04-19 10:00:00",
+        "rights_infos": [
+          {
+            "copr_rights_id": "bq2079405-o1161158",
+            "contract_codes": "T180-PCG-20260100000039",
+            "copyright_type": "import",
+            "copyright_time_start": "2025-01-01",
+            "copyright_time_end": "2027-12-31",
+            "ip_authorize_right_external": "pending",
+            "rights_type_label": "信息网络传播权",
+            "authorized_platforms": [
+              "快手",
+              "抖音"
+            ],
+            "co_intention": "non_exclusive",
+            "copyright_rights": [
+              "information_network",
+              "editing"
+            ],
+            "resell_time_type": "inherit_auth_period",
+            "sub_license_permission": "joint_sublicense",
+            "resell_right_term": [
+              "platform_restriction"
+            ],
+            "resell_right_other_term": "",
+            "copyright_area": [
+              "mainland_china"
+            ],
+            "edit_right_term_option": [
+              "duration_limit"
+            ],
+            "edit_right_other_term": "",
+            "edit_right_duration_term": "3",
+            "second_creation_has_rights": "123127036",
+            "second_creation_exclusivity": "non_exclusive",
+            "second_creation_sublicense": "allowed",
+            "second_creation_sublicense_remark": "",
+            "achievements_time_requirement_authorized_use": "no_limit",
+            "achievements_quantity_requirement_authorized_use": "no_limit",
+            "second_creation_new_attribution": "joint_ownership",
+            "dissemination_restrictions_channels_authorized_use": "no_limit",
+            "dissemination_restrictions_period_authorized_use": "no_limit",
+            "dissemination_restrictions_area_authorized_use": "no_limit"
+          },
+          {
+            "copr_rights_id": "bq2079405-o1161258",
+            "contract_codes": "T180-PCG-20260100000040",
+            "copyright_type": "import",
+            "copyright_time_start": "2025-01-01",
+            "copyright_time_end": "2027-12-31",
+            "ip_authorize_right_external": "",
+            "rights_type_label": "二次创作权",
+            "authorized_platforms": [
+              "快手"
+            ],
+            "co_intention": "non_exclusive",
+            "copyright_rights": [
+              "information_network",
+              "editing"
+            ],
+            "resell_time_type": "inherit_auth_period",
+            "sub_license_permission": "joint_sublicense",
+            "resell_right_term": [
+              "platform_restriction"
+            ],
+            "resell_right_other_term": "",
+            "copyright_area": [
+              "mainland_china"
+            ],
+            "edit_right_term_option": [
+              "duration_limit"
+            ],
+            "edit_right_other_term": "",
+            "edit_right_duration_term": "3",
+            "second_creation_has_rights": "123127036",
+            "second_creation_exclusivity": "non_exclusive",
+            "second_creation_sublicense": "allowed",
+            "second_creation_sublicense_remark": "",
+            "achievements_time_requirement_authorized_use": "no_limit",
+            "achievements_quantity_requirement_authorized_use": "no_limit",
+            "second_creation_new_attribution": "joint_ownership",
+            "dissemination_restrictions_channels_authorized_use": "no_limit",
+            "dissemination_restrictions_period_authorized_use": "no_limit",
+            "dissemination_restrictions_area_authorized_use": "no_limit"
+          }
+        ]
+      },
+      {
+        "rights_first_review_result": "rights_available",
+        "rights_first_review_defect_type": [],
+        "rights_first_review_other_defect_type": "",
+        "rights_first_review_authorized_platforms": [],
+        "rights_first_review_excluded_platforms": [],
+        "rights_first_review_by": "zhangsan",
+        "rights_first_review_at": "2026-04-21 10:00:00",
+        "rights_first_review_remark": "",
+        "rights_second_review_result": "",
+        "rights_second_review_authorized_platforms": [],
+        "rights_second_review_excluded_platforms": [],
+        "rights_second_review_defect_type": [],
+        "rights_second_review_defect_disposal_method": "",
+        "rights_second_review_by": "",
+        "rights_second_review_at": "",
+        "rights_second_review_remark": "",
+        "import_copr_rights_id": "bq2079406-o1161312",
+        "import_copr_rights_ids": [
+          "bq2079406-o1161312",
+          "bq2079406-o1161412",
+          "bq2079406-o1161512"
+        ],
+        "defect_copy_rights_ids": [],
+        "rights_third_review_result": "",
+        "rights_third_review_authorized_platform_kuaishou": "",
+        "rights_third_review_authorized_platform_douyin": "",
+        "xwq_status": "生效中",
+        "online_status": "在线",
+        "defect_type": "",
+        "authorized_projects": [],
+        "project_id": "",
+        "task_type": "authorization_review",
+        "audit_progress": "rights_second_review",
+        "operator": "system",
+        "audit_id": "AUD-B006",
+        "copyright_id": "bq2079406",
+        "play_name": "开端第二季",
+        "play_name_alias": "开端2",
+        "play_category": "1",
+        "main_cid": "mzc00200batch05",
+        "cid_info": {
+          "cid": "mzc00200batch05",
+          "title": "开端第二季",
+          "hot_level": "A"
+        },
+        "task_time": "2026-04-20 10:00:00",
+        "created_at": "2026-04-20 10:00:00",
+        "updated_at": "2026-04-20 10:00:00",
+        "rights_infos": [
+          {
+            "copr_rights_id": "bq2079406-o1161312",
+            "contract_codes": "T180-PCG-20260100000041",
+            "copyright_type": "import",
+            "copyright_time_start": "2025-01-01",
+            "copyright_time_end": "2027-12-31",
+            "ip_authorize_right_external": "pending",
+            "rights_type_label": "信息网络传播权",
+            "authorized_platforms": [
+              "快手",
+              "抖音"
+            ],
+            "co_intention": "non_exclusive",
+            "copyright_rights": [
+              "information_network",
+              "editing"
+            ],
+            "resell_time_type": "inherit_auth_period",
+            "sub_license_permission": "joint_sublicense",
+            "resell_right_term": [
+              "platform_restriction"
+            ],
+            "resell_right_other_term": "",
+            "copyright_area": [
+              "mainland_china"
+            ],
+            "edit_right_term_option": [
+              "duration_limit"
+            ],
+            "edit_right_other_term": "",
+            "edit_right_duration_term": "3",
+            "second_creation_has_rights": "123127036",
+            "second_creation_exclusivity": "non_exclusive",
+            "second_creation_sublicense": "allowed",
+            "second_creation_sublicense_remark": "",
+            "achievements_time_requirement_authorized_use": "no_limit",
+            "achievements_quantity_requirement_authorized_use": "no_limit",
+            "second_creation_new_attribution": "joint_ownership",
+            "dissemination_restrictions_channels_authorized_use": "no_limit",
+            "dissemination_restrictions_period_authorized_use": "no_limit",
+            "dissemination_restrictions_area_authorized_use": "no_limit"
+          },
+          {
+            "copr_rights_id": "bq2079406-o1161412",
+            "contract_codes": "T180-PCG-20260100000042",
+            "copyright_type": "export",
+            "copyright_time_start": "2025-01-01",
+            "copyright_time_end": "2027-12-31",
+            "ip_authorize_right_external": "pending",
+            "rights_type_label": "二次创作权",
+            "authorized_platforms": [
+              "快手"
+            ],
+            "export_platform": "快手",
+            "export_rights_type": "二创授权",
+            "export_time_start": "2025-06-01",
+            "export_time_end": "2026-12-31"
+          },
+          {
+            "copr_rights_id": "bq2079406-o1161512",
+            "contract_codes": "T180-PCG-20260100000043",
+            "copyright_type": "import",
+            "copyright_time_start": "2025-01-01",
+            "copyright_time_end": "2027-12-31",
+            "ip_authorize_right_external": "authorized",
+            "rights_type_label": "信息网络传播权",
+            "authorized_platforms": [
+              "快手"
+            ],
+            "co_intention": "non_exclusive",
+            "copyright_rights": [
+              "information_network",
+              "editing"
+            ],
+            "resell_time_type": "inherit_auth_period",
+            "sub_license_permission": "joint_sublicense",
+            "resell_right_term": [
+              "platform_restriction"
+            ],
+            "resell_right_other_term": "",
+            "copyright_area": [
+              "mainland_china"
+            ],
+            "edit_right_term_option": [
+              "duration_limit"
+            ],
+            "edit_right_other_term": "",
+            "edit_right_duration_term": "3",
+            "second_creation_has_rights": "123127036",
+            "second_creation_exclusivity": "non_exclusive",
+            "second_creation_sublicense": "allowed",
+            "second_creation_sublicense_remark": "",
+            "achievements_time_requirement_authorized_use": "no_limit",
+            "achievements_quantity_requirement_authorized_use": "no_limit",
+            "second_creation_new_attribution": "joint_ownership",
+            "dissemination_restrictions_channels_authorized_use": "no_limit",
+            "dissemination_restrictions_period_authorized_use": "no_limit",
+            "dissemination_restrictions_area_authorized_use": "no_limit"
+          }
+        ]
+      },
+      {
+        "rights_first_review_result": "rights_available",
+        "rights_first_review_defect_type": [],
+        "rights_first_review_other_defect_type": "",
+        "rights_first_review_authorized_platforms": [],
+        "rights_first_review_excluded_platforms": [],
+        "rights_first_review_by": "zhangsan",
+        "rights_first_review_at": "2026-04-22 10:00:00",
+        "rights_first_review_remark": "",
+        "rights_second_review_result": "",
+        "rights_second_review_authorized_platforms": [],
+        "rights_second_review_excluded_platforms": [],
+        "rights_second_review_defect_type": [],
+        "rights_second_review_defect_disposal_method": "",
+        "rights_second_review_by": "",
+        "rights_second_review_at": "",
+        "rights_second_review_remark": "",
+        "import_copr_rights_id": "bq2079407-o1161341",
+        "import_copr_rights_ids": [
+          "bq2079407-o1161341",
+          "bq2079407-o1161441",
+          "bq2079407-o1161541"
+        ],
+        "defect_copy_rights_ids": [],
+        "rights_third_review_result": "",
+        "rights_third_review_authorized_platform_kuaishou": "",
+        "rights_third_review_authorized_platform_douyin": "",
+        "xwq_status": "生效中",
+        "online_status": "在线",
+        "defect_type": "",
+        "authorized_projects": [],
+        "project_id": "",
+        "task_type": "authorization_review",
+        "audit_progress": "rights_second_review",
+        "operator": "system",
+        "audit_id": "AUD-B007",
+        "copyright_id": "bq2079407",
+        "play_name": "苍兰诀第二季",
+        "play_name_alias": "苍兰诀2",
+        "play_category": "1",
+        "main_cid": "mzc00200batch06",
+        "cid_info": {
+          "cid": "mzc00200batch06",
+          "title": "苍兰诀第二季",
+          "hot_level": "S"
+        },
+        "task_time": "2026-04-21 10:00:00",
+        "created_at": "2026-04-21 10:00:00",
+        "updated_at": "2026-04-21 10:00:00",
+        "rights_infos": [
+          {
+            "copr_rights_id": "bq2079407-o1161341",
+            "contract_codes": "T180-PCG-20260100000044",
+            "copyright_type": "import",
+            "copyright_time_start": "2025-01-01",
+            "copyright_time_end": "2027-12-31",
+            "ip_authorize_right_external": "pending",
+            "rights_type_label": "信息网络传播权",
+            "authorized_platforms": [
+              "快手",
+              "抖音"
+            ],
+            "co_intention": "non_exclusive",
+            "copyright_rights": [
+              "information_network",
+              "editing"
+            ],
+            "resell_time_type": "inherit_auth_period",
+            "sub_license_permission": "joint_sublicense",
+            "resell_right_term": [
+              "platform_restriction"
+            ],
+            "resell_right_other_term": "",
+            "copyright_area": [
+              "mainland_china"
+            ],
+            "edit_right_term_option": [
+              "duration_limit"
+            ],
+            "edit_right_other_term": "",
+            "edit_right_duration_term": "3",
+            "second_creation_has_rights": "123127036",
+            "second_creation_exclusivity": "non_exclusive",
+            "second_creation_sublicense": "allowed",
+            "second_creation_sublicense_remark": "",
+            "achievements_time_requirement_authorized_use": "no_limit",
+            "achievements_quantity_requirement_authorized_use": "no_limit",
+            "second_creation_new_attribution": "joint_ownership",
+            "dissemination_restrictions_channels_authorized_use": "no_limit",
+            "dissemination_restrictions_period_authorized_use": "no_limit",
+            "dissemination_restrictions_area_authorized_use": "no_limit"
+          },
+          {
+            "copr_rights_id": "bq2079407-o1161441",
+            "contract_codes": "T180-PCG-20260100000045",
+            "copyright_type": "import",
+            "copyright_time_start": "2025-01-01",
+            "copyright_time_end": "2027-12-31",
+            "ip_authorize_right_external": "authorized",
+            "rights_type_label": "二次创作权",
+            "authorized_platforms": [
+              "快手"
+            ],
+            "co_intention": "non_exclusive",
+            "copyright_rights": [
+              "information_network",
+              "editing"
+            ],
+            "resell_time_type": "inherit_auth_period",
+            "sub_license_permission": "joint_sublicense",
+            "resell_right_term": [
+              "platform_restriction"
+            ],
+            "resell_right_other_term": "",
+            "copyright_area": [
+              "mainland_china"
+            ],
+            "edit_right_term_option": [
+              "duration_limit"
+            ],
+            "edit_right_other_term": "",
+            "edit_right_duration_term": "3",
+            "second_creation_has_rights": "123127036",
+            "second_creation_exclusivity": "non_exclusive",
+            "second_creation_sublicense": "allowed",
+            "second_creation_sublicense_remark": "",
+            "achievements_time_requirement_authorized_use": "no_limit",
+            "achievements_quantity_requirement_authorized_use": "no_limit",
+            "second_creation_new_attribution": "joint_ownership",
+            "dissemination_restrictions_channels_authorized_use": "no_limit",
+            "dissemination_restrictions_period_authorized_use": "no_limit",
+            "dissemination_restrictions_area_authorized_use": "no_limit"
+          },
+          {
+            "copr_rights_id": "bq2079407-o1161541",
+            "contract_codes": "T180-PCG-20260100000046",
+            "copyright_type": "import",
+            "copyright_time_start": "2025-01-01",
+            "copyright_time_end": "2027-12-31",
+            "ip_authorize_right_external": "pending",
+            "rights_type_label": "信息网络传播权",
+            "authorized_platforms": [
+              "快手"
+            ],
+            "co_intention": "non_exclusive",
+            "copyright_rights": [
+              "information_network",
+              "editing"
+            ],
+            "resell_time_type": "inherit_auth_period",
+            "sub_license_permission": "joint_sublicense",
+            "resell_right_term": [
+              "platform_restriction"
+            ],
+            "resell_right_other_term": "",
+            "copyright_area": [
+              "mainland_china"
+            ],
+            "edit_right_term_option": [
+              "duration_limit"
+            ],
+            "edit_right_other_term": "",
+            "edit_right_duration_term": "3",
+            "second_creation_has_rights": "123127036",
+            "second_creation_exclusivity": "non_exclusive",
+            "second_creation_sublicense": "allowed",
+            "second_creation_sublicense_remark": "",
+            "achievements_time_requirement_authorized_use": "no_limit",
+            "achievements_quantity_requirement_authorized_use": "no_limit",
+            "second_creation_new_attribution": "joint_ownership",
+            "dissemination_restrictions_channels_authorized_use": "no_limit",
+            "dissemination_restrictions_period_authorized_use": "no_limit",
+            "dissemination_restrictions_area_authorized_use": "no_limit"
+          }
+        ]
+      },
+      {
+        "rights_first_review_result": "rights_available",
+        "rights_first_review_defect_type": [],
+        "rights_first_review_other_defect_type": "",
+        "rights_first_review_authorized_platforms": [],
+        "rights_first_review_excluded_platforms": [],
+        "rights_first_review_by": "zhangsan",
+        "rights_first_review_at": "2026-04-23 10:00:00",
+        "rights_first_review_remark": "",
+        "rights_second_review_result": "",
+        "rights_second_review_authorized_platforms": [],
+        "rights_second_review_excluded_platforms": [],
+        "rights_second_review_defect_type": [],
+        "rights_second_review_defect_disposal_method": "",
+        "rights_second_review_by": "",
+        "rights_second_review_at": "",
+        "rights_second_review_remark": "",
+        "import_copr_rights_id": "bq2079408-o1161395",
+        "import_copr_rights_ids": [
+          "bq2079408-o1161395",
+          "bq2079408-o1161495",
+          "bq2079408-o1161595"
+        ],
+        "defect_copy_rights_ids": [],
+        "rights_third_review_result": "",
+        "rights_third_review_authorized_platform_kuaishou": "",
+        "rights_third_review_authorized_platform_douyin": "",
+        "xwq_status": "生效中",
+        "online_status": "在线",
+        "defect_type": "",
+        "authorized_projects": [],
+        "project_id": "",
+        "task_type": "authorization_review",
+        "audit_progress": "rights_second_review",
+        "operator": "system",
+        "audit_id": "AUD-B008",
+        "copyright_id": "bq2079408",
+        "play_name": "星汉灿烂第三季",
+        "play_name_alias": "星汉3",
+        "play_category": "1",
+        "main_cid": "mzc00200batch07",
+        "cid_info": {
+          "cid": "mzc00200batch07",
+          "title": "星汉灿烂第三季",
+          "hot_level": "A"
+        },
+        "task_time": "2026-04-22 10:00:00",
+        "created_at": "2026-04-22 10:00:00",
+        "updated_at": "2026-04-22 10:00:00",
+        "rights_infos": [
+          {
+            "copr_rights_id": "bq2079408-o1161395",
+            "contract_codes": "T180-PCG-20260100000047",
+            "copyright_type": "import",
+            "copyright_time_start": "2025-01-01",
+            "copyright_time_end": "2027-12-31",
+            "ip_authorize_right_external": "pending",
+            "rights_type_label": "信息网络传播权",
+            "authorized_platforms": [
+              "快手",
+              "抖音"
+            ],
+            "co_intention": "non_exclusive",
+            "copyright_rights": [
+              "information_network",
+              "editing"
+            ],
+            "resell_time_type": "inherit_auth_period",
+            "sub_license_permission": "joint_sublicense",
+            "resell_right_term": [
+              "platform_restriction"
+            ],
+            "resell_right_other_term": "",
+            "copyright_area": [
+              "mainland_china"
+            ],
+            "edit_right_term_option": [
+              "duration_limit"
+            ],
+            "edit_right_other_term": "",
+            "edit_right_duration_term": "3",
+            "second_creation_has_rights": "123127036",
+            "second_creation_exclusivity": "non_exclusive",
+            "second_creation_sublicense": "allowed",
+            "second_creation_sublicense_remark": "",
+            "achievements_time_requirement_authorized_use": "no_limit",
+            "achievements_quantity_requirement_authorized_use": "no_limit",
+            "second_creation_new_attribution": "joint_ownership",
+            "dissemination_restrictions_channels_authorized_use": "no_limit",
+            "dissemination_restrictions_period_authorized_use": "no_limit",
+            "dissemination_restrictions_area_authorized_use": "no_limit"
+          },
+          {
+            "copr_rights_id": "bq2079408-o1161495",
+            "contract_codes": "T180-PCG-20260100000048",
+            "copyright_type": "import",
+            "copyright_time_start": "2025-01-01",
+            "copyright_time_end": "2027-12-31",
+            "ip_authorize_right_external": "authorized",
+            "rights_type_label": "二次创作权",
+            "authorized_platforms": [
+              "快手"
+            ],
+            "co_intention": "non_exclusive",
+            "copyright_rights": [
+              "information_network",
+              "editing"
+            ],
+            "resell_time_type": "inherit_auth_period",
+            "sub_license_permission": "joint_sublicense",
+            "resell_right_term": [
+              "platform_restriction"
+            ],
+            "resell_right_other_term": "",
+            "copyright_area": [
+              "mainland_china"
+            ],
+            "edit_right_term_option": [
+              "duration_limit"
+            ],
+            "edit_right_other_term": "",
+            "edit_right_duration_term": "3",
+            "second_creation_has_rights": "123127036",
+            "second_creation_exclusivity": "non_exclusive",
+            "second_creation_sublicense": "allowed",
+            "second_creation_sublicense_remark": "",
+            "achievements_time_requirement_authorized_use": "no_limit",
+            "achievements_quantity_requirement_authorized_use": "no_limit",
+            "second_creation_new_attribution": "joint_ownership",
+            "dissemination_restrictions_channels_authorized_use": "no_limit",
+            "dissemination_restrictions_period_authorized_use": "no_limit",
+            "dissemination_restrictions_area_authorized_use": "no_limit"
+          },
+          {
+            "copr_rights_id": "bq2079408-o1161595",
+            "contract_codes": "T180-PCG-20260100000049",
+            "copyright_type": "import",
+            "copyright_time_start": "2025-01-01",
+            "copyright_time_end": "2027-12-31",
+            "ip_authorize_right_external": "pending",
+            "rights_type_label": "信息网络传播权",
+            "authorized_platforms": [
+              "快手"
+            ],
+            "co_intention": "non_exclusive",
+            "copyright_rights": [
+              "information_network",
+              "editing"
+            ],
+            "resell_time_type": "inherit_auth_period",
+            "sub_license_permission": "joint_sublicense",
+            "resell_right_term": [
+              "platform_restriction"
+            ],
+            "resell_right_other_term": "",
+            "copyright_area": [
+              "mainland_china"
+            ],
+            "edit_right_term_option": [
+              "duration_limit"
+            ],
+            "edit_right_other_term": "",
+            "edit_right_duration_term": "3",
+            "second_creation_has_rights": "123127036",
+            "second_creation_exclusivity": "non_exclusive",
+            "second_creation_sublicense": "allowed",
+            "second_creation_sublicense_remark": "",
+            "achievements_time_requirement_authorized_use": "no_limit",
+            "achievements_quantity_requirement_authorized_use": "no_limit",
+            "second_creation_new_attribution": "joint_ownership",
+            "dissemination_restrictions_channels_authorized_use": "no_limit",
+            "dissemination_restrictions_period_authorized_use": "no_limit",
+            "dissemination_restrictions_area_authorized_use": "no_limit"
+          }
+        ]
+      },
+      {
+        "rights_first_review_result": "rights_available",
+        "rights_first_review_defect_type": [],
+        "rights_first_review_other_defect_type": "",
+        "rights_first_review_authorized_platforms": [],
+        "rights_first_review_excluded_platforms": [],
+        "rights_first_review_by": "zhangsan",
+        "rights_first_review_at": "2026-04-24 10:00:00",
+        "rights_first_review_remark": "",
+        "rights_second_review_result": "rights_available",
+        "rights_second_review_authorized_platforms": [],
+        "rights_second_review_excluded_platforms": [],
+        "rights_second_review_defect_type": [],
+        "rights_second_review_defect_disposal_method": "",
+        "rights_second_review_by": "lifawu",
+        "rights_second_review_at": "2026-04-25 14:00:00",
+        "rights_second_review_remark": "",
+        "import_copr_rights_id": "bq2079409-o1160987",
+        "import_copr_rights_ids": [
+          "bq2079409-o1160987"
+        ],
+        "defect_copy_rights_ids": [],
+        "rights_third_review_result": "",
+        "rights_third_review_authorized_platform_kuaishou": "",
+        "rights_third_review_authorized_platform_douyin": "",
+        "xwq_status": "生效中",
+        "online_status": "在线",
+        "defect_type": "",
+        "authorized_projects": [],
+        "project_id": "",
+        "task_type": "authorization_review",
+        "audit_progress": "rights_third_review",
+        "operator": "system",
+        "audit_id": "AUD-B009",
+        "copyright_id": "bq2079409",
+        "play_name": "知否知否第二季",
+        "play_name_alias": "知否2",
+        "play_category": "1",
+        "main_cid": "mzc00200batch08",
+        "cid_info": {
+          "cid": "mzc00200batch08",
+          "title": "知否知否第二季",
+          "hot_level": "S"
+        },
+        "task_time": "2026-04-23 10:00:00",
+        "created_at": "2026-04-23 10:00:00",
+        "updated_at": "2026-04-23 10:00:00",
+        "rights_infos": [
+          {
+            "copr_rights_id": "bq2079409-o1160987",
+            "contract_codes": "T180-PCG-20260100000050",
+            "copyright_type": "import",
+            "copyright_time_start": "2025-01-01",
+            "copyright_time_end": "2027-12-31",
+            "ip_authorize_right_external": "pending",
+            "rights_type_label": "信息网络传播权",
+            "authorized_platforms": [
+              "快手",
+              "抖音"
+            ],
+            "co_intention": "non_exclusive",
+            "copyright_rights": [
+              "information_network",
+              "editing"
+            ],
+            "resell_time_type": "inherit_auth_period",
+            "sub_license_permission": "joint_sublicense",
+            "resell_right_term": [
+              "platform_restriction"
+            ],
+            "resell_right_other_term": "",
+            "copyright_area": [
+              "mainland_china"
+            ],
+            "edit_right_term_option": [
+              "duration_limit"
+            ],
+            "edit_right_other_term": "",
+            "edit_right_duration_term": "3",
+            "second_creation_has_rights": "123127036",
+            "second_creation_exclusivity": "non_exclusive",
+            "second_creation_sublicense": "allowed",
+            "second_creation_sublicense_remark": "",
+            "achievements_time_requirement_authorized_use": "no_limit",
+            "achievements_quantity_requirement_authorized_use": "no_limit",
+            "second_creation_new_attribution": "joint_ownership",
+            "dissemination_restrictions_channels_authorized_use": "no_limit",
+            "dissemination_restrictions_period_authorized_use": "no_limit",
+            "dissemination_restrictions_area_authorized_use": "no_limit"
+          },
+          {
+            "copr_rights_id": "bq2079409-exp-8802",
+            "contract_codes": "T180-PCG-20260100000051",
+            "copyright_type": "export",
+            "export_platform": "抖音",
+            "export_rights_type": "二创授权",
+            "export_time_start": "2026-01-01",
+            "export_time_end": "2026-12-31",
+            "ip_authorize_right_external": "pending"
+          }
+        ]
+      },
+      {
+        "rights_first_review_result": "rights_available",
+        "rights_first_review_defect_type": [],
+        "rights_first_review_other_defect_type": "",
+        "rights_first_review_authorized_platforms": [],
+        "rights_first_review_excluded_platforms": [],
+        "rights_first_review_by": "zhangsan",
+        "rights_first_review_at": "2026-04-25 10:00:00",
+        "rights_first_review_remark": "",
+        "rights_second_review_result": "rights_available",
+        "rights_second_review_authorized_platforms": [],
+        "rights_second_review_excluded_platforms": [],
+        "rights_second_review_defect_type": [],
+        "rights_second_review_defect_disposal_method": "",
+        "rights_second_review_by": "lifawu",
+        "rights_second_review_at": "2026-04-26 14:00:00",
+        "rights_second_review_remark": "",
+        "import_copr_rights_id": "bq2079410-o1161186",
+        "import_copr_rights_ids": [
+          "bq2079410-o1161186"
+        ],
+        "defect_copy_rights_ids": [],
+        "rights_third_review_result": "",
+        "rights_third_review_authorized_platform_kuaishou": "",
+        "rights_third_review_authorized_platform_douyin": "",
+        "xwq_status": "生效中",
+        "online_status": "在线",
+        "defect_type": "",
+        "authorized_projects": [],
+        "project_id": "",
+        "task_type": "authorization_review",
+        "audit_progress": "rights_third_review",
+        "operator": "system",
+        "audit_id": "AUD-B010",
+        "copyright_id": "bq2079410",
+        "play_name": "梦华录第二季",
+        "play_name_alias": "梦华录2",
+        "play_category": "1",
+        "main_cid": "mzc00200batch09",
+        "cid_info": {
+          "cid": "mzc00200batch09",
+          "title": "梦华录第二季",
+          "hot_level": "A"
+        },
+        "task_time": "2026-04-24 10:00:00",
+        "created_at": "2026-04-24 10:00:00",
+        "updated_at": "2026-04-24 10:00:00",
+        "rights_infos": [
+          {
+            "copr_rights_id": "bq2079410-o1161186",
+            "contract_codes": "T180-PCG-20260100000052",
+            "copyright_type": "import",
+            "copyright_time_start": "2025-01-01",
+            "copyright_time_end": "2027-12-31",
+            "ip_authorize_right_external": "pending",
+            "rights_type_label": "信息网络传播权",
+            "authorized_platforms": [
+              "快手",
+              "抖音"
+            ],
+            "co_intention": "non_exclusive",
+            "copyright_rights": [
+              "information_network",
+              "editing"
+            ],
+            "resell_time_type": "inherit_auth_period",
+            "sub_license_permission": "joint_sublicense",
+            "resell_right_term": [
+              "platform_restriction"
+            ],
+            "resell_right_other_term": "",
+            "copyright_area": [
+              "mainland_china"
+            ],
+            "edit_right_term_option": [
+              "duration_limit"
+            ],
+            "edit_right_other_term": "",
+            "edit_right_duration_term": "3",
+            "second_creation_has_rights": "123127036",
+            "second_creation_exclusivity": "non_exclusive",
+            "second_creation_sublicense": "allowed",
+            "second_creation_sublicense_remark": "",
+            "achievements_time_requirement_authorized_use": "no_limit",
+            "achievements_quantity_requirement_authorized_use": "no_limit",
+            "second_creation_new_attribution": "joint_ownership",
+            "dissemination_restrictions_channels_authorized_use": "no_limit",
+            "dissemination_restrictions_period_authorized_use": "no_limit",
+            "dissemination_restrictions_area_authorized_use": "no_limit"
+          },
+          {
+            "copr_rights_id": "bq2079410-exp-6121",
+            "contract_codes": "T180-PCG-20260100000053",
+            "copyright_type": "export",
+            "export_platform": "抖音",
+            "export_rights_type": "二创授权",
+            "export_time_start": "2026-01-01",
+            "export_time_end": "2026-12-31",
+            "ip_authorize_right_external": "pending"
+          }
+        ]
+      },
+      {
+        "rights_first_review_result": "rights_available",
+        "rights_first_review_defect_type": [],
+        "rights_first_review_other_defect_type": "",
+        "rights_first_review_authorized_platforms": [],
+        "rights_first_review_excluded_platforms": [],
+        "rights_first_review_by": "zhangsan",
+        "rights_first_review_at": "2026-04-26 10:00:00",
+        "rights_first_review_remark": "",
+        "rights_second_review_result": "rights_available",
+        "rights_second_review_authorized_platforms": [],
+        "rights_second_review_excluded_platforms": [],
+        "rights_second_review_defect_type": [],
+        "rights_second_review_defect_disposal_method": "",
+        "rights_second_review_by": "lifawu",
+        "rights_second_review_at": "2026-04-27 14:00:00",
+        "rights_second_review_remark": "",
+        "import_copr_rights_id": "bq2079411-o1161103",
+        "import_copr_rights_ids": [
+          "bq2079411-o1161103"
+        ],
+        "defect_copy_rights_ids": [],
+        "rights_third_review_result": "",
+        "rights_third_review_authorized_platform_kuaishou": "",
+        "rights_third_review_authorized_platform_douyin": "",
+        "xwq_status": "生效中",
+        "online_status": "在线",
+        "defect_type": "",
+        "authorized_projects": [],
+        "project_id": "",
+        "task_type": "authorization_review",
+        "audit_progress": "rights_third_review",
+        "operator": "system",
+        "audit_id": "AUD-B011",
+        "copyright_id": "bq2079411",
+        "play_name": "风吹半夏第二季",
+        "play_name_alias": "半夏2",
+        "play_category": "1",
+        "main_cid": "mzc00200batch10",
+        "cid_info": {
+          "cid": "mzc00200batch10",
+          "title": "风吹半夏第二季",
+          "hot_level": "B"
+        },
+        "task_time": "2026-04-25 10:00:00",
+        "created_at": "2026-04-25 10:00:00",
+        "updated_at": "2026-04-25 10:00:00",
+        "rights_infos": [
+          {
+            "copr_rights_id": "bq2079411-o1161103",
+            "contract_codes": "T180-PCG-20260100000054",
+            "copyright_type": "import",
+            "copyright_time_start": "2025-01-01",
+            "copyright_time_end": "2027-12-31",
+            "ip_authorize_right_external": "pending",
+            "rights_type_label": "信息网络传播权",
+            "authorized_platforms": [
+              "快手",
+              "抖音"
+            ],
+            "co_intention": "non_exclusive",
+            "copyright_rights": [
+              "information_network",
+              "editing"
+            ],
+            "resell_time_type": "inherit_auth_period",
+            "sub_license_permission": "joint_sublicense",
+            "resell_right_term": [
+              "platform_restriction"
+            ],
+            "resell_right_other_term": "",
+            "copyright_area": [
+              "mainland_china"
+            ],
+            "edit_right_term_option": [
+              "duration_limit"
+            ],
+            "edit_right_other_term": "",
+            "edit_right_duration_term": "3",
+            "second_creation_has_rights": "123127036",
+            "second_creation_exclusivity": "non_exclusive",
+            "second_creation_sublicense": "allowed",
+            "second_creation_sublicense_remark": "",
+            "achievements_time_requirement_authorized_use": "no_limit",
+            "achievements_quantity_requirement_authorized_use": "no_limit",
+            "second_creation_new_attribution": "joint_ownership",
+            "dissemination_restrictions_channels_authorized_use": "no_limit",
+            "dissemination_restrictions_period_authorized_use": "no_limit",
+            "dissemination_restrictions_area_authorized_use": "no_limit"
+          },
+          {
+            "copr_rights_id": "bq2079411-exp-1538",
+            "contract_codes": "T180-PCG-20260100000055",
+            "copyright_type": "export",
+            "export_platform": "快手",
+            "export_rights_type": "二创授权",
+            "export_time_start": "2026-01-01",
+            "export_time_end": "2026-12-31",
+            "ip_authorize_right_external": "pending"
+          }
+        ]
+      },
+      {
+        "rights_first_review_result": "rights_defect",
+        "rights_first_review_defect_type": [
+          "distributed_secondary_creation"
+        ],
+        "rights_first_review_other_defect_type": "",
+        "rights_first_review_authorized_platforms": [
+          "kuaishou",
+          "douyin"
+        ],
+        "rights_first_review_excluded_platforms": [],
+        "rights_first_review_by": "zhangsan",
+        "rights_first_review_at": "2026-03-05 10:00:00",
+        "rights_first_review_remark": "",
+        "rights_second_review_result": "rights_defect",
+        "rights_second_review_authorized_platforms": [
+          "kuaishou",
+          "douyin"
+        ],
+        "rights_second_review_excluded_platforms": [],
+        "rights_second_review_defect_type": [
+          "distributed_secondary_creation"
+        ],
+        "rights_second_review_defect_disposal_method": "can_supplement_confirmation",
+        "rights_second_review_by": "lifawu",
+        "rights_second_review_at": "2026-03-06 14:00:00",
+        "rights_second_review_remark": "复审判定权利瑕疵，需终审处置",
+        "import_copr_rights_id": "",
+        "import_copr_rights_ids": [
+          "bq2079501-o1161051"
+        ],
+        "defect_copy_rights_ids": [],
+        "rights_third_review_result": "",
+        "rights_third_review_authorized_platform_kuaishou": "",
+        "rights_third_review_authorized_platform_douyin": "",
+        "xwq_status": "生效中",
+        "online_status": "在线",
+        "defect_type": "已分销二创",
+        "authorized_projects": [],
+        "project_id": "",
+        "task_type": "authorization_review",
+        "audit_progress": "rights_third_review",
+        "operator": "system",
+        "audit_id": "AUD-D001",
+        "copyright_id": "bq2079501",
+        "play_name": "人世间第二季",
+        "play_name_alias": "人世间2",
+        "play_category": "1",
+        "main_cid": "mzc00200test1",
+        "cid_info": {
+          "cid": "mzc00200test1",
+          "title": "人世间第二季",
+          "hot_level": "S",
+          "new_pic_hz": "https://picsum.photos/seed/d1/320/180",
+          "new_pic_vt": "https://picsum.photos/seed/d1v/180/240"
+        },
+        "task_time": "2026-03-05 09:00:00",
+        "created_at": "2026-04-23 10:00:00",
+        "updated_at": "2026-04-23 10:00:00",
+        "rights_infos": [
+          {
+            "copr_rights_id": "bq2079501-o1161051",
+            "contract_codes": "T180-PCG-2026010000051",
+            "copyright_type": "import",
+            "copyright_time_start": "2025-01-01",
+            "copyright_time_end": "2027-12-31",
+            "ip_authorize_right_external": "pending",
+            "rights_type_label": "信息网络传播权",
+            "authorized_platforms": [
+              "快手",
+              "抖音"
+            ],
+            "co_intention": "non_exclusive",
+            "copyright_rights": [
+              "information_network",
+              "editing"
+            ],
+            "resell_time_type": "inherit_auth_period",
+            "sub_license_permission": "joint_sublicense",
+            "resell_right_term": [
+              "platform_restriction"
+            ],
+            "resell_right_other_term": "",
+            "copyright_area": [
+              "mainland_china"
+            ],
+            "edit_right_term_option": [
+              "duration_limit"
+            ],
+            "edit_right_other_term": "",
+            "edit_right_duration_term": "3",
+            "second_creation_has_rights": "123127036",
+            "second_creation_exclusivity": "non_exclusive",
+            "second_creation_sublicense": "allowed",
+            "achievements_time_requirement_authorized_use": "no_limit",
+            "achievements_quantity_requirement_authorized_use": "no_limit",
+            "second_creation_new_attribution": "licensee",
+            "dissemination_restrictions_channels_authorized_use": "no_limit",
+            "dissemination_restrictions_period_authorized_use": "no_limit",
+            "dissemination_restrictions_area_authorized_use": "no_limit"
+          }
+        ]
+      },
+      {
+        "rights_first_review_result": "rights_defect",
+        "rights_first_review_defect_type": [
+          "distributed_secondary_creation"
+        ],
+        "rights_first_review_other_defect_type": "",
+        "rights_first_review_authorized_platforms": [
+          "kuaishou",
+          "douyin"
+        ],
+        "rights_first_review_excluded_platforms": [],
+        "rights_first_review_by": "zhangsan",
+        "rights_first_review_at": "2026-03-05 10:00:00",
+        "rights_first_review_remark": "",
+        "rights_second_review_result": "rights_defect",
+        "rights_second_review_authorized_platforms": [
+          "kuaishou",
+          "douyin"
+        ],
+        "rights_second_review_excluded_platforms": [],
+        "rights_second_review_defect_type": [
+          "distributed_secondary_creation"
+        ],
+        "rights_second_review_defect_disposal_method": "can_supplement_confirmation",
+        "rights_second_review_by": "lifawu",
+        "rights_second_review_at": "2026-03-06 14:00:00",
+        "rights_second_review_remark": "复审判定权利瑕疵，需终审处置",
+        "import_copr_rights_id": "",
+        "import_copr_rights_ids": [
+          "bq2079502-o1161052"
+        ],
+        "defect_copy_rights_ids": [],
+        "rights_third_review_result": "",
+        "rights_third_review_authorized_platform_kuaishou": "",
+        "rights_third_review_authorized_platform_douyin": "",
+        "xwq_status": "生效中",
+        "online_status": "在线",
+        "defect_type": "已分销二创",
+        "authorized_projects": [],
+        "project_id": "",
+        "task_type": "authorization_review",
+        "audit_progress": "rights_third_review",
+        "operator": "system",
+        "audit_id": "AUD-D002",
+        "copyright_id": "bq2079502",
+        "play_name": "狂飙续集",
+        "play_name_alias": "狂飙2",
+        "play_category": "1",
+        "main_cid": "mzc00200test2",
+        "cid_info": {
+          "cid": "mzc00200test2",
+          "title": "狂飙续集",
+          "hot_level": "A",
+          "new_pic_hz": "https://picsum.photos/seed/d2/320/180",
+          "new_pic_vt": "https://picsum.photos/seed/d2v/180/240"
+        },
+        "task_time": "2026-03-06 09:00:00",
+        "created_at": "2026-04-23 10:00:00",
+        "updated_at": "2026-04-23 10:00:00",
+        "rights_infos": [
+          {
+            "copr_rights_id": "bq2079502-o1161052",
+            "contract_codes": "T180-PCG-2026010000052",
+            "copyright_type": "import",
+            "copyright_time_start": "2025-01-01",
+            "copyright_time_end": "2027-12-31",
+            "ip_authorize_right_external": "pending",
+            "rights_type_label": "信息网络传播权",
+            "authorized_platforms": [
+              "快手",
+              "抖音"
+            ],
+            "co_intention": "non_exclusive",
+            "copyright_rights": [
+              "information_network",
+              "editing"
+            ],
+            "resell_time_type": "inherit_auth_period",
+            "sub_license_permission": "joint_sublicense",
+            "resell_right_term": [
+              "platform_restriction"
+            ],
+            "resell_right_other_term": "",
+            "copyright_area": [
+              "mainland_china"
+            ],
+            "edit_right_term_option": [
+              "duration_limit"
+            ],
+            "edit_right_other_term": "",
+            "edit_right_duration_term": "3",
+            "second_creation_has_rights": "123127036",
+            "second_creation_exclusivity": "non_exclusive",
+            "second_creation_sublicense": "allowed",
+            "achievements_time_requirement_authorized_use": "no_limit",
+            "achievements_quantity_requirement_authorized_use": "no_limit",
+            "second_creation_new_attribution": "licensee",
+            "dissemination_restrictions_channels_authorized_use": "no_limit",
+            "dissemination_restrictions_period_authorized_use": "no_limit",
+            "dissemination_restrictions_area_authorized_use": "no_limit"
+          }
+        ]
+      },
+      {
+        "rights_first_review_result": "rights_defect",
+        "rights_first_review_defect_type": [
+          "distributed_secondary_creation"
+        ],
+        "rights_first_review_other_defect_type": "",
+        "rights_first_review_authorized_platforms": [
+          "kuaishou",
+          "douyin"
+        ],
+        "rights_first_review_excluded_platforms": [],
+        "rights_first_review_by": "zhangsan",
+        "rights_first_review_at": "2026-03-05 10:00:00",
+        "rights_first_review_remark": "",
+        "rights_second_review_result": "rights_defect",
+        "rights_second_review_authorized_platforms": [
+          "kuaishou",
+          "douyin"
+        ],
+        "rights_second_review_excluded_platforms": [],
+        "rights_second_review_defect_type": [
+          "distributed_secondary_creation"
+        ],
+        "rights_second_review_defect_disposal_method": "can_supplement_confirmation",
+        "rights_second_review_by": "lifawu",
+        "rights_second_review_at": "2026-03-06 14:00:00",
+        "rights_second_review_remark": "复审判定权利瑕疵，需终审处置",
+        "import_copr_rights_id": "",
+        "import_copr_rights_ids": [
+          "bq2079503-o1161053"
+        ],
+        "defect_copy_rights_ids": [],
+        "rights_third_review_result": "",
+        "rights_third_review_authorized_platform_kuaishou": "",
+        "rights_third_review_authorized_platform_douyin": "",
+        "xwq_status": "生效中",
+        "online_status": "在线",
+        "defect_type": "已分销二创",
+        "authorized_projects": [],
+        "project_id": "",
+        "task_type": "authorization_review",
+        "audit_progress": "rights_third_review",
+        "operator": "system",
+        "audit_id": "AUD-D003",
+        "copyright_id": "bq2079503",
+        "play_name": "三十而已第二季",
+        "play_name_alias": "三十而已2",
+        "play_category": "1",
+        "main_cid": "mzc00200test3",
+        "cid_info": {
+          "cid": "mzc00200test3",
+          "title": "三十而已第二季",
+          "hot_level": "B",
+          "new_pic_hz": "https://picsum.photos/seed/d3/320/180",
+          "new_pic_vt": "https://picsum.photos/seed/d3v/180/240"
+        },
+        "task_time": "2026-03-07 09:00:00",
+        "created_at": "2026-04-23 10:00:00",
+        "updated_at": "2026-04-23 10:00:00",
+        "rights_infos": [
+          {
+            "copr_rights_id": "bq2079503-o1161053",
+            "contract_codes": "T180-PCG-2026010000053",
+            "copyright_type": "import",
+            "copyright_time_start": "2025-01-01",
+            "copyright_time_end": "2027-12-31",
+            "ip_authorize_right_external": "pending",
+            "rights_type_label": "信息网络传播权",
+            "authorized_platforms": [
+              "快手",
+              "抖音"
+            ],
+            "co_intention": "non_exclusive",
+            "copyright_rights": [
+              "information_network",
+              "editing"
+            ],
+            "resell_time_type": "inherit_auth_period",
+            "sub_license_permission": "joint_sublicense",
+            "resell_right_term": [
+              "platform_restriction"
+            ],
+            "resell_right_other_term": "",
+            "copyright_area": [
+              "mainland_china"
+            ],
+            "edit_right_term_option": [
+              "duration_limit"
+            ],
+            "edit_right_other_term": "",
+            "edit_right_duration_term": "3",
+            "second_creation_has_rights": "123127036",
+            "second_creation_exclusivity": "non_exclusive",
+            "second_creation_sublicense": "allowed",
+            "achievements_time_requirement_authorized_use": "no_limit",
+            "achievements_quantity_requirement_authorized_use": "no_limit",
+            "second_creation_new_attribution": "licensee",
+            "dissemination_restrictions_channels_authorized_use": "no_limit",
+            "dissemination_restrictions_period_authorized_use": "no_limit",
+            "dissemination_restrictions_area_authorized_use": "no_limit"
+          }
+        ]
+      }
+    ]
+  },
+  "tasks": {
+    "apply": {
+      "label": "申请任务",
+      "icon": "file-edit",
+      "total": 8,
+      "normal": 5,
+      "urgent": 3,
+      "description": "项目创建申请相关任务"
+    },
+    "approve": {
+      "label": "审批任务",
+      "icon": "check-circle",
+      "total": 12,
+      "normal": 9,
+      "urgent": 3,
+      "description": "项目审批相关任务"
+    },
+    "work": {
+      "label": "作品任务",
+      "icon": "film",
+      "total": 15,
+      "normal": 11,
+      "urgent": 4,
+      "description": "作品授权确权、回收、撤回相关任务"
+    }
+  },
+  "projects": [
+    {
+      "id": "PRJ-2026-001",
+      "name": "快手二创授权2026",
+      "rights_type": "secondary_creation",
+      "audit_mode": "rolling",
+      "status": "running",
+      "partner_name": "快手",
+      "partner_contract_no": "KS-2026-001",
+      "partner_contact": "张三",
+      "category_scope": [
+        "电视剧",
+        "电影",
+        "综艺",
+        "动漫",
+        "纪录片",
+        "少儿",
+        "微短剧"
+      ],
+      "auth_window_start": "2026-01-01",
+      "auth_window_end": "2026-12-31",
+      "daily_target": 3500,
+      "authorized_count": 3500,
+      "recovered_count": 12,
+      "detail": {
+        "authSheet": [
+          {
+            "play_name": "庆余年第三季",
+            "play_name_alias": "庆余年3",
+            "copyright_id": "bq2078802",
+            "ks_auth_id": "KS-2026-001",
+            "play_category": "1",
+            "auth_start_date": "2026-01-15",
+            "auth_end_date": "2026-12-31",
+            "xwq_status": "生效中",
+            "copyright_status": "authorized",
+            "online_status": "在线",
+            "first_online_date": "2026-01-10",
+            "ott_available": "是",
+            "hot_level": "S",
+            "recovery_status": null,
+            "recovery_reason": null,
+            "updated_at": "2026-04-20",
+            "main_cid": "CID10001",
+            "rights_id": "RID-20260001",
+            "audit_id": "AUD-2026042001"
+          },
+          {
+            "play_name": "斗罗大陆3",
+            "play_name_alias": "斗罗3",
+            "copyright_id": "bq3055901",
+            "ks_auth_id": "KS-2026-018",
+            "play_category": "4",
+            "auth_start_date": "2026-02-01",
+            "auth_end_date": "2026-11-30",
+            "xwq_status": "生效中",
+            "copyright_status": "authorized_new_hot",
+            "online_status": "在线",
+            "first_online_date": "2026-02-05",
+            "ott_available": "否",
+            "hot_level": "S",
+            "recovery_status": null,
+            "recovery_reason": null,
+            "updated_at": "2026-04-18",
+            "main_cid": "CID10002",
+            "rights_id": "RID-20260002",
+            "audit_id": "AUD-2026042002"
+          },
+          {
+            "play_name": "创造营2026",
+            "play_name_alias": "",
+            "copyright_id": "bq4012203",
+            "ks_auth_id": "KS-2026-032",
+            "play_category": "3",
+            "auth_start_date": "2026-03-01",
+            "auth_end_date": "2026-09-30",
+            "xwq_status": "生效中",
+            "copyright_status": "authorized_need_supplement",
+            "online_status": "在线",
+            "first_online_date": "2026-03-10",
+            "ott_available": "是",
+            "hot_level": "A",
+            "recovery_status": null,
+            "recovery_reason": null,
+            "updated_at": "2026-04-15",
+            "main_cid": "CID10003",
+            "rights_id": "RID-20260003",
+            "audit_id": "AUD-2026042003"
+          },
+          {
+            "play_name": "蓝色星球中国篇",
+            "play_name_alias": "",
+            "copyright_id": "bq5088104",
+            "ks_auth_id": "KS-2026-045",
+            "play_category": "5",
+            "auth_start_date": "2026-01-20",
+            "auth_end_date": "2026-06-30",
+            "xwq_status": "已失效",
+            "copyright_status": "authorized",
+            "online_status": "下架",
+            "first_online_date": "2026-01-25",
+            "ott_available": "否",
+            "hot_level": "B",
+            "recovery_status": "recovered",
+            "recovery_reason": "分销冲突",
+            "updated_at": "2026-04-10",
+            "main_cid": "CID10004",
+            "rights_id": "RID-20260004",
+            "audit_id": "AUD-2026042004",
+            "recovery_date": "2026-04-10"
+          },
+          {
+            "play_name": "仙剑奇侠传四",
+            "play_name_alias": "仙剑4",
+            "copyright_id": "bq6011305",
+            "ks_auth_id": "KS-2026-058",
+            "play_category": "1",
+            "auth_start_date": "2026-02-15",
+            "auth_end_date": "2027-02-14",
+            "xwq_status": "生效中",
+            "copyright_status": "authorized",
+            "online_status": "在线",
+            "first_online_date": "2026-02-20",
+            "ott_available": "是",
+            "hot_level": "A",
+            "recovery_status": null,
+            "recovery_reason": null,
+            "updated_at": "2026-04-19",
+            "main_cid": "CID10005",
+            "rights_id": "RID-20260005",
+            "audit_id": "AUD-2026042005"
+          },
+          {
+            "play_name": "名侦探柯南2026剧场版",
+            "play_name_alias": "柯南2026",
+            "copyright_id": "bq7022406",
+            "ks_auth_id": "KS-2026-071",
+            "play_category": "2",
+            "auth_start_date": "2026-04-01",
+            "auth_end_date": "2026-12-31",
+            "xwq_status": "生效中",
+            "copyright_status": "authorized",
+            "online_status": "在线",
+            "first_online_date": "2026-04-05",
+            "ott_available": "是",
+            "hot_level": "B",
+            "recovery_status": null,
+            "recovery_reason": null,
+            "updated_at": "2026-04-22",
+            "main_cid": "CID10006",
+            "rights_id": "RID-20260006",
+            "audit_id": "AUD-2026042006"
+          },
+          {
+            "play_name": "大宋少年志2",
+            "play_name_alias": "少年志2",
+            "copyright_id": "bq9044608",
+            "ks_auth_id": "KS-2026-102",
+            "play_category": "1",
+            "auth_start_date": "2026-03-15",
+            "auth_end_date": "2027-03-14",
+            "xwq_status": "生效中",
+            "copyright_status": "authorized",
+            "online_status": "在线",
+            "first_online_date": "2026-03-20",
+            "ott_available": "是",
+            "hot_level": "A",
+            "recovery_status": null,
+            "recovery_reason": null,
+            "updated_at": "2026-04-21",
+            "main_cid": "CID10008",
+            "rights_id": "RID-20260007",
+            "audit_id": "AUD-2026042007"
+          },
+          {
+            "play_name": "超级小熊猫",
+            "play_name_alias": "",
+            "copyright_id": "bq1055709",
+            "ks_auth_id": "KS-2026-115",
+            "play_category": "6",
+            "auth_start_date": "2026-02-01",
+            "auth_end_date": "2026-08-31",
+            "xwq_status": "生效中",
+            "copyright_status": "authorized",
+            "online_status": "在线",
+            "first_online_date": "2026-02-10",
+            "ott_available": "否",
+            "hot_level": "C",
+            "recovery_status": null,
+            "recovery_reason": null,
+            "updated_at": "2026-04-12",
+            "main_cid": "CID10009",
+            "rights_id": "RID-20260008",
+            "audit_id": "AUD-2026042008"
+          },
+          {
+            "play_name": "人世间",
+            "play_name_alias": "",
+            "copyright_id": "bq2066810",
+            "ks_auth_id": "KS-2026-128",
+            "play_category": "1",
+            "auth_start_date": "2026-01-01",
+            "auth_end_date": "2026-06-30",
+            "xwq_status": "已失效",
+            "copyright_status": "authorized",
+            "online_status": "在线",
+            "first_online_date": "2026-01-05",
+            "ott_available": "是",
+            "hot_level": "S",
+            "recovery_status": "recovered",
+            "recovery_reason": "我方版权到期",
+            "updated_at": "2026-04-05",
+            "main_cid": "CID10010",
+            "rights_id": "RID-20260009",
+            "audit_id": "AUD-2026042009"
+          }
+        ],
+        "reauthData": {
+          "bq2078955": {
+            "currentStatus": "group_confirm",
+            "history": [
+              {
+                "attempt": 1,
+                "startTime": "2026-04-12",
+                "step1Operator": "\u5f20\u4e09",
+                "step1OperatorRole": "\u5916\u5faa\u73af\u8fd0\u8425",
+                "step2Conclusion": "\u53ef\u8865\u51fd",
+                "step2Operator": "\u674e\u56db",
+                "step2OperatorRole": "\u54c1\u7c7b\u8fd0\u8425",
+                "step3Conclusion": "\u7ecf\u786e\u8ba4\u65e0\u6cd5\u8865\u51fd",
+                "step3Operator": "\u738b\u4e94",
+                "step3OperatorRole": "\u54c1\u7c7b\u8fd0\u8425",
+                "remark": "\u5bf9\u65b9\u65e0\u6cd5\u63d0\u4f9b\u6709\u6548\u8865\u51fd\u6750\u6599"
+              }
+            ],
+            "qwGroup": "\u91cd\u65b0\u6388\u6743-bq2078955",
+            "supplementConclusion": "\u4e0d\u53ef\u8865\u786e\u8ba4\u51fd",
+            "rejectRemark": "\u5bf9\u65b9\u65e0\u6cd5\u63d0\u4f9b\u6709\u6548\u8865\u51fd\u6750\u6599",
+            "rejectSource": "step3",
+            "supplementRemark": ""
+          },
+          "bq2078815": {
+            "currentStatus": "pending",
+            "history": [],
+            "qwGroup": null,
+            "supplementConclusion": null,
+            "rejectRemark": "",
+            "rejectSource": "",
+            "supplementRemark": ""
+          }
+        }
+      }
+    },
+    {
+      "id": "PRJ-2026-002",
+      "name": "抖音二创授权2026",
+      "rights_type": "secondary_creation",
+      "audit_mode": "rolling",
+      "status": "running",
+      "partner_name": "抖音",
+      "partner_contract_no": "DY-2026-001",
+      "partner_contact": "李四",
+      "category_scope": [
+        "电视剧",
+        "电影",
+        "综艺",
+        "动漫"
+      ],
+      "auth_window_start": "2026-01-15",
+      "auth_window_end": "2027-01-14",
+      "daily_target": 2000,
+      "authorized_count": 1850,
+      "recovered_count": 5
+    },
+    {
+      "id": "PRJ-2026-003",
+      "name": "酷狗彩铃授权",
+      "rights_type": "distribution",
+      "audit_mode": "one_time",
+      "status": "running",
+      "partner_name": "酷狗",
+      "partner_contract_no": "KG-2026-001",
+      "partner_contact": "王五",
+      "category_scope": [
+        "电视剧",
+        "电影"
+      ],
+      "auth_window_start": "2026-03-01",
+      "auth_window_end": "2026-09-30",
+      "authorized_count": 120,
+      "recovered_count": 0
+    },
+    {
+      "id": "PRJ-2026-004",
+      "name": "小红书二创合作",
+      "rights_type": "secondary_creation",
+      "audit_mode": "rolling",
+      "status": "configuring",
+      "partner_name": "小红书",
+      "partner_contract_no": "",
+      "partner_contact": "赵六",
+      "category_scope": [
+        "电视剧",
+        "综艺"
+      ],
+      "auth_window_start": "2026-06-01",
+      "auth_window_end": "2027-05-31",
+      "authorized_count": 0,
+      "recovered_count": 0
+    },
+    {
+      "id": "PRJ-2025-018",
+      "name": "梧桐稳智合作",
+      "rights_type": "comprehensive",
+      "audit_mode": "one_time",
+      "status": "archived",
+      "partner_name": "梧桐稳智",
+      "partner_contract_no": "WT-2025-018",
+      "partner_contact": "钱七",
+      "category_scope": [
+        "电视剧",
+        "电影",
+        "动漫"
+      ],
+      "auth_window_start": "2025-06-01",
+      "auth_window_end": "2025-12-31",
+      "authorized_count": 85,
+      "recovered_count": 3
+    },
+    {
+      "id": "PRJ-2026-005",
+      "name": "B站播控授权",
+      "rights_type": "broadcast",
+      "audit_mode": "rolling",
+      "status": "suspended",
+      "partner_name": "B站",
+      "partner_contract_no": "BL-2026-001",
+      "partner_contact": "孙八",
+      "category_scope": [
+        "动漫",
+        "纪录片"
+      ],
+      "auth_window_start": "2026-02-01",
+      "auth_window_end": "2026-12-31",
+      "daily_target": 500,
+      "authorized_count": 320,
+      "recovered_count": 2
+    }
+  ]
+}
